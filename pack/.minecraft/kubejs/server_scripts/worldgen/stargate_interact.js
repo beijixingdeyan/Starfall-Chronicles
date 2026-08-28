@@ -7,19 +7,17 @@
 //   stellaris→valley 自由返航
 // =============================================================
 
-const SC = global.SC;
-
 function hasStage(p, stage) {
   try { return p.stages.has(stage); } catch (e) { return false; }
 }
 function countOf(p, id) {
-  try { const c = p.inventory.countItem(id); if (c > 0) return c; } catch (e) {}
+  try { var c = p.inventory.countItem(id); if (c > 0) return c; } catch (e) {}
   try {
-    let c = 0;
-    const lists = [p.mainInventory, p.armor, p.offHand];
-    for (const list of lists) {
+    var c = 0;
+    var lists = [p.mainInventory, p.armor, p.offHand];
+    for (var list of lists) {
       if (!list) continue;
-      for (const slot of list) {
+      for (var slot of list) {
         if (slot && String(slot.id) === id) c += Number(slot.count || 1);
       }
     }
@@ -31,15 +29,15 @@ function consumeItem(server, playerName, id) {
 }
 
 function nearestGate(p, gates) {
-  const now = Date.now();
-  let best = null, bestD = 36;
-  for (const key of Object.keys(gates)) {
-    const g = gates[key];
+  var now = Date.now();
+  var best = null, bestD = 36;
+  for (var key of Object.keys(gates)) {
+    var g = gates[key];
     if (!g || !g.x) continue;
-    const dimMatch = String(p.level.dimension) === g.dim;
+    var dimMatch = String(p.level.dimension) === g.dim;
     if (!dimMatch) continue;
-    const dx = p.x - g.x, dy = p.y - g.y, dz = p.z - g.z;
-    const d = dx * dx + dz * dz + dy * dy;
+    var dx = p.x - g.x, dy = p.y - g.y, dz = p.z - g.z;
+    var d = dx * dx + dz * dz + dy * dy;
     if (d < bestD) { bestD = d; best = key; }
   }
   return best;
@@ -47,28 +45,28 @@ function nearestGate(p, gates) {
 
 BlockEvents.rightClicked('starciv:stargate_core', event => {
   try {
-const p = event.player;
-  const server = p.server;
-  const gates = server.persistentData.sc_gates;
+var p = event.player;
+  var server = p.server;
+  var gates = server.persistentData.sc_gates;
   if (!gates) { p.tell('§c星门尚未校准。'); return; }
 
-  const gateId = nearestGate(p, gates);
-  if (!gateId || !SC.warp_rules[gateId]) { p.tell('§c这里不是可用的星门。'); return; }
-  const rule = SC.warp_rules[gateId];
-  const to = rule.to;
+  var gateId = nearestGate(p, gates);
+  if (!gateId || !global.SC.warp_rules[gateId]) { p.tell('§c这里不是可用的星门。'); return; }
+  var rule = global.SC.warp_rules[gateId];
+  var to = rule.to;
   if (!to) { p.tell('§c这条线路尚未开通。'); return; }
 
   // 冷却
-  const now = Math.floor(Date.now() / 1000);
-  const lastWarp = Number(p.persistentData.sc_lastWarp || 0);
-  if (now - lastWarp < SC.warp_cooldown) { p.tell('§7星门还在重新充能……'); return; }
+  var now = Math.floor(Date.now() / 1000);
+  var lastWarp = Number(p.persistentData.sc_lastWarp || 0);
+  if (now - lastWarp < global.SC.warp_cooldown) { p.tell('§7星门还在重新充能……'); return; }
 
   // ---- 权限与消耗检查 ----
-  const msg = (txt) => p.tell(txt);
+  var msg = (txt) => p.tell(txt);
 
   if (gateId === 'valley') {
     // 首航仪式：非工业文明必须持有星门钥匙
-    const isVeteran = hasStage(p, SC.stages.industry);
+    var isVeteran = hasStage(p, global.SC.stages.industry);
     if (!isVeteran && countOf(p, 'starciv:stellar_key') < 1) {
       msg('§c星门核心需要§b星门钥匙§c才能唤醒。');
       msg('§7（耕作、收获、找到上古之种，用精粹打造钥匙吧。）');
@@ -94,7 +92,7 @@ const p = event.player;
 
   // 燃料扣减 + 传送
   if (rule.consume) consumeItem(server, p.username, rule.consume);
-  const target = gates[to];
+  var target = gates[to];
   p.persistentData.sc_lastWarp = now;
 
   server.runCommandSilent(
@@ -104,13 +102,13 @@ const p = event.player;
     'execute in ' + target.dim + ' run spawnpoint ' + p.username + ' ' + target.x + ' ' + (target.y + 1) + ' ' + target.z
   );
 
-  const names = {
+  var names = {
     rust: ['铁锈星·工业文明', '浓烟之下，钢铁与蒸汽在轰鸣。污染防治是活下去的功课。'],
     silicon: ['硅火星·信息文明', '霓虹与算法。写错代码，工厂会爆炸。'],
     stellaris: ['苍穹星·星际文明', '戴森球与反物质。物理法则可以改写。'],
     valley: ['绿谷星·农耕文明', '麦田、酒香与四季。你回到了原点。']
   };
-  const info = names[to] || [to, ''];
+  var info = names[to] || [to, ''];
   server.scheduleInTicks(60, () => {
     server.runCommandSilent('title ' + p.username + ' title {"text":"§6' + info[0] + '","bold":true}');
   });
@@ -125,18 +123,18 @@ const p = event.player;
 // ---- 上古遗迹拜访：发现独石碑 → 获得上古之种（跨文明起点）----
 PlayerEvents.tick(event => {
   try {
-  const p = event.player;
-  const server = p.server;
-  const gates = server && server.persistentData.sc_gates;
+  var p = event.player;
+  var server = p.server;
+  var gates = server && server.persistentData.sc_gates;
   if (!gates || !gates.monolith) return;
   if (String(p.level.dimension) !== gates.monolith.dim) return;
 
-  const now = Math.floor(Date.now() / 1000);
-  const last = Number(p.persistentData.sc_monolithVisit || 0);
-  if (now - last < SC.monolith_cooldown) return;
+  var now = Math.floor(Date.now() / 1000);
+  var last = Number(p.persistentData.sc_monolithVisit || 0);
+  if (now - last < global.SC.monolith_cooldown) return;
 
-  const m = gates.monolith;
-  const dx = p.x - m.x, dy = p.y - m.y, dz = p.z - m.z;
+  var m = gates.monolith;
+  var dx = p.x - m.x, dy = p.y - m.y, dz = p.z - m.z;
   if (dx * dx + dy * dy + dz * dz > 20 * 20) return;
 
   p.persistentData.sc_monolithVisit = now;

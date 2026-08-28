@@ -4,22 +4,11 @@
 // =============================================================
 
 ServerEvents.recipes(event => {
-  const { shapeless, shaped } = event;
+  const { shapeless } = event;
 
-  // 古法压榨：4 上古之种 → 1 文明精粹（绿谷星可做）
-  shapeless('1x starciv:civ_essence', ['4x starciv:ancient_seed']);
-
-  // 星门钥匙：文明的启蒙仪式（绿谷星可做）
-  // 金 = 太阳，绿宝石 = 绿谷，石英 = 星尘，精粹 = 文明记忆
-  shaped('1x starciv:stellar_key', [
-    'GEG',
-    'EQE',
-    'GEG'
-  ], {
-    G: 'minecraft:gold_ingot',
-    E: 'minecraft:emerald',
-    Q: 'starciv:civ_essence'
-  });
+  // 古法压榨（4 上古之种 → 1 文明精粹）与星门钥匙的配方位于数据包
+  // data/starciv/recipes/（civ_essence_from_seed.json / stellar_key.json），
+  // 稳定且被任务书 crafting 页引用（starciv:civ_essence_from_seed / starciv:stellar_key）。
 
   // 农夫乐事联动：上古之种可做沙拉原料（叙事：种子养活第一代殖民者）
   shapeless('minecraft:wheat_seeds', ['starciv:ancient_seed']);

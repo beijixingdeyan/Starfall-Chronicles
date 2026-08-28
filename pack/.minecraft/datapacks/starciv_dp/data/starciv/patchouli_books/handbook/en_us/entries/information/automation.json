@@ -1,0 +1,16 @@
+{
+  "name": "自动化与存储",
+  "icon": "minecraft:redstone_lamp",
+  "category": "starciv:information",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)两条科技主线：$()$(br)$(li)AE2：量子存储与自动化网络，适合$(bold)大产能$()流水线，但复杂度高。$(li)Refined Storage：$(bold)易用$()的存储网络，上手即巅峰。$(br2)两者加 $(bold)Pipez$() 管道网络与 $(bold)Integrated Dynamics$() 逻辑，可搭出全自动跨星物流。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)也算一门手艺：$()$(br)CC:Tweaked 的电脑可以写 Lua 程序：$(li)自动收割绿谷麦田$(li)监控铁锈污染指数并自动净化$(li)控制苍穹基地的能源开关$(br2)$(italic)写错代码，工厂会爆炸——请先备份。$()"
+    }
+  ]
+}

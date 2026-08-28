@@ -1,0 +1,17 @@
+{
+  "name": "终局：跃迁引擎",
+  "icon": "starciv:warp_engine",
+  "category": "starciv:interstellar",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "starciv:warp_engine",
+      "text": "$(6)终局引擎$()：燃烧 AI 核心驱动曲率航行。$(li)配方：跃迁核心 + 量子核心 + 星辰合金$(li)效果：解锁跨星际的$(bold)瞬时位移$()与终末仪式"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)终末仪式：$()$(br)带上跃迁引擎回到绿谷星的独石碑：$(li)在独石碑处右键引擎$(li)观看文明的回响——$(italic)一万年前，上一个文明也走到了这里。$()$(li)获得终局成就「文明的回答」$(br2)然后，你可以继续建设你的星际联邦——或者，开启第 97 次日出。$(bold)谢谢游玩。$()"
+    }
+  ]
+}

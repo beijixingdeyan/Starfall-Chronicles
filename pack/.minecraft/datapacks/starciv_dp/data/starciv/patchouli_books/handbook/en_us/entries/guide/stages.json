@@ -1,0 +1,16 @@
+{
+  "name": "文明阶段规则",
+  "icon": "minecraft:feather",
+  "category": "starciv:guide",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "本世界的核心机制是$(bold)文明阶段$()——由你所处的星球自动决定：$(br)$(li)绿谷星 → 农耕文明$(li)铁锈星 → 工业文明$(li)硅火星 → 信息文明$(li)苍穹星 → 星际文明$(br2)抵达新星球即解锁对应阶段：$(bold)新配方$()与$(bold)星门权限$()同步更新。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)阶段影响：$()$(br)$(li)高阶段配方不会提前可见（配方书/ JEI 自动过滤）。$(li)星门会根据你的阶段判断是否放行。$(li)回程星门$(italic)免费$()——文明从不忘记来路。$(br2)$(6)提示：$()若卡关可让管理员执行 $(italic)/kubejs stage add <玩家> industrial$() 手动补阶段。"
+    }
+  ]
+}

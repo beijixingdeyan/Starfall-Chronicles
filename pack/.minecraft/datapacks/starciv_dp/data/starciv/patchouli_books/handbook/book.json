@@ -1,0 +1,13 @@
+{
+  "name": "星际文明编年史 · 探索手册",
+  "landing_text": "$(l:starciv:guide/start)从绿谷星开始你的文明之旅$(/l)$(br2)这本手册由星港档案馆编撰，记录四颗星球——绿谷、铁锈、硅火、苍穹——的晋升之路。$(br2)$(bold)提示：$(reset)手册会在每次世界开始时赠予你；若遗失可用羽毛与书重新合成。",
+  "version": 1,
+  "model": "patchouli:book_purple",
+  "pause_game": true,
+  "advancement_namespaces": [
+    "starciv"
+  ],
+  "show_progress": false,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "index_icon": "minecraft:written_book"
+}

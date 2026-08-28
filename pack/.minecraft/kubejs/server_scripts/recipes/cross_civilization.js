@@ -16,11 +16,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:clock' });
 
   // ---- 生物燃料的“农场外销”变体：绿谷星本地产油（弱化版，仅 1 罐）----
-  // 若玩家想提前把种子攒起来带到铁锈星，也可在绿谷星用营火慢煮 1 罐。
-  event.recipes.create.mixing(
-    Item.of('starciv:biofuel_canister', 1),
-    ['3x starciv:ancient_seed', 'minecraft:charcoal']
-  ).heated();
+  // 若玩家想提前把种子攒起来带到铁锈星，也可在绿谷星直接装瓶 1 罐。
+  // （配方位于数据包 data/starciv/recipes/biofuel_canister_campfire.json）
 
   // ---- 主链 ②③ 的汇总配方（可视化：JEI 里能看到全链条）----
   // ② 精密零件 → 量子核心（在 information.js 中，此处保留链条注释）

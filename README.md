@@ -4,7 +4,7 @@
 
 一个基于 **Minecraft 1.20.1 (Forge 47.4.23)** 的文明主题整合包：四个星球 = 四个文明阶段
 （**农耕 → 工业 → 信息 → 星际**），每一个星球都是完全不同的玩法逻辑，而非换皮。
-由 **96 个模组（92 自动安装 + 4 CurseForge 手动）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
+由 **97 个模组（93 自动安装 + 4 CurseForge 手动）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
 组合而成——模组只是演员，KubeJS 是导演。依赖经 Modrinth API 审计闭环、配方/进度 ID 经真实 jar 校验、服务端经真实启动冒烟测试。
 
 ## ✨ 核心体验
@@ -52,11 +52,11 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 ├─ pack/                      # 可运行的整合包本体（Prism 实例 / PCL 数据源）
 │  └─ .minecraft/
 │     ├─ kubejs/              # 脚本层（物品/配方/阶段/事件/星门）
-│     ├─ datapacks/starciv_dp # 维度/群系/进度树/战利品/函数
-│     └─ resourcepacks/…      # 语言文件与程序化纹理
-├─ scripts/                   # 下载/校验/审计/打包/PCL构建/冒烟测试脚本
+│     ├─ datapacks/starciv_dp # 维度/群系/进度树/战利品/函数/Patchouli 任务书
+│     └─ resourcepacks/…      # 语言文件、程序化纹理、主菜单视觉与音乐
+├─ scripts/                   # 下载/校验/审计/打包/PCL构建/冒烟/资源生成脚本
 ├─ server/                    # 专用服务器一键启动（start-server.ps1/.sh）
-├─ docs/                      # 完整设计文档（01-08）
+├─ docs/                      # 完整设计文档（01-09）
 ├─ launch/jvm-args.txt        # JVM 参数（另有 jvm-args-low.txt 低配档）
 └─ mods 由 install 脚本下载   # 不内嵌任何 jar（尊重模组许可）
 ```
@@ -65,25 +65,28 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 
 | 命令 | 作用 |
 |------|------|
-| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（92 个） |
+| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（93 个） |
 | `pwsh scripts/audit_deps.ps1` | 依赖审计（Modrinth API 实时核对 required/incompatible） |
 | `pwsh scripts/verify_mod_ids.ps1` | 用真实 jar 校验配方/进度引用的物品/实体 ID |
 | `pwsh scripts/validate.ps1` | 校验全部 JSON/JS/进度引用/mcfunction 行尾 |
 | `pwsh scripts/server_smoke_test.ps1` | 端到端服务器启动冒烟测试（数据包+维度+RCON） |
-| `pwsh scripts/build_pcl_pack.ps1` | 构建 PCL2 拖入即用的离线整合包 |
+| `pwsh scripts/build_pcl_pack.ps1` | 构建 PCL2 拖入即用的离线整合包（含光影/材质/任务书） |
 | `pwsh scripts/make_zip.ps1` | 打包为 Prism 可导入 zip |
 | `pwsh scripts/build_textures.ps1` | 再生成纹理 PNG（仓库已含成品） |
+| `pwsh scripts/build_assets.ps1` | 再生成主菜单视觉（Logo/全景/标语/图标） |
+| `pwsh scripts/build_music.ps1` | 再生成音乐（需本地 ffmpeg，见文档 09） |
 
 ## 🗺️ 文档目录
 
 - [01 · 概念设计](docs/01-concept.md) — 文明阶梯、模组-叙事映射、主线大纲、经济系统
-- [02 · 模组清单](docs/02-modlist.md) — 96 模组逐条“为什么需要”
+- [02 · 模组清单](docs/02-modlist.md) — 97 模组逐条“为什么需要”
 - [03 · 技术实现](docs/03-technical.md) — KubeJS 配方/进度/事件、数据包、性能方案
 - [04 · 内容创作](docs/04-content.md) — 开局引导、星门仪式、Boss 设计
 - [05 · 发布与社区](docs/05-release-and-community.md) — 平台、安装、运营、扩展
 - [06 · 性能](docs/06-performance.md) — JVM 参数、配置矩阵、3050/低配优化
 - [07 · 故障排查](docs/07-troubleshooting.md) — 常见问题、冲突、存档迁移
 - [08 · 启动器指南](docs/08-launcher-guide.md) — PCL2 / Prism / 服务器 / 低配优化速查
+- [09 · 任务书与视听](docs/09-quest-and-aesthetics.md) — Patchouli 任务书、光影/材质、音乐、主菜单定制
 
 ## 🖥️ 服务器
 

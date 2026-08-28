@@ -1,0 +1,16 @@
+{
+  "name": "农田与四季",
+  "icon": "minecraft:wheat",
+  "category": "starciv:agriculture",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "四季系统（Serene Seasons）决定了绿谷星的耕种节奏：$(br)$(li)春季：播种黄金期，作物生长加速$(li)夏季：炎热，注意湿度与虫害$(li)秋季：丰收季，双倍掉落窗口$(li)冬季：雪封大地，温室（Botany Pots）成为救星$(br2)搭一个$(bold)温室$()，冬天也能继续产出。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)进阶农业：$()$(br)$(li)养蜂（Productive Bees）：花粉 → 蜜 → 基因样本，蜜蜂=古代种子基因库。$(li)酿酒（Brewin' and Chewin'）：果酒与奶酪是村落经济的基础。$(li)村民交易（Easy Villagers）：把村庄经营成永动的贸易网络。$(br2)耕作是唯一能$(bold)自我循环$()的文明起点——别急着离开绿谷。"
+    }
+  ]
+}

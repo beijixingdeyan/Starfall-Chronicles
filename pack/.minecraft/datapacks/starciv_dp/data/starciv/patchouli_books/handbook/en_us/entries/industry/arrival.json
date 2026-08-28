@@ -1,0 +1,16 @@
+{
+  "name": "抵达铁锈星",
+  "icon": "minecraft:iron_ingot",
+  "category": "starciv:industry",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "穿越星门，浓烟与锈蚀之间，工业文明接纳了你。$(br2)$(bold)记住两条铁律：$()$(li)污染$(bold)会扩散$()——污染源日夜排放，请及时处理。$(li)铁锈星的矿物$(bold)更富$()，但开采会加速污染。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)阶段奖励：$()$(br)$(li)全部工业配方解锁（Create / Immersive Engineering / Mekanism / PneumaticCraft）。$(li)铁锈星终局：用$(l:starciv:industry/biofuel)生物燃料$()点燃下一座星门。$(br2)找一座锈蚀的工厂遗迹做基地——$(italic)文明总是从废墟上重建。$()"
+    }
+  ]
+}

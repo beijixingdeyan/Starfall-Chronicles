@@ -1,0 +1,16 @@
+{
+  "name": "机械与产线",
+  "icon": "minecraft:piston",
+  "category": "starciv:industry",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)四条工业路线任选：$()$(br)$(li)Create：传动、动力辊压、装配线——铁锈星最浪漫的机械。$(li)Immersive Engineering：多块结构的重工业美学，电线与电弧。$(li)Mekanism：聚变前的全流程能源，适合做自动化总纲。$(li)PneumaticCraft：压缩空气驱动逻辑与无人机的过渡。$(br2)蒸汽火车（Create: Steam 'n' Rails）是跨矿区物流的大动脉。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)污染应对：$()$(br)污染值过高会$(bold)反向毒害$()你与作物。$(li)安装$(bold)净化设备$()（Pollution of the Realms 提供了过滤/催化装置）。$(li)用$(bold)绿植与净水$()对冲排放。$(li)把重污染工厂建在下风处，居住区建在上风。$(br2)工业文明的代价，是环境——但这也是$(bold)信息文明$()的前奏。"
+    }
+  ]
+}

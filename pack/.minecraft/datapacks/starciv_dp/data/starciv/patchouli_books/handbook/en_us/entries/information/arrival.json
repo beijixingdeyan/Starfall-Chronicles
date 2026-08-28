@@ -1,0 +1,16 @@
+{
+  "name": "抵达硅火星",
+  "icon": "starciv:data_slivers",
+  "category": "starciv:information",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "霓虹在你脚下延伸，代码就是力量。$(br2)硅火星的通用货币是$(6)数据碎晶$()——由紫水晶研磨而成。$(br)$(li)挖矿：硅火星地下的紫水晶簇。$(li)研磨：把紫水晶（或碎晶）投入加工设备提炼。$(li)交易：铁锈星的高炉产物在硅火价格翻倍。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)阶段奖励：$()$(li)信息文明配方解锁（AE2 / Refined Storage / CC:Tweaked / Integrated Dynamics）。$(li)霓虹楼宇间的$(italic)无线网络$()（Flux Networks）让跨星基地成为可能。$(br2)目标是锻造$(l:starciv:information/quantum)量子核心$()——那是跃迁引擎的入场券。"
+    }
+  ]
+}

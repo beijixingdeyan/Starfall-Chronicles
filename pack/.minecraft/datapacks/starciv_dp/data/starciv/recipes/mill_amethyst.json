@@ -1,0 +1,5 @@
+{
+  "type": "create:milling",
+  "ingredients": [ { "item": "minecraft:amethyst_shard" } ],
+  "results": [ { "item": "starciv:data_slivers", "count": 4 } ]
+}

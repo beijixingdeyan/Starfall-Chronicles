@@ -1,0 +1,12 @@
+Starfall Chronicles 音乐版权声明
+================================
+
+1) 主菜单乐(menu.ogg) —— 「Calm Ambient 1 (Synthwave 4k)」
+   来源: OpenGameArt (opengameart.org/content/calm-ambient-1-synthwave-4k)
+   许可: CC0 1.0 公有领域（原作者放弃版权；本包仅做时长裁剪）
+   已注明出处，感谢作者。
+
+2) drift.ogg / echo.ogg —— 本整合包使用 ffmpeg 合成（正弦叠层+淡入淡出），
+   纯算法生成，无采样素材，属公有领域（CC0）。
+
+3) 其余音频均为 Minecraft 原版音效/音乐，版权归 Mojang 所有。

@@ -1,0 +1,5 @@
+{
+  "type": "mekanism:crushing",
+  "input": { "ingredient": { "item": "minecraft:amethyst_shard" } },
+  "output": { "item": "starciv:data_slivers", "count": 4 }
+}

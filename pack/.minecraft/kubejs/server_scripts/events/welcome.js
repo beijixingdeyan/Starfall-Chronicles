@@ -4,9 +4,9 @@
 // =============================================================
 
 PlayerEvents.loggedIn(event => {
-  const p = event.player;
-  const uuid = String(p.uuid);
-  const pd = p.persistentData;
+  var p = event.player;
+  var uuid = String(p.uuid);
+  var pd = p.persistentData;
 
   if (pd.sc_welcomed) return;
   pd.sc_welcomed = true;
@@ -15,7 +15,7 @@ PlayerEvents.loggedIn(event => {
   p.server.scheduleInTicks(20, () => {
     try {
       // 史书（written_book，title/author/pages 均为服务端 NBT）
-      const book = Item.of('minecraft:written_book').withNBT({
+      var book = Item.of('minecraft:written_book').withNBT({
         title: '文明编年史·序章',
         author: 'Starfall 档案馆',
         resolved: 1,
@@ -28,8 +28,15 @@ PlayerEvents.loggedIn(event => {
         ]
       });
       p.give(book);
-      p.tell('§6【文明编年史】§f你获得了一本《文明编年史》。');
-      p.tell('§7东方的天空下，有一座独石碑在等你。');
+      // 探索手册（Patchouli 任务书：四星球全流程引导）
+      try {
+        var handbook = Item.of('patchouli:guide_book', '{patchouli:book:"starciv:handbook"}');
+        p.give(handbook);
+      } catch (e2) {
+        p.tell('§c[Starfall] 探索手册发放失败: ' + e2);
+      }
+      p.tell('§6【文明编年史】§f你获得了一本《文明编年史》与《探索手册》。');
+      p.tell('§7按 §eE§7 打开手册，东方的天空下有一座独石碑在等你。');
     } catch (e) {
       p.tell('§c[Starfall] 史书发放失败: ' + e);
     }

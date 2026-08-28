@@ -1,0 +1,16 @@
+{
+  "name": "抵达苍穹星",
+  "icon": "minecraft:elytra",
+  "category": "starciv:interstellar",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "苍穹星。物理法则在这里可以被改写。$(br2)这里是$(bold)星际文明$()的领域：$(li)Ad Astra：火箭、空间站、月球与火星基地——伟大航程的仪式感。$(li)Cataclysm 灾厄 Boss：苍穹星与终局内容的标准配置。$(li)跃迁引擎（下方词条）：让单个文明越过苍穹。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)阶段奖励：$()$(li)终局配方解锁（跃迁引擎、星图、超空间设备）。$(li)回程星门$(bold)免费$()——随时可以回到绿谷星的麦田。$(br2)$(italic)你已抵达文明之巅。接下来——回到原点。$()"
+    }
+  ]
+}

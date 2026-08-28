@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "starciv:agriculture",
+  "ingredients": [
+    { "item": "starciv:ancient_seed" },
+    { "item": "starciv:ancient_seed" },
+    { "item": "starciv:ancient_seed" },
+    { "item": "starciv:ancient_seed" }
+  ],
+  "result": { "item": "starciv:civ_essence", "count": 1 }
+}

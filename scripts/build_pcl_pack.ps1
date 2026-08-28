@@ -109,7 +109,7 @@ if (-not (Test-Path $verDir) -and -not $SkipForge) {
 }
 
 # ---- 3. 内容同步 ----
-Write-Host "== 同步 mods / datapacks / resourcepacks / kubejs =="
+Write-Host "== 同步 mods / datapacks / resourcepacks / shaderpacks / kubejs =="
 foreach ($sub in @('mods','datapacks','kubejs')) {
   $src = Join-Path $Root "pack\.minecraft\$sub"
   if (Test-Path $src) {
@@ -117,12 +117,29 @@ foreach ($sub in @('mods','datapacks','kubejs')) {
     Copy-Item $src (Join-Path $mcDir $sub) -Recurse -Force
   }
 }
-$rpSrc = Join-Path $Root 'pack\.minecraft\resourcepacks\starciv_resources'
-if (Test-Path $rpSrc) {
-  $rpDst = Join-Path $mcDir 'resourcepacks\starciv_resources'
-  if (Test-Path $rpDst) { Remove-Item $rpDst -Recurse -Force }
-  Copy-Item $rpSrc $rpDst -Recurse -Force
+# 全部资源包（starciv_resources 专属 + Better Vanilla Building 建筑材质）
+$rpSrcRoot = Join-Path $Root 'pack\.minecraft\resourcepacks'
+if (Test-Path $rpSrcRoot) {
+  foreach ($rp in (Get-ChildItem $rpSrcRoot -Directory)) {
+    $rpDst = Join-Path $mcDir ("resourcepacks\" + $rp.Name)
+    if (Test-Path $rpDst) { Remove-Item $rpDst -Recurse -Force }
+    Copy-Item $rp.FullName $rpDst -Recurse -Force
+  }
 }
+# 光影（客户端专属，服务端同步脚本本就不带 shaderpacks）
+$shSrc = Join-Path $Root 'pack\.minecraft\shaderpacks'
+if (Test-Path $shSrc) {
+  $shDst = Join-Path $mcDir 'shaderpacks'
+  if (Test-Path $shDst) { Remove-Item $shDst -Recurse -Force }
+  Copy-Item $shSrc $shDst -Recurse -Force
+}
+# 默认启用本包资源包（含 Better Vanilla Building，可在游戏内调整顺序/关闭）
+$optPath = Join-Path $mcDir 'options.txt'
+$opt = @(
+  'resourcePacks:["vanilla","file/starciv_resources","file/better_vanilla_building"]',
+  'incompatibleResourcePacks:[]'
+) -join "`n"
+[System.IO.File]::WriteAllText($optPath, $opt, (New-Object System.Text.UTF8Encoding($false)))
 # 打包根目录的空 datapacks 提示
 if (-not (Test-Path (Join-Path $mcDir 'datapacks'))) { New-Item -ItemType Directory -Force -Path (Join-Path $mcDir 'datapacks') | Out-Null }
 

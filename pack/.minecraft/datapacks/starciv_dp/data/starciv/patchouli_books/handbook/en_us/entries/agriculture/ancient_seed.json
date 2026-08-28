@@ -1,0 +1,18 @@
+{
+  "name": "上古之种",
+  "icon": "starciv:ancient_seed",
+  "category": "starciv:agriculture",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "starciv:ancient_seed",
+      "text": "在上古遗迹的宝箱里$(bold)概率$()出现，或从流经独石碑的生命泉水中钓取。$(br2)它是绿谷星上古文明留下的最后遗产——$(italic)种下去，或者碾碎它。$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "starciv:civ_essence_from_seed",
+      "text": "古法：$(bold)4 粒上古之种 → 1 文明精粹$()（直接合成）。工业法（铁锈星）：在 Mekanism 净化机中$(bold)富集$()，1 粒种子可提炼 4 精粹。$(br2)精粹是星门钥匙与高级农业配方的核心物料。$(bold)不要全部用掉：$()留一两种进田里，它是整个文明链的起点。"
+    }
+  ]
+}

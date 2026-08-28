@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "starciv:industry",
+  "ingredients": [
+    { "item": "starciv:ancient_seed" },
+    { "item": "starciv:ancient_seed" },
+    { "item": "minecraft:coal" },
+    { "item": "minecraft:glass_bottle" }
+  ],
+  "result": { "item": "starciv:biofuel_canister", "count": 1 }
+}

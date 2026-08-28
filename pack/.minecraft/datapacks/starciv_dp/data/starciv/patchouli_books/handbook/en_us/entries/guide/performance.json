@@ -1,0 +1,16 @@
+{
+  "name": "性能与画质建议（低配友好）",
+  "icon": "minecraft:lever",
+  "category": "starciv:guide",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "本整合包面向中低配置做了大量优化（Embeddium、ModernFix、FerriteCore、FastSuite、EntityCulling 等 13 项性能模组）。$(br2)$(bold)画质-性能三档：$()$(br)$(li)流畅档：渲染 6-8、模拟 4-6、粒子减少、光影关闭。$(li)均衡档（推荐 3050）：渲染 10-12、模拟 6-8、粒子中。$(li)画面档：渲染 16+、模拟 10+、开启光影。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)光影：$()包内附带两款光影：$(li)MakeUp - Ultra Fast（低配首选，帧数几乎无损失）$(li)Complementary Reimagined（画面惊艳，3050 可开均衡档）$(br2)$(bold)内存：$()启动参数请分配 4-6G（低配 4G 足够）。$(br)关闭垂直同步、限制最大帧率能显著降低发热。"
+    }
+  ]
+}

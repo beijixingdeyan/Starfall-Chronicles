@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "starciv:agriculture",
+  "pattern": [ "GEG", "EQE", "GEG" ],
+  "key": {
+    "G": { "item": "minecraft:gold_ingot" },
+    "E": { "item": "minecraft:emerald" },
+    "Q": { "item": "starciv:civ_essence" }
+  },
+  "result": { "item": "starciv:stellar_key", "count": 1 }
+}

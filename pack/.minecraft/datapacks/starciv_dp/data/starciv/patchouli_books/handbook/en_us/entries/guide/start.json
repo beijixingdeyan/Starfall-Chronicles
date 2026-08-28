@@ -1,0 +1,16 @@
+{
+  "name": "开局：起点与史书",
+  "icon": "minecraft:written_book",
+  "category": "starciv:guide",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "你在绿谷星的麦田里醒来。头顶四颗星球：$(bold)绿谷、铁锈、硅火、苍穹$()。$(br2)每次进入世界，你都会获得一本《文明编年史》和这本手册。$(br2)东方的天空下，有一座$(6)独石碑$()在等你——那是上古文明留下的第一个谜题。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "【快速上手】$(br)1. 种田、酿酒、养蜂，把绿谷星经营成宜居之乡。$(br)2. 找到 $(l:starciv:agriculture/ancient_seed)上古之种$()。$(br)3. 备齐 $(l:starciv:agriculture/stargate_valley)星门钥匙$()，开启星门。$(br)4. 依次前往铁锈星 → 硅火星 → 苍穹星。$(br)5. 在苍穹星完成终局仪式，回到起点。"
+    }
+  ]
+}

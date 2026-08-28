@@ -31,7 +31,8 @@ global.SC = {
   // 星门建造（世界首次加载时动态定位，坐标写入 persistentData）
   gate_offsets: {
     valley:   { dx: 60,  dz: 0 },
-    monolith: { dx: -140, dz: -120 }
+    monolith: { dx: -140, dz: -120 },
+    valley_orchard: { dx: 48, dz: 40 }
   },
   // 上古遗迹（绿谷星独石碑）再访冷却（秒）
   monolith_cooldown: 1800,

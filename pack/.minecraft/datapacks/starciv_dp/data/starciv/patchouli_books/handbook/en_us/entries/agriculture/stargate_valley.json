@@ -1,0 +1,17 @@
+{
+  "name": "星门钥匙与绿谷星门",
+  "icon": "starciv:stellar_key",
+  "category": "starciv:agriculture",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "starciv:stellar_key",
+      "text": "$(6)星门钥匙$()的配方：$(li)金锭$(li)绿宝石$(li)石英$(li)文明精粹$(br2)在绿谷星的谷地祭坛旁寻找到那座$(bold)星门核心$()（地表可见的巨大方块结构）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "手持$(l:starciv:agriculture/stargate_valley)星门钥匙$()右击$(bold)星门核心$()，即可开启前往$(6)铁锈星$()的旅程。$(br2)$(bold)规则：$()$(li)钥匙不会消耗，可反复使用。$(li)需要农耕文明阶段（开局默认拥有）。$(li)星门 5 秒蓄力，传送前请后退一步。$(br2)$(italic)钥匙会回应持有者的文明阶段。$()"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# 03 · 技术实现（Phase 2）
+﻿# 03 · 技术实现（Phase 2）
 
 ## 1. 脚本层：KubeJS 6（主）+ CraftTweaker（备）
 
@@ -143,3 +143,9 @@ Spark 周期性分析（`/spark heapsummary` 定位泄漏）+ 存档迁移工具
 
 启用后检查：`/datapack list` 应显示 `file/starciv_dp`；进服/回主世界传送 `/execute in starciv:rustfall run tp @s 0 100 0` 验证维度。
 资源包（语言/物品名）在「选项 → 资源包」中启用 `starciv_resources`。
+
+## 配方实现说明（2026-08 修订）
+
+- **跨模组/带 NBT/机器配方一律用数据包 JSON**（data/starciv/recipes/）：civ_essence_from_seed、stellar_key、iofuel_canister（含营火变体）、enrich_seed（mekanism:enriching）、mill_amethyst（create:milling）、crush_amethyst（mekanism:crushing）。原因是本 KubeJS 构建对 create:mixing/milling、mekanism:enriching/crushing 的构造器签名不兼容（“Constructor ... arguments not found”），且带 NBT 输出的数据包配方在部分 Forge 构建会 SNBT 解析报错——**KubeJS 侧只保留已证明可用的隐式 shaped/shapeless**。
+- **手册配方（指南书 NBT 输出）用 KubeJS Item.of('patchouli:guide_book', '{patchouli:book:"starciv:handbook"}') 对象输出**，NBT 由引擎原生构造，不经字符串解析。
+- **KubeJS 脚本作用域纪律**：脚本共享同一顶层作用域，禁止在多个文件顶层声明同名 const（会 edeclaration of const）；事件回调内尽量用 ar（ServerEvents.loaded 等事件可能多次触发，箭头函数里 const 二次触发会报 redeclaration）。

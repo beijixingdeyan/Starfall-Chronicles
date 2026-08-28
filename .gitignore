@@ -19,6 +19,7 @@ pack/.minecraft/usercache.json
 pack/.minecraft/usernamecache.json
 pack/.minecraft/shaderpacks/
 pack/.minecraft/resourcepacks/*.zip
+pack/.minecraft/resourcepacks/better_vanilla_building/
 pack/.minecraft/libraries/
 pack/.minecraft/versions/
 !pack/.minecraft/datapacks/

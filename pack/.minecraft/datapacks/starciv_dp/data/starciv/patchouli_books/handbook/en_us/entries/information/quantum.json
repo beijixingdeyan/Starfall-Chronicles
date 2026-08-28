@@ -1,0 +1,17 @@
+{
+  "name": "量子核心与硅火星门",
+  "icon": "starciv:quantum_core",
+  "category": "starciv:information",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "starciv:quantum_core",
+      "text": "由$(bold)精密零件$()（铁锈星机床产物）锻造而成的 AI 核心。$(li)0.5% 概率从铁锈星工厂 BOSS 掉落$(li)在精密组装台中合成$(br2)它是$(6)跃迁引擎$()的灵魂组件。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)开启苍穹星星门：$()$(br)在硅火星的星门核心处，手持$(bold)量子核心$()右击（消耗 1 个）。$(li)需要信息文明阶段$(br2)$(italic)纯粹的运算，已足够撬动物理法则。$()"
+    }
+  ]
+}

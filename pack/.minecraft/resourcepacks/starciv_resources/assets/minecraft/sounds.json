@@ -1,0 +1,26 @@
+{
+    "music.creative":  {
+                           "sounds":  [
+                                          {
+                                              "stream":  true,
+                                              "name":  "starciv:music/drift"
+                                          }
+                                      ]
+                       },
+    "music.menu":  {
+                       "sounds":  [
+                                      {
+                                          "stream":  true,
+                                          "name":  "starciv:music/menu"
+                                      }
+                                  ]
+                   },
+    "music.end":  {
+                      "sounds":  [
+                                     {
+                                         "stream":  true,
+                                         "name":  "starciv:music/echo"
+                                     }
+                                 ]
+                  }
+}

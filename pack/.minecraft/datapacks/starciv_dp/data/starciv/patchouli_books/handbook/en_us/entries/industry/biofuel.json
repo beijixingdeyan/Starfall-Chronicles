@@ -1,0 +1,17 @@
+{
+  "name": "生物燃料与铁锈星门",
+  "icon": "starciv:biofuel_canister",
+  "category": "starciv:industry",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "starciv:biofuel_canister",
+      "text": "$(bold)装瓶工艺：$()$(br)$(li)2 粒$(bold)上古之种$() + 1 煤炭 + 1 玻璃瓶 → 1 生物燃料罐（铁锈星工业配方）。$(li)绿谷星也可用 3 粒种子 + 木炭 + 玻璃瓶装瓶 1 罐（弱化版）。$(br2)它既是铁锈星机器的$(bold)清洁能源$()，也是点燃下一座星门的$(bold)燃料$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)开启硅火星星门：$()$(br)在铁锈星的星门核心处，手持$(l:starciv:industry/biofuel)生物燃料罐$()右击：$(li)消耗 1 罐燃料$()$(li)需要工业文明阶段$(br2)$(italic)种子发酵成的燃料——古老的生命，推进崭新的文明。$()"
+    }
+  ]
+}

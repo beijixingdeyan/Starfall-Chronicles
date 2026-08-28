@@ -1,6 +1,6 @@
 # 02 · 完整模组清单（Phase 2）
 
-> MC **1.20.1 · Forge 47.4.23**，共 **96 个模组**（92 个 Modrinth 一键自动安装 + 4 个 CurseForge 手动），
+> MC **1.20.1 · Forge 47.4.23**，共 **97 个模组**（93 个 Modrinth 一键自动安装 + 4 个 CurseForge 手动），
 > 全部经 Modrinth API 校验存在 1.20.1 + Forge 版本；依赖已用 API 审计闭环（0 缺失 required、
 > 0 收录 incompatible）。版本号为本仓库快照，脚本会装“最新匹配版”。
 > **禁止无脑堆砌**：每个模组都有明确叙事目的，缺失任一 required 模组会让对应星球玩法失效。
@@ -12,7 +12,7 @@
 | 分类 | 数量 | 一句话 |
 |------|------|--------|
 | 核心优化 optimization | 11 | 启动 <5 分钟、6-8GB 流畅、4 小时不崩 |
-| 界面辅助 ui | 10 | 配方可视化、地图、背包、传送 |
+| 界面辅助 ui | 11 | 配方可视化、地图、背包、传送、冲突消解 |
 | 绿谷星 agriculture | 12 | 农耕、四季、酿造、养蜂、村落 |
 | 铁锈星 industry | 9 | 机械、重工业、物流、污染 |
 | 硅火星 information | 8 | 存储网络、编程、逻辑、赛博建材 |
@@ -39,12 +39,14 @@
 | FastFurnace | 8.0.2 | 熔炉配方缓存（冶炼链） |
 | Saturn | mc1.20.1-0.1.3 | 无成本优化补丁 |
 
-## B. 界面与冒险辅助（10）
+## B. 界面与冒险辅助（11）
 
 JEI 15.49 · Jade 11.13 · Xaero's Minimap 26.4.2 · Xaero's World Map 1.45.0 · AppleSkin 2.5.1 ·
-Controlling 12.0.2 · Mouse Tweaks 2.25.1 · Inventory Profiles Next 1.10.20 · Sophisticated Backpacks 3.24.67 · Waystones 14.1.20
+Controlling 12.0.2 · Mouse Tweaks 2.25.1 · Inventory Profiles Next 1.10.20 · Sophisticated Backpacks 3.24.67 · Waystones 14.1.20 ·
+Polymorph 0.49.10
 
-作用：配方可视化（JEI 是跨文明链“谁能合、缺什么”的核心）、指向提示、四星球导航、一键整理、背包扩容、星球内传送石碑。
+作用：配方可视化（JEI 是跨文明链“谁能合、缺什么”的核心）、指向提示、四星球导航、一键整理、背包扩容、星球内传送石碑；
+**Polymorph** 在“同一输出对应多个配方”（如多种金属锭）时弹出选择框，从机制上杜绝跨模组配方冲突。
 
 ## C. 绿谷星 · 农耕文明（12）
 
@@ -111,5 +113,5 @@ Lionfish API 3.0(Cataclysm) · YUNG's API 4.0.6(YUNG's 三件) · Cristel Lib 1.
 - Create 6.x 与 Create: Steam 'n' Rails 1.7.x 配套（均已验证 1.20.1 Forge）。
 - Supplementaries 需要 **Moonlight**（原 Selene）；Waystones 需要 **Balm**（已包含）。
 - Embeddium + Oculus 兼容；若两者同时开启遇到渲染异常，先关闭 Oculus 排查。
-- 已知冲突规避：不装两个“存储网络”同时驱动同一物品（AE2 与 RS 请二选一专精，包内已通过配方阶段引导）。
+- 已知冲突规避：不装两个“存储网络”同时驱动同一物品（AE2 与 RS 请二选一专精，包内已通过配方阶段引导）；同类输出冲突由 Polymorph 弹窗兜底。
 - 全部模组来自 Modrinth / CurseForge 官方分发；追随各自许可证（本仓库不含任何 mod jar，安装脚本按官方 CDN 下载）。

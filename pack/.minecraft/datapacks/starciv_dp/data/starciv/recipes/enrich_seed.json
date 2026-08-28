@@ -1,0 +1,5 @@
+{
+  "type": "mekanism:enriching",
+  "input": { "ingredient": { "item": "starciv:ancient_seed" } },
+  "output": { "item": "starciv:civ_essence", "count": 4 }
+}

@@ -1,4 +1,4 @@
-# 07 · 故障排查
+﻿# 07 · 故障排查
 
 ## 1. 常见问题快速索引
 
@@ -50,3 +50,10 @@
 - 星门/进度/污染均为服务端逻辑，玩家无需额外装 KubeJS（服务端脚本即生效）。
 - 管理命令：`/kubejs stage`（阶段）、`/advancement grant @s only starciv:*`（调试进度）、
   `function starciv:quest/seed_gift`（补发种子）。
+
+## 数据包/脚本易错点（实战验证 2026-08）
+
+1. **群系要素重复引用 → Feature order cycle 崩溃**：自定义群系 JSON 的 eatures 列表里同一 placed feature 出现两次（如 minecraft:ore_diamond ×2）会让 FeatureSorter 产生自环，首次生成该维度区块时崩溃（InvalidDataException: Feature order cycle found，且会导致服务器 tick 卡死触发 Watchdog）。症状：第二启动（数据包生效后）在生成自定义维度区块时秒崩。**每个 placed feature 在同一个 biome 的 features 中只能出现一次。**
+2. **KubeJS 脚本共享顶层作用域**：多个文件顶部 const SC = ... 会 edeclaration of const，导致整文件不加载（星门/传送等静默失效）。全包现统一为单一事实源 global.SC，事件回调内用 ar。
+3. **本 KubeJS 构建的 modded 机器配方签名不兼容**（create:mixing/milling、mekanism:enriching/crushing 的构造器报错）——本包已全部改为数据包 JSON 配方，若自行添加请复制 data/starciv/recipes/enrich_seed.json 的写法。
+4. **IF 自带进度引用 orge:plastic 会报 “Unknown item id”**：这是 Industrial Foregoing 自身的进度数据问题（其假装依赖未知物品），不影响启动与游玩，属良性噪音。
