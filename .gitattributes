@@ -1,0 +1,14 @@
+# 统一 LF 行尾：Minecraft mcfunction 严格要求 LF，JSON/脚本同理
+* text=auto
+*.mcfunction text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.cfg text eol=lf
+*.txt text eol=lf
+*.mcmeta text eol=lf
+*.png binary
+*.jar binary
+*.zip binary
