@@ -159,9 +159,43 @@ New-Item -ItemType Directory -Force -Path $dist | Out-Null
 $zipPath = Join-Path $dist ("starfall-chronicles-pcl-" + (Get-Date -Format yyyyMMdd) + '.zip')
 if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
 Add-Type -AssemblyName System.IO.Compression.FileSystem | Out-Null
+Add-Type -AssemblyName System.IO.Compression | Out-Null
 # PCL 约定: zip 根内直接是 .minecraft/*（包含 .minecraft 这一层再压缩）
 $zipRoot = Split-Path $mcDir -Parent
-[System.IO.Compression.ZipFile]::CreateFromDirectory($zipRoot, $zipPath, [System.IO.Compression.CompressionLevel]::Optimal, $false)
+# HMCL/兼容启动器可读的入口 manifest（PCL2 按 .minecraft/ 结构识别，该文件纯增强互通性）
+$mfPath = Join-Path $zipRoot 'manifest.json'
+[System.IO.File]::WriteAllText($mfPath, (@"
+{
+  "manifestType": "minecraft",
+  "manifestVersion": 1,
+  "name": "Starfall Chronicles",
+  "version": "1.0.0",
+  "author": "Starfall Team"
+}
+"@), (New-Object System.Text.UTF8Encoding($false)))
+# ZipFile::CreateFromDirectory 在 .NET Framework(PS5.1) 下把条目写成反斜杠（zip 规范要求正斜杠），
+# 导致 PCL2/第三方读取器无法识别 .minecraft/ 目录 —— 改用 ZipArchive 手工写正斜杠条目（含目录条目）。
+function New-PosixZip([string]$srcDir, [string]$dstZip) {
+  $fs = [System.IO.File]::Open($dstZip, [System.IO.FileMode]::Create)
+  $zip = New-Object System.IO.Compression.ZipArchive($fs, [System.IO.Compression.ZipArchiveMode]::Create)
+  try {
+    $base = (Resolve-Path $srcDir).Path.TrimEnd('\') + '\'
+    $dirs = New-Object System.Collections.Generic.HashSet[string]
+    Get-ChildItem -Path $srcDir -Recurse -File | ForEach-Object {
+      $rel = $_.FullName.Substring($base.Length).Replace('\', '/')
+      $dirRel = Split-Path $rel -Parent
+      while ($dirRel) {
+        $dirRelPosix = $dirRel.Replace('\', '/')
+        if ($dirs.Add($dirRelPosix)) { $null = $zip.CreateEntry($dirRelPosix + '/') }
+        $dirRel = Split-Path $dirRel -Parent
+      }
+      $entry = $zip.CreateEntry($rel, [System.IO.Compression.CompressionLevel]::Optimal)
+      $es = $entry.Open()
+      try { $bytes = [System.IO.File]::ReadAllBytes($_.FullName); $es.Write($bytes, 0, $bytes.Length) } finally { $es.Dispose() }
+    }
+  } finally { $zip.Dispose(); $fs.Dispose() }
+}
+New-PosixZip $zipRoot $zipPath
 Write-Host "✔ 已生成 PCL2 整合包:" -ForegroundColor Green
 Write-Host "  $zipPath"
 $sz = (Get-Item $zipPath).Length / 1MB
