@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:book" },
+    "title": { "text": "失落科技", "color": "dark_gray" },
+    "description": { "text": "“最原始的，才是最先进的。”", "color": "gray" },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "starciv:interstellar/engine",
+  "criteria": {
+    "revealed": { "trigger": "minecraft:impossible" }
+  }
+}

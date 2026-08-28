@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "ae2:calculation_processor" },
+    "title": { "text": "算力之心", "color": "light_purple" },
+    "description": { "text": "锻造运算处理器。芯片是硅火星的货币，也是文明的算力。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/code",
+  "criteria": {
+    "cpu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "ae2:calculation_processor" ] } ] }
+    }
+  }
+}

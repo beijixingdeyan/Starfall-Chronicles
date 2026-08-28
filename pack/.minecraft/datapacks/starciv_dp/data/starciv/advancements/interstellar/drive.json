@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:warp_core" },
+    "title": { "text": "曲率之心", "color": "blue" },
+    "description": { "text": "将量子核心嵌入引擎框架——空间开始为你弯曲。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:interstellar/fabricator",
+  "criteria": {
+    "warp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:warp_core" ] } ] }
+    }
+  }
+}

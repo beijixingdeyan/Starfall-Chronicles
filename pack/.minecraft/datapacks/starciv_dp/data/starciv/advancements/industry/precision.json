@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:precision_parts" },
+    "title": { "text": "精密零件", "color": "gold" },
+    "description": { "text": "信息文明的基石：铁板、红石与金粉在机床中淬炼成型。", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/fuel",
+  "criteria": {
+    "parts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:precision_parts" ] } ] }
+    }
+  }
+}

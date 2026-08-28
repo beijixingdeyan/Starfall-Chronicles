@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:ender_pearl" },
+    "title": { "text": "登陆硅火星", "color": "light_purple" },
+    "description": { "text": "燃烧生物燃料，穿过星门。霓虹之下的城市在等待它的程序员。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/precision",
+  "criteria": {
+    "arrived": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": { "to": "starciv:silicon" }
+    }
+  }
+}

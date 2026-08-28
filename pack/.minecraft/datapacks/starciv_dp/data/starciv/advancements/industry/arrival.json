@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:iron_ingot" },
+    "title": { "text": "登陆铁锈星", "color": "red" },
+    "description": { "text": "穿过星门，踏上浓烟与锈蚀的工业世界。污染——它会反噬你。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:agriculture/stellar_key",
+  "criteria": {
+    "arrived": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": { "to": "starciv:rustfall" }
+    }
+  }
+}

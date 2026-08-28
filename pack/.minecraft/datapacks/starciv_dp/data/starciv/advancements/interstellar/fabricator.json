@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "ad_astra:steel_plate" },
+    "title": { "text": "恒星工业", "color": "blue" },
+    "description": { "text": "压制第一块航天钢板。戴森球的蓝图已经展开。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:interstellar/arrival",
+  "criteria": {
+    "plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "ad_astra:steel_plate" ] } ] }
+    }
+  }
+}

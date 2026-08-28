@@ -1,0 +1,8 @@
+# Starfall Chronicles — JVM 参数
+# 标准（6-8GB 内存）：
+-Xmx6G -Xms2G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1MixedGCCountTarget=4 -XX:SurvivorRatio=32 -XX:+AlwaysPreTouch -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true
+
+# 极致画质（12GB 内存，仅改动前两项）：
+# -Xmx12G -Xms4G ...（其余参数不变）
+
+# 说明：需 Java 17 (64-bit)。详见 docs/06-performance.md。

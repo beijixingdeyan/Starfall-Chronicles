@@ -1,0 +1,104 @@
+{
+  "pack": {
+    "id": "starfall-chronicles",
+    "name": "星际文明编年史 / Starfall Chronicles",
+    "mc_version": "1.20.1",
+    "loader": "forge",
+    "forge_recommended": "47.4.53",
+    "install_dir": "pack/.minecraft/mods",
+    "note": "单一数据源：scripts/install_mods.ps1 与 scripts/install_mods.sh 据此下载模组（Modrinth API，1.20.1+forge 最新版）。slug 与版本已通过 api.modrinth.com 校验（2026 快照）。"
+  },
+  "mods": [
+    { "slug": "embeddium",                 "category": "optimization", "tier": "required", "why": "渲染优化（Sodium Forge 移植）：6-8GB 内存下稳定 60fps+，加载提速" },
+    { "slug": "modernfix",                 "category": "optimization", "tier": "required", "why": "启动与内存优化：DFU 降级、动态资源加载，主菜单 <5 分钟的关键" },
+    { "slug": "ferrite-core",              "category": "optimization", "tier": "required", "why": "内存占用削减 30%+，12GB 预算内开满画质" },
+    { "slug": "lazydfu",                   "category": "optimization", "tier": "required", "why": "启动加速（数据修复懒加载）；若 Modrinth 检索不到 1.20.1 版本，请从 CurseForge 安装" },
+    { "slug": "spark",                     "category": "optimization", "tier": "required", "why": "性能分析：4 小时稳定性承诺靠它定位卡顿/泄漏" },
+    { "slug": "entityculling",             "category": "optimization", "tier": "required", "why": "只渲染视野内实体，硅火星巨型城市不掉帧" },
+    { "slug": "memoryleakfix",             "category": "optimization", "tier": "required", "why": "修复已知内存泄漏，长时间挂机不涨内存" },
+    { "slug": "fastsuite",                 "category": "optimization", "tier": "required", "why": "批量配方处理加速（FastWorkbench/FastFurnace 前置聚合）" },
+    { "slug": "fastworkbench",             "category": "optimization", "tier": "required", "why": "工作台配方缓存，原版合成不卡顿" },
+    { "slug": "fastfurnace",               "category": "optimization", "tier": "required", "why": "熔炉配方缓存，工业冶炼链流畅" },
+    { "slug": "saturn",                    "category": "optimization", "tier": "required", "why": "服务端/客户端零成本优化补丁" },
+
+    { "slug": "jei",                       "category": "ui", "tier": "required", "why": "配方查看器：跨文明合成链的可视化核心（谁能合、缺什么）" },
+    { "slug": "jade",                      "category": "ui", "tier": "required", "why": "指向提示：机器/作物/污染状态一眼可见" },
+    { "slug": "xaeros-minimap",            "category": "ui", "tier": "required", "why": "小地图：四星球探索需要方向感" },
+    { "slug": "xaeros-world-map",          "category": "ui", "tier": "required", "why": "大地图：跨星球资产运输路线规划" },
+    { "slug": "appleskin",                 "category": "ui", "tier": "required", "why": "饱食度可视化：绿谷星烹饪玩法的基础反馈" },
+    { "slug": "controlling",               "category": "ui", "tier": "required", "why": "按键冲突管理：90+ 模组零冲突的保障" },
+    { "slug": "mouse-tweaks",              "category": "ui", "tier": "required", "why": "鼠标拖拽合成，批量冶炼/酿造操作体验" },
+    { "slug": "inventory-profiles-next",   "category": "ui", "tier": "required", "why": "一键整理/自动补货，物流时代标配" },
+    { "slug": "sophisticated-backpacks",   "category": "ui", "tier": "required", "why": "背包扩容+流体槽：跨星球搬运补给" },
+    { "slug": "waystones",                 "category": "ui", "tier": "required", "why": "传送石碑：绿谷星村落网络的交通基础（需 Balm）" },
+
+    { "slug": "farmers-delight",           "category": "agriculture", "tier": "required", "why": "农夫乐事：绿谷星深度烹饪/丰收节核心玩法" },
+    { "slug": "brewin-and-chewin",         "category": "agriculture", "tier": "required", "why": "酿造与发酵：果酒/奶酪产业链（农耕→酿造）" },
+    { "slug": "serene-seasons",            "category": "agriculture", "tier": "required", "why": "四季系统：雨水与季节决定收成——农耕星独有的天时" },
+    { "slug": "alexs-mobs",                "category": "agriculture", "tier": "required", "why": "野生动物群与事件 Boss：农耕星的自然威胁与生态" },
+    { "slug": "naturalist",                "category": "agriculture", "tier": "required", "why": "真实动物行为：畜牧与生态观察（需 GeckoLib）" },
+    { "slug": "productivebees",            "category": "agriculture", "tier": "required", "why": "养蜂产业链：花粉→蜜→基因样本（蜜蜂=古代种子基因溯源）" },
+    { "slug": "quark",                     "category": "agriculture", "tier": "required", "why": "自然/村庄/建筑黏合剂：统一视觉语言，四星球通用美感" },
+    { "slug": "supplementaries",           "category": "agriculture", "tier": "required", "why": "装饰与逻辑：信件、灯笼、告示牌——文明叙事的道具（需 Moonlight）" },
+    { "slug": "botany-pots",               "category": "agriculture", "tier": "required", "why": "花盆种植：农耕自动化的第一块积木（温室墙）" },
+    { "slug": "decorative-blocks",         "category": "agriculture", "tier": "required", "why": "建筑装饰：农耕小镇与硅火星公寓楼同源建材" },
+    { "slug": "easy-villagers",            "category": "agriculture", "tier": "required", "why": "村民交易优化：村落经济与 NPC 交易体验" },
+
+    { "slug": "create",                    "category": "industry", "tier": "required", "why": "机械动力：铁锈星传动/机械臂/装配线的工业时代主玩法" },
+    { "slug": "createaddition",            "category": "industry", "tier": "required", "why": "Create 电气化：电阻/电机——工业星从蒸汽到电力的跃迁" },
+    { "slug": "create-steam-n-rails",      "category": "industry", "tier": "required", "why": "蒸汽火车与铁路：铁锈星跨矿区物流大动脉" },
+    { "slug": "immersiveengineering",      "category": "industry", "tier": "required", "why": "沉浸工程：多块高炉/电线的重工业美学与金属冶炼" },
+    { "slug": "mekanism",                  "category": "industry", "tier": "required", "why": "通用机械：聚变/反物质终极能源（苍穹星戴森球前奏）" },
+    { "slug": "industrial-foregoing",      "category": "industry", "tier": "required", "why": "工业先锋：激光钻、自动屠宰——流水线集约化" },
+    { "slug": "pipez",                     "category": "industry", "tier": "required", "why": "管道物流：物品/流体/能量/气体的运输标准化" },
+    { "slug": "pollution-of-the-realms",   "category": "industry", "tier": "required", "why": "污染机制：铁锈星污染反噬玩家——工业文明的代价具象化" },
+    { "slug": "pneumaticcraft-repressurized", "category": "industry", "tier": "required", "why": "气动工艺：压强逻辑.IO 无人机——工业向信息过渡的桥梁" },
+
+    { "slug": "ae2",                       "category": "information", "tier": "required", "why": "应用能源：量子存储与自动化网络——信息文明骨架" },
+    { "slug": "refined-storage",           "category": "information", "tier": "required", "why": "精致存储：硅火星第二科技路线（分支选择：AE2 复杂 vs RS 易用）" },
+    { "slug": "cc-tweaked",                "category": "information", "tier": "required", "why": "电脑编程（Lua）：代码即力量——写错代码工厂爆炸" },
+    { "slug": "integrated-dynamics",       "category": "information", "tier": "required", "why": "集成动力：逻辑网络/变量运算——算法驱动一切" },
+    { "slug": "integrated-terminals",      "category": "information", "tier": "required", "why": "集成终端：逻辑网络的可视化操作台" },
+    { "slug": "integrated-tunnels",        "category": "information", "tier": "required", "why": "集成隧道：逻辑网络与物流网络的深层融合" },
+    { "slug": "chipped",                   "category": "information", "tier": "required", "why": "赛博建筑方块库：硅火星霓虹都市的建材多样性" },
+
+    { "slug": "ad-astra",                  "category": "interstellar", "tier": "required", "why": "Ad Astra：火箭/空间站/月球火星——星际航行的仪式感载体" },
+    { "slug": "ad-astra-giselle-addon",    "category": "interstellar", "tier": "required", "why": "火箭自动化接口：苍穹星基地的物流自动化" },
+    { "slug": "l_enders-cataclysm",        "category": "interstellar", "tier": "required", "why": "灾厄：四大史诗 Boss——苍穹星与终局的标志性遭遇" },
+
+    { "slug": "terralith",                 "category": "adventure_worldgen", "tier": "required", "why": "地表群系扩展：绿谷星地貌多样性（依然是农耕田园基调）" },
+    { "slug": "yungs-better-strongholds",  "category": "adventure_worldgen", "tier": "required", "why": "远古要塞重制：上古文明的遗迹叙事载体" },
+    { "slug": "yungs-better-mineshafts",   "category": "adventure_worldgen", "tier": "required", "why": "矿洞重制：工业星挖矿前奏" },
+    { "slug": "yungs-better-dungeons",     "category": "adventure_worldgen", "tier": "required", "why": "地牢重制：四星球通用战斗内容" },
+    { "slug": "when-dungeons-arise",       "category": "adventure_worldgen", "tier": "required", "why": "失落文明城邦结构：环境叙事的主体来源" },
+    { "slug": "towns-and-towers",          "category": "adventure_worldgen", "tier": "required", "why": "城镇与塔楼：绿谷星聚落密度提升" },
+    { "slug": "structory",                 "category": "adventure_worldgen", "tier": "required", "why": "轻量遗迹：野外旅行节奏点缀" },
+    { "slug": "structory-towers",          "category": "adventure_worldgen", "tier": "required", "why": "遗迹高塔：绿谷星地标" },
+
+    { "slug": "botania",                   "category": "magic_branch", "tier": "required", "why": "植物魔法：'生命科技'平行路线——农耕星用花朵驱动工业（分支专精）" },
+    { "slug": "ars-nouveau",               "category": "magic_branch", "tier": "required", "why": "魔法工业：法术自动化第二路线（与纯机械路线形成专精分支）" },
+    { "slug": "patchouli",                 "category": "magic_branch", "tier": "required", "why": "手册系统：所有模组手册统一视觉，文明叙事的'史书记录'" },
+
+    { "slug": "kubejs",                    "category": "libraries", "tier": "required", "why": "脚本层核心：本包全部配方/进度/事件联动由 KubeJS 驱动" },
+    { "slug": "rhino",                     "category": "libraries", "tier": "required", "why": "KubeJS 运行时代理（Mozilla Rhino）" },
+    { "slug": "architectury-api",          "category": "libraries", "tier": "required", "why": "多加载器兼容 API（JEI/Jade 等前置）" },
+    { "slug": "crafttweaker",              "category": "libraries", "tier": "optional", "why": "备用脚本层：社区玩家可无 KubeJS 环境下继续改配方（本包以 KubeJS 为主）" },
+    { "slug": "citadel",                   "category": "libraries", "tier": "required", "why": "巢穴库：Alex's Mobs 前置" },
+    { "slug": "geckolib",                  "category": "libraries", "tier": "required", "why": "实体动画库：Naturalist/Ars Nouveau 前置" },
+    { "slug": "curios",                    "category": "libraries", "tier": "required", "why": "饰品槽：Cross 文明装备位统一" },
+    { "slug": "placebo",                   "category": "libraries", "tier": "required", "why": "工具库：Chipped 等前置" },
+    { "slug": "cloth-config",              "category": "libraries", "tier": "required", "why": "配置 UI：Jade 等模组配置界面" },
+    { "slug": "moonlight",                 "category": "libraries", "tier": "required", "why": "月光库（原 Selene）：Supplementaries 前置" },
+    { "slug": "balm",                      "category": "libraries", "tier": "required", "why": "跨加载器抽象：Waystones 前置" }
+  ],
+  "optional_mods": [
+    { "slug": "oculus", "category": "graphics", "why": "Forge 光影加载器（可选画质项，需配合 Complementery Reimagined 光影包）" }
+  ],
+  "curseforge_only": [
+    { "name": "Flux Networks", "page": "https://www.curseforge.com/minecraft/mc-mods/flux-networks", "why": "无线能量网络：硅火星建筑内无电线供电（Modrinth 无 Forge 1.20.1 版本）" },
+    { "name": "MineColonies", "page": "https://www.curseforge.com/minecraft/mc-mods/minecolonies", "why": "殖民地系统：绿谷星村落建设玩法（Modrinth 未收录 Forge 1.20.1）" }
+  ],
+  "resource_and_shader_packs": [
+    { "name": "Complementary Reimagined", "page": "https://modrinth.com/resourcepack/complementary-reimagined", "why": "柔和光影：硅火星霓虹夜景与苍穹星星云天空的视觉底色（装于 shaderpacks/，需 Oculus）" }
+  ]
+}

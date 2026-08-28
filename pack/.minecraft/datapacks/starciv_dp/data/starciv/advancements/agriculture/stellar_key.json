@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:stellar_key" },
+    "title": { "text": "星门钥匙", "color": "gold" },
+    "description": { "text": "锻造星门钥匙：金、绿宝石、石英与文明精粹。星门在等你了。", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:agriculture/explore_ruin",
+  "criteria": {
+    "key": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:stellar_key" ] } ] }
+    }
+  }
+}

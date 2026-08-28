@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:nether_star" },
+    "title": { "text": "登陆苍穹星", "color": "blue" },
+    "description": { "text": "穿过最后的星门。在这里，物理法则可以被改写。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/core",
+  "criteria": {
+    "arrived": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": { "to": "starciv:stellaris" }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:biofuel_canister" },
+    "title": { "text": "生物燃料", "color": "dark_green" },
+    "description": { "text": "用绿谷星的上古之种，在 Create 混合机中酿造星门燃料。文明在此交汇。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/mechanic",
+  "criteria": {
+    "fuel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:biofuel_canister" ] } ] }
+    }
+  }
+}

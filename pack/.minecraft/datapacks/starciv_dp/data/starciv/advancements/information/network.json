@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "ae2:controller" },
+    "title": { "text": "网络筑造者", "color": "light_purple" },
+    "description": { "text": "建立第一个应用能源网络。万物皆可寻址。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/arrival",
+  "criteria": {
+    "ae2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "ae2:controller" ] } ] }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:bread" },
+    "title": { "text": "面包师", "color": "green" },
+    "description": { "text": "烤出第一条面包。烹饪是农耕文明的语言。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:agriculture/first_fruit",
+  "criteria": {
+    "baked": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "minecraft:bread" ] } ] }
+    }
+  }
+}

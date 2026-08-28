@@ -1,0 +1,59 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.4,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 7397391,
+    "fog_color": 5592687,
+    "water_color": 47080,
+    "water_fog_color": 329011,
+    "grass_color": 7370596,
+    "foliage_color": 5471467,
+    "music": {
+      "sound": "minecraft:music.end",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [
+      { "type": "minecraft:zombie", "weight": 80, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:skeleton", "weight": 80, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:creeper", "weight": 80, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:spider", "weight": 80, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:enderman", "weight": 60, "minCount": 1, "maxCount": 4 },
+      { "type": "minecraft:phantom", "weight": 15, "minCount": 1, "maxCount": 3 }
+    ],
+    "creature": [
+      { "type": "minecraft:sheep", "weight": 12, "minCount": 4, "maxCount": 4 }
+    ],
+    "ambient": [
+      { "type": "minecraft:bat", "weight": 10, "minCount": 8, "maxCount": 8 }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": { "air": [] },
+  "features": [
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_gold_upper",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond_upper",
+      "minecraft:ore_lapis",
+      "minecraft:ore_copper",
+      "minecraft:trees_plains",
+      "minecraft:patch_grass_plain",
+      "minecraft:flower_plains",
+      "starciv:amethyst_cluster"
+    ]
+  ]
+}

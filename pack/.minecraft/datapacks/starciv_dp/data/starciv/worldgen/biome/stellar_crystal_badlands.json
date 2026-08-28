@@ -1,0 +1,48 @@
+{
+  "temperature": 0.3,
+  "downfall": 0.1,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 12303291,
+    "fog_color": 10658467,
+    "water_color": 14737632,
+    "water_fog_color": 6381921,
+    "grass_color": 13093616,
+    "foliage_color": 12433594,
+    "music": {
+      "sound": "minecraft:music.nether.debris",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [
+      { "type": "minecraft:zombie", "weight": 60, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:skeleton", "weight": 60, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:creeper", "weight": 100, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:enderman", "weight": 80, "minCount": 1, "maxCount": 4 }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": { "air": [] },
+  "features": [
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond_upper",
+      "minecraft:ore_copper",
+      "starciv:amethyst_cluster",
+      "starciv:glowstone_cluster"
+    ]
+  ]
+}

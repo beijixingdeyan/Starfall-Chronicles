@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:minecart" },
+    "title": { "text": "蒸汽动脉", "color": "red" },
+    "description": { "text": "铺下第一节铁轨。Create 的蒸汽火车将贯通铁锈星矿区。", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/smelter",
+  "criteria": {
+    "rail": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "minecraft:minecart" ] } ] }
+    }
+  }
+}

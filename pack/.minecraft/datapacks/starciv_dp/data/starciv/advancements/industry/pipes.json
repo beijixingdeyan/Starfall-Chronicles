@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "pipez:item_pipe" },
+    "title": { "text": "管道工", "color": "red" },
+    "description": { "text": "铺设第一段物流管道。工业的血脉开始流动。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/arrival",
+  "criteria": {
+    "pipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "pipez:item_pipe" ] } ] }
+    }
+  }
+}

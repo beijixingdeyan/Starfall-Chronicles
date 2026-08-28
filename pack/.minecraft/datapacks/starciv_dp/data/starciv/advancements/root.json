@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:ancient_seed" },
+    "title": { "text": "文明编年史", "color": "gold", "bold": true },
+    "description": { "text": "四颗星球，四个文明。你从一片麦田开始，最终改写物理法则。", "color": "gray" },
+    "background": "minecraft:textures/block/coarse_dirt.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "awakened": { "trigger": "minecraft:tick" }
+  },
+  "rewards": {
+    "loot": [ "minecraft:chests/village/village_plains_house" ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "immersiveengineering:ingot_steel" },
+    "title": { "text": "炼钢者", "color": "red" },
+    "description": { "text": "在高炉中炼出第一锭钢。工业时代的骨骼。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/arrival",
+  "criteria": {
+    "steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "immersiveengineering:ingot_steel" ] } ] }
+    }
+  }
+}

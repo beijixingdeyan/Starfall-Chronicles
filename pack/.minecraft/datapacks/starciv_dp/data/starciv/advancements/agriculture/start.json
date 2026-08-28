@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:wheat_seeds" },
+    "title": { "text": "播种者", "color": "green" },
+    "description": { "text": "种下第一粒种子——文明的轮回由此开始。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:root",
+  "criteria": {
+    "planted": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "minecraft:wheat_seeds" ] } ] }
+    }
+  }
+}

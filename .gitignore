@@ -1,0 +1,44 @@
+# =============================================================
+# Starfall Chronicles — .gitignore
+# 本仓库将公开上传至 GitHub：任何隐私/机器相关文件一律不入库。
+# =============================================================
+
+# ---- 任务要求文件（不入库） ----
+mc_modpack_civilization_prompt.txt
+*_prompt.txt
+
+# ---- 运行时/启动器生成物 ----
+pack/.minecraft/mods/
+pack/.minecraft/saves/
+pack/.minecraft/logs/
+pack/.minecraft/crash-reports/
+pack/.minecraft/options.txt
+pack/.minecraft/options*.txt
+pack/.minecraft/servers.dat
+pack/.minecraft/usercache.json
+pack/.minecraft/usernamecache.json
+pack/.minecraft/shaderpacks/
+pack/.minecraft/resourcepacks/*.zip
+pack/.minecraft/libraries/
+pack/.minecraft/versions/
+!pack/.minecraft/datapacks/
+!pack/.minecraft/resourcepacks/starciv_resources/
+
+# ---- 下载与临时产物 ----
+downloads/
+*.jar
+*.zip
+*.tmp
+*.log
+
+# ---- 构建/打包产物 ----
+dist/
+*.mrpack
+*.zip
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "computercraft:computer_normal" },
+    "title": { "text": "第一行代码", "color": "light_purple" },
+    "description": { "text": "组装第一台电脑。在硅火星，代码就是力量。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/arrival",
+  "criteria": {
+    "computer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "computercraft:computer_normal" ] } ] }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "create:brass_ingot" },
+    "title": { "text": "机械师", "color": "red" },
+    "description": { "text": "锻出第一锭黄铜。齿轮开始转动。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:industry/arrival",
+  "criteria": {
+    "brass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "create:brass_ingot" ] } ] }
+    }
+  }
+}

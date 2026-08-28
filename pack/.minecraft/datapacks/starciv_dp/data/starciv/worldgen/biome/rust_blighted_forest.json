@@ -1,0 +1,51 @@
+{
+  "temperature": 0.4,
+  "downfall": 0.7,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 5856599,
+    "fog_color": 4604519,
+    "water_color": 5915936,
+    "water_fog_color": 2631720,
+    "grass_color": 5526863,
+    "foliage_color": 4736134,
+    "music": {
+      "sound": "minecraft:music.nether.warped_forest",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [
+      { "type": "minecraft:zombie", "weight": 100, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:skeleton", "weight": 100, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:creeper", "weight": 100, "minCount": 4, "maxCount": 4 },
+      { "type": "minecraft:spider", "weight": 100, "minCount": 4, "maxCount": 4 }
+    ],
+    "creature": [],
+    "ambient": [
+      { "type": "minecraft:bat", "weight": 10, "minCount": 8, "maxCount": 8 }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": { "air": [] },
+  "features": [
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond_upper",
+      "minecraft:ore_copper",
+      "minecraft:trees_birch_and_oak",
+      "minecraft:patch_grass_forest",
+      "starciv:glowstone_cluster"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:quantum_core" },
+    "title": { "text": "量子核心", "color": "dark_purple" },
+    "description": { "text": "用精密零件为 AI 核心注入灵魂。这是跃迁引擎的入场券。", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/chips",
+  "criteria": {
+    "core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:quantum_core" ] } ] }
+    }
+  }
+}

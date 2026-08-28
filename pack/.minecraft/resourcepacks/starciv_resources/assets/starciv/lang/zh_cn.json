@@ -1,0 +1,13 @@
+{
+  "item.starciv.ancient_seed": "上古之种",
+  "item.starciv.civ_essence": "文明精粹",
+  "item.starciv.stellar_key": "星门钥匙",
+  "item.starciv.biofuel_canister": "生物燃料罐",
+  "item.starciv.data_slivers": "数据碎晶",
+  "item.starciv.precision_parts": "精密零件",
+  "item.starciv.quantum_core": "量子核心",
+  "item.starciv.warp_core": "跃迁核心",
+  "item.starciv.warp_engine": "跃迁引擎",
+  "block.starciv.stargate_core": "星门核心",
+  "block.starciv.stargate_core.description": "右键以启用星门。文明的阶梯，由此开始。"
+}

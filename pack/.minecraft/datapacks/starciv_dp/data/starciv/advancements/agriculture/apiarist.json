@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:honey_bottle" },
+    "title": { "text": "蜂农", "color": "green" },
+    "description": { "text": "从蜜蜂手中接过第一瓶蜂蜜。与自然共生，是绿谷星的修行。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:agriculture/first_fruit",
+  "criteria": {
+    "honey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "minecraft:honey_bottle" ] } ] }
+    }
+  }
+}

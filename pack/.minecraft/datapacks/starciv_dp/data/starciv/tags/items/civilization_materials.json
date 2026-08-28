@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#starciv:ancient_seeds",
+    "#starciv:civ_essences",
+    "#starciv:precision_parts",
+    "#starciv:quantum_cores",
+    "#starciv:warp_cores",
+    "starciv:warp_engine"
+  ]
+}

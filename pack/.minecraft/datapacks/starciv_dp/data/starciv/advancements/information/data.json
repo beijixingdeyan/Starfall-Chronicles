@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "starciv:data_slivers" },
+    "title": { "text": "数据碎晶", "color": "light_purple" },
+    "description": { "text": "研磨紫水晶得到数据载体——硅火星的通用货币。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:information/network",
+  "criteria": {
+    "data": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:data_slivers" ] } ] }
+    }
+  }
+}

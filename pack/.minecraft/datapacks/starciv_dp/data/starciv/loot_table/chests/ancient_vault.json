@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 3 },
+      "entries": [
+        { "type": "minecraft:item", "name": "starciv:ancient_seed", "weight": 24 },
+        { "type": "minecraft:item", "name": "minecraft:amethyst_shard", "weight": 16 },
+        { "type": "minecraft:item", "name": "minecraft:emerald", "weight": 12 },
+        { "type": "minecraft:item", "name": "minecraft:diamond", "weight": 4 },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['{\"text\":\"\\u00a76起源碑文\\n\\n我们播种，我们离去。\\n种子记得每一个时代。\\n\\n终有一天，\\n一个农夫会带着\\n我们留下的钥匙\\n重新点亮星门。\\n\\n——守望者\",\"color\":\"white\"}'],title:\"起源碑文\",author:\"上古守望者\",resolved:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

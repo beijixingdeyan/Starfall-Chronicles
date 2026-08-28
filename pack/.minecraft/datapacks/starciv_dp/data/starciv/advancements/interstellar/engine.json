@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": { "item": "starciv:warp_engine" },
+    "title": { "text": "跃迁引擎", "color": "aqua", "bold": true },
+    "description": { "text": "跃迁引擎竣工。单个文明，自此越过苍穹。", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:interstellar/drive",
+  "criteria": {
+    "engine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "starciv:warp_engine" ] } ] }
+    }
+  },
+  "rewards": {
+    "function": "starciv:quest/reveal_lost_tech"
+  }
+}

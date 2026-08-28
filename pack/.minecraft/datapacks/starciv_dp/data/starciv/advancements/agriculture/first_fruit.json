@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:wheat" },
+    "title": { "text": "第一穗", "color": "green" },
+    "description": { "text": "收获第一批小麦。绿谷星的四季会记住你的勤劳。", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "starciv:agriculture/start",
+  "criteria": {
+    "harvested": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "minecraft:wheat" ] } ] }
+    }
+  }
+}

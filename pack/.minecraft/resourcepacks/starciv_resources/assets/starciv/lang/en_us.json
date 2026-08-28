@@ -1,0 +1,13 @@
+{
+  "item.starciv.ancient_seed": "Ancient Seed",
+  "item.starciv.civ_essence": "Essence of Civilization",
+  "item.starciv.stellar_key": "Stellar Gate Key",
+  "item.starciv.biofuel_canister": "Biofuel Canister",
+  "item.starciv.data_slivers": "Data Slivers",
+  "item.starciv.precision_parts": "Precision Parts",
+  "item.starciv.quantum_core": "Quantum Core",
+  "item.starciv.warp_core": "Warp Core",
+  "item.starciv.warp_engine": "Warp Engine",
+  "block.starciv.stargate_core": "Stargate Core",
+  "block.starciv.stargate_core.description": "Right-click to activate the gate. The ladder of civilizations begins here."
+}
