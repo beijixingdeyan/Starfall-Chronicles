@@ -46,7 +46,8 @@ function nearestGate(p, gates) {
 }
 
 BlockEvents.rightClicked('starciv:stargate_core', event => {
-  const p = event.player;
+  try {
+const p = event.player;
   const server = p.server;
   const gates = server.persistentData.sc_gates;
   if (!gates) { p.tell('§c星门尚未校准。'); return; }
@@ -116,10 +117,14 @@ BlockEvents.rightClicked('starciv:stargate_core', event => {
   // 抵达补给/叙事（数据包函数）
   server.runCommandSilent('execute as ' + p.username + ' run function starciv:arrive/' + to);
   msg('§6[跃迁完成] ' + info[0] + '. §7' + info[1]);
+  } catch (e) {
+    console.warn('[Starfall] stargate interact error: ' + e);
+  }
 });
 
 // ---- 上古遗迹拜访：发现独石碑 → 获得上古之种（跨文明起点）----
 PlayerEvents.tick(event => {
+  try {
   const p = event.player;
   const server = p.server;
   const gates = server && server.persistentData.sc_gates;
@@ -140,4 +145,7 @@ PlayerEvents.tick(event => {
   p.tell('§6【文明编年史】独石碑的低语在你脑海中苏醒：');
   p.tell('§7“§o...这是种子。文明的种子。它记得每一个时代。§r”');
   p.tell('§6你获得了 2 粒§b上古之种§6。');
+  } catch (e) {
+    console.warn('[Starfall] monolith tick error: ' + e);
+  }
 });

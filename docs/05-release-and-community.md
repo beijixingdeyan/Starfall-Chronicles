@@ -11,7 +11,7 @@
 | 方式 | 步骤 |
 |------|------|
 | **Prism Launcher（推荐）** | `scripts/make_zip.ps1` 打包 → 添加实例 → 从文件导入 zip；或直接把 `pack/` 目录放入 `instances/`（含 mmc-pack.json 与 instance.cfg） |
-| **手动（任何启动器）** | 建 1.20.1-Forge 47.4.53 实例 → 运行 `scripts/install_mods.ps1` 下载模组 → 启用数据包/资源包（见 docs/03 §4） |
+| **手动（任何启动器）** | 建 1.20.1-Forge 47.4.23 实例 → 运行 `scripts/install_mods.ps1` 下载模组 → 启用数据包/资源包（见 docs/03 §4） |
 | **一键（服务器）** | 服务端运行 `install_mods.sh`（Linux）→ 放入 world/datapacks → `/reload` |
 
 ## 社区运营

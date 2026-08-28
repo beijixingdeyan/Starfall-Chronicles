@@ -13,10 +13,8 @@ StartupEvents.registry('item', event => {
     .maxStackSize(64)
     .rarity('epic')
     .tag('starciv:ancient_seeds')
-    .tooltip(
-      '§7它是绿谷星上古文明留下的最后遗产。',
-      '§6种下去，或者碾碎它——提炼文明精粹。'
-    );
+    .tooltip('§7它是绿谷星上古文明留下的最后遗产。')
+    .tooltip('§6种下去，或者碾碎它——提炼文明精粹。');
 
   event.create('starciv:civ_essence', 'basic')
     .displayName('文明精粹')
@@ -32,10 +30,8 @@ StartupEvents.registry('item', event => {
     .maxStackSize(1)
     .rarity('epic')
     .tag('starciv:stellar_keys')
-    .tooltip(
-      '§b在绿谷星的星门核心处右键，开启前往铁锈星的旅程。',
-      '§7钥匙会回应持有者的文明阶段。'
-    );
+    .tooltip('§b在绿谷星的星门核心处右键，开启前往铁锈星的旅程。')
+    .tooltip('§7钥匙会回应持有者的文明阶段。');
 
   event.create('starciv:biofuel_canister', 'basic')
     .displayName('生物燃料罐')
@@ -82,10 +78,8 @@ StartupEvents.registry('item', event => {
     .texture('starciv:item/warp_core') // 复用核心纹理，引擎成品以tooltip区分
     .maxStackSize(1)
     .rarity('epic')
-    .tooltip(
-      '§d终局引擎：燃烧 AI 核心驱动曲率航行。',
-      '§6它让单个文明越过苍穹。'
-    );
+    .tooltip('§d终局引擎：燃烧 AI 核心驱动曲率航行。')
+    .tooltip('§6它让单个文明越过苍穹。');
 });
 
 // 二、星门核心方块（星门传送的交互点）

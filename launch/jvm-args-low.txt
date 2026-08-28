@@ -1,0 +1,5 @@
+# Starfall Chronicles — 低配/轻薄本 JVM 档（4GB 内存）
+# 用法：把本文件内容替换 Prism 实例「Java 参数」或 PCL2 版本设置里的 JVM 参数
+-Xmx4G -Xms1G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=150 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=15 -XX:SurvivorRatio=32 -XX:MaxDirectMemorySize=512M
+# 若内存 6GB 且想开光影，用 6G 档（见 jvm-args.txt，去掉 -XX:+AlwaysPreTouch 更省启动内存）
+# 提示：分配内存 ≤ 机器物理内存的一半，并关闭其它大型程序。

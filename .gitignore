@@ -33,8 +33,38 @@ downloads/
 
 # ---- 构建/打包产物 ----
 dist/
+build_pcl/
 *.mrpack
 *.zip
+
+# ---- 专用服务器生成物（脚本自动生成，不入库）----
+server/libraries/
+server/mods/
+server/world/
+server/logs/
+server/crash-reports/
+server/config/
+server/kubejs/
+server/local/
+server/rhino.local.properties
+server/user_jvm_args.txt
+server/eula.txt
+server/server.properties
+server/run.bat
+server/run.sh
+server/forge-*.jar
+server/installer-*.jar
+server/usercache.json
+server/banned-ips.json
+server/banned-players.json
+server/ops.json
+server/whitelist.json
+server/backups/
+server/modernfix/
+server/moonlight-global-datapacks/
+server/patchouli_books/
+server/defaultconfigs/
+server/scripts/
 
 # ---- OS / IDE ----
 .DS_Store

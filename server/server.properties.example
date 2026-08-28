@@ -1,0 +1,19 @@
+#Minecraft server properties
+#Starfall Chronicles 服务端默认配置
+motd=Starfall Chronicles — 星际文明编年史
+max-players=8
+online-mode=true
+enable-command-block=true
+spawn-protection=0
+allow-flight=true
+difficulty=normal
+view-distance=8
+simulation-distance=6
+level-name=world
+level-seed=
+generate-structures=true
+max-world-size=29999984
+network-compression-threshold=256
+rate-limit=0
+enable-status=true
+pvp=true

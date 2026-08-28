@@ -77,6 +77,23 @@ if (Test-Path $fnDir) {
     else { Write-Host "  mcfunction 行尾检查通过" }
 } else { Write-Host "  跳过: 无 functions 目录" -ForegroundColor Yellow }
 
+# ---- 5. PS1 编码（恰一个 UTF-8 BOM；双重 BOM 会导致 PowerShell 解析失败）----
+Write-Host "[5/5] 检查脚本编码（.ps1 单 BOM 规范）..."
+$scriptFiles = @()
+$scriptFiles += (Get-ChildItem (Join-Path $Root 'scripts') -Filter *.ps1 -File)
+$scriptFiles += (Get-ChildItem (Join-Path $Root 'server') -Filter *.ps1 -File)
+foreach ($sf in $scriptFiles) {
+    $bytes = [System.IO.File]::ReadAllBytes($sf.FullName)
+    $bomCount = 0
+    $i = 0
+    while ($i + 2 -lt $bytes.Length -and $bytes[$i] -eq 0xEF -and $bytes[$i+1] -eq 0xBB -and $bytes[$i+2] -eq 0xBF) { $bomCount++; $i += 3 }
+    if ($bomCount -ne 1) {
+        Write-Host "  [ENC-FAIL] $($sf.Name) BOM 数量=$bomCount（应为 1；0=旧 PS 按 ANSI 误读中文，2=解析失败）" -ForegroundColor Red
+        $fail++
+    }
+}
+if ($fail -eq 0) { Write-Host "  编码检查通过" } else { Write-Host "  编码检查存在失败项" -ForegroundColor Yellow }
+
 Write-Host ""
 if ($fail -eq 0) { Write-Host "✔ 全部校验通过" -ForegroundColor Green }
 else { Write-Host "✘ 共 $fail 处失败" -ForegroundColor Red; exit 1 }

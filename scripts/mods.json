@@ -4,7 +4,7 @@
     "name": "星际文明编年史 / Starfall Chronicles",
     "mc_version": "1.20.1",
     "loader": "forge",
-    "forge_recommended": "47.4.53",
+    "forge_recommended": "47.4.23",
     "install_dir": "pack/.minecraft/mods",
     "note": "单一数据源：scripts/install_mods.ps1 与 scripts/install_mods.sh 据此下载模组（Modrinth API，1.20.1+forge 最新版）。slug 与版本已通过 api.modrinth.com 校验（2026 快照）。"
   },
@@ -89,14 +89,37 @@
     { "slug": "placebo",                   "category": "libraries", "tier": "required", "why": "工具库：Chipped 等前置" },
     { "slug": "cloth-config",              "category": "libraries", "tier": "required", "why": "配置 UI：Jade 等模组配置界面" },
     { "slug": "moonlight",                 "category": "libraries", "tier": "required", "why": "月光库（原 Selene）：Supplementaries 前置" },
-    { "slug": "balm",                      "category": "libraries", "tier": "required", "why": "跨加载器抽象：Waystones 前置" }
+    { "slug": "balm",                      "category": "libraries", "tier": "required", "why": "跨加载器抽象：Waystones 前置" },
+
+    { "slug": "searchables",               "category": "libraries", "tier": "required", "why": "Controlling 前置（按键搜索库）" },
+    { "slug": "libipn",                    "category": "libraries", "tier": "required", "why": "Inventory Profiles Next 前置库" },
+    { "slug": "kotlin-for-forge",          "category": "libraries", "tier": "required", "why": "IPN/Sophisticated 系所需的 Kotlin 运行时" },
+    { "slug": "sophisticated-core",        "category": "libraries", "tier": "required", "why": "精致系列前置（背包/存储）" },
+    { "slug": "glitchcore",                "category": "libraries", "tier": "required", "why": "Serene Seasons 前置（季节核心）" },
+    { "slug": "zeta",                      "category": "libraries", "tier": "required", "why": "Quark 前置（自然/建筑库）" },
+    { "slug": "bookshelf-lib",             "category": "libraries", "tier": "required", "why": "Botany Pots 前置（书架库）" },
+    { "slug": "titanium",                  "category": "libraries", "tier": "required", "why": "Industrial Foregoing 前置（钛库）" },
+    { "slug": "forgeendertech",            "category": "libraries", "tier": "required", "why": "Pollution of the Realms 前置（Endertech 工具库）" },
+    { "slug": "guideme",                   "category": "libraries", "tier": "required", "why": "AE2 前置（GuideME 指南书库）" },
+    { "slug": "cyclops-core",              "category": "libraries", "tier": "required", "why": "Integrated Dynamics/终端/隧道 前置（独眼巨人核心）" },
+    { "slug": "common-capabilities",       "category": "libraries", "tier": "required", "why": "Integrated Dynamics 家族前置（通用能力库）" },
+    { "slug": "resourceful-lib",           "category": "libraries", "tier": "required", "why": "Ad Astra/Giselle/Chipped 前置（Resourceful 库）" },
+    { "slug": "resourceful-config",        "category": "libraries", "tier": "required", "why": "Ad Astra 前置（配置库）" },
+    { "slug": "athena-ctm",                "category": "libraries", "tier": "required", "why": "Chipped 前置（连接纹理库）" },
+    { "slug": "botarium",                  "category": "libraries", "tier": "required", "why": "Ad Astra 前置（多方块/能源接口库）" },
+    { "slug": "lionfish-api",              "category": "libraries", "tier": "required", "why": "L_Ender's Cataclysm 前置（狮鱼 API）" },
+    { "slug": "yungs-api",                 "category": "libraries", "tier": "required", "why": "YUNG's 系列（要塞/矿洞/地牢）前置 API" },
+    { "slug": "cristel-lib",               "category": "libraries", "tier": "required", "why": "Towns and Towers 前置（克里斯特尔库）" }
   ],
   "optional_mods": [
     { "slug": "oculus", "category": "graphics", "why": "Forge 光影加载器（可选画质项，需配合 Complementery Reimagined 光影包）" }
   ],
+  "client_only": [ "oculus" ],
   "curseforge_only": [
     { "name": "Flux Networks", "page": "https://www.curseforge.com/minecraft/mc-mods/flux-networks", "why": "无线能量网络：硅火星建筑内无电线供电（Modrinth 无 Forge 1.20.1 版本）" },
-    { "name": "MineColonies", "page": "https://www.curseforge.com/minecraft/mc-mods/minecolonies", "why": "殖民地系统：绿谷星村落建设玩法（Modrinth 未收录 Forge 1.20.1）" }
+    { "name": "MineColonies", "page": "https://www.curseforge.com/minecraft/mc-mods/minecolonies", "why": "殖民地系统：绿谷星村落建设玩法（Modrinth 未收录 Forge 1.20.1）。其自身前置 Structurize 与 BlockUI 也需一并从 CurseForge 下载。" },
+    { "name": "Structurize", "page": "https://www.curseforge.com/minecraft/mc-mods/structurize", "why": "MineColonies 前置（结构蓝图库）" },
+    { "name": "BlockUI", "page": "https://www.curseforge.com/minecraft/mc-mods/blockui", "why": "MineColonies 前置（界面库）" }
   ],
   "resource_and_shader_packs": [
     { "name": "Complementary Reimagined", "page": "https://modrinth.com/resourcepack/complementary-reimagined", "why": "柔和光影：硅火星霓虹夜景与苍穹星星云天空的视觉底色（装于 shaderpacks/，需 Oculus）" }

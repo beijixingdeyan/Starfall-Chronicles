@@ -102,6 +102,7 @@ function buildMonolith(server, dim, cx, y, cz) {
 
 // ---- 主入口 ----------
 ServerEvents.loaded(event => {
+  try {
   const server = event.server;
   if (!server || server.persistentData.sc_gates_built) return;
   server.persistentData.sc_gates_built = true;
@@ -142,4 +143,7 @@ ServerEvents.loaded(event => {
 
   console.info('[Starfall] 星门已生成: ' + JSON.stringify(gates));
   server.runCommandSilent('tellraw @a {"text":"§6【文明编年史】§f四座星门已在各文明世界点亮。","color":"gold"}');
+  } catch (e) {
+    console.error('[Starfall] 星门生成失败(不影响启动): ' + e);
+  }
 });

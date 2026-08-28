@@ -1,9 +1,11 @@
 # 02 · 完整模组清单（Phase 2）
 
-> MC **1.20.1 · Forge 47.4.53**，共 **78 个模组**（74 默认安装 + 1 可选 Oculus + 3 CurseForge 手动），
-> 全部经 Modrinth API 校验存在 1.20.1 + Forge 版本（版本号为本仓库 2026 快照，脚本会装“最新匹配版”）。
+> MC **1.20.1 · Forge 47.4.23**，共 **96 个模组**（92 个 Modrinth 一键自动安装 + 4 个 CurseForge 手动），
+> 全部经 Modrinth API 校验存在 1.20.1 + Forge 版本；依赖已用 API 审计闭环（0 缺失 required、
+> 0 收录 incompatible）。版本号为本仓库快照，脚本会装“最新匹配版”。
 > **禁止无脑堆砌**：每个模组都有明确叙事目的，缺失任一 required 模组会让对应星球玩法失效。
-> 安装：`pwsh scripts/install_mods.ps1`（或 `bash scripts/install_mods.sh`）。单一数据源：`scripts/mods.json`。
+> 安装：`pwsh scripts/install_mods.ps1 -IncludeOptional`（或 `bash scripts/install_mods.sh --include-optional`）。单一数据源：`scripts/mods.json`。
+> 依赖自检：`pwsh scripts/audit_deps.ps1`（Modrinth API 实时核对）；运行时 ID 自检：`pwsh scripts/verify_mod_ids.ps1`。
 
 ## 分类总览
 
@@ -17,9 +19,9 @@
 | 苍穹星 interstellar | 3 | 火箭、自动化接口、史诗 Boss |
 | 冒险世界 adventure_worldgen | 8 | 地表多样、遗迹、地牢、城镇 |
 | 魔法分支 magic_branch | 3 | Botania / Ars Nouveau / Patchouli |
-| 库 libraries | 11 | 脚本层与前置库 |
+| 库 libraries | 30 | 脚本层与全部前置库（KubeJS 全家桶、资源系、ID 系、Ad Astra 系等）|
 | 可选 graphics | 1 | Oculus（光影） |
-| CurseForge 独有 | 3 | Flux Networks / MineColonies / LazyDFU 兜底 |
+| CurseForge 独有 | 4 | LazyDFU 兜底 / MineColonies / Structurize / BlockUI（Flux Networks 可选加装）|
 
 ## A. 核心优化（11）
 
@@ -86,16 +88,23 @@ Botania 1.20.1-455 · Ars Nouveau 4.12.7 · Patchouli 1.20.1-85
 作用：**科技树分支**——不喜欢纯机器的玩家可走“生命科技”（Botania）或“法术工业”（Ars Nouveau）路线；
 Patchouli 统一全部手册（史书记录）。
 
-## I. 库 / 前置（11）
+## I. 库 / 前置（30）
 
-KubeJS 2001.6.5-build.26 · Rhino 2001.2.3 · Architectury API 9.2.14 · CraftTweaker 14.0.60(可选) ·
+核心脚本层：KubeJS 2001.6.5-build.26 · Rhino 2001.2.3 · Architectury API 9.2.14 · CraftTweaker 14.0.60(可选) ·
 Citadel 2.6.3 · GeckoLib 4.8.4 · Curios 5.14.1 · Placebo 8.6.3 · Cloth Config 11.1.136 ·
 Moonlight 2.16.34(原 Selene) · Balm 7.3.42
 
+生态前置库（`audit_deps.ps1` 逐模组从 Modrinth 实时核对补齐，0 缺失）：
+Searchables 1.0.3(Controlling) · LibIPN 4.0.2 + Kotlin for Forge 4.12(IPN) · Sophisticated Core 1.3.84.2308 ·
+GlitchCore 0.0.1.1(Serene Seasons) · Zeta 1.0-31(Quark) · Bookshelf 20.2.15(Botany Pots) · Titanium 3.8.35(IF) ·
+ForgeEndertech 11.1.10.2(Pollution) · GuideME 20.1.15(AE2) · Cyclops Core 1.22.2 + Common Capabilities 2.9.11(ID 家族) ·
+Resourceful Lib 2.1.29 + Resourceful Config 2.1.3 + Botarium 2.3.4(Ad Astra / Chipped) · Athena CTM 3.1.2(Chipped) ·
+Lionfish API 3.0(Cataclysm) · YUNG's API 4.0.6(YUNG's 三件) · Cristel Lib 1.1.6(Towns and Towers)
+
 ## J. 可选
 
-- **Oculus**（光影加载器，Modrinth）：安装后可将 Complementary Reimagined 放入 `shaderpacks/` 获得霓虹/星云画质。可选，默认不装（规避渲染兼容风险）。
-- CurseForge 手动：**Flux Networks**（无线能量）、**MineColonies**（殖民地）、LazyDFU 兜底——链接见 `scripts/mods.json` 与 `install_mods.ps1` 输出。
+- **Oculus 1.8.0**（光影加载器，Modrinth，`-IncludeOptional` 或单独）：安装后可将 Complementary Reimagined 放入 `shaderpacks/` 获得霓虹/星云画质。
+- CurseForge 手动 4 个（链接见 `scripts/mods.json` 与安装脚本输出）：**LazyDFU 0.1.3**（启动加速兜底；Modrinth 无 1.20.1+forge 版）、**MineColonies**（殖民地系统，需连带 **Structurize** 与 **BlockUI** 两个前置）、Flux Networks 可选加装（无线能量网络）。
 
 ## 版本兼容性注意事项
 
