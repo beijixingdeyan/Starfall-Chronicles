@@ -1,6 +1,6 @@
 # 02 · 完整模组清单（Phase 2）
 
-> MC **1.20.1 · Forge 47.4.53**，共 **78 个模组**（75 Modrinth 自动安装 + 3 CurseForge 手动），
+> MC **1.20.1 · Forge 47.4.53**，共 **78 个模组**（74 默认安装 + 1 可选 Oculus + 3 CurseForge 手动），
 > 全部经 Modrinth API 校验存在 1.20.1 + Forge 版本（版本号为本仓库 2026 快照，脚本会装“最新匹配版”）。
 > **禁止无脑堆砌**：每个模组都有明确叙事目的，缺失任一 required 模组会让对应星球玩法失效。
 > 安装：`pwsh scripts/install_mods.ps1`（或 `bash scripts/install_mods.sh`）。单一数据源：`scripts/mods.json`。
