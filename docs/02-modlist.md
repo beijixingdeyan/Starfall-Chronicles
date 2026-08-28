@@ -1,6 +1,6 @@
-# 02 · 完整模组清单（Phase 2）
+﻿# 02 · 完整模组清单（Phase 2）
 
-> MC **1.20.1 · Forge 47.4.23**，共 **97 个模组**（93 个 Modrinth 一键自动安装 + 4 个 CurseForge 手动），
+> MC **1.20.1 · Forge 47.4.23**，共 **104 个模组**（100 个 Modrinth 一键自动安装 + 4 个 CurseForge 手动），
 > 全部经 Modrinth API 校验存在 1.20.1 + Forge 版本；依赖已用 API 审计闭环（0 缺失 required、
 > 0 收录 incompatible）。版本号为本仓库快照，脚本会装“最新匹配版”。
 > **禁止无脑堆砌**：每个模组都有明确叙事目的，缺失任一 required 模组会让对应星球玩法失效。
@@ -39,7 +39,9 @@
 | FastFurnace | 8.0.2 | 熔炉配方缓存（冶炼链） |
 | Saturn | mc1.20.1-0.1.3 | 无成本优化补丁 |
 
-## B. 界面与冒险辅助（11）
+## B. 界面与冒险辅助（13）
+| Falling Leaves | falling-leaves | 环境粒子 | 树叶飘落（纯客户端） |
+| Clear Water | clear-water | 环境视觉 | 清水与水下能见度（纯客户端） |
 
 JEI 15.49 · Jade 11.13 · Xaero's Minimap 26.4.2 · Xaero's World Map 1.45.0 · AppleSkin 2.5.1 ·
 Controlling 12.0.2 · Mouse Tweaks 2.25.1 · Inventory Profiles Next 1.10.20 · Sophisticated Backpacks 3.24.67 · Waystones 14.1.20 ·
@@ -76,7 +78,12 @@ Ad Astra 1.15.20 · Ad Astra: Giselle Addon 6.20 · L_Ender's Cataclysm 3.31（+
 
 作用：火箭/空间站/月球火星、火箭自动化、史诗 Boss——**星际文明的史诗舞台**。
 
-## G. 冒险与世界生成（8）
+## G. 冒险与世界生成（13）
+| Tectonic | tectonic | 世界生成 | 板块构造：真实高山/峡谷/海岸，与 Terralith 官方兼容 |
+| Regions Unexplored | regions-unexplored | 世界生成 | 生态群系扩充（竹林/红树林/樱林等） |
+| TerraBlender | terrablender | 世界生成前置 | Regions Unexplored 群系注入库 |
+| Lithostitched | lithostitched | 世界生成前置 | Tectonic 3.x 地形引擎核心（Terralith 亦受益） |
+| Frikinzi's Fauna | frikinzis-fauna | 生态生灵 | 珊瑚鱼/寄居蟹/鹦鹉螺等轻量装饰动物 |
 
 Terralith 2.5.4 · YUNG's Better Strongholds 4.0.3 · Better Mineshafts 4.0.4 · Better Dungeons 4.0.4 ·
 When Dungeons Arise 2.1.58 · Towns and Towers 1.12 · Structory 1.3.5 · Structory Towers 1.0.7

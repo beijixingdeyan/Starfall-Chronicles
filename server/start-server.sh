@@ -48,19 +48,32 @@ if [ ! -f eula.txt ]; then
 fi
 
 # ---- 同步模组 ----
-# 纯客户端模组（光影/渲染）不能进服务端，否则 Forge 直接致命失败
+# 纯客户端模组（光影/渲染/粒子）不能进服务端，否则 Forge 直接致命失败。
+# 名单与 scripts/mods.json 的 client_only 保持一致（注意含空格的 jar 名）。
 SRC="../pack/.minecraft/mods"
 CLIENT_ONLY_PREFIX="oculus-"
+NEEDLES="Falling leaves 1_20_1 Clear-Water-"
 if [ -d "$SRC" ]; then
   mkdir -p mods
   rm -f mods/*.jar
   SKIPPED=""
   COUNT=0
   for f in "$SRC"/*.jar; do
-    case "$(basename "$f")" in
-      "$CLIENT_ONLY_PREFIX"*) SKIPPED="$SKIPPED $(basename "$f")" ;;
-      *) cp -f "$f" mods/ && COUNT=$((COUNT+1)) ;;
+    bn=$(basename "$f")
+    skip=0
+    case "$bn" in
+      "$CLIENT_ONLY_PREFIX"*) skip=1 ;;
     esac
+    if [ "$skip" -eq 0 ]; then
+      for needle in $NEEDLES; do
+        case "$bn" in
+          "$needle"*) skip=1; break ;;
+        esac
+      done
+    fi
+    if [ "$skip" -eq 1 ]; then SKIPPED="$SKIPPED $bn"
+    else cp -f "$f" mods/ && COUNT=$((COUNT+1))
+    fi
   done
   echo "模组同步完成: $COUNT 个 jar${SKIPPED:+（跳过纯客户端: $SKIPPED）}"
 else

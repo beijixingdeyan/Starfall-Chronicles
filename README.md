@@ -1,10 +1,10 @@
-# 星际文明编年史 · Starfall Chronicles
+﻿# 星际文明编年史 · Starfall Chronicles
 
 > **你在一片麦田里醒来，头顶是四颗星球。一万年前，上一个文明把种子留在了这里——现在，轮到你沿着星门，把文明重新点亮。**
 
 一个基于 **Minecraft 1.20.1 (Forge 47.4.23)** 的文明主题整合包：四个星球 = 四个文明阶段
 （**农耕 → 工业 → 信息 → 星际**），每一个星球都是完全不同的玩法逻辑，而非换皮。
-由 **97 个模组（93 自动安装 + 4 CurseForge 手动）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
+由 **104 个模组（100 自动安装 + 4 CurseForge 手动）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
 组合而成——模组只是演员，KubeJS 是导演。依赖经 Modrinth API 审计闭环、配方/进度 ID 经真实 jar 校验、服务端经真实启动冒烟测试。
 
 ## ✨ 核心体验
@@ -65,7 +65,7 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 
 | 命令 | 作用 |
 |------|------|
-| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（93 个） |
+| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（100 个） |
 | `pwsh scripts/audit_deps.ps1` | 依赖审计（Modrinth API 实时核对 required/incompatible） |
 | `pwsh scripts/verify_mod_ids.ps1` | 用真实 jar 校验配方/进度引用的物品/实体 ID |
 | `pwsh scripts/validate.ps1` | 校验全部 JSON/JS/进度引用/mcfunction 行尾 |
@@ -79,7 +79,7 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 ## 🗺️ 文档目录
 
 - [01 · 概念设计](docs/01-concept.md) — 文明阶梯、模组-叙事映射、主线大纲、经济系统
-- [02 · 模组清单](docs/02-modlist.md) — 97 模组逐条“为什么需要”
+- [02 · 模组清单](docs/02-modlist.md) — 104 模组逐条“为什么需要”
 - [03 · 技术实现](docs/03-technical.md) — KubeJS 配方/进度/事件、数据包、性能方案
 - [04 · 内容创作](docs/04-content.md) — 开局引导、星门仪式、Boss 设计
 - [05 · 发布与社区](docs/05-release-and-community.md) — 平台、安装、运营、扩展

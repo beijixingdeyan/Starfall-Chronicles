@@ -13,12 +13,13 @@ $fail = 0; $jsonCount = 0
 # ---- 1. JSON ----
 Write-Host "[1/4] 检查 JSON 可解析性 ..."
 Get-ChildItem -Path $Root -Recurse -Filter *.json -File |
-    Where-Object { $_.FullName -notmatch '\\(node_modules|\.git|downloads|dist)\\' } |
+    Where-Object { $_.FullName -notmatch '\\(server|node_modules|\.git|downloads|dist|build_pcl)\\' } |
     ForEach-Object {
+        $f = $_
         $jsonCount++
-        try { Get-Content $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json | Out-Null }
+        try { $raw = Get-Content $f.FullName -Raw -Encoding UTF8; if ($raw) { $raw | ConvertFrom-Json | Out-Null } }
         catch {
-            Write-Host "  [JSON-FAIL] $($_.FullName.Substring($Root.Length)) :: $($_.Exception.Message)" -ForegroundColor Red
+            Write-Host "  [JSON-FAIL] $($f.FullName.Substring($Root.Length)) :: $($_.Exception.Message)" -ForegroundColor Red
             $fail++
         }
     }
@@ -32,7 +33,7 @@ if ($node) {
     Get-ChildItem -Path (Join-Path $Root 'pack\.minecraft\kubejs') -Recurse -Filter *.js -File | ForEach-Object {
         & $node --check $_.FullName 2>&1 | ForEach-Object {
             if ($LASTEXITCODE -ne 0) {
-                Write-Host "  [JS-FAIL] $($_.FullName.Substring($Root.Length)) :: $_" -ForegroundColor Red
+                Write-Host "  [JS-FAIL] $($f.FullName.Substring($Root.Length)) :: $_" -ForegroundColor Red
                 $fail++
             }
         }

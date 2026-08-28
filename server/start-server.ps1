@@ -67,8 +67,9 @@ if (-not $eulaOk) {
 }
 
 # ---------- 同步模组 ----------
-# 纯客户端模组（光影/渲染）不能进服务端，否则 Forge 直接致命失败
-$ClientOnlyPrefix = @('oculus-')
+# 纯客户端模组（光影/渲染/粒子）不能进服务端，否则 Forge 直接致命失败。
+# 名单与 scripts/mods.json 的 client_only 保持一致（注意含空格的 jar 名）。
+$ClientOnlyPrefix = @('oculus-', 'Falling leaves ', 'Clear-Water-')
 $srcMods = Join-Path $ServerDir '..\pack\.minecraft\mods'
 $dstMods = Join-Path $ServerDir 'mods'
 if (Test-Path $srcMods) {
@@ -80,7 +81,7 @@ if (Test-Path $srcMods) {
     foreach ($p in $ClientOnlyPrefix) { if ($_.Name -like ($p + '*')) { $skip = $true; break } }
     if ($skip) { $skipped += $_.Name } else { Copy-Item $_.FullName $dstMods -Force; $copied++ }
   }
-  if ($skipped.Count -gt 0) { Write-Host ("模组同步完成：{0} 个 jar（跳过纯客户端: {1}）" -f $copied, ($skipped -join ', ')) }
+  if ($skipped.Count -gt 0) { Write-Host ("模组同步完成：" + $copied + " 个 jar（跳过纯客户端: " + ($skipped -join ', ') + "）") }
   else { Write-Host "模组同步完成：$copied 个 jar" }
 } else {
   Write-Host "警告：$srcMods 不存在，请先运行 scripts/install_mods.ps1" -ForegroundColor Yellow

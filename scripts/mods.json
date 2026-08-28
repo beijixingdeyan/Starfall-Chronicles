@@ -566,6 +566,48 @@
                      "category":  "ui",
                      "tier":  "required",
                      "why":  "配方冲突消解：同一输出多个配方时弹窗选择，保证跨文明合成链永不冲突"
+                 },
+                 {
+                     "slug":  "tectonic",
+                     "category":  "worldgen",
+                     "tier":  "required",
+                     "why":  "板块构造地形：真实高山/峡谷/侵蚀海岸，与 Terralith 官方声明兼容，绿谷星山水层次质变"
+                 },
+                 {
+                     "slug":  "regions-unexplored",
+                     "category":  "worldgen",
+                     "tier":  "required",
+                     "why":  "生态群系扩充（竹林/红树林/樱林/荒漠绿洲等），与 Terralith/Tectonic 共存"
+                 },
+                 {
+                     "slug":  "terrablender",
+                     "category":  "lib",
+                     "tier":  "required",
+                     "why":  "Regions Unexplored 的群系注入前置（Terralith 自带兼容）"
+                 },
+                 {
+                     "slug":  "falling-leaves",
+                     "category":  "ambient",
+                     "tier":  "required",
+                     "why":  "树叶飘落环境粒子：四季林带的“落叶感”（纯客户端）"
+                 },
+                 {
+                     "slug":  "clear-water",
+                     "category":  "ambient",
+                     "tier":  "required",
+                     "why":  "清水与水下能见度：真实水体观感（纯客户端）"
+                 },
+                 {
+                     "slug":  "frikinzis-fauna",
+                     "category":  "creature",
+                     "tier":  "required",
+                     "why":  "轻量装饰动物（珊瑚鱼/寄居蟹/鹦鹉螺等海洋与雨林生灵），丰富绿谷与硅火水岸生机"
+                 },
+                 {
+                     "slug":  "lithostitched",
+                     "category":  "lib",
+                     "tier":  "required",
+                     "why":  "Tectonic 3.x 的地形引擎前置（Terralith 亦受益）：世界生成核心库"
                  }
              ],
     "optional_mods":  [
@@ -576,7 +618,9 @@
                           }
                       ],
     "client_only":  [
-                        "oculus"
+                        "oculus",
+                        "falling-leaves",
+                        "clear-water"
                     ],
     "curseforge_only":  [
                             {
