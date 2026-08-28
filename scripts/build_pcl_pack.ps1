@@ -162,17 +162,9 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem | Out-Null
 Add-Type -AssemblyName System.IO.Compression | Out-Null
 # PCL 约定: zip 根内直接是 .minecraft/*（包含 .minecraft 这一层再压缩）
 $zipRoot = Split-Path $mcDir -Parent
-# HMCL/兼容启动器可读的入口 manifest（PCL2 按 .minecraft/ 结构识别，该文件纯增强互通性）
-$mfPath = Join-Path $zipRoot 'manifest.json'
-[System.IO.File]::WriteAllText($mfPath, (@"
-{
-  "manifestType": "minecraft",
-  "manifestVersion": 1,
-  "name": "Starfall Chronicles",
-  "version": "1.0.0",
-  "author": "Starfall Team"
-}
-"@), (New-Object System.Text.UTF8Encoding($false)))
+# 防御：绝不允许任何 manifest.json 混进包根（PCL2 会把任意根 manifest.json 当 CurseForge 格式解析）
+$legacyManifest = Join-Path $zipRoot 'manifest.json'
+if (Test-Path $legacyManifest) { Remove-Item $legacyManifest -Force }
 # ZipFile::CreateFromDirectory 在 .NET Framework(PS5.1) 下把条目写成反斜杠（zip 规范要求正斜杠），
 # 导致 PCL2/第三方读取器无法识别 .minecraft/ 目录 —— 改用 ZipArchive 手工写正斜杠条目（含目录条目）。
 function New-PosixZip([string]$srcDir, [string]$dstZip) {
