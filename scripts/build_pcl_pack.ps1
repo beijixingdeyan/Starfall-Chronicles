@@ -131,6 +131,11 @@ if (Test-Path $qlSrc) {
   if (Test-Path $qlDst) { Remove-Item $qlDst -Recurse -Force }
   Copy-Item $qlSrc $qlDst -Recurse -Force
 }
+# Questlog 客户端配置（背包 E 键任务书按钮显式开启）
+foreach ($qt in @('questlog-client.toml', 'questlog.toml')) {
+  $qtSrc = Join-Path $Root ('pack\.minecraft\config\' + $qt)
+  if (Test-Path $qtSrc) { Copy-Item $qtSrc (Join-Path $mcDir ('config\' + $qt)) -Force }
+}
 # 全部资源包（starciv_resources 专属 + Better Vanilla Building 建筑材质）
 $rpSrcRoot = Join-Path $Root 'pack\.minecraft\resourcepacks'
 if (Test-Path $rpSrcRoot) {

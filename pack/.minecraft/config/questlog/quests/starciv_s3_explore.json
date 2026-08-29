@@ -1,0 +1,47 @@
+{
+    "title":  "支线 · 星际远行",
+    "description":  "维度支线：亲访铁锈、硅火、苍穹三颗星球各一次——星门传送即可。三颗星球的景象与特产，是主线之外不可错过的风景。",
+    "icon":  {
+                 "item":  "minecraft:compass"
+             },
+    "background":  "四星文明从不是孤岛。档案馆给每位新晋升者的建议：走出去，亲眼看一看锈蚀的大地和霓虹的都市，然后你才会真正理解要守护的是什么。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q05_slivers"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "再访铁锈星",
+                           "dimension":  "starciv:rustfall",
+                           "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "探访硅火星",
+                           "dimension":  "starciv:silicon",
+                           "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "遨游苍穹星",
+                           "dimension":  "starciv:stellaris",
+                           "type":  "questlog:visit_dimension"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  150
+                    },
+                    {
+                        "count":  1,
+                        "item":  "starciv:warp_core",
+                        "type":  "questlog:item"
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

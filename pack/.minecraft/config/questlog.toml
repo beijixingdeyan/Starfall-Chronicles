@@ -1,0 +1,5 @@
+[button]
+enabled = true
+relativeToInventory = true
+x = 2
+y = -26

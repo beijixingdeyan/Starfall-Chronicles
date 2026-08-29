@@ -46,3 +46,16 @@ Write-Host ("✔ 共生成 " + $n + " 个任务")
 $bad = 0
 Get-ChildItem $qdir -Filter *.json | ForEach-Object { try { Get-Content $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json | Out-Null } catch { Write-Host ("!! " + $_.Name + " " + $_.Exception.Message); $bad++ } }
 Write-Host ("JSON 校验失败: " + $bad)
+Write-Host "== 支线 5（科技/维度/建筑）=="
+New-Quest 'starciv_s1_workshop' '支线 · 手作工坊' '科技支线：制作 2 个活塞和 8 个铁锭，建立你的第一座自动化车间。Create 的传动轴与齿轮从这里开始转动。' '技师手册上的第一课：工具先于文明。有了车间，你才能把绿谷的粮食变成铁锈的燃料，把铁锈的矿砂变成硅火的电路。' 'minecraft:piston' @('starciv_g_guide') @(@{type='questlog:item_craft'; item='minecraft:piston'; required_amount=2; name='制作 2 个活塞'}, @{type='questlog:item_obtain'; item='minecraft:iron_ingot'; required_amount=8; name='持有 8 个铁锭'}) @(@{type='questlog:experience'; experience=30})
+New-Quest 'starciv_s2_smeltery' '支线 · 工业熔炉' '科技支线：铸造高炉，开启大规模冶炼。高炉是铁锈星工业的心脏，也是制造精密零件的前置。' '旧文明把铁锈星变成了钢铁行星，也把天空染成了锈色。档案馆的批注只有一句：重工业可以粗粝，但必须可控。' 'minecraft:blast_furnace' @('starciv_q03_arrive_rust') @(@{type='questlog:item_craft'; item='minecraft:blast_furnace'; required_amount=1; name='铸造高炉'}, @{type='questlog:item_obtain'; item='minecraft:coal'; required_amount=16; name='储备 16 块煤'}) @(@{type='questlog:item'; item='starciv:data_slivers'; count=2}, @{type='questlog:experience'; experience=60})
+New-Quest 'starciv_s3_explore' '支线 · 星际远行' '维度支线：亲访铁锈、硅火、苍穹三颗星球各一次——星门传送即可。三颗星球的景象与特产，是主线之外不可错过的风景。' '四星文明从不是孤岛。档案馆给每位新晋升者的建议：走出去，亲眼看一看锈蚀的大地和霓虹的都市，然后你才会真正理解要守护的是什么。' 'minecraft:compass' @('starciv_q05_slivers') @(@{type='questlog:visit_dimension'; dimension='starciv:rustfall'; required_amount=1; name='再访铁锈星'}, @{type='questlog:visit_dimension'; dimension='starciv:silicon'; required_amount=1; name='探访硅火星'}, @{type='questlog:visit_dimension'; dimension='starciv:stellaris'; required_amount=1; name='遨游苍穹星'}) @(@{type='questlog:experience'; experience=150}, @{type='questlog:item'; item='starciv:warp_core'; count=1})
+New-Quest 'starciv_s4_royal_gardens' '支线 · 文明基建' '建筑支线：积攒 64 块石砖与 16 块玻璃，为晨曦花园城堡添砖加瓦。宏大建筑由砖石砌成，也由文明的心血砌成。' '有人问为什么文明需要城堡与花园。档案馆的回答：因为美本身就是文明的存档。每一座地标，都是给后代的留言。' 'minecraft:stone_bricks' @('starciv_g_agriculture') @(@{type='questlog:item_obtain'; item='minecraft:stone_bricks'; required_amount=64; name='积攒 64 块石砖'}, @{type='questlog:item_obtain'; item='minecraft:glass'; required_amount=16; name='备齐 16 块玻璃'}) @(@{type='questlog:experience'; experience=80})
+New-Quest 'starciv_s5_silicon_treasures' '支线 · 霓虹宝物' '建筑支线：采集硅火星特产——紫水晶与石英，装点你的空中楼阁。' '硅火都市的霓虹之下，紫水晶矿脉仍在生长。把它们带回绿谷，让星你界的一端与另一端，共享同一种光芒。' 'minecraft:amethyst_shard' @('starciv_s3_explore') @(@{type='questlog:item_obtain'; item='minecraft:amethyst_shard'; required_amount=16; name='采集 16 枚紫水晶碎片'}, @{type='questlog:item_obtain'; item='minecraft:quartz'; required_amount=16; name='收集 16 块石英'}) @(@{type='questlog:experience'; experience=100})
+
+Write-Host ""
+$n2 = (Get-ChildItem $qdir -Filter *.json).Count
+Write-Host ("✔ 最终共 " + $n2 + " 个任务")
+$bad2 = 0
+Get-ChildItem $qdir -Filter *.json | ForEach-Object { try { Get-Content $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json | Out-Null } catch { Write-Host ("!! " + $_.Name); $bad2++ } }
+Write-Host ("JSON 校验失败: " + $bad2)

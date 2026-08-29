@@ -1,0 +1,41 @@
+{
+    "title":  "支线 · 工业熔炉",
+    "description":  "科技支线：铸造高炉，开启大规模冶炼。高炉是铁锈星工业的心脏，也是制造精密零件的前置。",
+    "icon":  {
+                 "item":  "minecraft:blast_furnace"
+             },
+    "background":  "旧文明把铁锈星变成了钢铁行星，也把天空染成了锈色。档案馆的批注只有一句：重工业可以粗粝，但必须可控。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q03_arrive_rust"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "铸造高炉",
+                           "item":  "minecraft:blast_furnace",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  16,
+                           "name":  "储备 16 块煤",
+                           "item":  "minecraft:coal",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  2,
+                        "item":  "starciv:data_slivers",
+                        "type":  "questlog:item"
+                    },
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  60
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

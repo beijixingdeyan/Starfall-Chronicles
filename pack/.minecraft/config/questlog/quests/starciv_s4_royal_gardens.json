@@ -1,0 +1,36 @@
+{
+    "title":  "支线 · 文明基建",
+    "description":  "建筑支线：积攒 64 块石砖与 16 块玻璃，为晨曦花园城堡添砖加瓦。宏大建筑由砖石砌成，也由文明的心血砌成。",
+    "icon":  {
+                 "item":  "minecraft:stone_bricks"
+             },
+    "background":  "有人问为什么文明需要城堡与花园。档案馆的回答：因为美本身就是文明的存档。每一座地标，都是给后代的留言。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_g_agriculture"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  64,
+                           "name":  "积攒 64 块石砖",
+                           "item":  "minecraft:stone_bricks",
+                           "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  16,
+                           "name":  "备齐 16 块玻璃",
+                           "item":  "minecraft:glass",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  80
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

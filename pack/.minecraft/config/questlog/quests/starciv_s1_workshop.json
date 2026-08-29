@@ -1,0 +1,36 @@
+{
+    "title":  "支线 · 手作工坊",
+    "description":  "科技支线：制作 2 个活塞和 8 个铁锭，建立你的第一座自动化车间。Create 的传动轴与齿轮从这里开始转动。",
+    "icon":  {
+                 "item":  "minecraft:piston"
+             },
+    "background":  "技师手册上的第一课：工具先于文明。有了车间，你才能把绿谷的粮食变成铁锈的燃料，把铁锈的矿砂变成硅火的电路。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_g_guide"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "制作 2 个活塞",
+                           "item":  "minecraft:piston",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  8,
+                           "name":  "持有 8 个铁锭",
+                           "item":  "minecraft:iron_ingot",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}
