@@ -1,10 +1,12 @@
 {
     "title":  "硅火 · 量子核心",
-    "description":  "第八步：组装【量子核心】。中央计算机群会在你脚下苏醒。",
+    "description":  "第八步：组装量子核心。$(br)① 集齐 2 个精密零件、1 个红石灯、4 块石英（JEI 查配方）；$(br)② 在工作台组装【量子核心】；$(br)③ 前往中央计算机群，核心在那里苏醒。$(br)$(br)核心苏醒后，星门坐标库会展开——通往苍穹的路由此显现。",
     "icon":  {
                  "item":  "starciv:quantum_core"
              },
     "background":  "量子核心是硅火都市的中枢神经。档案馆的秘档显示：当核心苏醒，星门的坐标库会展开——通往苍穹的路由此显现。",
+    "chapter":  "main",
+    "sort_order":  8,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

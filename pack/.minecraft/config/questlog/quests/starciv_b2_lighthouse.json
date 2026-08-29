@@ -1,0 +1,38 @@
+{
+    "title":  "建筑 · 灯塔守望",
+    "description":  "建筑线第 2 步：为天际灯塔添油点火。$(br)① 制作 4 个【灯笼】（火把+8 铁粒）；$(br)② 制作 8 块【暗黑石】（4 基岩粉? 用黑曜石替代：备 8 块黑曜石）；$(br)③ 前往铁锈星灯塔（约 480, 460）主塔点亮灯火。$(br)$(br)灯塔为夜航的星舰引路，也让远方的人知道：这里还亮着。",
+    "icon":  {
+                 "item":  "minecraft:lantern"
+             },
+    "background":  "档案馆的航海日志：灯塔不是为了照亮道路，而是为了告诉星空“我们还在”。",
+    "chapter":  "building",
+    "sort_order":  2,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q03_arrive_rust"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "制作 4 个灯笼",
+                           "item":  "minecraft:lantern",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  8,
+                           "name":  "备 8 块黑曜石",
+                           "item":  "minecraft:obsidian",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  70
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

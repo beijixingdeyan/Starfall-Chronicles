@@ -1,0 +1,38 @@
+{
+    "title":  "维度 · 铁锈巡礼",
+    "description":  "维度线第 2 步：深入铁锈星工业遗迹。$(br)① 重访铁锈星，探索至少一处大型工厂遗迹；$(br)② 收集 16 份【红石粉】（遗迹宝箱与矿脉中常见）；$(br)③ 记住你看到的高炉群——那是旧文明燃烧过的证明。$(br)$(br)地标：铁锈灯塔（约 -480, 460 一带）。",
+    "icon":  {
+                 "item":  "minecraft:redstone"
+             },
+    "background":  "巡礼的意义在于记住：机械的辉煌与代价从来一体两面。档案馆希望每一位晋升者都亲眼见过，再决定自己要成为怎样的文明。",
+    "chapter":  "dimensions",
+    "sort_order":  2,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_s3_explore"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  16,
+                           "name":  "收集 16 份红石粉",
+                           "item":  "minecraft:redstone",
+                           "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "重游铁锈星",
+                           "dimension":  "starciv:rustfall",
+                           "type":  "questlog:visit_dimension"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  90
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

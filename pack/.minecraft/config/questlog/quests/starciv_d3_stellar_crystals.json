@@ -1,0 +1,38 @@
+{
+    "title":  "维度 · 苍穹水晶",
+    "description":  "维度线第 3 步：遨游苍穹星的晶体森林。$(br)① 再次抵达苍穹星；$(br)② 在晶体森林采集 8 枚【紫水晶碎片】（发光的晶簇）；$(br)③ 登上一座悬浮岛远眺大陆全貌。$(br)$(br)苍穹星是最接近星空的地方——把这片光芒带回你的世界。",
+    "icon":  {
+                 "item":  "minecraft:amethyst_block"
+             },
+    "background":  "苍穹星的晶体森林记录着星光的形状。档案馆的诗句：每摘下一枚水晶，就收藏了一束星光。",
+    "chapter":  "dimensions",
+    "sort_order":  3,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_s3_explore"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "遨游苍穹星",
+                           "dimension":  "starciv:stellaris",
+                           "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  8,
+                           "name":  "采集 8 枚紫水晶碎片",
+                           "item":  "minecraft:amethyst_shard",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  110
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

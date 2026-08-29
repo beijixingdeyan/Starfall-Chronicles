@@ -1,0 +1,38 @@
+{
+    "title":  "动物 · 农场生态",
+    "description":  "动物线第 1 步：让农场活起来。$(br)① 圈养至少 2 种动物（牛/羊/猪/鸡均可）；$(br)② 收获 1 瓶蜂蜜（打碎蜂巢或养蜂）；$(br)③ 收集 1 个蛋；$(br)$(br)动物线为农业/酿酒/皮革提供持续产出，是文明的自循环基础。",
+    "icon":  {
+                 "item":  "minecraft:egg"
+             },
+    "background":  "博物馆的标本页这样描述绿谷生态：动物不是资源，是同住一颗星球的邻居。善待它们，农场才会回报你。",
+    "chapter":  "creatures",
+    "sort_order":  1,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q04_biofuel"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "收获 1 瓶蜂蜜",
+                           "item":  "minecraft:honey_bottle",
+                           "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "收集 1 个蛋",
+                           "item":  "minecraft:egg",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  40
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

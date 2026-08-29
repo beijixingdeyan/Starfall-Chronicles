@@ -1,10 +1,12 @@
 {
     "title":  "硅火 · 跃迁引擎",
-    "description":  "第九步：铸造【跃迁引擎】——抵达苍穹星的唯一钥匙。",
+    "description":  "第九步：铸造跃迁引擎。$(br)① 备好 1 个量子核心 + 1 个焰火之星 + 4 块紫水晶；$(br)② 按 JEI 配方合成【跃迁引擎】；$(br)③ 它是抵达苍穹星的唯一钥匙——苍穹星不通过星门抵达，它需要跃迁。",
     "icon":  {
                  "item":  "minecraft:firework_rocket"
              },
     "background":  "苍穹星不通过星门抵达，它需要跃迁。跃迁引擎由量子核心驱动，是硅火工业与间宇宙物理的结晶。",
+    "chapter":  "main",
+    "sort_order":  9,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

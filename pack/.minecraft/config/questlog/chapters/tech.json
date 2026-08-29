@@ -1,0 +1,7 @@
+{
+    "icon":  {
+                 "item":  "minecraft:blast_furnace"
+             },
+    "default_chapter":  false,
+    "hidden":  false
+}

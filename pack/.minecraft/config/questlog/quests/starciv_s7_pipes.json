@@ -1,0 +1,37 @@
+{
+    "title":  "科技 · 物流管道",
+    "description":  "科技线第 4 步：搭建物流管道，让产物自己流动。$(br)① 制作 1 个【物品管道】（Pipez）；$(br)② 把仓库与机器用管道连起来；$(br)③ 观察产物自动转运。$(br)$(br)物流网络建成后，铁锈-绿谷的物资将不再需要人肉搬运。",
+    "icon":  {
+                 "item":  "pipez:item_pipe"
+             },
+    "background":  "Pipez 把“搬运”从苦力活变成了全自动的诗。档案馆写道：当物资自己流动时，文明才真正腾出手来思考星空。",
+    "chapter":  "tech",
+    "sort_order":  4,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_s6_axles"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作物品管道",
+                           "item":  "pipez:item_pipe",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  1,
+                        "item":  "starciv:warp_core",
+                        "type":  "questlog:item"
+                    },
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  90
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

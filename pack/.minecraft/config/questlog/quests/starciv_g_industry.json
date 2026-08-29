@@ -1,10 +1,12 @@
 {
     "title":  "指引 · 铁锈工业",
-    "description":  "工业册并入任务书：Create 传动轴与 Belt 建材构建永动机城；Immersive Engineering 高压电网覆盖废土；Pollution of the Realms 的污染值提醒你——工业必须与自然和解。铁锈星的任务核心是产出与减排的平衡。",
+    "description":  "工业册并入任务书。$(br)① Create 传动轴与皮带构建机械城；$(br)② Immersive Engineering 高压电网覆盖废土；$(br)③ 注意污染值——工业必须与自然和解；$(br)④ 铁锈星任务核心是产出与减排的平衡。$(br)$(br)参考：科技线 4 个任务与本页配套食用。",
     "icon":  {
                  "item":  "minecraft:piston"
              },
     "background":  "铁锈星教会文明一件事：力量需要代价。但档案馆记录显示，旧文明正是败于对代价的傲慢。这一次，让机械服务于田园。",
+    "chapter":  "knowledge",
+    "sort_order":  3,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

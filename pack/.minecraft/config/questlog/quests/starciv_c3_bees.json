@@ -1,0 +1,38 @@
+{
+    "title":  "动物 · 养蜂人",
+    "description":  "动物线第 3 步：成为一名养蜂人。$(br)① 制作 1 个【蜂箱】（6 木板 + 3 蜜脾）；$(br)② 在花田边放置蜂箱并等到蜜蜂入住；$(br)③ 收集 2 瓶【蜂蜜瓶】。$(br)$(br)Productive Bees 的基因样本库也是从这一步开始的——未来的变异蜜蜂将有更高产量。",
+    "icon":  {
+                 "item":  "minecraft:bee_nest"
+             },
+    "background":  "蜜蜂是生态链的枢纽。Productive Bees 的档案第一页写着：文明的甜，一半来自蜜蜂。",
+    "chapter":  "creatures",
+    "sort_order":  3,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_c2_pet"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作蜂箱",
+                           "item":  "minecraft:beehive",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  2,
+                           "name":  "收获 2 瓶蜂蜜",
+                           "item":  "minecraft:honey_bottle",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  60
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

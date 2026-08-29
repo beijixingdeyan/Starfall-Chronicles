@@ -1,10 +1,12 @@
 {
     "title":  "苍穹 · 应许之地",
-    "description":  "第十步：穿越苍穹之门，抵达悬浮大陆与水晶森林的苍穹星。",
+    "description":  "第十步：穿越苍穹之门。$(br)① 手持【跃迁引擎】回到硅火中心广场的苍穹之门；$(br)② 启动跃迁，抵达苍穹星；$(br)③ 这里悬浮着大陆，生长着发光的晶体森林。$(br)$(br)苍穹星保存着文明的终极答案，但守护者也在等待。",
     "icon":  {
                  "item":  "minecraft:nether_star"
              },
     "background":  "苍穹星保存着文明的终极答案。传说首批文明在这里完成了“升华”——但他们也留下了守护者。",
+    "chapter":  "main",
+    "sort_order":  10,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

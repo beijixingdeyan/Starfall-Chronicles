@@ -1,0 +1,38 @@
+{
+    "title":  "动物 · 驯养伙伴",
+    "description":  "动物线第 2 步：驯养你的旅伴。$(br)① 制作 1 根【拴绳】（线+粘液球）；$(br)② 获得 1 个【鞍】（战利品或宝箱）；$(br)③ 驯服一头动物（狼用骨头、猫用鱼、马用空手骑乘）并用拴绳牵着它。$(br)$(br)冒险旅途有个伙伴，夜晚也不会那么孤单。",
+    "icon":  {
+                 "item":  "minecraft:lead"
+             },
+    "background":  "旧文明的探险家人手一头坐骑。档案馆的记录：驯养动物不仅是生存手段，更是文明与自然建立信任的第一步。",
+    "chapter":  "creatures",
+    "sort_order":  2,
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_c1_farm"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作拴绳",
+                           "item":  "minecraft:lead",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "获得马鞍",
+                           "item":  "minecraft:saddle",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

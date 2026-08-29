@@ -1,10 +1,12 @@
 {
     "title":  "硅火 · 精密零件",
-    "description":  "第七步：锻造 4 个【精密零件】——穿梭机的核心部件，也是离开硅火星的先决条件。",
+    "description":  "第七步：锻造 4 个精密零件。$(br)① 用【数据裂片】换成设计图（JEI 查看）；$(br)② 在硅火工业台按配方投入铁锭与红石；$(br)③ 锻造 4 个【精密零件】。$(br)$(br)精密零件是穿梭机的核心部件，也是离开硅火星的先决条件。",
     "icon":  {
                  "item":  "starciv:precision_parts"
              },
     "background":  "数据裂片终于化成了可用的设计图。精密零件是硅火星工业台的骄傲：只有这里的机床能保证亚毫米公差。",
+    "chapter":  "main",
+    "sort_order":  7,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

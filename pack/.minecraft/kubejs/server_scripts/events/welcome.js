@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 // Starfall Chronicles — 开局欢迎：第一次进入世界
 // 通过 persistentData 保证只触发一次：赠送史书 + 文明指引。
 // =============================================================
@@ -30,7 +30,7 @@ PlayerEvents.loggedIn(event => {
       p.give(book);
       // 探索手册（Patchouli 任务书：四星球全流程引导）
       try {
-        var handbook = Item.of('patchouli:guide_book', '{patchouli:book:"starciv:handbook"}');
+        var handbook = Item.of('patchouli:guide_book', '{patchouli:book:"starciv_data:handbook"}');
         p.give(handbook);
       } catch (e2) {
         p.tell('§c[Starfall] 探索手册发放失败: ' + e2);

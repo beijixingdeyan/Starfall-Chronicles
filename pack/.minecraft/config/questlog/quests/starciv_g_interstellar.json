@@ -1,10 +1,12 @@
 {
     "title":  "指引 · 苍穹星际",
-    "description":  "星际册并入任务书：Ad Astra 火箭与空间站搭建跨星球航线；跃迁引擎（warp engine）是通往苍穹的唯一载体；L_Ender 的 Cataclysm 的 Boss 是终局试炼。集齐四星科技的文明，才有资格举行终局仪式。",
+    "description":  "星际册并入任务书。$(br)① Ad Astra 火箭与空间站搭建跨星球航线；$(br)② 跃迁引擎（warp engine）是通往苍穹的唯一载体；$(br)③ L_Ender 的 Cataclysm 的 Boss 是终局试炼；$(br)④ 集齐四星科技的文明，才有资格举行终局仪式。$(br)$(br)最终奖励：四星灯塔同亮，文明薪火相传。",
     "icon":  {
                  "item":  "minecraft:elytra"
              },
     "background":  "苍穹星不是终点，而是起点。档案馆的最后一页写着：文明的轮回在苍穹完成，而薪火将永远传递。",
+    "chapter":  "knowledge",
+    "sort_order":  5,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

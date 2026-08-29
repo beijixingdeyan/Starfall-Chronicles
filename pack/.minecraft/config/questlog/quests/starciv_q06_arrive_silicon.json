@@ -1,10 +1,12 @@
 {
     "title":  "硅火 · 霓虹都市",
-    "description":  "第六步：抵达硅火星的霓虹都市。这里的硅基自动工厂，将由你接管。",
+    "description":  "第六步：抵达硅火星。$(br)① 从铁锈星星门返回绿谷，再从绿谷星门选择【硅火】坐标；$(br)② 降落在霓虹都市外围；$(br)③ 观察这座城市——自动工厂仍在运转，硅基文明的气息扑面而来。$(br)$(br)提示：硅火都市中心有中央计算机群，是后续任务的主舞台。",
     "icon":  {
                  "item":  "minecraft:redstone"
              },
     "background":  "硅火星是最接近旧文明巅峰的世界——整座都市仍亮着霓虹。档案馆的结论：这座城市从未关闭，它在等一个能读懂它的人。",
+    "chapter":  "main",
+    "sort_order":  6,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",

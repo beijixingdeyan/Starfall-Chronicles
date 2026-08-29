@@ -1,10 +1,12 @@
 {
-    "title":  "支线 · 霓虹宝物",
-    "description":  "建筑支线：采集硅火星特产——紫水晶与石英，装点你的空中楼阁。",
+    "title":  "建筑 · 霓虹宝物",
+    "description":  "建筑线第 3 步：采集硅火星特产，装点你的空中楼阁。$(br)① 采集 16 枚【紫水晶碎片】；$(br)② 收集 16 块【石英】；$(br)③ 把它们带回绿谷，镶嵌在你的建筑上。$(br)$(br)硅火都市的霓虹之下，紫水晶矿脉仍在生长。",
     "icon":  {
                  "item":  "minecraft:amethyst_shard"
              },
     "background":  "硅火都市的霓虹之下，紫水晶矿脉仍在生长。把它们带回绿谷，让星你界的一端与另一端，共享同一种光芒。",
+    "chapter":  "building",
+    "sort_order":  3,
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
