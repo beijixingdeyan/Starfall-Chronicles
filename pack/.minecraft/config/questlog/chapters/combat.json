@@ -1,0 +1,7 @@
+{
+    "icon":  {
+                 "item":  "minecraft:netherite_sword"
+             },
+    "default_chapter":  false,
+    "hidden":  false
+}

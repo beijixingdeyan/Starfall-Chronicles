@@ -1,0 +1,26 @@
+{
+    "title":  "手册 · 建筑与摄影",
+    "description":  "【建筑指引】\n  ① 想复古：石砖+橡木+灯笼，参考晨曦花园城堡\n  ② 想科技：混凝土+玻璃+霓虹（紫水晶），参考硅火霓虹亭\n  ③ 想自然：原木+藤蔓+花坛，参考绿谷农田\n【摄影技巧】\n  · 按 F1 隐藏界面截图\n  · 日出/日落光线最好\n  · 站在护城河/悬空岛边缘取中景\n【任务】拍摄（或亲眼观赏）2 个地标——完成后你就是认证的建筑巡礼者。",
+    "icon":  {
+                 "item":  "minecraft:map"
+             },
+    "background":  "建筑是文明写给时间的信。写得好不好，百年后自有读者。",
+    "chapter":  "building",
+    "sort_order":  47,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作地图",
+                           "item":  "minecraft:map",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

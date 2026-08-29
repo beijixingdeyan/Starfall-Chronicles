@@ -1,0 +1,32 @@
+{
+    "title":  "战斗 · 出战准备",
+    "description":  "【出战清单】（打任何 Boss 前对照）\n  装备：全套下界合金/更高品质，附魔 保护+锋利\n  药水：力量、抗火、治疗喷溅、夜视（地下）\n  食物：金苹果/炖汤（回满饱食）\n  道具：末影珍珠（逃脱）、烟花（逃生）、盾牌（防御姿态）\n【练手目标】先击败一次普通精英怪，熟悉战斗节奏。\n【注意】Boss 战建议单人备份存档 / 多人约定复活点。",
+    "icon":  {
+                 "item":  "minecraft:golden_apple"
+             },
+    "background":  "胜败乃兵家常事，但准备是胜利的一半。档案馆给所有候补晋升者的忠告：别拿生命测试运气。",
+    "chapter":  "combat",
+    "sort_order":  62,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "备好金苹果",
+                           "item":  "minecraft:golden_apple",
+                           "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "手拿盾牌",
+                           "item":  "minecraft:shield",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  120
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

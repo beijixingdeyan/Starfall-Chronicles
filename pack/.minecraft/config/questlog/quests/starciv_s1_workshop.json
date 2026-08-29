@@ -1,18 +1,12 @@
 {
-    "title":  "科技 · 手作工坊",
-    "description":  "科技线第 1 步：建立你的第一座自动化车间。$(br)① 制作 2 个活塞（木板+圆石+铁锭+红石）；$(br)② 积攒 8 个铁锭；$(br)③ 用 Create 的传动轴（铁轴）把第一台机器转起来。$(br)$(br)科技线最终通向硅火的精密制造。",
+    "title":  "手作工坊（自动化入门）",
+    "description":  "科技线之一：建立你的第一座车间。\n【材料】2 个活塞（木板+圆石+铁锭+红石）+ 8 个铁锭。\n【干什么】造出活塞后，用 Create 的【传动轴】（见科技线 x_tech_create）把第一台机器转起来。\n【指引】这条线最终通向硅火的精密制造；主线⑤⑥⑦会用到这里的知识。\n【背景】技师手册第一课：工具先于文明。",
     "icon":  {
                  "item":  "minecraft:piston"
              },
     "background":  "技师手册上的第一课：工具先于文明。有了车间，你才能把绿谷的粮食变成铁锈的燃料，把铁锈的矿砂变成硅火的电路。",
     "chapter":  "tech",
-    "sort_order":  1,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_g_guide"
-                          }
-                      ],
+    "sort_order":  20,
     "objectives":  [
                        {
                            "required_amount":  2,

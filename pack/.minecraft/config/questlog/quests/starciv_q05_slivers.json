@@ -1,18 +1,12 @@
 {
-    "title":  "铁锈 · 数据裂片",
-    "description":  "第五步：收集 8 片数据裂片。$(br)① 在铁锈星地下开采【紫水晶矿石】（矿区深处与遗迹中常见）；$(br)② 用研磨装置或精准采集把紫水晶加工成数据裂片；$(br)③ 集齐 8 片后任务完成。$(br)$(br)数据裂片记录了旧文明的生产参数，是解锁硅火科技的关键。",
+    "title":  "⑤ 铁锈 · 数据裂片",
+    "description":  "主线第五步。\n【去哪里】铁锈星地下：紫水晶矿石在矿洞深处与遗迹中常见。\n【干什么】开采紫水晶，用研磨装置或精准采集加工成【数据裂片】，集齐 8 片。\n【为什么】裂片记录了旧文明的生产参数，是后续精密零件的图纸来源。\n【提示】挖矿带好火把与镐；深矿层注意岩浆与怪物。",
     "icon":  {
                  "item":  "starciv:data_slivers"
              },
     "background":  "紫水晶是铁锈星少数未被氧化的晶体。研磨它们得到的数据裂片，记录了旧文明的生产参数——包括如何铸造更精密的零件。",
     "chapter":  "main",
     "sort_order":  5,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q04_biofuel"
-                          }
-                      ],
     "objectives":  [
                        {
                            "required_amount":  8,

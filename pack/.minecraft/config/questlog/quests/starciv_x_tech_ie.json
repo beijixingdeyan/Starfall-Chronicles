@@ -1,0 +1,26 @@
+{
+    "title":  "百科 · 沉浸工程",
+    "description":  "【沉浸工程（Immersive Engineering）】高压电网与重工。\n【是什么】多块结构（Multi-block）的工业模组：高炉、电弧炉、高压线塔、炼油厂。\n【怎么上手】\n  · 造【工程师锤】锻打多块结构\n  · 搭高压电网：发电机→变压器→线塔→机器\n  · 电弧炉一次熔炼 3 矿物\n【本包定位】铁锈星的电网基建，与 Create 并行不悖：传动管机械，电网管冶金。\n【提示】高压线有电，别裸手碰（会掉血）。",
+    "icon":  {
+                 "item":  "immersiveengineering:coil_lv"
+             },
+    "background":  "旧文明的高压线塔至今矗立在废土上。档案馆的批注：电是文明的骨骼，而电网是它的脊梁。",
+    "chapter":  "tech",
+    "sort_order":  25,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作低压线圈",
+                           "item":  "immersiveengineering:coil_lv",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

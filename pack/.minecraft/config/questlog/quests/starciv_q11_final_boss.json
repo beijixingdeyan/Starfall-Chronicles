@@ -1,18 +1,12 @@
 {
-    "title":  "苍穹 · 终局仪式",
-    "description":  "最终步：击败远古造物【下界合金巨兽】。$(br)① 在苍穹星晶体平原找到巨兽巢穴（大地图上骸骨环绕的区域）；$(br)② 备好整套下界合金装备与充足的药水；$(br)③ 击败 L_Ender 的 Cataclysm 之【下界合金巨兽】。$(br)$(br)仪式完成之时，四颗星球的灯塔将同时亮起——文明的薪火传到了你手中。",
+    "title":  "⑪ 苍穹 · 终局仪式",
+    "description":  "最终步：击败远古造物【下界合金巨兽】。\n【去哪里】苍穹星晶体平原，骸骨环绕的巨兽巢穴。\n【准备】整套下界合金装备、充足药水与食物；参考【战斗】页签了解它的弱点。\n【怎么做】正面迎战 L_Ender 的 Cataclysm 之【下界合金巨兽】。它攻击高、范围大，注意走位与血量管理。\n【为什么】守护者是第一代文明留下的守门人。击败它并非征服，而是证明：新的文明已具备接过星火的资格。\n【结尾】仪式完成时，四颗星球的灯塔将同时亮起——文明的薪火传到了你手中。",
     "icon":  {
                  "item":  "minecraft:netherite_ingot"
              },
     "background":  "守护者不是敌人，它是第一代文明留下的守门人。击败它并非征服，而是证明：新的文明已具备接过星火的资格。仪式完成之时，四颗星球的灯塔将同时亮起。",
     "chapter":  "main",
     "sort_order":  11,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q10_arrive_stellaris"
-                          }
-                      ],
     "objectives":  [
                        {
                            "required_amount":  1,

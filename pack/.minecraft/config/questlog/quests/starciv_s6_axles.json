@@ -1,18 +1,12 @@
 {
-    "title":  "科技 · 动能网络",
-    "description":  "科技线第 3 步：铺设动能传动网络。$(br)① 用 Create 制作 8 根【传动轴】（Iron Sheet + 木轴）；$(br)② 连接 1 个【动力源】（水车/风车或手摇机）；$(br)③ 让传动轴把动力送到你的第一台机器。$(br)$(br)动能网络是 Create 自动化一切的骨架。",
+    "title":  "动能网络（Create 骨架）",
+    "description":  "科技线之三：铺设传动。\n【材料】8 根【传动轴】（Create：木轴+铁片，JEI 查看）+ 1 个拉杆。\n【干什么】把传动轴连接动力源（水车/风车/手摇机），让动力传到机器。\n【为什么】动能网络是 Create 自动化一切的骨架——传送带、钻头、机械臂都靠它。\n【提示】对着传动轴右键可以调整朝向，Shift+右键拆除。",
     "icon":  {
                  "item":  "create:shaft"
              },
     "background":  "Create 的世界观从一根轴开始：转动、咬合、传递。档案馆把它称作“机械的诗”——文明的脉搏，就藏在这些匀速旋转的零件里。",
     "chapter":  "tech",
-    "sort_order":  3,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_s1_workshop"
-                          }
-                      ],
+    "sort_order":  22,
     "objectives":  [
                        {
                            "required_amount":  8,

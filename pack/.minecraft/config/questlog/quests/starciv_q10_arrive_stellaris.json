@@ -1,18 +1,12 @@
 {
-    "title":  "苍穹 · 应许之地",
-    "description":  "第十步：穿越苍穹之门。$(br)① 手持【跃迁引擎】回到硅火中心广场的苍穹之门；$(br)② 启动跃迁，抵达苍穹星；$(br)③ 这里悬浮着大陆，生长着发光的晶体森林。$(br)$(br)苍穹星保存着文明的终极答案，但守护者也在等待。",
+    "title":  "⑩ 苍穹 · 应许之地",
+    "description":  "主线第十步（需持有跃迁引擎）。\n【去哪里】回到硅火中心广场的【苍穹之门】，手持跃迁引擎启动跃迁。\n【苍穹星是什么】悬浮大陆与发光晶体森林，保存着文明的终极答案——但守护者也在等待。\n【干什么】落地后熟悉环境，寻找晶体平原上的巨兽巢穴。\n【注意】苍穹星的生物比前三个世界强，先做好装备再来。",
     "icon":  {
                  "item":  "minecraft:nether_star"
              },
     "background":  "苍穹星保存着文明的终极答案。传说首批文明在这里完成了“升华”——但他们也留下了守护者。",
     "chapter":  "main",
     "sort_order":  10,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q09_warp_engine"
-                          }
-                      ],
     "objectives":  [
                        {
                            "required_amount":  1,

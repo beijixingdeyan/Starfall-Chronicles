@@ -1,0 +1,26 @@
+{
+    "title":  "地标 · 晨曦花园城堡",
+    "description":  "【地标档案：晨曦花园城堡】\n【位置】绿谷星 (60, 79, -250)\n【外观】石砖与玻璃构成的童话花园城堡：主塔、花园庭院、环形护城河。\n【看点】主塔观景台看日出；花园里四季花卉（季节系统）轮换开放；夜晚城堡灯火通明——是绿谷的地标名片。\n【拍照点】护城河对岸正南方向，能拍到整座城堡倒影。\n【任务】抵达城堡并完成主线④的燃料任务后，这里就是你的后勤基地。",
+    "icon":  {
+                 "item":  "minecraft:stone_brick_stairs"
+             },
+    "background":  "档案馆把它称作“绿谷的心脏”：文明在花园里种下的第一颗种子，长成了这座城市。",
+    "chapter":  "building",
+    "sort_order":  43,
+    "objectives":  [
+                       {
+                           "required_amount":  16,
+                           "name":  "为城堡备 16 块石砖",
+                           "item":  "minecraft:stone_bricks",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  40
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

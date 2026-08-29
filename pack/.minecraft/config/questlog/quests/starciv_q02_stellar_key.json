@@ -1,18 +1,12 @@
 {
-    "title":  "绿谷 · 星门钥匙",
-    "description":  "第二步：铸造星门钥匙。$(br)① 准备 1 文明精华（上古之种制成）、4 金锭、4 绿宝石；$(br)② 打开 JEI（E 键列表）搜索【星门钥匙】查看配方；$(br)③ 在工作台合成【星门钥匙】。$(br)$(br)完成后从绿谷星门（独石碑旁）传送到铁锈星废土。",
+    "title":  "② 绿谷 · 星门钥匙",
+    "description":  "主线第二步（建议先完成①）。\n【材料】1 文明精华（上古之种制成）、4 金锭、4 绿宝石。\n【怎么做】打开 JEI（按 E 键后右侧配方列表，搜索“星门钥匙”）查看配方，在工作台合成。\n【为什么】星门钥匙是激活星门、前往铁锈星的凭证——没有它，你哪儿也去不了。\n【提示】配方详情见 JEI；材料不够就多挖矿。",
     "icon":  {
                  "item":  "starciv:stellar_key"
              },
     "background":  "星门钥匙的作用被发现后，星港档案馆沸腾了——绿谷星门并非传说，而是通往其他三颗星球的唯一通道。铸造钥匙，就是向星空承诺：我们不会困守于此。",
     "chapter":  "main",
     "sort_order":  2,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q01_sprout"
-                          }
-                      ],
     "objectives":  [
                        {
                            "required_amount":  1,

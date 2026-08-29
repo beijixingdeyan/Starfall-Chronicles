@@ -1,0 +1,26 @@
+{
+    "title":  "星球 · 铁锈",
+    "description":  "【星球档案：铁锈星】\n【定位】工业之星：锈红天空，钢铁废土。\n【生态】荒漠+矿区：废弃工厂、高炉群、深埋紫水晶矿。\n【特产】数据裂片（紫水晶研磨）、生物燃料（上古之种发酵）、红石。\n【地标】铁锈灯塔 (480,76,460)。\n【玩法】Create 传动、沉浸工程电网、高炉冶炼。\n【主线地位】③④⑤ 步的主舞台：重启抛光线→收集数据裂片。\n【注意】污染值会提醒你：工业必须与自然和解。",
+    "icon":  {
+                 "item":  "minecraft:iron_ingot"
+             },
+    "background":  "铁锈星曾是旧文明的工业心脏。锈蚀的大地仍在回荡机械的呓语。",
+    "chapter":  "dimensions",
+    "sort_order":  54,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "铸造高炉",
+                           "item":  "minecraft:blast_furnace",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

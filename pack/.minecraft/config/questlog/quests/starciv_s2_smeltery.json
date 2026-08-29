@@ -1,18 +1,12 @@
 {
-    "title":  "科技 · 工业熔炉",
-    "description":  "科技线第 2 步：铸造高炉，开启大规模冶炼。$(br)① 合成一个【高炉】（5 铁锭 + 熔炉 + 3 平滑石）；$(br)② 储备 16 块煤作为燃料；$(br)③ 用高炉把铁锭产量提上来。$(br)$(br)高炉是铁锈星工业的心脏，也是制造精密零件的前置。",
+    "title":  "工业熔炉（规模冶炼）",
+    "description":  "科技线之二：铸造高炉。\n【材料】高炉（5 铁锭 + 熔炉 + 3 平滑石）+ 16 块煤。\n【为什么】高炉是铁锈星工业的心脏：冶炼速度翻倍，是生产精密零件的必须配套。\n【指引】建议在抵达铁锈星后完成；随后去【维度】页签认识铁锈星全貌。\n【背景】重工业可以粗粝，但必须可控。",
     "icon":  {
                  "item":  "minecraft:blast_furnace"
              },
     "background":  "旧文明把铁锈星变成了钢铁行星，也把天空染成了锈色。档案馆的批注只有一句：重工业可以粗粝，但必须可控。",
     "chapter":  "tech",
-    "sort_order":  2,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q03_arrive_rust"
-                          }
-                      ],
+    "sort_order":  21,
     "objectives":  [
                        {
                            "required_amount":  1,

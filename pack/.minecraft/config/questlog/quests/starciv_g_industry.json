@@ -1,18 +1,12 @@
 {
     "title":  "指引 · 铁锈工业",
-    "description":  "工业册并入任务书。$(br)① Create 传动轴与皮带构建机械城；$(br)② Immersive Engineering 高压电网覆盖废土；$(br)③ 注意污染值——工业必须与自然和解；$(br)④ 铁锈星任务核心是产出与减排的平衡。$(br)$(br)参考：科技线 4 个任务与本页配套食用。",
+    "description":  "【工业三步曲】\n  ① Create：传动轴+皮带→机械城（参见科技页签）\n  ② 沉浸工程：高压电网→重工冶炼\n  ③ 减排：污染值别爆表，绿植/过滤器可以压\n【本包平衡】铁锈星的任务核心=产出与减排的平衡。\n【任务】制作 2 个活塞（工业第一步）。\n【提示】详细教程看【科技】章节。",
     "icon":  {
                  "item":  "minecraft:piston"
              },
-    "background":  "铁锈星教会文明一件事：力量需要代价。但档案馆记录显示，旧文明正是败于对代价的傲慢。这一次，让机械服务于田园。",
+    "background":  "铁锈星教会文明一件事：力量需要代价。但旧文明正是败于对代价的傲慢。这一次，让机械服务于田园。",
     "chapter":  "knowledge",
-    "sort_order":  3,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q04_biofuel"
-                          }
-                      ],
+    "sort_order":  72,
     "objectives":  [
                        {
                            "required_amount":  2,

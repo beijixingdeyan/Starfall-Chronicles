@@ -1,18 +1,12 @@
 {
     "title":  "建筑 · 文明基建",
-    "description":  "建筑线第 1 步：为晨曦花园城堡添砖加瓦。$(br)① 积攒 64 块【石砖】（烧石头后合成）；$(br)② 备齐 16 块【玻璃】；$(br)③ 打开地图（M 键）确认晨曦花园城堡位置（坐标约 60, -250）。$(br)$(br)宏大建筑由砖石砌成，也由文明的心血砌成。",
+    "description":  "建筑线之一：为晨曦花园城堡添砖加瓦。\n【材料】64 块【石砖】（烧石头→合成）+ 16 块【玻璃】。\n【去哪里】晨曦花园城堡：绿谷坐标约 (60, 79, -250)——从绿谷中心朝东南走。\n【为什么】地标不只是一栋楼，它是文明的存档：城堡、灯塔、霓虹亭、飞艇。\n【完成后】去【建筑·城堡】任务看它的全貌与拍摄点。",
     "icon":  {
                  "item":  "minecraft:stone_bricks"
              },
     "background":  "有人问为什么文明需要城堡与花园。档案馆的回答：因为美本身就是文明的存档。每一座地标，都是给后代的留言。",
     "chapter":  "building",
-    "sort_order":  1,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_g_agriculture"
-                          }
-                      ],
+    "sort_order":  40,
     "objectives":  [
                        {
                            "required_amount":  64,

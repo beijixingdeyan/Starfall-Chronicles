@@ -1,18 +1,12 @@
 {
-    "title":  "铁锈 · 生物燃料",
-    "description":  "第四步：合成生物燃料罐。$(br)① 加工【上古之种】获得燃料胚体；$(br)② 备好木炭（烧原木即可）；$(br)③ 按 JEI 配方合成【生物燃料罐】。$(br)$(br)生物燃料是重启铁锈星机器的第一步——它让锈蚀的传动轴重新转动。",
+    "title":  "④ 铁锈 · 生物燃料",
+    "description":  "主线第四步。\n【材料】上古之种（或它的胚体）+ 木炭（烧原木）。\n【怎么做】按 JEI 配方合成【生物燃料罐】。\n【为什么】生物燃料是重启铁锈星机器的燃料——它们让锈蚀的传动轴重新转动，也解锁后续工厂科技。\n【提示】这步是农业与工业的第一次握手，之后绿谷粮食→铁锈燃料的循环就建立了。",
     "icon":  {
                  "item":  "starciv:biofuel_canister"
              },
     "background":  "上古之种的基因链解开了谜底——它能在任何环境下发酵。生物燃料罐是重启铁锈星抛光线的最短路径，也是绿谷农业与铁锈工业的第一次握手。",
     "chapter":  "main",
     "sort_order":  4,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q03_arrive_rust"
-                          }
-                      ],
     "objectives":  [
                        {
                            "required_amount":  1,

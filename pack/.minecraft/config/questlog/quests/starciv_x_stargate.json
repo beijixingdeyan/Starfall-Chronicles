@@ -1,0 +1,26 @@
+{
+    "title":  "手册 · 星门与跃迁",
+    "description":  "【星际交通指南】\n  · 星门（绿谷→铁锈/硅火）：手持【星门钥匙】走进星门\n  · 苍穹之门（硅火→苍穹）：手持【跃迁引擎】启动\n  · 返程：任何星门都可回绿谷（用钥匙）\n【用什么做】星门钥匙=主线②；跃迁引擎=主线⑨。\n【坐标卡】\n  绿谷星门：独石碑旁（约 0,70,0 一带）\n  苍穹之门：硅火中央广场\n【任务】完成一次完整往返（绿谷→任一星球→回绿谷）。",
+    "icon":  {
+                 "item":  "minecraft:ender_pearl"
+             },
+    "background":  "星门技术是第一代文明的赠礼：把四颗星球缝在同一条时间线上。",
+    "chapter":  "dimensions",
+    "sort_order":  57,
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "收集 2 颗末影珍珠",
+                           "item":  "minecraft:ender_pearl",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

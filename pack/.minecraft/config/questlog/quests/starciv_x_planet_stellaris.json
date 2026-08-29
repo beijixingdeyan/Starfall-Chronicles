@@ -1,0 +1,26 @@
+{
+    "title":  "星球 · 苍穹",
+    "description":  "【星球档案：苍穹星】\n【定位】星际终点：悬浮大陆与晶体森林。\n【生态】悬浮岛、水晶林、云海。\n【特产】紫水晶碎片、跃迁核心、远古造物战利品。\n【地标】苍穹空艇 (300,64,-580)。\n【玩法】火箭与空间站、跃迁引擎往返。\n【主线地位】⑩⑪ 步：应许之地→终局仪式。\n【威胁】守护者【下界合金巨兽】盘踞晶体平原；终局前务必全副武装。",
+    "icon":  {
+                 "item":  "minecraft:elytra"
+             },
+    "background":  "苍穹星不是终点，而是起点。档案馆的最后一页写着：文明的轮回在苍穹完成，而薪火将永远传递。",
+    "chapter":  "dimensions",
+    "sort_order":  56,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "收集 4 枚紫水晶碎片",
+                           "item":  "minecraft:amethyst_shard",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  60
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

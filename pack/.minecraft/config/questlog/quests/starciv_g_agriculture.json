@@ -1,18 +1,12 @@
 {
     "title":  "指引 · 绿谷农业",
-    "description":  "农业册并入任务书。$(br)① 四季系统决定耕种节奏：春播种、夏护养、秋丰收、冬温室（Botany Pots）；$(br)② 养蜂（Productive Bees）产基因样本；$(br)③ 酿酒（Brewin and Chewin）建立村落经济；$(br)④ 村民交易（Easy Villagers）织成贸易网络。$(br)$(br)农业是唯一能自我循环的起点——先吃饱，再远征。",
+    "description":  "【农业四季节奏】\n  春：播种小麦/胡萝卜/土豆\n  夏：护养+除草（作物疯长）\n  秋：大丰收\n  冬：温室（盆栽室内种植）维持供应\n【进阶】\n  · 养蜂（产物蜜蜂）→基因样本\n  · 酿酒（酿造与烹饪）→村落经济\n  · 村民交易（简易村民）→贸易网络\n【任务】收获 16 个小麦。\n【结论】农业是唯一能自我循环的起点——先吃饱，再远征。",
     "icon":  {
                  "item":  "minecraft:wheat"
              },
-    "background":  "绿谷星的农田不是背景，而是文明的温床。档案馆始终相信：能种出粮食的文明，才配仰望星空。",
+    "background":  "绿谷星的农田不是背景，而是文明的温床。能种出粮食的文明，才配仰望星空。",
     "chapter":  "knowledge",
-    "sort_order":  2,
-    "prerequisites":  [
-                          {
-                              "type":  "questlog:quest_complete",
-                              "quest":  "questlog:starciv_q02_stellar_key"
-                          }
-                      ],
+    "sort_order":  71,
     "objectives":  [
                        {
                            "required_amount":  16,
