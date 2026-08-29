@@ -1,0 +1,31 @@
+{
+    "title":  "绿谷 · 上古之种",
+    "description":  "在绿谷星安家。找到并收集【上古之种】——铁锈纪元之前的文明遗物，是一切晋升的起点。",
+    "icon":  {
+                 "item":  "starciv:ancient_seed"
+             },
+    "prerequisites":  [
+
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "获取上古之种",
+                           "item":  "starciv:ancient_seed",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  2,
+                        "item":  "starciv:civ_essence",
+                        "type":  "questlog:item"
+                    },
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  20
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

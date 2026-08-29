@@ -1,0 +1,30 @@
+{
+    "title":  "铁锈 · 踏上废土",
+    "description":  "踏入铁锈星废土，收集旧世界的数据残骸。",
+    "icon":  {
+                 "item":  "minecraft:iron_ingot"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q02_stellar_key"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "抵达铁锈星",
+                           "dimension":  "starciv:rustfall",
+                           "type":  "questlog:visit_dimension"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  4,
+                        "item":  "starciv:data_slivers",
+                        "type":  "questlog:item"
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,30 @@
+{
+    "title":  "铁锈 · 数据裂片",
+    "description":  "收集 8 片数据裂片（紫水晶研磨所得），旧纪元的知识碎片逐渐成形。",
+    "icon":  {
+                 "item":  "starciv:data_slivers"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q04_biofuel"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  8,
+                           "name":  "收集 8 片数据裂片",
+                           "item":  "starciv:data_slivers",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  2,
+                        "item":  "starciv:precision_parts",
+                        "type":  "questlog:item"
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,29 @@
+{
+    "title":  "硅火 · 跃迁引擎",
+    "description":  "铸造【跃迁引擎】——抵达苍穹星的唯一钥匙。",
+    "icon":  {
+                 "item":  "minecraft:firework_rocket"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q08_quantum"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "铸造跃迁引擎",
+                           "item":  "starciv:warp_engine",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  350
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

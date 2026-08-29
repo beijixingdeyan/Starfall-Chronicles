@@ -1,0 +1,30 @@
+{
+    "title":  "苍穹 · 应许之地",
+    "description":  "穿越苍穹之门。悬浮大陆、水晶森林——文明巅峰的答案。",
+    "icon":  {
+                 "item":  "minecraft:nether_star"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q09_warp_engine"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "抵达苍穹星",
+                           "dimension":  "starciv:stellaris",
+                           "type":  "questlog:visit_dimension"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "count":  2,
+                        "item":  "starciv:warp_core",
+                        "type":  "questlog:item"
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

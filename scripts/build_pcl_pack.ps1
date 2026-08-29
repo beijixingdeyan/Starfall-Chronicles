@@ -117,6 +117,13 @@ foreach ($sub in @('mods','datapacks','kubejs')) {
     Copy-Item $src (Join-Path $mcDir $sub) -Recurse -Force
   }
 }
+# Questlog 任务书配置（任务书走 config，自定义数据包由 kubejs/data 内建）
+$qlSrc = Join-Path $Root 'pack\.minecraft\config\questlog'
+if (Test-Path $qlSrc) {
+  $qlDst = Join-Path $mcDir 'config\questlog'
+  if (Test-Path $qlDst) { Remove-Item $qlDst -Recurse -Force }
+  Copy-Item $qlSrc $qlDst -Recurse -Force
+}
 # 全部资源包（starciv_resources 专属 + Better Vanilla Building 建筑材质）
 $rpSrcRoot = Join-Path $Root 'pack\.minecraft\resourcepacks'
 if (Test-Path $rpSrcRoot) {

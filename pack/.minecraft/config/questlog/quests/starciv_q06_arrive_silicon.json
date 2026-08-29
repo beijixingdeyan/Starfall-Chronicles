@@ -1,0 +1,29 @@
+{
+    "title":  "硅火 · 霓虹都市",
+    "description":  "抵达硅火星的霓虹都市。这里由硅基文明建造，你将是它的新主人。",
+    "icon":  {
+                 "item":  "minecraft:redstone"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q05_slivers"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "抵达硅火星",
+                           "dimension":  "starciv:silicon",
+                           "type":  "questlog:visit_dimension"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  120
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

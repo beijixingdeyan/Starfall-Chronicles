@@ -123,15 +123,8 @@ try { Invoke-Rcon @('list') | Out-Null } catch {}
 if (-not $proc1.HasExited) { Stop-Process -Id $proc1.Id -Force -ErrorAction SilentlyContinue }
 Start-Sleep -Seconds 3
 
-# ---- 3. 放置数据包 ----
-$dpSrc = Join-Path $Root 'pack\.minecraft\datapacks\starciv_dp'
-$worldDp = Join-Path $ServerDir 'world\datapacks\starciv_dp'
-if ((Test-Path $dpSrc) -and (Test-Path (Join-Path $ServerDir 'world'))) {
-  New-Item -ItemType Directory -Force -Path (Split-Path $worldDp) | Out-Null
-  if (Test-Path $worldDp) { Remove-Item $worldDp -Recurse -Force }
-  Copy-Item $dpSrc $worldDp -Recurse -Force
-  Write-Host "== 数据包已放入 world/datapacks =="
-}
+# ---- 3. 数据包说明：starciv_dp 已由 kubejs/data 内建（永远启用），无需 world/datapacks ----
+Write-Host "== 自定义数据包由 kubejs/data 内建（永远启用）=="
 
 # ---- 4. 第二次启动（数据包完整验证）----
 $proc2 = Start-Boot 'second boot (datapack)'
@@ -166,7 +159,7 @@ if ($done2 -eq $true) {
   }
   if ($r) {
     Write-Host "=== RCON 输出 ==="; Write-Host $r
-    Assert ([bool]($r -match 'starciv_dp')) "数据包 starciv_dp 已加载"
+    Assert ([bool]($r -match "[mod:kubejs]") -and [bool]($r -match "[mod:questlog]")) "内建数据包 kubejs / questlog 已注册"
     Assert ([bool]($r -match 'STARCIV-RUSTFALL-OK')) "铁锈星维度可执行命令"
     Assert ([bool]($r -match 'STARCIV-SILICON-OK')) "硅火星维度可执行命令"
     Assert ([bool]($r -match 'STARCIV-STELLARIS-OK')) "苍穹星维度可执行命令"

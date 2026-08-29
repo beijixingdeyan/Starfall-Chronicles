@@ -608,6 +608,12 @@
                      "category":  "lib",
                      "tier":  "required",
                      "why":  "Tectonic 3.x 的地形引擎前置（Terralith 亦受益）：世界生成核心库"
+                 },
+                 {
+                     "slug":  "questlog",
+                     "category":  "quest",
+                     "tier":  "required",
+                     "why":  "任务书系统：11 个主线任务贯穿四星文明晋级，数据驱动（kubejs/data/starciv/quests）"
                  }
              ],
     "optional_mods":  [

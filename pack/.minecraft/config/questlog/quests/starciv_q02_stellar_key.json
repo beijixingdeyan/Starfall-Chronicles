@@ -1,0 +1,29 @@
+{
+    "title":  "绿谷 · 星门钥匙",
+    "description":  "用文明精华、金锭与绿宝石铸造【星门钥匙】，开启绿谷星门。",
+    "icon":  {
+                 "item":  "starciv:stellar_key"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q01_sprout"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "铸造星门钥匙",
+                           "item":  "starciv:stellar_key",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

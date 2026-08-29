@@ -1,0 +1,29 @@
+{
+    "title":  "硅火 · 精密零件",
+    "description":  "锻造 4 个【精密零件】——穿梭机的心脏部件。",
+    "icon":  {
+                 "item":  "starciv:precision_parts"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q06_arrive_silicon"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "锻造 4 个精密零件",
+                           "item":  "starciv:precision_parts",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  200
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

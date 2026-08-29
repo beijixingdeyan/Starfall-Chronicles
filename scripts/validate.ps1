@@ -45,7 +45,7 @@ if ($node) {
 
 # ---- 3. Advancement 引用 ----
 Write-Host "[3/4] 校验 Advancement parent 引用 ..."
-$advDir = Join-Path $Root 'pack\.minecraft\datapacks\starciv_dp\data\starciv\advancements'
+$advDir = Join-Path $Root 'pack\.minecraft\kubejs\data\starciv\advancements'
 if (Test-Path $advDir) {
     $advs = Get-ChildItem $advDir -Recurse -Filter *.json -File
     $ids = @{}
@@ -68,7 +68,7 @@ if (Test-Path $advDir) {
 
 # ---- 4. mcfunction ----
 Write-Host "[4/4] 检查 mcfunction 行尾 ..."
-$fnDir = Join-Path $Root 'pack\.minecraft\datapacks\starciv_dp\data\starciv\functions'
+$fnDir = Join-Path $Root 'pack\.minecraft\kubejs\data\starciv\functions'
 if (Test-Path $fnDir) {
     $bad = 0
     Get-ChildItem $fnDir -Recurse -Filter *.mcfunction -File | ForEach-Object {

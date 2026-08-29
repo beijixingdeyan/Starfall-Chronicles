@@ -1,0 +1,34 @@
+{
+    "title":  "苍穹 · 终局仪式",
+    "description":  "击败远古造物【下界合金巨兽】，完成星港档案馆记载的终局仪式——文明轮回，你已是薪火。",
+    "icon":  {
+                 "item":  "minecraft:netherite_ingot"
+             },
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q10_arrive_stellaris"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败下界合金巨兽",
+                           "entity":  "cataclysm:netherite_monstrosity",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  1500
+                    },
+                    {
+                        "count":  4,
+                        "item":  "starciv:warp_core",
+                        "type":  "questlog:item"
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

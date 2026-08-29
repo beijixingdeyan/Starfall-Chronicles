@@ -87,14 +87,13 @@ if (Test-Path $srcMods) {
   Write-Host "警告：$srcMods 不存在，请先运行 scripts/install_mods.ps1" -ForegroundColor Yellow
 }
 
-# ---------- 数据包（世界已存在时自动放入）----------
-$dpSrc = Join-Path $ServerDir '..\pack\.minecraft\datapacks\starciv_dp'
-$worldDir = Join-Path $ServerDir 'world'
-if ((Test-Path $dpSrc) -and (Test-Path $worldDir)) {
-  $dstDp = Join-Path $worldDir 'datapacks\starciv_dp'
-  if (Test-Path $dstDp) { Remove-Item $dstDp -Recurse -Force }
-  Copy-Item $dpSrc $dstDp -Recurse -Force
-  Write-Host "数据包已放入世界: world/datapacks/starciv_dp"
+# ---------- Questlog 任务书配置（自定义数据包已由 kubejs/data 内建，任务书走 config）----------
+$qlSrc = Join-Path $ServerDir '..\pack\.minecraft\config\questlog'
+$qlDst = Join-Path $ServerDir 'config\questlog'
+if (Test-Path $qlSrc) {
+  if (Test-Path $qlDst) { Remove-Item $qlDst -Recurse -Force }
+  Copy-Item $qlSrc $qlDst -Recurse -Force
+  Write-Host "Questlog 任务书已同步: config/questlog"
 }
 
 # ---------- KubeJS 脚本（必须同步：自定义物品/配方/阶段全部由脚本定义）----------
@@ -106,9 +105,6 @@ if (Test-Path $kjsSrc) {
   Write-Host "KubeJS 脚本已同步: kubejs/scripts"
 } else {
   Write-Host "警告：$kjsSrc 不存在（KubeJS 自定义内容将缺失）" -ForegroundColor Yellow
-}
-if (Test-Path $dpSrc) {
-  Write-Host "首次启动：世界尚未生成。服务器首次启动结束（Ctrl+C/stop）后再次运行本脚本，自动放置数据包。" -ForegroundColor Yellow
 }
 
 if ($SyncOnly) { Write-Host "同步完成(SyncOnly)。"; exit 0 }
