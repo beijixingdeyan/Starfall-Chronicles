@@ -51,7 +51,7 @@ Write-Host "模组: $modCount 个 jar"
 
 # ---- 2. Forge 客户端安装（一次即可，之后 -SkipForge）----
 # Forge 客户端版本 ID 形如 1.20.1-forge-47.4.23（与服务端包不同）
-$ForgeVerId = 'starciv-1.20.1-forge-' + ($ForgeVer -replace '^1\.20\.1-', '')   # PCL2 版本列表显示名（包名前缀）
+$ForgeVerId = 'Starfall-Chronicles'   # PCL2 版本列表显示名：星际编年史英文（不带版本号）
 $verDir = Join-Path $mcDir "versions\$ForgeVerId"
 $vanillaDir = Join-Path $mcDir 'versions\1.20.1'
 if (-not (Test-Path $verDir) -and -not $SkipForge) {
@@ -208,4 +208,4 @@ $sz = (Get-Item $zipPath).Length / 1MB
 Write-Host ("  大小约 {0:N0} MB" -f $sz)
 Write-Host ""
 Write-Host "使用: PCL2 首页 -> 安装整合包 -> 导入本地整合包 -> 选择该 zip"
-Write-Host "      首次启动请选版本: starciv-1.20.1-forge-47.4.23（包名带前缀，不再显示裸 1.20.1）"
+Write-Host "      首次启动请选版本: Starfall-Chronicles（星际编年史，可直接拖动启动）"
