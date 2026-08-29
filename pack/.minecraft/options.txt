@@ -1,0 +1,2 @@
+resourcePacks:["vanilla","file/starciv_resources","file/better_vanilla_building"]
+incompatibleResourcePacks:[]
