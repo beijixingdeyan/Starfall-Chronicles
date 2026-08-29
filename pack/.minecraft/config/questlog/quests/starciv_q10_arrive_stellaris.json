@@ -1,9 +1,10 @@
 {
     "title":  "苍穹 · 应许之地",
-    "description":  "穿越苍穹之门。悬浮大陆、水晶森林——文明巅峰的答案。",
+    "description":  "第十步：穿越苍穹之门，抵达悬浮大陆与水晶森林的苍穹星。",
     "icon":  {
                  "item":  "minecraft:nether_star"
              },
+    "background":  "苍穹星保存着文明的终极答案。传说首批文明在这里完成了“升华”——但他们也留下了守护者。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "抵达苍穹星",
                            "dimension":  "starciv:stellaris",
                            "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·苍穹纪元",
+                           "advancement":  "starciv:interstellar/arrival",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

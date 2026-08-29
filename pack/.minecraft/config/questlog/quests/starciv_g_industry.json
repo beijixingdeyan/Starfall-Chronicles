@@ -1,0 +1,30 @@
+{
+    "title":  "指引 · 铁锈工业",
+    "description":  "工业册并入任务书：Create 传动轴与 Belt 建材构建永动机城；Immersive Engineering 高压电网覆盖废土；Pollution of the Realms 的污染值提醒你——工业必须与自然和解。铁锈星的任务核心是产出与减排的平衡。",
+    "icon":  {
+                 "item":  "minecraft:piston"
+             },
+    "background":  "铁锈星教会文明一件事：力量需要代价。但档案馆记录显示，旧文明正是败于对代价的傲慢。这一次，让机械服务于田园。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q04_biofuel"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "制作 2 个活塞",
+                           "item":  "minecraft:piston",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,9 +1,10 @@
 {
     "title":  "铁锈 · 生物燃料",
-    "description":  "合成【生物燃料罐】：上古之种+木炭装瓶，让锈蚀工厂重新运转。",
+    "description":  "第四步：合成【生物燃料罐】（上古之种 + 木炭装瓶），让锈蚀的工厂重新运转。",
     "icon":  {
                  "item":  "starciv:biofuel_canister"
              },
+    "background":  "上古之种的基因链解开了谜底——它能在任何环境下发酵。生物燃料罐是重启铁锈星抛光线的最短路径，也是绿谷农业与铁锈工业的第一次握手。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "合成生物燃料罐",
                            "item":  "starciv:biofuel_canister",
                            "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·燃料革命",
+                           "advancement":  "starciv:industry/fuel",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

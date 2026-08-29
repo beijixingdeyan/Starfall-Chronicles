@@ -4,7 +4,7 @@
 
 一个基于 **Minecraft 1.20.1 (Forge 47.4.23)** 的文明主题整合包：四个星球 = 四个文明阶段
 （**农耕 → 工业 → 信息 → 星际**），每一个星球都是完全不同的玩法逻辑，而非换皮。
-由 **101 个模组（全部 Modrinth 自动安装）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
+由 **103 个模组（全部 Modrinth 自动安装）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
 组合而成——模组只是演员，KubeJS 是导演。依赖经 Modrinth API 审计闭环、配方/进度 ID 经真实 jar 校验、服务端经真实启动冒烟测试。
 
 ## ✨ 核心体验
@@ -30,7 +30,7 @@
 
 ### 方式 B：Prism Launcher
 1. 确认 [Java 17](https://adoptium.net/) 已安装。
-2. 运行 `scripts/install_mods.ps1 -IncludeOptional` 下载 101 个模组到 `pack/.minecraft/mods/`
+2. 运行 `scripts/install_mods.ps1 -IncludeOptional` 下载 103 个模组到 `pack/.minecraft/mods/`
    （或 `bash scripts/install_mods.sh`；LazyDFU/MineColonies 等 4 个 CurseForge 手动链接会打印出来）。
 3. 运行 `scripts/make_zip.ps1` → Prism「添加实例 → 从文件导入」选择 `dist/*.zip`。
 4. 数据包无需手动启用：自定义内容（手册/成就/维度）由 kubejs/data 内建，任何世界自动生效。
@@ -66,7 +66,7 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 
 | 命令 | 作用 |
 |------|------|
-| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（101 个） |
+| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（103 个） |
 | `pwsh scripts/audit_deps.ps1` | 依赖审计（Modrinth API 实时核对 required/incompatible） |
 | `pwsh scripts/verify_mod_ids.ps1` | 用真实 jar 校验配方/进度引用的物品/实体 ID |
 | `pwsh scripts/validate.ps1` | 校验全部 JSON/JS/进度引用/mcfunction 行尾 |
@@ -80,7 +80,7 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 ## 🗺️ 文档目录
 
 - [01 · 概念设计](docs/01-concept.md) — 文明阶梯、模组-叙事映射、主线大纲、经济系统
-- [02 · 模组清单](docs/02-modlist.md) — 101 模组逐条“为什么需要”（+4 CurseForge 可选清单）
+- [02 · 模组清单](docs/02-modlist.md) — 103 模组逐条“为什么需要”（+4 CurseForge 可选清单）
 - [03 · 技术实现](docs/03-technical.md) — KubeJS 配方/进度/事件、数据包、性能方案
 - [04 · 内容创作](docs/04-content.md) — 开局引导、星门仪式、Boss 设计
 - [05 · 发布与社区](docs/05-release-and-community.md) — 平台、安装、运营、扩展

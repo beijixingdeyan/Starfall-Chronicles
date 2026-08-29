@@ -1,9 +1,10 @@
 {
     "title":  "绿谷 · 星门钥匙",
-    "description":  "用文明精华、金锭与绿宝石铸造【星门钥匙】，开启绿谷星门。",
+    "description":  "第二步：用文明精华、金锭与绿宝石铸造【星门钥匙】（配方见 JEI）。完成后前往绿谷星门。",
     "icon":  {
                  "item":  "starciv:stellar_key"
              },
+    "background":  "星门钥匙的作用被发现后，星港档案馆沸腾了——绿谷星门并非传说，而是通往其他三颗星球的唯一通道。铸造钥匙，就是向星空承诺：我们不会困守于此。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "铸造星门钥匙",
                            "item":  "starciv:stellar_key",
                            "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·星门开启",
+                           "advancement":  "starciv:agriculture/stellar_key",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

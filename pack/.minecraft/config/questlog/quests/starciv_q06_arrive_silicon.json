@@ -1,9 +1,10 @@
 {
     "title":  "硅火 · 霓虹都市",
-    "description":  "抵达硅火星的霓虹都市。这里由硅基文明建造，你将是它的新主人。",
+    "description":  "第六步：抵达硅火星的霓虹都市。这里的硅基自动工厂，将由你接管。",
     "icon":  {
                  "item":  "minecraft:redstone"
              },
+    "background":  "硅火星是最接近旧文明巅峰的世界——整座都市仍亮着霓虹。档案馆的结论：这座城市从未关闭，它在等一个能读懂它的人。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "抵达硅火星",
                            "dimension":  "starciv:silicon",
                            "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·硅基纪元",
+                           "advancement":  "starciv:information/arrival",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

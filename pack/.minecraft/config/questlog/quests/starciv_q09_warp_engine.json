@@ -1,9 +1,10 @@
 {
     "title":  "硅火 · 跃迁引擎",
-    "description":  "铸造【跃迁引擎】——抵达苍穹星的唯一钥匙。",
+    "description":  "第九步：铸造【跃迁引擎】——抵达苍穹星的唯一钥匙。",
     "icon":  {
                  "item":  "minecraft:firework_rocket"
              },
+    "background":  "苍穹星不通过星门抵达，它需要跃迁。跃迁引擎由量子核心驱动，是硅火工业与间宇宙物理的结晶。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "铸造跃迁引擎",
                            "item":  "starciv:warp_engine",
                            "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·跃迁引擎",
+                           "advancement":  "starciv:interstellar/engine",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

@@ -1,0 +1,30 @@
+{
+    "title":  "指引 · 成为文明",
+    "description":  "手册《星际文明编年史·探索手册》从这一刻并入任务书。阅读本章了解开局：四季节奏、性能建议、阶段规则。每阶段必须按顺序推进，否则星门不会响应。",
+    "icon":  {
+                 "item":  "minecraft:written_book"
+             },
+    "background":  "星港档案馆把四星文明的哲学写进了每一页。成为文明的第一步不是征服，而是理解——理解四季、理解机械、理解数据，最后理解星空。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q01_sprout"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "拥有任意书籍",
+                           "item":  "minecraft:book",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  10
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

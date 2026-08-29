@@ -1,9 +1,10 @@
 {
     "title":  "铁锈 · 踏上废土",
-    "description":  "踏入铁锈星废土，收集旧世界的数据残骸。",
+    "description":  "第三步：踏入铁锈星废土（星门传送），开始收集数据残骸。",
     "icon":  {
                  "item":  "minecraft:iron_ingot"
              },
+    "background":  "铁锈星曾是旧文明的工业心脏。如今锈蚀的大地仍回荡着机械的呓语——这里的每一块废铁里，都封存着一段被遗忘的科技。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "抵达铁锈星",
                            "dimension":  "starciv:rustfall",
                            "type":  "questlog:visit_dimension"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·铁锈纪元",
+                           "advancement":  "starciv:industry/arrival",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

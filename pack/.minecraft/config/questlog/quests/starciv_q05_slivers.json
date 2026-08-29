@@ -1,9 +1,10 @@
 {
     "title":  "铁锈 · 数据裂片",
-    "description":  "收集 8 片数据裂片（紫水晶研磨所得），旧纪元的知识碎片逐渐成形。",
+    "description":  "第五步：收集 8 片【数据裂片】（紫水晶研磨或开采），破译旧世界知识。",
     "icon":  {
                  "item":  "starciv:data_slivers"
              },
+    "background":  "紫水晶是铁锈星少数未被氧化的晶体。研磨它们得到的数据裂片，记录了旧文明的生产参数——包括如何铸造更精密的零件。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "收集 8 片数据裂片",
                            "item":  "starciv:data_slivers",
                            "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·失传科技",
+                           "advancement":  "starciv:hidden/lost_tech",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

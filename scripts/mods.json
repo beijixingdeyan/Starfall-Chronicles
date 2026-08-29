@@ -614,6 +614,18 @@
                      "category":  "quest",
                      "tier":  "required",
                      "why":  "任务书系统：11 个主线任务贯穿四星文明晋级，数据驱动（kubejs/data/starciv/quests）"
+                 },
+                 {
+                     "slug":  "amendments",
+                     "category":  "libraries",
+                     "tier":  "required",
+                     "why":  "Supplementaries 2.8 的专业子模组：墙灯/烛台/悬挂花盆等 tweaks，消除启动红字警告"
+                 },
+                 {
+                     "slug":  "geophilic",
+                     "category":  "adventure_worldgen",
+                     "tier":  "required",
+                     "why":  "世界植被与地形美化：原版群系树木更自然、岩层与草丛更丰富，搭配 Tectonic 高山"
                  }
              ],
     "optional_mods":  [

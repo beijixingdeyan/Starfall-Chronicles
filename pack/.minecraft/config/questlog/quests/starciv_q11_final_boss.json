@@ -1,9 +1,10 @@
 {
     "title":  "苍穹 · 终局仪式",
-    "description":  "击败远古造物【下界合金巨兽】，完成星港档案馆记载的终局仪式——文明轮回，你已是薪火。",
+    "description":  "最终步：击败远古造物【下界合金巨兽】，完成星港档案馆记载的终局仪式。",
     "icon":  {
                  "item":  "minecraft:netherite_ingot"
              },
+    "background":  "守护者不是敌人，它是第一代文明留下的守门人。击败它并非征服，而是证明：新的文明已具备接过星火的资格。仪式完成之时，四颗星球的灯塔将同时亮起。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "击败下界合金巨兽",
                            "entity":  "cataclysm:netherite_monstrosity",
                            "type":  "questlog:entity_kill"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·接触造物",
+                           "advancement":  "starciv:interstellar/contact",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

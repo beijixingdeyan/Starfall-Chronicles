@@ -1,9 +1,10 @@
 {
     "title":  "硅火 · 精密零件",
-    "description":  "锻造 4 个【精密零件】——穿梭机的心脏部件。",
+    "description":  "第七步：锻造 4 个【精密零件】——穿梭机的核心部件，也是离开硅火星的先决条件。",
     "icon":  {
                  "item":  "starciv:precision_parts"
              },
+    "background":  "数据裂片终于化成了可用的设计图。精密零件是硅火星工业台的骄傲：只有这里的机床能保证亚毫米公差。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "锻造 4 个精密零件",
                            "item":  "starciv:precision_parts",
                            "type":  "questlog:item_craft"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·芯片工坊",
+                           "advancement":  "starciv:information/chips",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

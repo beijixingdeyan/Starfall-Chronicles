@@ -1,9 +1,10 @@
 {
     "title":  "硅火 · 量子核心",
-    "description":  "组装【量子核心】。中央计算机群在你脚下苏醒。",
+    "description":  "第八步：组装【量子核心】。中央计算机群会在你脚下苏醒。",
     "icon":  {
                  "item":  "starciv:quantum_core"
              },
+    "background":  "量子核心是硅火都市的中枢神经。档案馆的秘档显示：当核心苏醒，星门的坐标库会展开——通往苍穹的路由此显现。",
     "prerequisites":  [
                           {
                               "type":  "questlog:quest_complete",
@@ -16,6 +17,12 @@
                            "name":  "组装量子核心",
                            "item":  "starciv:quantum_core",
                            "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·量子之心",
+                           "advancement":  "starciv:information/core",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

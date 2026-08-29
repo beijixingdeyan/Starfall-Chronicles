@@ -1,9 +1,10 @@
 {
     "title":  "绿谷 · 上古之种",
-    "description":  "在绿谷星安家。找到并收集【上古之种】——铁锈纪元之前的文明遗物，是一切晋升的起点。",
+    "description":  "第一步：在绿谷星安家，找到并收集【上古之种】——它是铁锈纪元之前的文明遗物，也是一切晋升的起点。搜寻麦田与遗迹，独石碑脚下会有线索。",
     "icon":  {
                  "item":  "starciv:ancient_seed"
              },
+    "background":  "星港档案馆的记录这样写道：绿谷星是四颗星球中唯一保有远古种子的世界。独石碑下的休眠舱里，上古文明留下了最后的遗产。捡起那颗种子，你就接过了文明的薪火。",
     "prerequisites":  [
 
                       ],
@@ -13,6 +14,12 @@
                            "name":  "获取上古之种",
                            "item":  "starciv:ancient_seed",
                            "type":  "questlog:item_obtain"
+                       },
+                       {
+                           "required_amount":  1,
+                           "name":  "成就·绿谷初耕",
+                           "advancement":  "starciv:agriculture/start",
+                           "type":  "questlog:advancement"
                        }
                    ],
     "rewards":  [

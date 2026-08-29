@@ -1,0 +1,30 @@
+{
+    "title":  "指引 · 苍穹星际",
+    "description":  "星际册并入任务书：Ad Astra 火箭与空间站搭建跨星球航线；跃迁引擎（warp engine）是通往苍穹的唯一载体；L_Ender 的 Cataclysm 的 Boss 是终局试炼。集齐四星科技的文明，才有资格举行终局仪式。",
+    "icon":  {
+                 "item":  "minecraft:elytra"
+             },
+    "background":  "苍穹星不是终点，而是起点。档案馆的最后一页写着：文明的轮回在苍穹完成，而薪火将永远传递。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q10_arrive_stellaris"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "持有跃迁核心",
+                           "item":  "starciv:warp_core",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  50
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

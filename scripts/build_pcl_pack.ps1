@@ -51,7 +51,7 @@ Write-Host "模组: $modCount 个 jar"
 
 # ---- 2. Forge 客户端安装（一次即可，之后 -SkipForge）----
 # Forge 客户端版本 ID 形如 1.20.1-forge-47.4.23（与服务端包不同）
-$ForgeVerId = '1.20.1-forge-' + ($ForgeVer -replace '^1\.20\.1-', '')
+$ForgeVerId = 'starciv-1.20.1-forge-' + ($ForgeVer -replace '^1\.20\.1-', '')   # PCL2 版本列表显示名（包名前缀）
 $verDir = Join-Path $mcDir "versions\$ForgeVerId"
 $vanillaDir = Join-Path $mcDir 'versions\1.20.1'
 if (-not (Test-Path $verDir) -and -not $SkipForge) {
@@ -96,10 +96,17 @@ if (-not (Test-Path $verDir) -and -not $SkipForge) {
   Remove-Item $installer -Force -ErrorAction SilentlyContinue
   # 安装器可能把 Forge 版本 json 写进 versions/1.20.1/，需挪到独立版本目录（PCL 要求）
   New-Item -ItemType Directory -Force -Path $verDir | Out-Null
-  $stray = Get-ChildItem $vanillaDir -Filter "*forge*.json" -File -ErrorAction SilentlyContinue
+  $stray = Get-ChildItem (Join-Path $mcDir 'versions') -Recurse -Filter '*forge*.json' -File -ErrorAction SilentlyContinue
   foreach ($s in $stray) {
-    Move-Item $s.FullName (Join-Path $verDir ($ForgeVerId + '.json')) -Force -ErrorAction SilentlyContinue
+    if ($s.DirectoryName -eq $verDir) { continue }
+    Move-Item $s.FullName (Join-Path $verDir ($ForgeVerId + '.json')) -Force
     Write-Host "  (已迁移版本 json: $($s.Name) → versions/$ForgeVerId/)"
+  }
+  # 版本 json 内部 id 与目录名/文件名对齐（PCL2/启动器按 json.id 显示版本名）
+  $vjPath = Join-Path $verDir ($ForgeVerId + '.json')
+  if (Test-Path $vjPath) {
+    $vj = Get-Content $vjPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ($vj.id -ne $ForgeVerId) { $vj.id = $ForgeVerId; [System.IO.File]::WriteAllText($vjPath, ($vj | ConvertTo-Json -Depth 12), (New-Object System.Text.UTF8Encoding($false))) }
   }
   if (-not (Test-Path (Join-Path $verDir ($ForgeVerId + '.json')))) {
     Write-Host "无法找到安装好的 Forge 版本 json" -ForegroundColor Red; exit 1
@@ -201,4 +208,4 @@ $sz = (Get-Item $zipPath).Length / 1MB
 Write-Host ("  大小约 {0:N0} MB" -f $sz)
 Write-Host ""
 Write-Host "使用: PCL2 首页 -> 安装整合包 -> 导入本地整合包 -> 选择该 zip"
-Write-Host "      首次启动请选版本: 1.20.1-forge-47.4.23"
+Write-Host "      首次启动请选版本: starciv-1.20.1-forge-47.4.23（包名带前缀，不再显示裸 1.20.1）"

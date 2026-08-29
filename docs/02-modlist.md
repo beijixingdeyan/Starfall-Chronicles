@@ -21,7 +21,8 @@
 | 魔法分支 magic_branch | 3 | Botania / Ars Nouveau / Patchouli |
 | 库 libraries | 30 | 脚本层与全部前置库（KubeJS 全家桶、资源系、ID 系、Ad Astra 系等）|
 | 可选 graphics | 1 | Oculus（光影） |
-| 任务书 quest | 1 | Questlog：11 个主线任务 + 成就进度 GUI（config/questlog 数据驱动）|
+| 任务书 quest | 1 | Questlog：16 个任务（11 主线 + 5 知识指引，含剧情背景与成就联动，config/questlog 数据驱动）|
+| 世界美化 | 2 | Amendments：墙壁灯笼/悬挂花盆等细节回归（消除 Supplementaries 启动警告）；Geophilic：原生群系树木与植被大幅自然化 |
 | CurseForge 独有（可选清单） | 4 | LazyDFU 兜底 / MineColonies / Structurize / BlockUI（Flux Networks 可选加装，不随包分发）|
 
 ## A. 核心优化（11）

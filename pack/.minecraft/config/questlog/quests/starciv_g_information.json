@@ -1,0 +1,30 @@
+{
+    "title":  "指引 · 硅火信息",
+    "description":  "信息册并入任务书：Refined Storage 存储网络统御万物；Integrated Dynamics 以逻辑编程收发数据；CC:Tweaked 的电脑让整座都市自动化；AE2 的能量走廊是终局电网。硅火星的答案藏在比特与晶片之间。",
+    "icon":  {
+                 "item":  "minecraft:redstone_lamp"
+             },
+    "background":  "硅火文明几乎抵达了“上传”的境界——他们把自己写进了数据。档案馆警告：信息是有生命的，读懂它，但别被它吞噬。",
+    "prerequisites":  [
+                          {
+                              "type":  "questlog:quest_complete",
+                              "quest":  "questlog:starciv_q07_precision"
+                          }
+                      ],
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作红石灯",
+                           "item":  "minecraft:redstone_lamp",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  40
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}
