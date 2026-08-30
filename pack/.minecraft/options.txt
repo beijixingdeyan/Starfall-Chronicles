@@ -1,2 +1,3 @@
 resourcePacks:["vanilla","file/starciv_resources","file/better_vanilla_building"]
 incompatibleResourcePacks:[]
+shaderPack:ComplementaryReimagined_r5.8.1.zip
