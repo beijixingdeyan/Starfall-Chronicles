@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 能量走廊",
+    "description":  "【位置】中央计算机群外围的玻璃长廊。\n【目标】制作 1 个红石块 + 收集 16 块石英。\n【要领】能量走廊是都市的“血管”；红石块做成枢纽。\n【背景】石英与红石在硅火体内同流——这就是它不熄灯的代价。",
+    "icon":  {
+                 "item":  "minecraft:redstone_block"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  105,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作红石块",
+                           "item":  "minecraft:redstone_block",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

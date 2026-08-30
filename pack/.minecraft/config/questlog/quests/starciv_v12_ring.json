@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 地标环游",
+    "description":  "【位置】晨曦花园城堡 (60,-250)。\n【目标】备 4 颗橡树苗（城堡花园补种用）+ 亲自登上主塔观景台。\n【要领】城堡护城河对岸正南是全景机位；夜里灯火全亮最美。\n【背景】环游地标不是观光——是让新文明记得：自己从哪里来。",
+    "icon":  {
+                 "item":  "minecraft:oak_sapling"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  87,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "准备 4 颗橡树苗",
+                           "item":  "minecraft:oak_sapling",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

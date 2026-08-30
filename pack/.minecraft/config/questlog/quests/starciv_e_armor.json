@@ -1,0 +1,25 @@
+{
+    "title":  "防具 · 熔火重甲",
+    "description":  "【防具图鉴：熔火系】（Cataclysm，炎之王掉落的材料）\n【是什么】头盔/胸甲/护腿/靴子 + 熔火披风/鞘翅胸甲——火焰附魔重甲。\n【怎么获得】用【熔火锭】（炎之王 ignis 掉落）锻造全套。\n【数据】护甲值顶配；自带抗火附魔，适合火战与下界远征。\n【目标】锻造 1 件【熔火胸甲】。\n【背景】档案馆：穿熔火甲的人和炎之王之间，只有一炉之隔。",
+    "icon":  {
+                 "item":  "cataclysm:ignitium_chestplate"
+             },
+    "chapter":  "combat",
+    "sort_order":  142,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "获得熔火胸甲",
+                           "item":  "cataclysm:ignitium_chestplate",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

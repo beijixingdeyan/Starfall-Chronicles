@@ -1,0 +1,25 @@
+{
+    "title":  "苍穹 · 风暴巨蛇",
+    "description":  "【位置】晶体森林上空的雷暴云里。\n【目标】击败 1 只【风暴巨蛇】（storm serpent）。\n【要领】它盘踞云端，喷吐闪电；用弓箭+盾牌，落地时集火。\n【掉落】雷暴系材料。\n【背景】风暴巨蛇是苍穹大气层的“守卫”——档案馆叫它天气本身。",
+    "icon":  {
+                 "item":  "minecraft:lightning_rod"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  122,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败风暴巨蛇",
+                           "entity":  "cataclysm:storm_serpent",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

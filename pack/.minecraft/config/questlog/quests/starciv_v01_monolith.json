@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 独石碑考古",
+    "description":  "【位置】绿谷星门 (0,-100) 旁的独石碑 (26,-126)。\n【目标】收集 2 份【文明精华】（上古之种成熟后加工）。\n【要领】在独石碑周围仔细找休眠舱与隐藏箱，往往藏着更多种子。\n【背景】独石碑是星港档案馆的入口，也是第一代文明留给绿谷的“遗嘱”。",
+    "icon":  {
+                 "item":  "starciv:civ_essence"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  76,
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "收集 2 份文明精华",
+                           "item":  "starciv:civ_essence",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

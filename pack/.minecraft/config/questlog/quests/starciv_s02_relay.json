@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 数据中继",
+    "description":  "【位置】都市街道地下的管线井。\n【目标】收集 8 片数据裂片 + 制作 2 个红石灯。\n【要领】井盖下藏着旧网线的备份；红石灯是硅火的路灯。\n【背景】硅火把整座城市写进了数据——纸面档案在这里早已消失。",
+    "icon":  {
+                 "item":  "starciv:data_slivers"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  103,
+    "objectives":  [
+                       {
+                           "required_amount":  8,
+                           "name":  "收集 8 片数据裂片",
+                           "item":  "starciv:data_slivers",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 哨站补给",
+    "description":  "【位置】废土哨站 (140,130)。\n【目标】烤 8 块牛排（狩猎牛/马）。\n【要领】废土草场有野牛（Alex 的动物）；篝火/烟熏炉更省燃料。\n【背景】哨站的意义：在废土维持“人吃得饱”这条底线。",
+    "icon":  {
+                 "item":  "minecraft:cooked_beef"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  94,
+    "objectives":  [
+                       {
+                           "required_amount":  8,
+                           "name":  "烤 8 块牛排",
+                           "item":  "minecraft:cooked_beef",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

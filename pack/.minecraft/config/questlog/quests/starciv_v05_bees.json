@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 花园蜂场",
+    "description":  "【位置】花田中央。\n【目标】制作 1 个蜂箱，收获 6 个蜜脾。\n【要领】蜂箱放花田边，蜜脾蓄满后玻璃瓶收蜜；别徒手拆蜂巢。\n【背景】蜂场让农场第一次“自动化”：花粉传播由蜜蜂承包。",
+    "icon":  {
+                 "item":  "minecraft:beehive"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  80,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作蜂箱",
+                           "item":  "minecraft:beehive",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

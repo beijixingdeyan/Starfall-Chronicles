@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 管网自动化",
+    "description":  "【位置】铁锈厂房与仓库之间。\n【目标】制作 4 个【物品管道】（Pipez）收拢产线。\n【要领】管道右键切输入/输出；矿物都往一个箱子汇。\n【背景】物资自己流动的那一刻，铁锈星才真正“活”了过来。",
+    "icon":  {
+                 "item":  "pipez:item_pipe"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  92,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "制作 4 个物品管道",
+                           "item":  "pipez:item_pipe",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

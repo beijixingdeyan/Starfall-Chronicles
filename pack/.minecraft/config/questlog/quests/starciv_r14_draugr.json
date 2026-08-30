@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 精英首领：皇家尸鬼",
+    "description":  "【位置】铁锈地下王陵/废城地宫。\n【目标】击败 1 只【皇家尸鬼】（royal draugr）。\n【要领】它会呼召普通尸鬼+瞬移斩；先清小怪再集火，火锅底料别省。\n【掉落】废土系材料。\n【背景】尸鬼是旧文明武装部队的残骸——皇家尸鬼则是它们的“将军”。",
+    "icon":  {
+                 "item":  "minecraft:bone"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  101,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败皇家尸鬼",
+                           "entity":  "cataclysm:royal_draugr",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 废土锻甲",
+    "description":  "【位置】任意锻造站。\n【目标】锻造 1 件铁胸甲 + 1 把铁剑（进阶：黑钢参见【装备】页签）。\n【要领】铁锭+工作台；附魔台插书架更香。\n【背景】废土的铁皮就是新文明的甲胄——先活下来，再谈理想。",
+    "icon":  {
+                 "item":  "minecraft:iron_chestplate"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  99,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "锻造铁胸甲",
+                           "item":  "minecraft:iron_chestplate",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

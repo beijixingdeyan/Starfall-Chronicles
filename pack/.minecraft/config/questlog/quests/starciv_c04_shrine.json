@@ -1,0 +1,25 @@
+{
+    "title":  "苍穹 · 星界祭坛",
+    "description":  "【位置】晶体森林间的荒废祭坛。\n【目标】制作 4 根末地烛 + 集 8 颗末影珍珠。\n【要领】祭坛点燃后，附近会聚集末影生物——注意背后。\n【背景】祭坛不是崇拜——是第一代文明向“回归”发出信号的电台。",
+    "icon":  {
+                 "item":  "minecraft:end_rod"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  118,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "制作 4 根末地烛",
+                           "item":  "minecraft:end_rod",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

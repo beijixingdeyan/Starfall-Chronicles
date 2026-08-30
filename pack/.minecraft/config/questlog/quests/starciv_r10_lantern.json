@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 灯塔守望",
+    "description":  "【位置】铁锈灯塔 (480,460)。\n【目标】制作 6 个灯笼，亲手把灯塔点亮一次。\n【要领】灯笼=火把+8铁粒；塔顶灯室有隐藏箱。\n【背景】灯塔不是为了照亮路，是为了告诉星空：这里还亮着。",
+    "icon":  {
+                 "item":  "minecraft:lantern"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  97,
+    "objectives":  [
+                       {
+                           "required_amount":  6,
+                           "name":  "制作 6 个灯笼",
+                           "item":  "minecraft:lantern",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 霓虹街市",
+    "description":  "【位置】硅火星门 (-300,150) 落地即霓虹街。\n【目标】收集 8 块品红染色玻璃 + 4 份品红染料（霓虹装饰）。\n【要领】都市废料箱里常有；玻璃匠铺可换。\n【背景】硅火的霓虹不是装饰——是这座都市仍在呼吸的证明。",
+    "icon":  {
+                 "item":  "minecraft:magenta_stained_glass"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  102,
+    "objectives":  [
+                       {
+                           "required_amount":  8,
+                           "name":  "收集 8 块品红玻璃",
+                           "item":  "minecraft:magenta_stained_glass",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

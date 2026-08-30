@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 量子实验室",
+    "description":  "【位置】中央计算机群内部实验室。\n【目标】持有 1 个【跃迁核心】检测量子环境（主线⑧后即成）。\n【要领】核心在主线里会用到；此任务只需“持有”。\n【背景】量子实验室门上写着：进来之前，请先忘掉经典物理。",
+    "icon":  {
+                 "item":  "starciv:warp_core"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  109,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "持有跃迁核心",
+                           "item":  "starciv:warp_core",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

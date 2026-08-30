@@ -1,0 +1,25 @@
+{
+    "title":  "档案馆 · 四大文明",
+    "description":  "【档案馆文献：四种文明的哲学】\n  绿谷 · 扎根：种不出粮食的文明，不配仰望星空\n  铁锈 · 燃烧：力量需要代价，但代价必须可控\n  硅火 · 思考：读懂数据，但别被数据吞噬\n  苍穹 · 仰望：文明轮回在苍穹完成，薪火永远传递\n【目标】集 4 份【文明精华】向档案馆致敬。\n【结语】四种哲学合在一起，才是完整的《星际文明编年史》。",
+    "icon":  {
+                 "item":  "starciv:civ_essence"
+             },
+    "chapter":  "knowledge",
+    "sort_order":  161,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "集 4 份文明精华",
+                           "item":  "starciv:civ_essence",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

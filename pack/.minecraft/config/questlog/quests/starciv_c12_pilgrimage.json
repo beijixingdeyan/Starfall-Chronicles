@@ -1,0 +1,25 @@
+{
+    "title":  "苍穹 · 应许巡航",
+    "description":  "【位置】四星各据点。\n【目标】持有 2 块【末地锭】（enderite ingot）纪念远征。\n【要领】末地锭=末影珍珠+合金废料（JEI 查配方）。\n【背景】巡航的意义：把四颗星球的记忆，铸成一块属于新文明的金属。",
+    "icon":  {
+                 "item":  "cataclysm:enderite_ingot"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  126,
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "持有 2 块末地锭",
+                           "item":  "cataclysm:enderite_ingot",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

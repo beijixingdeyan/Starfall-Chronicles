@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 星港档案馆",
+    "description":  "【位置】独石碑 (26,-126)。\n【目标】制作 3 本书（含《编年史》用）。\n【要领】书=纸×3+皮革；档案馆周围常有旧书架残骸。\n【背景】档案馆的电子库早已断电，但纸质书页永远不会过期。",
+    "icon":  {
+                 "item":  "minecraft:book"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  84,
+    "objectives":  [
+                       {
+                           "required_amount":  3,
+                           "name":  "制作 3 本书",
+                           "item":  "minecraft:book",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

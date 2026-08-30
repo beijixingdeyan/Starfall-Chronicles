@@ -1,0 +1,25 @@
+{
+    "title":  "苍穹 · 精英首领：末影傀儡",
+    "description":  "【位置】晶体森林边缘的古机械坟场。\n【目标】击败 1 只【末影傀儡】（ender golem）。\n【要领】它会瞬移+召唤末影人；保持移动，用喷溅治疗别停。\n【掉落】苍穹中级材料。\n【背景】末影傀儡是第一代文明最后一批自动兵器——它们仍按“灭绝异形”的指令运转。",
+    "icon":  {
+                 "item":  "cataclysm:enderite_ingot"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  124,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败末影傀儡",
+                           "entity":  "cataclysm:ender_golem",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

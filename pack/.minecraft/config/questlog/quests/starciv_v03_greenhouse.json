@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 温室花房",
+    "description":  "【位置】绿谷河流南岸。\n【目标】制作 2 个花盆 + 备 8 块玻璃，搭一座小温室。\n【要领】玻璃封顶+花盆土培，冬天也能种作物（Botany Pots 更省心）。\n【背景】温室是绿谷人对“四季”的第一次反抗：文明的本质是不向环境低头。",
+    "icon":  {
+                 "item":  "minecraft:flower_pot"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  78,
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "制作 2 个花盆",
+                           "item":  "minecraft:flower_pot",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

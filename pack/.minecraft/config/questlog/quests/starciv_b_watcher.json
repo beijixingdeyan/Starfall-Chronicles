@@ -1,0 +1,25 @@
+{
+    "title":  "首领 · 虚空潜视（苍穹）",
+    "description":  "【Boss 档案：虚空潜视】（the watcher）\n【位置】苍穹晶体森林最深处的虚空柱。\n【外观】悬浮的巨大眼球：空间裂隙、激光、召唤虚空生物。\n【打法】\n  ① 打掉召唤物优先，否则场地失控\n  ② 激光前摇明显，侧向走位\n  ③ 掉落：虚空核心/碎片\n【目标】击败 1 次。\n【剧情】它不是怪物——它是一只“眼睛”。第一代文明最后一位观察者。",
+    "icon":  {
+                 "item":  "cataclysm:void_core"
+             },
+    "chapter":  "combat",
+    "sort_order":  146,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败虚空潜视",
+                           "entity":  "cataclysm:the_watcher",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

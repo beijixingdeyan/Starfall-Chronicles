@@ -1,0 +1,25 @@
+{
+    "title":  "武器 · 诅咒之弓",
+    "description":  "【武器图鉴：诅咒之弓】（Cataclysm）\n【是什么】发射诅咒箭矢的远程武器，附带穿透/凋零效果，Boss 战首选。\n【怎么获得】击杀【远古残骸】等废土首领掉落，或摧毁其残骸寻宝。\n【提示】配合火焰箭/多普勒箭更猛——远程职业的毕业级武器之一。\n【目标】获得 1 把【诅咒之弓】。\n【背景】警句：弓弦上刻着一行字——“每一次命中，都在偿还旧债。”",
+    "icon":  {
+                 "item":  "cataclysm:cursed_bow"
+             },
+    "chapter":  "combat",
+    "sort_order":  141,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "获得诅咒之弓",
+                           "item":  "cataclysm:cursed_bow",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

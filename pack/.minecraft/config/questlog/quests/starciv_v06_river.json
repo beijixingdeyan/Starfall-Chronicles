@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 河流生态",
+    "description":  "【位置】绿谷新开凿的流动河流（出生点南侧，约 0,70,-40 起）。\n【目标】收集 4 个睡莲 + 钓上 3 条鳕鱼。\n【要领】睡莲漂在水面直接捡；钓鱼挂上鱼竿耐心等（水下有鳄鱼！）。\n【背景】河流是绿谷的生命线：灌溉、运输、风景，缺一不可。",
+    "icon":  {
+                 "item":  "minecraft:lily_pad"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  81,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "收集 4 个睡莲",
+                           "item":  "minecraft:lily_pad",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

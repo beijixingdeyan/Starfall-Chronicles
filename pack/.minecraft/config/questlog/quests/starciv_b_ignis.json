@@ -1,0 +1,25 @@
+{
+    "title":  "首领 · 炎之王（硅火）",
+    "description":  "【Boss 档案：炎之王】（ignis）\n【位置】硅火地下熔炉核心（都市正下方深处）。\n【外观】烈焰巨兽：吐火、召陨石、点燃全场。\n【打法】\n  ① 保持距离躲火浪\n  ② 陨石阶段逃到霓虹柱后\n  ③ 掉落：熔火锭（ignitium）+ 烈焰壁垒\n【目标】击败 1 次。\n【剧情】炎之王是都市“供电”的源头——它休眠时，硅火才能点亮。",
+    "icon":  {
+                 "item":  "cataclysm:ignitium_ingot"
+             },
+    "chapter":  "combat",
+    "sort_order":  145,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "击败炎之王",
+                           "entity":  "cataclysm:ignis",
+                           "type":  "questlog:entity_kill"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

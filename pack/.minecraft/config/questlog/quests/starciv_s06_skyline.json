@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 都市瞭望",
+    "description":  "【位置】霓虹商栈 (-220,210) 高层露台。\n【目标】备 16 块玻璃 + 居高俯瞰整座都市（截图留念）。\n【要领】玻璃做观景台护栏；日落时霓虹最美。\n【背景】站在都市之巅，你会理解旧文明为何如此骄傲——也会理解它为何坠落。",
+    "icon":  {
+                 "item":  "minecraft:glass"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  107,
+    "objectives":  [
+                       {
+                           "required_amount":  16,
+                           "name":  "备 16 块玻璃",
+                           "item":  "minecraft:glass",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

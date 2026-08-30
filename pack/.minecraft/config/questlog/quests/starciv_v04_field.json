@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 田园酿造",
+    "description":  "【位置】农田与蜂场之间。\n【目标】收集 2 瓶蜂蜜 + 烤 4 个面包。\n【要领】蜂蜜瓶右键蜂巢可得；面包用小麦三换一。\n【背景】蜂蜜与面包是绿谷的“文明名片”——村民们都愿意为它们讨价还价。",
+    "icon":  {
+                 "item":  "minecraft:honey_bottle"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  79,
+    "objectives":  [
+                       {
+                           "required_amount":  2,
+                           "name":  "收集 2 瓶蜂蜜",
+                           "item":  "minecraft:honey_bottle",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

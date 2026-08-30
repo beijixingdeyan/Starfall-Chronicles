@@ -1,0 +1,25 @@
+{
+    "title":  "星际 · 登天计划",
+    "description":  "【位置】苍穹空艇甲板。\n【目标】制作 1 个望远镜（spyglass）+ 遥望下方星球。\n【要领】望远镜=铜锭+紫水晶（原版合成）。\n【背景】从苍穹看绿谷，只是一粒发光的种子。文明的高度，就是这样拉开的。",
+    "icon":  {
+                 "item":  "minecraft:spyglass"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  130,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "制作望远镜",
+                           "item":  "minecraft:spyglass",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

@@ -1,0 +1,25 @@
+{
+    "title":  "铁锈 · 废土开荒",
+    "description":  "【位置】铁锈星门 (200,200) 周边废墟。\n【目标】收集 24 块铁锭（废铁熔炼/矿脉）。\n【要领】废墟里的铁栅栏/铁块可挖了熔炼；深矿层铁最多。\n【背景】在铁锈星，铁不是矿产——它是骸骨。大地记得每一座工厂。",
+    "icon":  {
+                 "item":  "minecraft:iron_ingot"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  88,
+    "objectives":  [
+                       {
+                           "required_amount":  24,
+                           "name":  "收集 24 块铁锭",
+                           "item":  "minecraft:iron_ingot",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

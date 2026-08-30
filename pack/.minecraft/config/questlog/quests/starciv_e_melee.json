@@ -1,0 +1,25 @@
+{
+    "title":  "武器 · 黑钢近战",
+    "description":  "【武器图鉴：黑钢系】（Cataclysm）\n【是什么】黑钢剑/斧/镐/锹——废土废钢锻造的原生武器，中前期最强平民武器。\n【怎么获得】黑钢锭（废铁+煤）在工作台/锻造台制成；JEI 可查全配方。\n【对比】黑钢剑≈钻石剑的下位替身，但附魔后性价比极高。\n【目标】打造 1 把【黑钢剑】。\n【背景】档案馆武器栏第一行：黑钢不锋利，但够硬。废土信奉硬度。",
+    "icon":  {
+                 "item":  "cataclysm:black_steel_sword"
+             },
+    "chapter":  "combat",
+    "sort_order":  140,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "获得黑钢剑",
+                           "item":  "cataclysm:black_steel_sword",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

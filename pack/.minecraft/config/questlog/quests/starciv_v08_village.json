@@ -1,0 +1,25 @@
+{
+    "title":  "绿谷 · 交易村落",
+    "description":  "【位置】周围村庄（出生点任意方向 300-800 格，有小地图指引）。\n【目标】与村民交易，攒下 8 颗绿宝石。\n【要领】种田卖粮最划算；村民价格会波动，多对比。\n【背景】交易网络是文明的稳定器——档案馆认为：绿谷的和平来自“谁都离不开谁”。",
+    "icon":  {
+                 "item":  "minecraft:emerald"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  83,
+    "objectives":  [
+                       {
+                           "required_amount":  8,
+                           "name":  "交易攒下 8 颗绿宝石",
+                           "item":  "minecraft:emerald",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

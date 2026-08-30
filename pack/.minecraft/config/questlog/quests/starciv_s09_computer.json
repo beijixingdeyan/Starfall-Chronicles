@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 中央计算机群",
+    "description":  "【位置】都市核心（落点东北，最高的玻璃塔群）。\n【目标】抵达中央计算机群 + 备 4 个红石灯。\n【要领】主线⑧⑨在此推进；红石灯是“开机”的信号。\n【背景】这座计算机群里，可能还运行着第一代文明最后的进程。",
+    "icon":  {
+                 "item":  "minecraft:redstone_lamp"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  110,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "备 4 个红石灯",
+                           "item":  "minecraft:redstone_lamp",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

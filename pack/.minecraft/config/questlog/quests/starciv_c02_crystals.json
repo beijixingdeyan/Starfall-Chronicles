@@ -1,0 +1,25 @@
+{
+    "title":  "苍穹 · 晶体森林",
+    "description":  "【位置】晶体平原（星门东南大面积发光区）。\n【目标】采 32 枚紫水晶碎片 + 4 块紫水晶块。\n【要领】晶体森林夜里发光像星河；穿好装备，巨兽巢穴就在深处。\n【背景】晶体森林记录着星光的形状——每枚水晶都是一束被收纳的光。",
+    "icon":  {
+                 "item":  "minecraft:amethyst_block"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  116,
+    "objectives":  [
+                       {
+                           "required_amount":  32,
+                           "name":  "采 32 枚紫水晶碎片",
+                           "item":  "minecraft:amethyst_shard",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

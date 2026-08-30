@@ -1,0 +1,25 @@
+{
+    "title":  "装备 · 圣卫拳套",
+    "description":  "【装备图鉴：拳套与护盾】（Cataclysm）\n【是什么】圣卫拳套/守护拳套/漩涡拳套——副手近战格挡系；\n　　　　蔚蓝海盾——水下战斗防线；\n　　　　烈焰壁垒——火战护盾。\n【怎么获得】深海/烈焰首领掉落（利维坦、炎之王系）。\n【提示】拳套格挡不耗耐久；护盾可附魔“荆棘”反弹。\n【目标】获得 1 个【圣卫拳套】（gauntlet of guard）。\n【背景】拳套上刻着守卫者的誓言：我挡住的不只是攻击，还有你们的恐惧。",
+    "icon":  {
+                 "item":  "cataclysm:gauntlet_of_guard"
+             },
+    "chapter":  "combat",
+    "sort_order":  143,
+    "objectives":  [
+                       {
+                           "required_amount":  1,
+                           "name":  "获得圣卫拳套",
+                           "item":  "cataclysm:gauntlet_of_guard",
+                           "type":  "questlog:item_obtain"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}

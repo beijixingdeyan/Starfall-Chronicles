@@ -1,0 +1,25 @@
+{
+    "title":  "硅火 · 霓虹庆典",
+    "description":  "【位置】中央广场。\n【目标】制作 4 枚烟花火箭 + 收集 8 颗荧光浆果。\n【要领】烟花=火药+纸+染料；庆典时广场会亮成星河。\n【背景】旧文明每年都在这一天放烟花——庆祝“续命成功”。千年后，烟花还在。",
+    "icon":  {
+                 "item":  "minecraft:firework_rocket"
+             },
+    "chapter":  "dimensions",
+    "sort_order":  114,
+    "objectives":  [
+                       {
+                           "required_amount":  4,
+                           "name":  "制作 4 枚烟花",
+                           "item":  "minecraft:firework_rocket",
+                           "type":  "questlog:item_craft"
+                       }
+                   ],
+    "rewards":  [
+                    {
+                        "type":  "questlog:experience",
+                        "experience":  30
+                    }
+                ],
+    "toast_on_unlock":  true,
+    "toast_on_complete":  true
+}
