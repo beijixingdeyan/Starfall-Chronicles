@@ -1,10 +1,10 @@
-﻿# 星际文明编年史 · Starfall Chronicles
+# 星际文明编年史 · Starfall Chronicles
 
 > **你在一片麦田里醒来，头顶是四颗星球。一万年前，上一个文明把种子留在了这里——现在，轮到你沿着星门，把文明重新点亮。**
 
 一个基于 **Minecraft 1.20.1 (Forge 47.4.23)** 的文明主题整合包：四个星球 = 四个文明阶段
 （**农耕 → 工业 → 信息 → 星际**），每一个星球都是完全不同的玩法逻辑，而非换皮。
-由 **103 个模组（全部 Modrinth 自动安装）+ KubeJS 脚本层 + 自定义数据包 + 资源包**
+由 **104 个模组（全部 Modrinth 自动安装）+ KubeJS 脚本层 + 自定义数据 mod + 资源包**
 组合而成——模组只是演员，KubeJS 是导演。依赖经 Modrinth API 审计闭环、配方/进度 ID 经真实 jar 校验、服务端经真实启动冒烟测试。
 
 ## ✨ 核心体验
@@ -18,7 +18,44 @@
 
 **跨文明合成链**（禁止各星球独立发展）：
 上古之种(绿谷) → 生物燃料(铁锈) → 精密零件 → 量子核心(硅火) → 跃迁引擎(苍穹)。
-进度树 27 节点、星门跃迁仪式、终局“失落科技”揭示：**最原始的，才是最先进的。**
+进度树 11 步主线 + 112 任务任务书、星门跃迁仪式、终局“失落科技”揭示：**最原始的，才是最先进的。**
+
+## 🎯 任务书（Questlog · 112 任务 / 7 页签）
+
+| 页签 | 任务 | 内容 |
+|------|------|------|
+| ⭐ 主线 | 11 | ①~⑪ 每步坐标指引 + 剧情（上古之种 → 终局仪式） |
+| 🔧 科技 | 6 | 手作/高炉/动能网络/物流 + Create·沉浸工程百科 |
+| 🐝 动物 | 6 | 农场/驯养/养蜂 + 荒野图鉴 |
+| 🧱 建筑 | 7 | 地标档案（城堡/灯塔/霓虹亭/空艇）+ 建筑摄影手册 |
+| 🌌 维度 | 55 | **每星球 12-14 探索任务** + 星际总览 4 |
+| ⚔️ 战斗 | 14 | **装备武器图鉴 4** + **星球 Boss/精英 8** + 出战指南 |
+| 📖 知识 | 8 | 四星球玩法说明书 + 编年史终章 |
+
+### 星球主线 Boss 一览（全部经真实注册表验证）
+
+| Boss | 星球 | 掉落方向 |
+|------|------|---------|
+| 深渊利维坦 | 绿谷 · 深海 | 海系材料 |
+| 深潜蛮兵（精英） | 绿谷 · 海沟 | 海底前哨守护者 |
+| 远古残骸 | 铁锈 · 废土 | 诅咒之弓 + 远古金属 |
+| 皇家尸鬼（精英） | 铁锈 · 地宫 | 废土系材料 |
+| 炎之王 ignis | 硅火 · 熔炉 | 熔火重甲全套 |
+| 烈焰狂战士（精英） | 硅火 · 熔炉区 | 烈焰材料 |
+| 虚空潜视 | 苍穹 · 晶体森林 | 虚空核心 |
+| 风暴巨蛇 / 末影傀儡（精英） | 苍穹 · 云海/坟场 | 雷暴/末地锭 |
+| 先驱者 | 苍穹 · 最高岛 | 先驱者遗物 |
+| **下界合金巨兽**（终局） | 苍穹 · 晶体平原 | 终局仪式掉跃迁核心 |
+
+## 📦 下载（GitHub Releases）
+
+| 文件 | 用途 |
+|------|------|
+| `starfall-chronicles-pcl-*.zip` | **客户端** —— PCL2 拖入即玩（含 Derivative 光影、任务书、图标） |
+| `starfall-chronicles-server-*.zip` | **服务端** —— 解压后双击 `run.bat` 一键开服 |
+| `starfall-chronicles-*.mrpack` | Modrinth 格式（PCL2/Prism 可导入） |
+
+> ⚠️ 地标/河流/驿站为一次性生成，**请开新世界**；手册随初始物品发放（遗失可用书+羽毛合成）。
 
 ## 🚀 快速开始
 
@@ -30,7 +67,7 @@
 
 ### 方式 B：Prism Launcher
 1. 确认 [Java 17](https://adoptium.net/) 已安装。
-2. 运行 `scripts/install_mods.ps1 -IncludeOptional` 下载 103 个模组到 `pack/.minecraft/mods/`
+2. 运行 `scripts/install_mods.ps1 -IncludeOptional` 下载 104 个模组到 `pack/.minecraft/mods/`
    （或 `bash scripts/install_mods.sh`；LazyDFU/MineColonies 等 4 个 CurseForge 手动链接会打印出来）。
 3. 运行 `scripts/make_zip.ps1` → Prism「添加实例 → 从文件导入」选择 `dist/*.zip`。
 4. 数据包无需手动启用：自定义内容（手册/成就/维度）由 kubejs/data 内建，任何世界自动生效。
@@ -66,12 +103,16 @@ cd server; ./start-server.ps1        # 自动装 Forge → 同步模组 → 启�
 
 | 命令 | 作用 |
 |------|------|
-| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（103 个） |
+| `pwsh scripts/install_mods.ps1 -IncludeOptional` | 从 Modrinth 下载全部模组（104 个） |
 | `pwsh scripts/audit_deps.ps1` | 依赖审计（Modrinth API 实时核对 required/incompatible） |
 | `pwsh scripts/verify_mod_ids.ps1` | 用真实 jar 校验配方/进度引用的物品/实体 ID |
 | `pwsh scripts/validate.ps1` | 校验全部 JSON/JS/进度引用/mcfunction 行尾 |
 | `pwsh scripts/server_smoke_test.ps1` | 端到端服务器启动冒烟测试（数据包+维度+RCON） |
+| `pwsh scripts/generate_quests.ps1` | 生成任务书基础 48 任务（v3） |
+| `pwsh scripts/generate_quests_extra.ps1` | 追加 64 个探索/Boss/装备任务（共 112） |
+| `pwsh scripts/build_starciv_data.ps1` | 一键重建 Patchouli 手册数据 mod 并入库 |
 | `pwsh scripts/build_pcl_pack.ps1` | 构建 PCL2 拖入即用的离线整合包（含光影/材质/任务书） |
+| `pwsh scripts/build_server_pack.ps1` | 构建服务端一键开服 zip |
 | `pwsh scripts/make_zip.ps1` | 打包为 Prism 可导入 zip |
 | `pwsh scripts/build_textures.ps1` | 再生成纹理 PNG（仓库已含成品） |
 | `pwsh scripts/build_assets.ps1` | 再生成主菜单视觉（Logo/全景/标语/图标） |
