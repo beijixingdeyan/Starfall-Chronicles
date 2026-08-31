@@ -188,15 +188,13 @@ if (Test-Path $vanillaJsonPath) {
     $merged.libraries = @($libs.Values)
     $merged | Add-Member -NotePropertyName downloads -NotePropertyValue $van.downloads -Force
     $merged | Add-Member -NotePropertyName assetIndex -NotePropertyValue $van.assetIndex -Force
-    $mg = @{}
-    foreach ($a in @($van.arguments.game) + @($fg.arguments.game)) {
-      if ($a -is [string]) { $mg['s:' + $a] = $a } else { $mg['o:' + ($a | ConvertTo-Json -Compress -Depth 20)] = $a }
-    }
-    $mj = @{}
-    foreach ($a in @($van.arguments.jvm) + @($fg.arguments.jvm)) {
-      if ($a -is [string]) { $mj['s:' + $a] = $a } else { $mj['o:' + ($a | ConvertTo-Json -Compress -Depth 20)] = $a }
-    }
-    $merged.arguments = [ordered]@{ game = @($mg.Values); jvm = @($mj.Values) }
+    $ga = @()
+    foreach ($a in @($fg.arguments.game)) { $ga += $a }
+    foreach ($a in @($van.arguments.game)) { $ga += $a }
+    # jvm 参数：只用 forge 的（保持原始顺序，禁止混入 vanilla 参数导致 -D/-- 值错位）
+    $ja = @()
+    foreach ($a in @($fg.arguments.jvm)) { $ja += $a }
+    $merged.arguments = [ordered]@{ game = $ga; jvm = $ja }
     [System.IO.File]::WriteAllText($verJson, ($merged | ConvertTo-Json -Depth 30), (New-Object System.Text.UTF8Encoding($false)))
     if (Test-Path $vanillaJar) { Copy-Item $vanillaJar (Join-Path $verDir ($ForgeVerId + '.jar')) -Force -ErrorAction SilentlyContinue }
     if (Test-Path $vanillaDir) { Remove-Item $vanillaDir -Recurse -Force }
