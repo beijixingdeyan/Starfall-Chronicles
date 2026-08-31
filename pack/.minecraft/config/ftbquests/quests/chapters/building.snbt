@@ -1,0 +1,135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	id: "1B20E9021B3A16B0"
+	icon: { Count: 1, id: "minecraft:stone_bricks", tag: { } }
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "9312E3067D9354F3"
+			title: "建筑 · 文明基建"
+			subtitle: ""
+			description: "建筑线之一：为晨曦花园城堡添砖加瓦。\n【材料】64 块【石砖】（烧石头→合成）+ 16 块【玻璃】。\n【去哪里】晨曦花园城堡：绿谷坐标约 (60, 79, -250)——从绿谷中心朝东南走。\n【为什么】地标不只是一栋楼，它是文明的存档：城堡、灯塔、霓虹亭、飞艇。\n【完成后】去【建筑·城堡】任务看它的全貌与拍摄点。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:stone_bricks", tag: { } }
+			tasks: [
+				{ id: "E11A27664159BC5B", type: "item", item: { Count: 1, id: "minecraft:stone_bricks", tag: { } }, count: 64L }
+				{ id: "520A4E95BDE1F685", type: "item", item: { Count: 1, id: "minecraft:glass", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "ADC30EFEC602417F"
+			title: "建筑 · 灯塔守望"
+			subtitle: ""
+			description: "建筑线之二：为铁锈灯塔添油点火。\n【材料】4 个【灯笼】（火把+8 铁粒）+ 8 块【黑曜石】。\n【去哪里】铁锈星灯塔，坐标约 (480, 76, 460)——锈色平原上的高塔。\n【为什么】灯塔为夜航的星舰引路，也让远方的人知道：这里还亮着。\n【提示】这里是铁锈星拍风景照的最佳机位之一。"
+		dependencies: ["9312E3067D9354F3"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:lantern", tag: { } }
+			tasks: [
+				{ id: "16A0E1F21F4C6441", type: "item", item: { Count: 1, id: "minecraft:lantern", tag: { } }, count: 4L }
+				{ id: "F1224D2607EF2EDA", type: "item", item: { Count: 1, id: "minecraft:obsidian", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "344E817FC0ADE061"
+			title: "建筑 · 霓虹宝物"
+			subtitle: ""
+			description: "建筑线之三：采集硅火特产装点建筑。\n【材料】16 枚【紫水晶碎片】+ 16 块【石英】。\n【去哪里】硅火星（紫水晶矿脉在都市外围岩层）。\n【为什么】把硅火的光芒带回绿谷——让星际的两端共享同一种光。\n【提示】紫水晶碎片也可用于合成数据裂片（主线⑤），规划好用量。"
+		dependencies: ["ADC30EFEC602417F"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "0848912DB633EA3D", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 16L }
+				{ id: "BBC4AD9B0EBDC3A9", type: "item", item: { Count: 1, id: "minecraft:quartz", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8B92E19FC7C969A6"
+			title: "地标 · 晨曦花园城堡"
+			subtitle: ""
+			description: "【地标档案：晨曦花园城堡】\n【位置】绿谷星 (60, 79, -250)\n【外观】石砖与玻璃构成的童话花园城堡：主塔、花园庭院、环形护城河。\n【看点】主塔观景台看日出；花园里四季花卉（季节系统）轮换开放；夜晚城堡灯火通明——是绿谷的地标名片。\n【拍照点】护城河对岸正南方向，能拍到整座城堡倒影。\n【任务】抵达城堡并完成主线④的燃料任务后，这里就是你的后勤基地。"
+		dependencies: ["344E817FC0ADE061"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:stone_brick_stairs", tag: { } }
+			tasks: [
+				{ id: "3B3B301E543EBD8D", type: "item", item: { Count: 1, id: "minecraft:stone_bricks", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D64293F13A66E9FD"
+			title: "地标 · 铁锈灯塔"
+			subtitle: ""
+			description: "【地标档案：铁锈灯塔】\n【位置】铁锈星 (480, 76, 460)\n【外观】锈色废土上直插天穹的灯塔：红砖塔身、顶部灯室、螺旋外梯。\n【看点】灯室在夜里发出醒目光束；塔顶平台可以远眺高炉群与推进器残骸；废土日落时灯影拉得很长，是铁锈星最出名的摄影点。\n【任务】亲自登塔（任务：建筑线之二已完成者直接解锁）。"
+		dependencies: ["8B92E19FC7C969A6"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:lantern", tag: { } }
+			tasks: [
+				{ id: "4E81EDE50BA40875", type: "item", item: { Count: 1, id: "minecraft:lantern", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "2CE4C2628E90D6A7"
+			title: "地标 · 硅火霓虹亭"
+			subtitle: ""
+			description: "【地标档案：硅火霓虹亭】\n【位置】硅火星 (-660, 69, 360)\n【外观】霓虹管的空中亭台：紫水晶柱+玻璃穹顶+LED 光带。\n【看点】夜里整座亭子像悬浮的宝石；亭下广场有自动化展览（中央计算机群）。\n【提示】这是硅火都市的“城市客厅”，完成主线⑥后可以常来。\n【任务】带 8 枚紫水晶碎片来亭台装点（或直接参观）。"
+		dependencies: ["D64293F13A66E9FD"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_block", tag: { } }
+			tasks: [
+				{ id: "45D8D3C05A3CB2D8", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "3911A469DECD7FF9"
+			title: "地标 · 苍穹空艇"
+			subtitle: ""
+			description: "【地标档案：苍穹空艇】\n【位置】苍穹星 (300, 64, -580)\n【外观】悬浮大陆边缘停泊的大型空艇：木铁舰体、帆与气囊。\n【看点】从甲板上俯瞰晶体森林全貌；云层在船底流过——全包最美景观位。\n【任务】登上甲板并收集 4 枚紫水晶碎片（晶体森林随手可得）。\n【提示】完成主线⑩后可达；返航绿谷可用这边风景当传送参照。"
+		dependencies: ["2CE4C2628E90D6A7"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:oak_planks", tag: { } }
+			tasks: [
+				{ id: "E2EA287ABE757CC1", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "496F84BF2BA35B6E"
+			title: "手册 · 建筑与摄影"
+			subtitle: ""
+			description: "【建筑指引】\n  ① 想复古：石砖+橡木+灯笼，参考晨曦花园城堡\n  ② 想科技：混凝土+玻璃+霓虹（紫水晶），参考硅火霓虹亭\n  ③ 想自然：原木+藤蔓+花坛，参考绿谷农田\n【摄影技巧】\n  · 按 F1 隐藏界面截图\n  · 日出/日落光线最好\n  · 站在护城河/悬空岛边缘取中景\n【任务】拍摄（或亲眼观赏）2 个地标——完成后你就是认证的建筑巡礼者。"
+		dependencies: ["3911A469DECD7FF9"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:map", tag: { } }
+			tasks: [
+				{ id: "55358A6B9BD5F735", type: "item", item: { Count: 1, id: "minecraft:map", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

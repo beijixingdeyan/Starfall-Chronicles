@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "valley"
+	id: "DD2921CC76EE3ABF"
+	icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "30B3538E390996A3"
+			title: "星球 · 绿谷"
+			subtitle: ""
+			description: "【星球档案：绿谷星】\n【定位】农业之星，你的出生地，文明的食物基地。\n【生态】温带平原+河谷：麦田、果园、四季更替（季节系统）。\n【特产】上古之种（独石碑脚下）、文明精华、四季作物。\n【地标】晨曦花园城堡 (60,79,-250)、绿谷星门（独石碑旁）。\n【玩法】农业（温室盆栽）、养蜂、酿酒、村民交易。\n【主线地位】农业→燃料循环的起点；星门钥匙在此铸造。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+			tasks: [
+				{ id: "A5DCFB9BE9E971D9", type: "item", item: { Count: 1, id: "minecraft:wheat", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0D6A5F471645472B"
+			title: "绿谷 · 独石碑考古"
+			subtitle: ""
+			description: "【位置】绿谷星门 (0,-100) 旁的独石碑 (26,-126)。\n【目标】收集 2 份【文明精华】（上古之种成熟后加工）。\n【要领】在独石碑周围仔细找休眠舱与隐藏箱，往往藏着更多种子。\n【背景】独石碑是星港档案馆的入口，也是第一代文明留给绿谷的“遗嘱”。"
+		dependencies: ["30B3538E390996A3"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:civ_essence", tag: { } }
+			tasks: [
+				{ id: "5D7556B690B99092", type: "item", item: { Count: 1, id: "starciv:civ_essence", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "CD209DD94F012BEB"
+			title: "绿谷 · 四季农场"
+			subtitle: ""
+			description: "【位置】出生地周边平原（河流两岸最肥沃）。\n【目标】收获 16 个小麦；把农场扩到 2 块 9x9 田。\n【要领】用锄头犁地+水渠灌溉；种一批留一批（循环播种）。\n【背景】绿谷的四季（春种夏长秋收冬藏）让农业有了节奏——这是文明的第一课。"
+		dependencies: ["0D6A5F471645472B"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+			tasks: [
+				{ id: "2466C1321E7237C3", type: "item", item: { Count: 1, id: "minecraft:wheat", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "40578536B5B1C323"
+			title: "绿谷 · 温室花房"
+			subtitle: ""
+			description: "【位置】绿谷河流南岸。\n【目标】制作 2 个花盆 + 备 8 块玻璃，搭一座小温室。\n【要领】玻璃封顶+花盆土培，冬天也能种作物（Botany Pots 更省心）。\n【背景】温室是绿谷人对“四季”的第一次反抗：文明的本质是不向环境低头。"
+		dependencies: ["CD209DD94F012BEB"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:flower_pot", tag: { } }
+			tasks: [
+				{ id: "E70B5F517789DB19", type: "item", item: { Count: 1, id: "minecraft:flower_pot", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F6A7D29BDFE38A0E"
+			title: "绿谷 · 田园酿造"
+			subtitle: ""
+			description: "【位置】农田与蜂场之间。\n【目标】收集 2 瓶蜂蜜 + 烤 4 个面包。\n【要领】蜂蜜瓶右键蜂巢可得；面包用小麦三换一。\n【背景】蜂蜜与面包是绿谷的“文明名片”——村民们都愿意为它们讨价还价。"
+		dependencies: ["40578536B5B1C323"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:honey_bottle", tag: { } }
+			tasks: [
+				{ id: "26DDC213A82A7AFE", type: "item", item: { Count: 1, id: "minecraft:honey_bottle", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F81ADB88BD76857C"
+			title: "绿谷 · 花园蜂场"
+			subtitle: ""
+			description: "【位置】花田中央。\n【目标】制作 1 个蜂箱，收获 6 个蜜脾。\n【要领】蜂箱放花田边，蜜脾蓄满后玻璃瓶收蜜；别徒手拆蜂巢。\n【背景】蜂场让农场第一次“自动化”：花粉传播由蜜蜂承包。"
+		dependencies: ["F6A7D29BDFE38A0E"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:beehive", tag: { } }
+			tasks: [
+				{ id: "922675ADA0612279", type: "item", item: { Count: 1, id: "minecraft:beehive", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "19D719821B863291"
+			title: "绿谷 · 河流生态"
+			subtitle: ""
+			description: "【位置】绿谷新开凿的流动河流（出生点南侧，约 0,70,-40 起）。\n【目标】收集 4 个睡莲 + 钓上 3 条鳕鱼。\n【要领】睡莲漂在水面直接捡；钓鱼挂上鱼竿耐心等（水下有鳄鱼！）。\n【背景】河流是绿谷的生命线：灌溉、运输、风景，缺一不可。"
+		dependencies: ["F81ADB88BD76857C"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:lily_pad", tag: { } }
+			tasks: [
+				{ id: "BD1B731C215FB3A4", type: "item", item: { Count: 1, id: "minecraft:lily_pad", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7577CFF01A431759"
+			title: "绿谷 · 矿脉探险"
+			subtitle: ""
+			description: "【位置】绿谷地下（河流下游石灰岩山体）。\n【目标】挖到 3 颗绿宝石 + 8 块金锭。\n【要领】绿宝石在深山地层常见；下矿带火把，岔路口做标记。\n【背景】绿谷的矿脉太平和了——真正的矿藏在铁锈星等着你。"
+		dependencies: ["19D719821B863291"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:emerald", tag: { } }
+			tasks: [
+				{ id: "5574AA4D063FAD62", type: "item", item: { Count: 1, id: "minecraft:emerald", tag: { } }, count: 3L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0A011268AA5DDEBF"
+			title: "绿谷 · 交易村落"
+			subtitle: ""
+			description: "【位置】周围村庄（出生点任意方向 300-800 格，有小地图指引）。\n【目标】与村民交易，攒下 8 颗绿宝石。\n【要领】种田卖粮最划算；村民价格会波动，多对比。\n【背景】交易网络是文明的稳定器——档案馆认为：绿谷的和平来自“谁都离不开谁”。"
+		dependencies: ["7577CFF01A431759"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:emerald", tag: { } }
+			tasks: [
+				{ id: "F725F505759C7C38", type: "item", item: { Count: 1, id: "minecraft:emerald", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1F7A50C28752E30E"
+			title: "绿谷 · 星港档案馆"
+			subtitle: ""
+			description: "【位置】独石碑 (26,-126)。\n【目标】制作 3 本书（含《编年史》用）。\n【要领】书=纸×3+皮革；档案馆周围常有旧书架残骸。\n【背景】档案馆的电子库早已断电，但纸质书页永远不会过期。"
+		dependencies: ["0A011268AA5DDEBF"]
+			x: 18.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:book", tag: { } }
+			tasks: [
+				{ id: "BEC5980E79AF78BA", type: "item", item: { Count: 1, id: "minecraft:book", tag: { } }, count: 3L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "88B1517C3DAC35AC"
+			title: "绿谷 · 深海遗迹"
+			subtitle: ""
+			description: "【位置】绿谷海沟（出生点以北的大海深处）。\n【目标】收集 8 个海晶碎片（海底神殿/遗迹宝箱）+ 击败 2 只深潜者（deepling）。\n【要领】水下呼吸药水+夜视；带盾防三叉戟。\n【背景】海下沉睡着第一代文明的水下前哨——深潜者仍在守护它们。"
+		dependencies: ["1F7A50C28752E30E"]
+			x: 20.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:prismarine_shard", tag: { } }
+			tasks: [
+				{ id: "9DD949A8342E643E", type: "item", item: { Count: 1, id: "minecraft:prismarine_shard", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "72C0615B4CA07FA1"
+			title: "绿谷 · 精英首领：深潜蛮兵"
+			subtitle: ""
+			description: "【位置】绿谷海沟深处（深潜者巢穴）。\n【目标】击败 1 只【深潜蛮兵】（deepling brute）。\n【要领】它比普通深潜者壮一圈、攻击附带击退；水战吃亏，引到浅滩打。\n【掉落】海底材料的稳定来源之一。\n【背景】档案：深潜蛮兵是水下前哨的“警长”，任何闯入者都得先过它这关。"
+		dependencies: ["88B1517C3DAC35AC"]
+			x: 22.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:prismarine_bricks", tag: { } }
+			tasks: [
+				{ id: "B5BB3977E511D05F", type: "kill", entity: "cataclysm:deepling_brute", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "51FE71F07F33C329"
+			title: "绿谷 · 地标环游"
+			subtitle: ""
+			description: "【位置】晨曦花园城堡 (60,-250)。\n【目标】备 4 颗橡树苗（城堡花园补种用）+ 亲自登上主塔观景台。\n【要领】城堡护城河对岸正南是全景机位；夜里灯火全亮最美。\n【背景】环游地标不是观光——是让新文明记得：自己从哪里来。"
+		dependencies: ["72C0615B4CA07FA1"]
+			x: 24.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:oak_sapling", tag: { } }
+			tasks: [
+				{ id: "F29F1CFEE1DE0779", type: "item", item: { Count: 1, id: "minecraft:oak_sapling", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

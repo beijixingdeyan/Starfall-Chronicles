@@ -1,0 +1,7 @@
+{
+	auto_accept_quests: false
+	default_quest_shape: ""
+	quest_file_version: 1L
+	rewards: [ ]
+	reward_tables: [ ]
+}

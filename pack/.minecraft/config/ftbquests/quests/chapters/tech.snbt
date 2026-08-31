@@ -1,0 +1,105 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech"
+	id: "D9F9133FB120CD60"
+	icon: { Count: 1, id: "minecraft:blast_furnace", tag: { } }
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8F2AECF4392162C9"
+			title: "手作工坊（自动化入门）"
+			subtitle: ""
+			description: "科技线之一：建立你的第一座车间。\n【材料】2 个活塞（木板+圆石+铁锭+红石）+ 8 个铁锭。\n【干什么】造出活塞后，用 Create 的【传动轴】（见科技线 x_tech_create）把第一台机器转起来。\n【指引】这条线最终通向硅火的精密制造；主线⑤⑥⑦会用到这里的知识。\n【背景】技师手册第一课：工具先于文明。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:piston", tag: { } }
+			tasks: [
+				{ id: "ABFF93B51726275A", type: "item", item: { Count: 1, id: "minecraft:piston", tag: { } }, count: 2L }
+				{ id: "1F389E7BFB72570A", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "792DC7E00D3F297E"
+			title: "工业熔炉（规模冶炼）"
+			subtitle: ""
+			description: "科技线之二：铸造高炉。\n【材料】高炉（5 铁锭 + 熔炉 + 3 平滑石）+ 16 块煤。\n【为什么】高炉是铁锈星工业的心脏：冶炼速度翻倍，是生产精密零件的必须配套。\n【指引】建议在抵达铁锈星后完成；随后去【维度】页签认识铁锈星全貌。\n【背景】重工业可以粗粝，但必须可控。"
+		dependencies: ["8F2AECF4392162C9"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:blast_furnace", tag: { } }
+			tasks: [
+				{ id: "25F4FE15F90B1D79", type: "item", item: { Count: 1, id: "minecraft:blast_furnace", tag: { } }, count: 1L }
+				{ id: "E3E01894CC7505F0", type: "item", item: { Count: 1, id: "minecraft:coal", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F32CCFCFA69D8F6C"
+			title: "动能网络（Create 骨架）"
+			subtitle: ""
+			description: "科技线之三：铺设传动。\n【材料】8 根【传动轴】（Create：木轴+铁片，JEI 查看）+ 1 个拉杆。\n【干什么】把传动轴连接动力源（水车/风车/手摇机），让动力传到机器。\n【为什么】动能网络是 Create 自动化一切的骨架——传送带、钻头、机械臂都靠它。\n【提示】对着传动轴右键可以调整朝向，Shift+右键拆除。"
+		dependencies: ["792DC7E00D3F297E"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "create:shaft", tag: { } }
+			tasks: [
+				{ id: "46AB794D923BB5C5", type: "item", item: { Count: 1, id: "create:shaft", tag: { } }, count: 8L }
+				{ id: "BEDBF59B903B8F4A", type: "item", item: { Count: 1, id: "minecraft:lever", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "81E1A9D294CA030E"
+			title: "物流管道（自动转运）"
+			subtitle: ""
+			description: "科技线之四：让物资自己流动。\n【材料】1 个【物品管道】（Pipez，JEI 查看配方）。\n【干什么】把仓库与机器用管道连起来（管道可左键切换提取/输入模式）。\n【为什么】物流网络建成后，铁锈-绿谷的物资不再需要人肉搬运。\n【提示】Pipez 管道支持升级件，后期可提速至无限。"
+		dependencies: ["F32CCFCFA69D8F6C"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "pipez:item_pipe", tag: { } }
+			tasks: [
+				{ id: "F628E8CE069F7CAD", type: "item", item: { Count: 1, id: "pipez:item_pipe", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B0527B0BD38DDD1A"
+			title: "百科 · Create 入门"
+			subtitle: ""
+			description: "【创造（Create）】本包的中期机械核心。\n【是什么】用传动轴+齿轮+皮带搭出“齿轮机械城市”：\n  · 动力源：水车、风车、蒸汽机\n  · 传动：传动轴（铁）、齿轮箱（变速）\n  · 工作机：鼓风机、碾磨机、钻头、机械臂、传送带\n【怎么上手】先做 1 个【齿轮】（create:cogwheel），再连一根轴带动它；看着它转起来，你就入门了。\n【推荐】机械动力官方演示（游戏内/网上均有）。\n【本包配套】工业熔炉、动能网络、物流管道都是它的应用。"
+		dependencies: ["81E1A9D294CA030E"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "create:cogwheel", tag: { } }
+			tasks: [
+				{ id: "3DC1D425D5ECF9B0", type: "item", item: { Count: 1, id: "create:cogwheel", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7E0B609BC207A1B5"
+			title: "百科 · 沉浸工程"
+			subtitle: ""
+			description: "【沉浸工程（Immersive Engineering）】高压电网与重工。\n【是什么】多块结构（Multi-block）的工业模组：高炉、电弧炉、高压线塔、炼油厂。\n【怎么上手】\n  · 造【工程师锤】锻打多块结构\n  · 搭高压电网：发电机→变压器→线塔→机器\n  · 电弧炉一次熔炼 3 矿物\n【本包定位】铁锈星的电网基建，与 Create 并行不悖：传动管机械，电网管冶金。\n【提示】高压线有电，别裸手碰（会掉血）。"
+		dependencies: ["B0527B0BD38DDD1A"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "immersiveengineering:coil_lv", tag: { } }
+			tasks: [
+				{ id: "EF86E0DEEE52F765", type: "item", item: { Count: 1, id: "immersiveengineering:coil_lv", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

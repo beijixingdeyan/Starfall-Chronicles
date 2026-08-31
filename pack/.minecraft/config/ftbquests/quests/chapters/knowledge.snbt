@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "knowledge"
+	id: "A542E9B744BEDCFD"
+	icon: { Count: 1, id: "minecraft:written_book", tag: { } }
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1F0D74BE6C258ACF"
+			title: "维度 · 星际远行"
+			subtitle: ""
+			description: "维度线之一：亲访三颗星球。\n【怎么做】从各星门依次传送【铁锈星】【硅火星】【苍穹星】各一次，每颗停留至少 1 分钟。\n【推荐路线】铁锈（主线③后）→ 硅火（主线⑥后）→ 苍穹（主线⑩后）。\n【为什么】三颗星球的景象与特产是主线之外不可错过的风景；也是后续百科任务的实地考察。\n【提示】星门在绿谷独石碑旁；带好星门钥匙与跃迁引擎。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:compass", tag: { } }
+			tasks: [
+				{ id: "14DFCAD537FEB673", type: "dimension", dimension: "starciv:rustfall" }
+				{ id: "875A42865E7D38AF", type: "dimension", dimension: "starciv:silicon" }
+				{ id: "83745654DD7C8AF7", type: "dimension", dimension: "starciv:stellaris" }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C8A8B650FB5C9CAD"
+			title: "维度 · 铁锈巡礼"
+			subtitle: ""
+			description: "维度线之二：深入铁锈星工业遗迹。\n【干什么】① 探索至少一处大型工厂遗迹；② 收集 16 份【红石粉】（遗迹宝箱/矿脉）；③ 远眺高炉群。\n【记住】你看到的每一座高炉，都是旧文明燃烧过的证明。\n【提示】地标：铁锈灯塔 (480,76,460) 与灯塔周边废城。"
+		dependencies: ["1F0D74BE6C258ACF"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+			tasks: [
+				{ id: "A5EB03047BE898DC", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 16L }
+				{ id: "0448DE0CAE0E851E", type: "dimension", dimension: "starciv:rustfall" }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "AD7C50DACCD1D09B"
+			title: "维度 · 苍穹水晶"
+			subtitle: ""
+			description: "维度线之三：遨游苍穹星晶体森林。\n【干什么】① 再次抵达苍穹星；② 在晶体森林采集 8 枚【紫水晶碎片】；③ 登上一座悬浮岛远眺。\n【提示】晶体森林是苍穹最亮的地方，夜里像星河落在地面。\n【注意】悬浮岛边缘没有护栏，别掉下去——掉进云层只会重生。"
+		dependencies: ["C8A8B650FB5C9CAD"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_block", tag: { } }
+			tasks: [
+				{ id: "57839A8651D48A1E", type: "dimension", dimension: "starciv:stellaris" }
+				{ id: "8BD096563D0E93AE", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A36F92B15FD0DBF1"
+			title: "指引 · 成为文明"
+			subtitle: ""
+			description: "【总览】这是一本“星际文明编年史”任务书。\n【怎么用】\n  · 章节页签：主线 / 科技 / 动物 / 建筑 / 维度 / 战斗 / 知识\n  · 每章按编号排序，从左到右即推荐流程\n  · 主线带①②③序号，是通关主流程\n【核心规则】绿谷(农业)→铁锈(工业)→硅火(信息)→苍穹(星际)；阶段可以提前游览，但升级材料一环扣一环。\n【参考】手册《星际文明编年史·探索手册》随初始物品赠送，遗失可用【书+羽毛】合成。\n【任务】拥有任意一本书（任务书/手册/普通书均可）。"
+		dependencies: ["AD7C50DACCD1D09B"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:written_book", tag: { } }
+			tasks: [
+				{ id: "475123A8EAC005B7", type: "item", item: { Count: 1, id: "minecraft:book", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "2389BCBF9F65C213"
+			title: "指引 · 绿谷农业"
+			subtitle: ""
+			description: "【农业四季节奏】\n  春：播种小麦/胡萝卜/土豆\n  夏：护养+除草（作物疯长）\n  秋：大丰收\n  冬：温室（盆栽室内种植）维持供应\n【进阶】\n  · 养蜂（产物蜜蜂）→基因样本\n  · 酿酒（酿造与烹饪）→村落经济\n  · 村民交易（简易村民）→贸易网络\n【任务】收获 16 个小麦。\n【结论】农业是唯一能自我循环的起点——先吃饱，再远征。"
+		dependencies: ["A36F92B15FD0DBF1"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+			tasks: [
+				{ id: "D154FED0C05001EB", type: "item", item: { Count: 1, id: "minecraft:wheat", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1AF2A6F8B149AB3E"
+			title: "指引 · 铁锈工业"
+			subtitle: ""
+			description: "【工业三步曲】\n  ① Create：传动轴+皮带→机械城（参见科技页签）\n  ② 沉浸工程：高压电网→重工冶炼\n  ③ 减排：污染值别爆表，绿植/过滤器可以压\n【本包平衡】铁锈星的任务核心=产出与减排的平衡。\n【任务】制作 2 个活塞（工业第一步）。\n【提示】详细教程看【科技】章节。"
+		dependencies: ["2389BCBF9F65C213"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:piston", tag: { } }
+			tasks: [
+				{ id: "3B1F6D14786D2DDF", type: "item", item: { Count: 1, id: "minecraft:piston", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0CD74EC5A782D7EB"
+			title: "指引 · 硅火信息"
+			subtitle: ""
+			description: "【信息四件套】\n  ① 存储网络：统御万物\n  ② 逻辑编程：收发数据\n  ③ 电脑：让整座都市自动化\n  ④ 能量走廊：终局电网\n【主线结合】⑥⑦⑧⑨ 是实践课：精密零件→量子核心→跃迁引擎。\n【任务】制作 1 个红石灯。\n【警告】信息是有生命的——读懂它，但别被它吞噬。"
+		dependencies: ["1AF2A6F8B149AB3E"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }
+			tasks: [
+				{ id: "5E98216D58DB32A5", type: "item", item: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BC0FBFEF083CBE52"
+			title: "指引 · 苍穹星际"
+			subtitle: ""
+			description: "【星际三步】\n  ① 火箭：火箭+空间站→跨星球航线\n  ② 跃迁引擎：通往苍穹的唯一载体（主线⑨）\n  ③ Cataclysm Boss：终局试炼（见【战斗】页签）\n【终局】集齐四星科技的文明，才有资格举行终局仪式。\n【任务】持有 1 个【跃迁核心】。\n【结局彩蛋】仪式完成后，四星灯塔同亮——可以回绿谷山顶看全景。"
+		dependencies: ["0CD74EC5A782D7EB"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:elytra", tag: { } }
+			tasks: [
+				{ id: "30357316523E7F6D", type: "item", item: { Count: 1, id: "starciv:warp_core", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "9C459E1E929AAEF1"
+			title: "总览 · 星际编年史"
+			subtitle: ""
+			description: "【故事背景】\n上古文明在四颗星球上留下星港与档案馆，随后消失。你——一名绿谷的开拓者——在独石碑下拾起【上古之种】，接过了文明的薪火。\n【四星路线】\n  绿谷星：农业与种子（你在这里出生）\n  铁锈星：工业与燃料（③④⑤）\n  硅火星：信息与量子（⑥⑦⑧⑨）\n  苍穹星：跃迁与终局（⑩⑪）\n【推荐顺序】\n  主线 ①→⑪ 为主线通关；\n  支线（科技/动物/建筑/维度）可平行推进；\n  【知识】页签是全部玩法的说明书。\n【任务】集齐 4 种星球特产各 1 份（种子/铁锭/红石/紫水晶碎片）。"
+		dependencies: ["BC0FBFEF083CBE52"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:nether_star", tag: { } }
+			tasks: [
+				{ id: "0276495556AA7BF4", type: "item", item: { Count: 1, id: "starciv:ancient_seed", tag: { } }, count: 1L }
+				{ id: "4C31E3B69381A250", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 1L }
+				{ id: "D53BB08822A4BA8A", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 1L }
+				{ id: "E14E737FEC46B0E6", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C59C473DAC31168C"
+			title: "编年史 · 终章"
+			subtitle: ""
+			description: "【文明编年史·终章】\n从上古之种到终局仪式，你走完了四颗星球。\n【回顾】\n  绿谷教你如何扎根（农业）\n  铁锈教你如何燃烧（工业）\n  硅火教你如何思考（信息）\n  苍穹教你如何仰望（星际）\n【如果还不能结束】终局之前还有：五个首领、精英战队、一切装备图鉴。\n【目标】持有 1 颗下界之星——不仅仅是奖励，是新的开始。\n【档案馆留言】“读完它的人，就是下一个档案馆。”"
+		dependencies: ["9C459E1E929AAEF1"]
+			x: 18.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:nether_star", tag: { } }
+			tasks: [
+				{ id: "F3DD29D9CA057DE5", type: "item", item: { Count: 1, id: "minecraft:nether_star", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0972F949A8A759D9"
+			title: "档案馆 · 四大文明"
+			subtitle: ""
+			description: "【档案馆文献：四种文明的哲学】\n  绿谷 · 扎根：种不出粮食的文明，不配仰望星空\n  铁锈 · 燃烧：力量需要代价，但代价必须可控\n  硅火 · 思考：读懂数据，但别被数据吞噬\n  苍穹 · 仰望：文明轮回在苍穹完成，薪火永远传递\n【目标】集 4 份【文明精华】向档案馆致敬。\n【结语】四种哲学合在一起，才是完整的《星际文明编年史》。"
+		dependencies: ["C59C473DAC31168C"]
+			x: 20.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:civ_essence", tag: { } }
+			tasks: [
+				{ id: "E0D079C0B3CC9307", type: "item", item: { Count: 1, id: "starciv:civ_essence", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

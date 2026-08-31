@@ -1,0 +1,237 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rust"
+	id: "72812E30873455DC"
+	icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "19A10A912EE9928E"
+			title: "星球 · 铁锈"
+			subtitle: ""
+			description: "【星球档案：铁锈星】\n【定位】工业之星：锈红天空，钢铁废土。\n【生态】荒漠+矿区：废弃工厂、高炉群、深埋紫水晶矿。\n【特产】数据裂片（紫水晶研磨）、生物燃料（上古之种发酵）、红石。\n【地标】铁锈灯塔 (480,76,460)。\n【玩法】Create 传动、沉浸工程电网、高炉冶炼。\n【主线地位】③④⑤ 步的主舞台：重启抛光线→收集数据裂片。\n【注意】污染值会提醒你：工业必须与自然和解。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
+			tasks: [
+				{ id: "D0F238074B234BF8", type: "item", item: { Count: 1, id: "minecraft:blast_furnace", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "68AA31F4C1FB4889"
+			title: "铁锈 · 废土开荒"
+			subtitle: ""
+			description: "【位置】铁锈星门 (200,200) 周边废墟。\n【目标】收集 24 块铁锭（废铁熔炼/矿脉）。\n【要领】废墟里的铁栅栏/铁块可挖了熔炼；深矿层铁最多。\n【背景】在铁锈星，铁不是矿产——它是骸骨。大地记得每一座工厂。"
+		dependencies: ["19A10A912EE9928E"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
+			tasks: [
+				{ id: "DA01A80DCEFFA132", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 24L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A840A08539759D88"
+			title: "铁锈 · 紫水晶矿脉"
+			subtitle: ""
+			description: "【位置】铁锈地下（灯塔 480,460 周边岩层最密集）。\n【目标】采集 24 枚紫水晶碎片。\n【要领】精准采集更好的整块；带足镐，洞穴蝙蝠成群。\n【背景】紫水晶是铁锈星少数没被氧化的晶体——旧文明用它们存储数据。"
+		dependencies: ["68AA31F4C1FB4889"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "B482C9AE357FC60D", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 24L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B7D7D8F169E97F7C"
+			title: "铁锈 · 数据深挖"
+			subtitle: ""
+			description: "【位置】铁锈各遗迹的档案室/矿洞。\n【目标】收集 16 片【数据裂片】。\n【要领】紫水晶研磨成裂片；遗迹宝箱也常有存货。\n【背景】每片裂片都是一段生产参数——读得懂它们，就接过了旧文明的图纸。"
+		dependencies: ["A840A08539759D88"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:data_slivers", tag: { } }
+			tasks: [
+				{ id: "4FBD86D66FD734A7", type: "item", item: { Count: 1, id: "starciv:data_slivers", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "30AE76CD20BCF9EB"
+			title: "铁锈 · 传动工程课"
+			subtitle: ""
+			description: "【位置】铁锈中转站（星门附近厂房）。\n【目标】制作 16 根【传动轴】（Create）。\n【要领】一根轴带不动两条产线——学会用齿轮箱分速。\n【背景】抛光线重启的第一步，就是把“动力”重新接回废土。"
+		dependencies: ["B7D7D8F169E97F7C"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "create:shaft", tag: { } }
+			tasks: [
+				{ id: "0E4D6BA809C14398", type: "item", item: { Count: 1, id: "create:shaft", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E1698646257518EF"
+			title: "铁锈 · 管网自动化"
+			subtitle: ""
+			description: "【位置】铁锈厂房与仓库之间。\n【目标】制作 4 个【物品管道】（Pipez）收拢产线。\n【要领】管道右键切输入/输出；矿物都往一个箱子汇。\n【背景】物资自己流动的那一刻，铁锈星才真正“活”了过来。"
+		dependencies: ["30AE76CD20BCF9EB"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "pipez:item_pipe", tag: { } }
+			tasks: [
+				{ id: "BE808AB4E9ED4302", type: "item", item: { Count: 1, id: "pipez:item_pipe", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7E20B331EA9FC6D7"
+			title: "铁锈 · 高炉群巡礼"
+			subtitle: ""
+			description: "【位置】灯塔 (480,460) 远方的高炉群。\n【目标】储备 32 块煤 + 亲自站在高炉群中央听一次“轰鸣”。\n【要领】煤在矿脉/废墟仓库；高炉群是旧文明的墓碑，也是你的熔炉。\n【背景】站在高炉群中央，你才会明白旧文明为什么能把天空染锈。"
+		dependencies: ["E1698646257518EF"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:coal", tag: { } }
+			tasks: [
+				{ id: "275BDAA4FF1E70D4", type: "item", item: { Count: 1, id: "minecraft:coal", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "106F4CA02241815A"
+			title: "铁锈 · 哨站补给"
+			subtitle: ""
+			description: "【位置】废土哨站 (140,130)。\n【目标】烤 8 块牛排（狩猎牛/马）。\n【要领】废土草场有野牛（Alex 的动物）；篝火/烟熏炉更省燃料。\n【背景】哨站的意义：在废土维持“人吃得饱”这条底线。"
+		dependencies: ["7E20B331EA9FC6D7"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:cooked_beef", tag: { } }
+			tasks: [
+				{ id: "0C50FCDE39E93279", type: "item", item: { Count: 1, id: "minecraft:cooked_beef", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A5C873B1B388D8C1"
+			title: "铁锈 · 污染治理"
+			subtitle: ""
+			description: "【位置】高炉群与哨站周边。\n【目标】种下 8 颗橡树苗（绿植抗污染）。\n【要领】污染值见右上角指示器；种树+过滤器能压回安全线。\n【背景】旧文明死于对代价的傲慢。这一次，让机械服务于田园。"
+		dependencies: ["106F4CA02241815A"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:oak_sapling", tag: { } }
+			tasks: [
+				{ id: "2BE7F93E42ED0DB7", type: "item", item: { Count: 1, id: "minecraft:oak_sapling", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B39E60BAC24CFC32"
+			title: "铁锈 · 夜袭防线"
+			subtitle: ""
+			description: "【位置】铁锈星任意据点（夜里最危险）。\n【目标】击杀 10 只僵尸（夜袭者）。\n【要领】夜里废土的僵尸游荡成片；据点插满火把+铁门。\n【背景】铁锈星的夜，属于亡灵与变异体——它们比地表的锈更贪婪。"
+		dependencies: ["A5C873B1B388D8C1"]
+			x: 18.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:rotten_flesh", tag: { } }
+			tasks: [
+				{ id: "C166FE767BD3C4AB", type: "kill", entity: "minecraft:zombie", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "6387B08F36D25DD0"
+			title: "铁锈 · 灯塔守望"
+			subtitle: ""
+			description: "【位置】铁锈灯塔 (480,460)。\n【目标】制作 6 个灯笼，亲手把灯塔点亮一次。\n【要领】灯笼=火把+8铁粒；塔顶灯室有隐藏箱。\n【背景】灯塔不是为了照亮路，是为了告诉星空：这里还亮着。"
+		dependencies: ["B39E60BAC24CFC32"]
+			x: 20.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:lantern", tag: { } }
+			tasks: [
+				{ id: "C87ECE419E0BCF83", type: "item", item: { Count: 1, id: "minecraft:lantern", tag: { } }, count: 6L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0C2B1CA50147DAE6"
+			title: "铁锈 · 矿车铁路"
+			subtitle: ""
+			description: "【位置】星门与高炉群之间。\n【目标】制作 2 辆矿车 + 16 格铁轨，铺一段运输线。\n【要领】坡道用动力铁轨+红石火把；矿车运煤运矿都行。\n【背景】铁路是废土物流的脊梁——旧文明的铁轨还埋在锈土里。"
+		dependencies: ["6387B08F36D25DD0"]
+			x: 22.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:minecart", tag: { } }
+			tasks: [
+				{ id: "05A1C272863D407D", type: "item", item: { Count: 1, id: "minecraft:minecart", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5B2CF9D56EB8E21C"
+			title: "铁锈 · 废土锻甲"
+			subtitle: ""
+			description: "【位置】任意锻造站。\n【目标】锻造 1 件铁胸甲 + 1 把铁剑（进阶：黑钢参见【装备】页签）。\n【要领】铁锭+工作台；附魔台插书架更香。\n【背景】废土的铁皮就是新文明的甲胄——先活下来，再谈理想。"
+		dependencies: ["0C2B1CA50147DAE6"]
+			x: 24.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:iron_chestplate", tag: { } }
+			tasks: [
+				{ id: "A0EC6AB790421375", type: "item", item: { Count: 1, id: "minecraft:iron_chestplate", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "09A3EBAB15337AA4"
+			title: "铁锈 · 地下避难所"
+			subtitle: ""
+			description: "【位置】铁锈城废墟的地下（地表大洞下去）。\n【目标】备 32 根火把点亮一层避难所。\n【要领】废城地下藏着旧文明的生活区——火把是文明回归的标志。\n【背景】黑暗会先于怪物吞掉一切。点亮它。"
+		dependencies: ["5B2CF9D56EB8E21C"]
+			x: 26.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:torch", tag: { } }
+			tasks: [
+				{ id: "F7FCD5FD0EC18E45", type: "item", item: { Count: 1, id: "minecraft:torch", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8DB3EE7E986411D4"
+			title: "铁锈 · 精英首领：皇家尸鬼"
+			subtitle: ""
+			description: "【位置】铁锈地下王陵/废城地宫。\n【目标】击败 1 只【皇家尸鬼】（royal draugr）。\n【要领】它会呼召普通尸鬼+瞬移斩；先清小怪再集火，火锅底料别省。\n【掉落】废土系材料。\n【背景】尸鬼是旧文明武装部队的残骸——皇家尸鬼则是它们的“将军”。"
+		dependencies: ["09A3EBAB15337AA4"]
+			x: 28.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:bone", tag: { } }
+			tasks: [
+				{ id: "DC572FDB0549A1C0", type: "kill", entity: "cataclysm:royal_draugr", value: 1L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

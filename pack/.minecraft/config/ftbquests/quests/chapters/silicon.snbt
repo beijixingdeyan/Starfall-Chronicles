@@ -1,0 +1,222 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silicon"
+	id: "2D612A8A156E7FE9"
+	icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "E86154C8D09C8CBB"
+			title: "星球 · 硅火"
+			subtitle: ""
+			description: "【星球档案：硅火星】\n【定位】信息之星：霓虹都市，硅基文明巅峰。\n【生态】都市+岩区：霓虹街道、中央计算机群、紫水晶矿脉。\n【特产】数据裂片、红石灯、精密零件、量子科技。\n【地标】硅火霓虹亭 (-660,69,360)。\n【玩法】存储网络、电脑自动化、能量走廊。\n【主线地位】⑥⑦⑧⑨ 步的主舞台：精密零件→量子核心→跃迁引擎。\n【注意】信息是有生命的——读懂它，但别被它吞噬。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }
+			tasks: [
+				{ id: "628627D4AD8B8B85", type: "item", item: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "76686F13F6AFDEC3"
+			title: "硅火 · 霓虹街市"
+			subtitle: ""
+			description: "【位置】硅火星门 (-300,150) 落地即霓虹街。\n【目标】收集 8 块品红染色玻璃 + 4 份品红染料（霓虹装饰）。\n【要领】都市废料箱里常有；玻璃匠铺可换。\n【背景】硅火的霓虹不是装饰——是这座都市仍在呼吸的证明。"
+		dependencies: ["E86154C8D09C8CBB"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:magenta_stained_glass", tag: { } }
+			tasks: [
+				{ id: "0A654EE43C48C1CF", type: "item", item: { Count: 1, id: "minecraft:magenta_stained_glass", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "529308FF966B8F91"
+			title: "硅火 · 数据中继"
+			subtitle: ""
+			description: "【位置】都市街道地下的管线井。\n【目标】收集 8 片数据裂片 + 制作 2 个红石灯。\n【要领】井盖下藏着旧网线的备份；红石灯是硅火的路灯。\n【背景】硅火把整座城市写进了数据——纸面档案在这里早已消失。"
+		dependencies: ["76686F13F6AFDEC3"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:data_slivers", tag: { } }
+			tasks: [
+				{ id: "11F263E48BCB457D", type: "item", item: { Count: 1, id: "starciv:data_slivers", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "598B5BC8F362258F"
+			title: "硅火 · 电路工坊"
+			subtitle: ""
+			description: "【位置】都市任意工坊。\n【目标】备 32 份红石粉 + 制作 4 个红石中继器 + 2 个比较器。\n【要领】红石在都市地下矿脉/旧机房；中继器是信号高速公路。\n【背景】电路是硅火的语言——读懂它，你就能让整座都市为你工作。"
+		dependencies: ["529308FF966B8F91"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+			tasks: [
+				{ id: "2C61ABDEADD0030B", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0D500873F38E08FC"
+			title: "硅火 · 能量走廊"
+			subtitle: ""
+			description: "【位置】中央计算机群外围的玻璃长廊。\n【目标】制作 1 个红石块 + 收集 16 块石英。\n【要领】能量走廊是都市的“血管”；红石块做成枢纽。\n【背景】石英与红石在硅火体内同流——这就是它不熄灯的代价。"
+		dependencies: ["598B5BC8F362258F"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone_block", tag: { } }
+			tasks: [
+				{ id: "5836469CEC15FEED", type: "item", item: { Count: 1, id: "minecraft:redstone_block", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5398EDDE5C94F091"
+			title: "硅火 · 紫晶工艺"
+			subtitle: ""
+			description: "【位置】都市外围岩层。\n【目标】采 32 枚紫水晶碎片 + 做 4 块遮光玻璃。\n【要领】遮光玻璃挡霓虹刺眼；紫水晶是硅火的地标建材。\n【背景】硅火人认为紫水晶里有“光”——他们把整座城照成了水晶宫。"
+		dependencies: ["0D500873F38E08FC"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "26FB3E082052271E", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "49AEE88D23C3DC87"
+			title: "硅火 · 都市瞭望"
+			subtitle: ""
+			description: "【位置】霓虹商栈 (-220,210) 高层露台。\n【目标】备 16 块玻璃 + 居高俯瞰整座都市（截图留念）。\n【要领】玻璃做观景台护栏；日落时霓虹最美。\n【背景】站在都市之巅，你会理解旧文明为何如此骄傲——也会理解它为何坠落。"
+		dependencies: ["5398EDDE5C94F091"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:glass", tag: { } }
+			tasks: [
+				{ id: "73A083E22AC1A69C", type: "item", item: { Count: 1, id: "minecraft:glass", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7170024E80D254D1"
+			title: "硅火 · 商栈贸易"
+			subtitle: ""
+			description: "【位置】霓虹商栈 (-220,210)。\n【目标】集 16 颗绿宝石（以货易货/任务收入）。\n【要领】裂片换绿宝石最划算；商栈收紫水晶。\n【背景】硅火的贸易法则：信息即货币——谁读得懂数据，谁就富有。"
+		dependencies: ["49AEE88D23C3DC87"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:emerald", tag: { } }
+			tasks: [
+				{ id: "D13B291BCD3B0136", type: "item", item: { Count: 1, id: "minecraft:emerald", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5D4D94CEDAA25CE3"
+			title: "硅火 · 量子实验室"
+			subtitle: ""
+			description: "【位置】中央计算机群内部实验室。\n【目标】持有 1 个【跃迁核心】检测量子环境（主线⑧后即成）。\n【要领】核心在主线里会用到；此任务只需“持有”。\n【背景】量子实验室门上写着：进来之前，请先忘掉经典物理。"
+		dependencies: ["7170024E80D254D1"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:warp_core", tag: { } }
+			tasks: [
+				{ id: "6A452A6463E8C91E", type: "item", item: { Count: 1, id: "starciv:warp_core", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A02AF19FF284B43C"
+			title: "硅火 · 中央计算机群"
+			subtitle: ""
+			description: "【位置】都市核心（落点东北，最高的玻璃塔群）。\n【目标】抵达中央计算机群 + 备 4 个红石灯。\n【要领】主线⑧⑨在此推进；红石灯是“开机”的信号。\n【背景】这座计算机群里，可能还运行着第一代文明最后的进程。"
+		dependencies: ["5D4D94CEDAA25CE3"]
+			x: 18.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }
+			tasks: [
+				{ id: "E4265CCEA1870901", type: "item", item: { Count: 1, id: "minecraft:redstone_lamp", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5B3BE17B2FABE108"
+			title: "硅火 · 霓虹夜市"
+			subtitle: ""
+			description: "【位置】都市夜间的巷道。\n【目标】击败 2 只女巫 + 收集 8 份萤石粉。\n【要领】女巫泼药水要闪避；萤石粉照亮夜市。\n【背景】硅火的夜晚属于女巫与幽灵程序——她们在旧机房徘徊。"
+		dependencies: ["A02AF19FF284B43C"]
+			x: 20.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:glowstone_dust", tag: { } }
+			tasks: [
+				{ id: "28685E008D587C92", type: "item", item: { Count: 1, id: "minecraft:glowstone_dust", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D6683B0D6793008B"
+			title: "硅火 · 红石奇观"
+			subtitle: ""
+			description: "【位置】都市工坊区。\n【目标】制作 4 个活塞 + 2 个粘性活塞。\n【要领】粘性活塞用粘液球；组合起来可以做都市机关。\n【背景】硅火的工程师把红石玩成了艺术——访客称它为“会思考的都市”。"
+		dependencies: ["5B3BE17B2FABE108"]
+			x: 22.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:piston", tag: { } }
+			tasks: [
+				{ id: "3B70B0658AF5BAA3", type: "item", item: { Count: 1, id: "minecraft:piston", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "05FD1ED91066C0C4"
+			title: "硅火 · 精英首领：烈焰狂战士"
+			subtitle: ""
+			description: "【位置】硅火地下熔炉区（都市正下方岩洞）。\n【目标】击败 1 只【烈焰狂战士】（ignited berserker）。\n【要领】它被点燃后攻击翻倍——先打断它的点燃动作（远程打断）。\n【掉落】烈焰系材料（通向炎之王试炼）。\n【背景】狂战士是都市最后一批“火卫兵”——它们在熔炉区守了千年。"
+		dependencies: ["D6683B0D6793008B"]
+			x: 24.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:blaze_rod", tag: { } }
+			tasks: [
+				{ id: "4974F1640FFB0795", type: "kill", entity: "cataclysm:ignited_berserker", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B73B99726D34F5B8"
+			title: "硅火 · 霓虹庆典"
+			subtitle: ""
+			description: "【位置】中央广场。\n【目标】制作 4 枚烟花火箭 + 收集 8 颗荧光浆果。\n【要领】烟花=火药+纸+染料；庆典时广场会亮成星河。\n【背景】旧文明每年都在这一天放烟花——庆祝“续命成功”。千年后，烟花还在。"
+		dependencies: ["05FD1ED91066C0C4"]
+			x: 26.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:firework_rocket", tag: { } }
+			tasks: [
+				{ id: "6112F3C14B05FAD3", type: "item", item: { Count: 1, id: "minecraft:firework_rocket", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

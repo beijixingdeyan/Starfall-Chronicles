@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stellaris"
+	id: "0665E571DC297D8B"
+	icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A5AC43AE0670690"
+			title: "星球 · 苍穹"
+			subtitle: ""
+			description: "【星球档案：苍穹星】\n【定位】星际终点：悬浮大陆与晶体森林。\n【生态】悬浮岛、水晶林、云海。\n【特产】紫水晶碎片、跃迁核心、远古造物战利品。\n【地标】苍穹空艇 (300,64,-580)。\n【玩法】火箭与空间站、跃迁引擎往返。\n【主线地位】⑩⑪ 步：应许之地→终局仪式。\n【威胁】守护者【下界合金巨兽】盘踞晶体平原；终局前务必全副武装。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:elytra", tag: { } }
+			tasks: [
+				{ id: "01ED7F39BDEC47C6", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "145701D74214912F"
+			title: "苍穹 · 悬浮岛纵览"
+			subtitle: ""
+			description: "【位置】苍穹星门 (120,-260) 落地环视。\n【目标】抵达苍穹星 + 采 8 枚紫水晶碎片。\n【要领】悬浮岛之间有吊桥/滑翔通道；掉进云海会重生到星门。\n【背景】苍穹是四星中最不像“星球”的——它更像文明的陵园与摇篮。"
+		dependencies: ["7A5AC43AE0670690"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "1A47C686AB68E5DC", type: "dimension", dimension: "starciv:stellaris" }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "FE163D851EA4BD11"
+			title: "苍穹 · 晶体森林"
+			subtitle: ""
+			description: "【位置】晶体平原（星门东南大面积发光区）。\n【目标】采 32 枚紫水晶碎片 + 4 块紫水晶块。\n【要领】晶体森林夜里发光像星河；穿好装备，巨兽巢穴就在深处。\n【背景】晶体森林记录着星光的形状——每枚水晶都是一束被收纳的光。"
+		dependencies: ["145701D74214912F"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_block", tag: { } }
+			tasks: [
+				{ id: "8AA523B5CA88111C", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0068744E1BB03692"
+			title: "苍穹 · 空艇甲板"
+			subtitle: ""
+			description: "【位置】苍穹空艇 (300,-580)。\n【目标】备 32 块橡木木板 + 1 个木桶（登艇补给）。\n【要领】空艇是悬浮大陆的“港口”；甲板黄昏拍照绝美。\n【背景】档案馆的开工记录：这艘空艇是最后一艘，再也没有下一艘了。"
+		dependencies: ["FE163D851EA4BD11"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:oak_planks", tag: { } }
+			tasks: [
+				{ id: "C3134CD2B456C432", type: "item", item: { Count: 1, id: "minecraft:oak_planks", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1526C1084A79CA90"
+			title: "苍穹 · 星界祭坛"
+			subtitle: ""
+			description: "【位置】晶体森林间的荒废祭坛。\n【目标】制作 4 根末地烛 + 集 8 颗末影珍珠。\n【要领】祭坛点燃后，附近会聚集末影生物——注意背后。\n【背景】祭坛不是崇拜——是第一代文明向“回归”发出信号的电台。"
+		dependencies: ["0068744E1BB03692"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:end_rod", tag: { } }
+			tasks: [
+				{ id: "533AAFF0E54D7E08", type: "item", item: { Count: 1, id: "minecraft:end_rod", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BA4D1F6743B688D9"
+			title: "苍穹 · 云海滑翔"
+			subtitle: ""
+			description: "【位置】任意悬浮岛边缘。\n【目标】集 3 片幻翼膜（为鞘翅做准备）。\n【要领】幻翼在你连续三天不睡觉时出现；或去末地城找鞘翅。\n【背景】滑翔是一项“苍穹特供”运动——风里裹着晶尘，呼吸都是甜的。"
+		dependencies: ["1526C1084A79CA90"]
+			x: 10.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:phantom_membrane", tag: { } }
+			tasks: [
+				{ id: "19CD4B4D850B61CD", type: "item", item: { Count: 1, id: "minecraft:phantom_membrane", tag: { } }, count: 3L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B3F09C9250267994"
+			title: "苍穹 · 虚空残片"
+			subtitle: ""
+			description: "【位置】悬浮岛边缘的虚空裂缝附近。\n【目标】收集 4 个【虚空碎片】（cataclysm）。\n【要领】虚空的裂缝里偶有碎片飘出；小心别掉进去。\n【背景】虚空碎片是第一代文明“跃迁”留下的废料——也是终局材料的线索。"
+		dependencies: ["BA4D1F6743B688D9"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:void_shard", tag: { } }
+			tasks: [
+				{ id: "94FA7D16BC83CDEC", type: "item", item: { Count: 1, id: "cataclysm:void_shard", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "CE061FACE5F954F8"
+			title: "苍穹 · 终局材料"
+			subtitle: ""
+			description: "【位置】苍穹晶体平原深层矿/末地。\n【目标】熔炼 2 块远古残骸 + 合成 1 块下界合金锭。\n【要领】远古残骸在下界深处（y≈15）；灵魂沙谷更富。\n【背景】下界合金不是挖出来的——是“淬”出来的。苍穹守护者的甲壳也是这么来的。"
+		dependencies: ["B3F09C9250267994"]
+			x: 14.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:netherite_scrap", tag: { } }
+			tasks: [
+				{ id: "BED0ACA9EBD8E05F", type: "item", item: { Count: 1, id: "minecraft:netherite_scrap", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A0F69C82A303D7E6"
+			title: "苍穹 · 风暴巨蛇"
+			subtitle: ""
+			description: "【位置】晶体森林上空的雷暴云里。\n【目标】击败 1 只【风暴巨蛇】（storm serpent）。\n【要领】它盘踞云端，喷吐闪电；用弓箭+盾牌，落地时集火。\n【掉落】雷暴系材料。\n【背景】风暴巨蛇是苍穹大气层的“守卫”——档案馆叫它天气本身。"
+		dependencies: ["CE061FACE5F954F8"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:lightning_rod", tag: { } }
+			tasks: [
+				{ id: "0FDBC2DE497AB9CF", type: "kill", entity: "cataclysm:storm_serpent", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "4DCAB07056C8BD2A"
+			title: "苍穹 · 终局备战"
+			subtitle: ""
+			description: "【位置】任意据点。\n【目标】备 2 个金苹果 + 1 个不死图腾（终局前准备）。\n【要领】金苹果=金锭+苹果；图腾去林地府邸/掠夺者队长。\n【背景】准备是胜利的一半——终局仪式没有第二次机会。"
+		dependencies: ["A0F69C82A303D7E6"]
+			x: 18.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:golden_apple", tag: { } }
+			tasks: [
+				{ id: "35B874A1459AEC25", type: "item", item: { Count: 1, id: "minecraft:golden_apple", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5B5FA05A70F8DC7C"
+			title: "苍穹 · 精英首领：末影傀儡"
+			subtitle: ""
+			description: "【位置】晶体森林边缘的古机械坟场。\n【目标】击败 1 只【末影傀儡】（ender golem）。\n【要领】它会瞬移+召唤末影人；保持移动，用喷溅治疗别停。\n【掉落】苍穹中级材料。\n【背景】末影傀儡是第一代文明最后一批自动兵器——它们仍按“灭绝异形”的指令运转。"
+		dependencies: ["4DCAB07056C8BD2A"]
+			x: 20.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:enderite_ingot", tag: { } }
+			tasks: [
+				{ id: "987319E2B28EBE56", type: "kill", entity: "cataclysm:ender_golem", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E6D96B4A9DD810A7"
+			title: "苍穹 · 首领试炼：先驱者"
+			subtitle: ""
+			description: "【位置】苍穹最高悬浮岛的穹顶。\n【目标】击败 1 只【先驱者】（the harbinger）。\n【要领】它掌握空间法术（传送+裂隙）；Boss 战要带珍珠与图腾，分阶段打。\n【掉落】先驱者遗物——终局前的最终试炼之一。\n【背景】先驱者是“离开地球”的第一个文明成员——也是最后一个。它回来了。"
+		dependencies: ["5B5FA05A70F8DC7C"]
+			x: 22.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:void_core", tag: { } }
+			tasks: [
+				{ id: "D05BF598E5940501", type: "kill", entity: "cataclysm:the_harbinger", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "FE40E4B34E51BE6F"
+			title: "苍穹 · 应许巡航"
+			subtitle: ""
+			description: "【位置】四星各据点。\n【目标】持有 2 块【末地锭】（enderite ingot）纪念远征。\n【要领】末地锭=末影珍珠+合金废料（JEI 查配方）。\n【背景】巡航的意义：把四颗星球的记忆，铸成一块属于新文明的金属。"
+		dependencies: ["E6D96B4A9DD810A7"]
+			x: 24.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:enderite_ingot", tag: { } }
+			tasks: [
+				{ id: "22278F0D8060750D", type: "item", item: { Count: 1, id: "cataclysm:enderite_ingot", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

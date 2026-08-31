@@ -1,0 +1,87 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "interstellar"
+	id: "F62E05EAFEC32312"
+	icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "52AF7B9A7E0F39C5"
+			title: "手册 · 星门与跃迁"
+			subtitle: ""
+			description: "【星际交通指南】\n  · 星门（绿谷→铁锈/硅火）：手持【星门钥匙】走进星门\n  · 苍穹之门（硅火→苍穹）：手持【跃迁引擎】启动\n  · 返程：任何星门都可回绿谷（用钥匙）\n【用什么做】星门钥匙=主线②；跃迁引擎=主线⑨。\n【坐标卡】\n  绿谷星门：独石碑旁（约 0,70,0 一带）\n  苍穹之门：硅火中央广场\n【任务】完成一次完整往返（绿谷→任一星球→回绿谷）。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
+			tasks: [
+				{ id: "E858B477D32896F2", type: "item", item: { Count: 1, id: "minecraft:ender_pearl", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "12ED4CBA9A1B85CA"
+			title: "星际 · 轨道运输"
+			subtitle: ""
+			description: "【位置】绿谷→铁锈星门沿线。\n【目标】铺 24 格铁轨（或修一条你们之间的“大动脉”）。\n【要领】Create 列车（蒸汽铁路）可在铁轨上跑：动力机车+车厢。\n【背景】第一代文明的四星物流网靠的也是铁路——历史在重演，这一次更温柔。"
+		dependencies: ["52AF7B9A7E0F39C5"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:rail", tag: { } }
+			tasks: [
+				{ id: "2EACAA65F2C89573", type: "item", item: { Count: 1, id: "minecraft:rail", tag: { } }, count: 24L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "10C97A5303BF8149"
+			title: "星际 · 四星特产"
+			subtitle: ""
+			description: "【位置】四星各特产区。\n【目标】集齐四星特产：种子 / 铁锭 / 红石 / 紫水晶碎片（各 4）。\n【要领】特产=四星文明的“名片”；交集处可以做贸易中心。\n【背景】文明因交换而伟大——四星特产汇聚的地方，就是新文明的星港。"
+		dependencies: ["12ED4CBA9A1B85CA"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:ancient_seed", tag: { } }
+			tasks: [
+				{ id: "4B5A187BC52080CA", type: "item", item: { Count: 1, id: "starciv:ancient_seed", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F8ADEE68A04F54EC"
+			title: "星际 · 路标网络"
+			subtitle: ""
+			description: "【位置】各地标/驿站的路标石。\n【目标】激活 4 个路标（waystone 右键登记）。\n【要领】路标激活后可互相传送；地图上能直观看到已激活路标。\n【背景】路标网络是文明的地图——让四颗星球之间不再有“迷路”。"
+		dependencies: ["10C97A5303BF8149"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "waystones:waystone", tag: { } }
+			tasks: [
+				{ id: "D29B7BD62D1E66ED", type: "item", item: { Count: 1, id: "waystones:waystone", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "6F795A47D6DB2408"
+			title: "星际 · 登天计划"
+			subtitle: ""
+			description: "【位置】苍穹空艇甲板。\n【目标】制作 1 个望远镜（spyglass）+ 遥望下方星球。\n【要领】望远镜=铜锭+紫水晶（原版合成）。\n【背景】从苍穹看绿谷，只是一粒发光的种子。文明的高度，就是这样拉开的。"
+		dependencies: ["F8ADEE68A04F54EC"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:spyglass", tag: { } }
+			tasks: [
+				{ id: "64D062D8E6F74696", type: "item", item: { Count: 1, id: "minecraft:spyglass", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+	]
+}

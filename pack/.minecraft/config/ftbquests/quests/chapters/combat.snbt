@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "combat"
+	id: "C222AE0D4E9C59BD"
+	icon: { Count: 1, id: "minecraft:netherite_sword", tag: { } }
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7FDCCB95DD72250A"
+			title: "Boss · 深渊利维坦"
+			subtitle: ""
+			description: "【Boss 档案：深渊利维坦】（Cataclysm）\n【位置】深海生物群系（绿谷海沟/铁锈星海底遗迹）。\n【外观】巨型海龙：长颈、利齿、潜伏水底。\n【打法】\n  ① 水战吃亏——把它引到浅水/岸上打\n  ② 俯冲注意躲闪，贴身连击\n  ③ 掉落物含【利维坦牙】，可合成强力武器\n【准备】潜水装备（海龟壳/水下呼吸药水）、远程武器。\n【奖励】高额经验 + 稀有材料。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:water_bucket", tag: { } }
+			tasks: [
+				{ id: "7DE7F941FBAF7873", type: "kill", entity: "cataclysm:the_leviathan", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "134493A4035985B5"
+			title: "Boss · 下界合金巨兽（终局）"
+			subtitle: ""
+			description: "【Boss 档案：下界合金巨兽】（终局守护者，主线⑪）\n【位置】苍穹星晶体平原，骸骨环绕的巢穴。\n【外观】四足机械巨兽：下界合金甲壳，流星火雨与冲锋是招牌。\n【打法】\n  ① 绕侧翼攻击后腿，正面会被碾压\n  ② 火雨阶段找掩体（水晶柱）\n  ③ 残血狂暴：拉开距离风筝，或上药水硬刚\n【掉落】远超普通材料；任务奖励 4 跃迁核心。\n【准备】全套下界合金 + 金苹果 + 喷溅治疗。\n【剧情】击败它=完成终局仪式，四星灯塔同亮。"
+		dependencies: ["7FDCCB95DD72250A"]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:netherite_ingot", tag: { } }
+			tasks: [
+				{ id: "097CD71E15C23DA1", type: "kill", entity: "cataclysm:netherite_monstrosity", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1587A78491196A58"
+			title: "战斗 · 出战准备"
+			subtitle: ""
+			description: "【出战清单】（打任何 Boss 前对照）\n  装备：全套下界合金/更高品质，附魔 保护+锋利\n  药水：力量、抗火、治疗喷溅、夜视（地下）\n  食物：金苹果/炖汤（回满饱食）\n  道具：末影珍珠（逃脱）、烟花（逃生）、盾牌（防御姿态）\n【练手目标】先击败一次普通精英怪，熟悉战斗节奏。\n【注意】Boss 战建议单人备份存档 / 多人约定复活点。"
+		dependencies: ["134493A4035985B5"]
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:golden_apple", tag: { } }
+			tasks: [
+				{ id: "FD35A6077CE567AC", type: "item", item: { Count: 1, id: "minecraft:golden_apple", tag: { } }, count: 1L }
+				{ id: "30F90C40DD6FDD94", type: "item", item: { Count: 1, id: "minecraft:shield", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "FCD8AF8252245FBA"
+			title: "武器 · 黑钢近战"
+			subtitle: ""
+			description: "【武器图鉴：黑钢系】（Cataclysm）\n【是什么】黑钢剑/斧/镐/锹——废土废钢锻造的原生武器，中前期最强平民武器。\n【怎么获得】黑钢锭（废铁+煤）在工作台/锻造台制成；JEI 可查全配方。\n【对比】黑钢剑≈钻石剑的下位替身，但附魔后性价比极高。\n【目标】打造 1 把【黑钢剑】。\n【背景】档案馆武器栏第一行：黑钢不锋利，但够硬。废土信奉硬度。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:black_steel_sword", tag: { } }
+			tasks: [
+				{ id: "4629774B35D2C283", type: "item", item: { Count: 1, id: "cataclysm:black_steel_sword", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "19819DD05F6FC480"
+			title: "武器 · 诅咒之弓"
+			subtitle: ""
+			description: "【武器图鉴：诅咒之弓】（Cataclysm）\n【是什么】发射诅咒箭矢的远程武器，附带穿透/凋零效果，Boss 战首选。\n【怎么获得】击杀【远古残骸】等废土首领掉落，或摧毁其残骸寻宝。\n【提示】配合火焰箭/多普勒箭更猛——远程职业的毕业级武器之一。\n【目标】获得 1 把【诅咒之弓】。\n【背景】警句：弓弦上刻着一行字——“每一次命中，都在偿还旧债。”"
+		dependencies: ["FCD8AF8252245FBA"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:cursed_bow", tag: { } }
+			tasks: [
+				{ id: "6FACF4C3007E06EA", type: "item", item: { Count: 1, id: "cataclysm:cursed_bow", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BE80695AFF14B222"
+			title: "防具 · 熔火重甲"
+			subtitle: ""
+			description: "【防具图鉴：熔火系】（Cataclysm，炎之王掉落的材料）\n【是什么】头盔/胸甲/护腿/靴子 + 熔火披风/鞘翅胸甲——火焰附魔重甲。\n【怎么获得】用【熔火锭】（炎之王 ignis 掉落）锻造全套。\n【数据】护甲值顶配；自带抗火附魔，适合火战与下界远征。\n【目标】锻造 1 件【熔火胸甲】。\n【背景】档案馆：穿熔火甲的人和炎之王之间，只有一炉之隔。"
+		dependencies: ["19819DD05F6FC480"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:ignitium_chestplate", tag: { } }
+			tasks: [
+				{ id: "23159D81E684A829", type: "item", item: { Count: 1, id: "cataclysm:ignitium_chestplate", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B2451D9D62BF8DF3"
+			title: "装备 · 圣卫拳套"
+			subtitle: ""
+			description: "【装备图鉴：拳套与护盾】（Cataclysm）\n【是什么】圣卫拳套/守护拳套/漩涡拳套——副手近战格挡系；\n　　　　蔚蓝海盾——水下战斗防线；\n　　　　烈焰壁垒——火战护盾。\n【怎么获得】深海/烈焰首领掉落（利维坦、炎之王系）。\n【提示】拳套格挡不耗耐久；护盾可附魔“荆棘”反弹。\n【目标】获得 1 个【圣卫拳套】（gauntlet of guard）。\n【背景】拳套上刻着守卫者的誓言：我挡住的不只是攻击，还有你们的恐惧。"
+		dependencies: ["BE80695AFF14B222"]
+			x: 6.0d
+			y: 0.0d
+			icon: { Count: 1, id: "cataclysm:gauntlet_of_guard", tag: { } }
+			tasks: [
+				{ id: "E799B329EEE8E0BD", type: "item", item: { Count: 1, id: "cataclysm:gauntlet_of_guard", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "763AD392A947F5A7"
+			title: "首领 · 远古残骸（铁锈）"
+			subtitle: ""
+			description: "【Boss 档案：远古残骸】（ancient remnant）\n【位置】铁锈星沙漠/废土巨型骸骨区（灯塔西南沙漠）。\n【外观】巨型白骨甲虫机甲，喷射毒针与沙暴。\n【打法】\n  ① 沙暴阶段找岩柱遮挡\n  ② 近身喷毒转圈躲\n  ③ 掉落：诅咒之弓 + 远古金属锭（ancient metal）\n【目标】击败 1 次。\n【剧情】它守卫着旧文明最后的矿脉——铁锈星的“地心钥匙”。"
+		dependencies: [ ]
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "cataclysm:ancient_metal_ingot", tag: { } }
+			tasks: [
+				{ id: "B90A39F4F7D7E235", type: "kill", entity: "cataclysm:ancient_remnant", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "135EB399507009F0"
+			title: "首领 · 炎之王（硅火）"
+			subtitle: ""
+			description: "【Boss 档案：炎之王】（ignis）\n【位置】硅火地下熔炉核心（都市正下方深处）。\n【外观】烈焰巨兽：吐火、召陨石、点燃全场。\n【打法】\n  ① 保持距离躲火浪\n  ② 陨石阶段逃到霓虹柱后\n  ③ 掉落：熔火锭（ignitium）+ 烈焰壁垒\n【目标】击败 1 次。\n【剧情】炎之王是都市“供电”的源头——它休眠时，硅火才能点亮。"
+		dependencies: ["763AD392A947F5A7"]
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "cataclysm:ignitium_ingot", tag: { } }
+			tasks: [
+				{ id: "840FBF557B148F93", type: "kill", entity: "cataclysm:ignis", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7521FED5DBEE86D0"
+			title: "首领 · 虚空潜视（苍穹）"
+			subtitle: ""
+			description: "【Boss 档案：虚空潜视】（the watcher）\n【位置】苍穹晶体森林最深处的虚空柱。\n【外观】悬浮的巨大眼球：空间裂隙、激光、召唤虚空生物。\n【打法】\n  ① 打掉召唤物优先，否则场地失控\n  ② 激光前摇明显，侧向走位\n  ③ 掉落：虚空核心/碎片\n【目标】击败 1 次。\n【剧情】它不是怪物——它是一只“眼睛”。第一代文明最后一位观察者。"
+		dependencies: ["135EB399507009F0"]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "cataclysm:void_core", tag: { } }
+			tasks: [
+				{ id: "DBB00F6AD339F631", type: "kill", entity: "cataclysm:the_watcher", value: 1L }
+			]
+			rewards: [
+			]
+		}
+	]
+}
