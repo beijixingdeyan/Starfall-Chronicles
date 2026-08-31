@@ -124,7 +124,7 @@ foreach ($sub in @('mods','datapacks','kubejs')) {
     Copy-Item $src (Join-Path $mcDir $sub) -Recurse -Force
   }
 }
-# Questlog 任务书配置（任务书走 config，自定义数据包由 kubejs/data 内建）
+# Questlog 已删除，改用 FTB Quests
 $qlSrc = Join-Path $Root 'pack\.minecraft\config\questlog'
 if (Test-Path $qlSrc) {
   $qlDst = Join-Path $mcDir 'config\questlog'
@@ -138,11 +138,7 @@ if (Test-Path $fqSrc) {
   if (Test-Path $fqDst) { Remove-Item $fqDst -Recurse -Force }
   Copy-Item $fqSrc $fqDst -Recurse -Force
 }
-# Questlog 客户端配置（背包 E 键任务书按钮显式开启）
-foreach ($qt in @('questlog-client.toml', 'questlog.toml')) {
-  $qtSrc = Join-Path $Root ('pack\.minecraft\config\' + $qt)
-  if (Test-Path $qtSrc) { Copy-Item $qtSrc (Join-Path $mcDir ('config\' + $qt)) -Force }
-}
+
 # 全部资源包（starciv_resources 专属 + Better Vanilla Building 建筑材质）
 $rpSrcRoot = Join-Path $Root 'pack\.minecraft\resourcepacks'
 if (Test-Path $rpSrcRoot) {

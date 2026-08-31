@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 // Starfall Chronicles — 星门交互：右键星门（核心或门框任意方块）发起跃迁
 // 规则表见 settings.js warp_rules：
 //   valley→rust     (首航需星门钥匙)
@@ -35,7 +35,7 @@ function nearestGate(p, gates) {
   var best = null, bestD = 64 * 64;
   for (var key of Object.keys(gates)) {
     var g = gates[key];
-    if (!g || !g.x) continue;
+    if (!g || g.x === undefined || g.y === undefined || g.z === undefined || !g.dim) continue;
     if (String(p.level.dimension) !== g.dim) continue;
     var dx = p.x - g.x, dy = p.y - g.y, dz = p.z - g.z;
     var d = dx * dx + dz * dz + dy * dy;

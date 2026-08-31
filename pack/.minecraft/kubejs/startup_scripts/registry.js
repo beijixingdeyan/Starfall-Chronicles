@@ -82,7 +82,22 @@ StartupEvents.registry('item', event => {
     .tooltip('§6它让单个文明越过苍穹。');
 });
 
-// 二、星门核心方块（星门传送的交互点）
+// 二、上古作物方块（右键收获）
+StartupEvents.registry('block', event => {
+  event.create('starciv:ancient_crop', 'crop')
+    .displayName('上古作物')
+    .texture('starciv:block/ancient_crop_0', 0)
+    .texture('starciv:block/ancient_crop_1', 1)
+    .texture('starciv:block/ancient_crop_2', 2)
+    .texture('starciv:block/ancient_crop_3', 3)
+    .age(3)
+    .speedUpWhen(e => e.world.isRaining())
+    .replacementLoot('starciv:ancient_seed')
+    .replacementLoot('starciv:ancient_seed')
+    .alwaysDropExperience(2);
+});
+
+// 三、星门核心方块（星门传送的交互点）
 StartupEvents.registry('block', event => {
   event.create('starciv:stargate_core', 'basic')
     .displayName('星门核心')
@@ -96,4 +111,4 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_iron_tool');
 });
 
-console.info('[Starfall] 文明物品注册完成');
+console.info('[Starfall] 文明物品和作物注册完成');
