@@ -63,3 +63,16 @@ PlayerEvents.rightClickBlock(event => {
 });
 
 console.info('[Starfall] 上古之种种植机制已注册');
+
+// ---- 上古作物自动生长 ----
+BlockEvents.cropGrow(event => {
+  try {
+    if (String(event.block.id) !== 'starciv:ancient_crop') return;
+    var age = event.block.properties.age || 0;
+    if (age >= 3) return;
+    var growChance = event.level.isRaining() ? 0.30 : 0.15;
+    if (Math.random() < growChance) {
+      event.block.set('starciv:ancient_crop', { age: Math.min(age + 1, 3) });
+    }
+  } catch (e) { console.warn('[Starfall] crop grow: ' + e); }
+});

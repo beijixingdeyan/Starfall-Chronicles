@@ -83,7 +83,8 @@ StartupEvents.registry('item', event => {
 });
 
 // 二、上古作物方块（右键收获）
-// 注：使用 KubeJS 的基础 crop 方块 API，收获逻辑由事件处理
+// 注：使用 KubeJS 的基础 crop 方块 API
+// 生长加速逻辑由事件处理（见 events/ancient_crop_growth.js）
 StartupEvents.registry('block', event => {
   event.create('starciv:ancient_crop', 'crop')
     .displayName('上古作物')
@@ -91,8 +92,7 @@ StartupEvents.registry('block', event => {
     .texture('starciv:block/ancient_crop_1', 1)
     .texture('starciv:block/ancient_crop_2', 2)
     .texture('starciv:block/ancient_crop_3', 3)
-    .age(3)
-    .speedUpWhen(e => e.world.isRaining());
+    .age(3);
 });
 
 // 三、星门核心方块（星门传送的交互点）
