@@ -101,5 +101,365 @@
 			rewards: [
 			]
 		}
+		{
+			id: "AA11BB22CC33DD44"
+			title: "Create · 水车动力"
+			subtitle: ""
+			description: "【材料】8 块木板 + 传动轴。\n【做法】JEI 搜索水车，放在流水旁。\n【为什么】水车是 Create 最基础的动力源。\n【提示】水流越快，动力越大。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:water_wheel", tag: { } }
+			tasks: [
+				{ id: "AA11BB22CC33DD45", type: "item", item: { Count: 1, id: "create:water_wheel", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BB11CC22DD33EE44"
+			title: "Create · 搅拌器机构"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁板 + 玻璃。\n【做法】JEI 搜索机械搅拌器，放在动力网络上。\n【为什么】搅拌器用于合成液体和混合物。\n【提示】输入液体从两侧的管道口。"
+			dependencies: [ ]
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:mechanical_mixer", tag: { } }
+			tasks: [
+				{ id: "BB11CC22DD33EE45", type: "item", item: { Count: 1, id: "create:mechanical_mixer", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "CC11DD22EE33FF44"
+			title: "Create · 传送带系统"
+			subtitle: ""
+			description: "【材料】8 块皮带连接器 + 2 个传动轴。\n【做法】JEI 搜索皮带连接器，在两根轴间铺设。\n【为什么】传送带用于物品运输和分流。\n【提示】Shift+右键调整方向。"
+			dependencies: [ ]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:belt_connector", tag: { } }
+			tasks: [
+				{ id: "CC11DD22EE33FF45", type: "item", item: { Count: 1, id: "create:belt_connector", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "DD11EE22FF33AA44"
+			title: "Create · 压片机"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁板 + 弹簧。\n【做法】JEI 搜索机械压片机，放在动力网络上。\n【为什么】压片机用于冲压和压扁物品。\n【提示】可与搅拌器配合做合金。"
+			dependencies: [ ]
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:mechanical_press", tag: { } }
+			tasks: [
+				{ id: "DD11EE22FF33AA45", type: "item", item: { Count: 1, id: "create:mechanical_press", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "EE11FF22AA33BB44"
+			title: "Create · 机械钻头"
+			subtitle: ""
+			description: "【材料】铁锭 + 钻头 + 铁板。\n【做法】JEI 搜索机械钻头，放在动力网络上。\n【为什么】机械钻头用于钻孔和开采。\n【提示】可用于自动挖矿。"
+			dependencies: [ ]
+			x: 8.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:mechanical_drill", tag: { } }
+			tasks: [
+				{ id: "EE11FF22AA33BB45", type: "item", item: { Count: 1, id: "create:mechanical_drill", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "FF11AA22BB33CC44"
+			title: "Create · 部署器"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁臂 + 动力源。\n【做法】JEI 搜索部署器，放在动力网络上。\n【为什么】部署器用于放置方块和物品。\n【提示】可自动放置和删除方块。"
+			dependencies: [ ]
+			x: 10.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:deployer", tag: { } }
+			tasks: [
+				{ id: "FF11AA22BB33CC45", type: "item", item: { Count: 1, id: "create:deployer", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "11AA22BB33CC44DD"
+			title: "Create · 齿轮箱"
+			subtitle: ""
+			description: "【材料】2 个齿轮 + 铁板 + 传动轴。\n【做法】JEI 搜索齿轮箱，与传动轴配合使用。\n【为什么】齿轮箱用于变速和转向。\n【提示】可以 4 选 1 改变转速。"
+			dependencies: [ ]
+			x: 12.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:gearbox", tag: { } }
+			tasks: [
+				{ id: "11AA22BB33CC44DE", type: "item", item: { Count: 1, id: "create:gearbox", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "22BB33CC44DD55EE"
+			title: "Create · 蒸汽引擎"
+			subtitle: ""
+			description: "【材料】铜锭 + 铁锭 + 玻璃 + 锅炉。\n【做法】JEI 搜索蒸汽引擎，烧水产生蒸汽。\n【为什么】蒸汽引擎是高功率动力源。\n【提示】需要充足的水和燃料。"
+			dependencies: [ ]
+			x: 14.0d
+			y: 2.0d
+			icon: { Count: 1, id: "create:steam_engine", tag: { } }
+			tasks: [
+				{ id: "22BB33CC44DD55EF", type: "item", item: { Count: 1, id: "create:steam_engine", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "33CC44DD55EE66FF"
+			title: "Mekanism · 冶金灌注器"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁板 + 能源仓。\n【做法】JEI 搜索冶金灌注器。\n【为什么】冶金灌注器用于给矿石注入元素。\n【提示】需要与输入输出管道配合。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:metallurgic_infuser", tag: { } }
+			tasks: [
+				{ id: "33CC44DD55EE66A0", type: "item", item: { Count: 1, id: "mekanism:metallurgic_infuser", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "44DD55EE66FF77AA"
+			title: "Mekanism · 富集仓"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁板 + 能源仓。\n【做法】JEI 搜索富集仓。\n【为什么】富集仓用于富集矿石为锭。\n【提示】输入矿石，输出双倍锭。"
+			dependencies: [ ]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:enrichment_chamber", tag: { } }
+			tasks: [
+				{ id: "44DD55EE66FF77AB", type: "item", item: { Count: 1, id: "mekanism:enrichment_chamber", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "55EE66FF77AA88BB"
+			title: "Mekanism · 能量立方"
+			subtitle: ""
+			description: "【材料】钻石 + 能源芯片 + 铁板。\n【做法】JEI 搜索能量立方。\n【为什么】能量立方用于储存能量。\n【提示】可升级容量，支持无线充电。"
+			dependencies: [ ]
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:energy_cube", tag: { } }
+			tasks: [
+				{ id: "55EE66FF77AA88BC", type: "item", item: { Count: 1, id: "mekanism:energy_cube", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "66FF77AA88BB99CC"
+			title: "Mekanism · 数字化矿机"
+			subtitle: ""
+			description: "【材料】钻石 + 芯片 + 铁板 + 激光。\n【做法】JEI 搜索数字化矿机。\n【为什么】数字化矿机用于远程挖矿。\n【提示】需要大量能量，挖矿范围大。"
+			dependencies: [ ]
+			x: 6.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:digital_miner", tag: { } }
+			tasks: [
+				{ id: "66FF77AA88BB99CD", type: "item", item: { Count: 1, id: "mekanism:digital_miner", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "77AA88BB99CC00DD"
+			title: "Mekanism · 太阳能发电"
+			subtitle: ""
+			description: "【材料】硅片 + 铁板 + 能源仓。\n【做法】JEI 搜索太阳能发电板。\n【为什么】太阳能发电是无限绿能。\n【提示】白天发电，晚上无效。"
+			dependencies: [ ]
+			x: 8.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:solar_generator", tag: { } }
+			tasks: [
+				{ id: "77AA88BB99CC00DE", type: "item", item: { Count: 1, id: "mekanism:solar_generator", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "88BB99CC00DD11EE"
+			title: "Mekanism · 化学灌注器"
+			subtitle: ""
+			description: "【材料】铁锭 + 铁板 + 化学能。\n【做法】JEI 搜索化学灌注器。\n【为什么】化学灌注器用于制造化学物质。\n【提示】需要气体和液体输入。"
+			dependencies: [ ]
+			x: 10.0d
+			y: 4.0d
+			icon: { Count: 1, id: "mekanism:chemical_infuser", tag: { } }
+			tasks: [
+				{ id: "88BB99CC00DD11EF", type: "item", item: { Count: 1, id: "mekanism:chemical_infuser", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "99CC00DD11EE22FF"
+			title: "IE · 工程师锤"
+			subtitle: ""
+			description: "【材料】铁锭 + 木板 + 皮革。\n【做法】JEI 搜索工程师锤。\n【为什么】工程师锤用于锻打多块结构。\n【提示】右键点击多块方块进行构造。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 6.0d
+			icon: { Count: 1, id: "immersiveengineering:hammer", tag: { } }
+			tasks: [
+				{ id: "99CC00DD11EE2300", type: "item", item: { Count: 1, id: "immersiveengineering:hammer", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "AA00BB11CC22DD33"
+			title: "IE · 水轮发电机"
+			subtitle: ""
+			description: "【材料】铁锭 + 线圈 + 轴承。\n【做法】JEI 搜索发电机，放在流水旁。\n【为什么】水轮发电机是电能的主要源。\n【提示】水流越快，发电量越大。"
+			dependencies: [ ]
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "immersiveengineering:dynamo", tag: { } }
+			tasks: [
+				{ id: "AA00BB11CC22DD34", type: "item", item: { Count: 1, id: "immersiveengineering:dynamo", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BB00CC11DD22EE33"
+			title: "IE · 高压传送带"
+			subtitle: ""
+			description: "【材料】4 段传送带 + 铁锭 + 皮革。\n【做法】JEI 搜索传送带，铺设在两个滑轮间。\n【为什么】高压传送带用于运输物品。\n【提示】可与机器配合自动输出。"
+			dependencies: [ ]
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "immersiveengineering:conveyor_basic", tag: { } }
+			tasks: [
+				{ id: "BB00CC11DD22EE34", type: "item", item: { Count: 1, id: "immersiveengineering:conveyor_basic", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "CC00DD11EE22FF33"
+			title: "IE · 电弧炉"
+			subtitle: ""
+			description: "【材料】20 个铁块 + 工程师锤 + 线圈。\n【做法】使用工程师锤锻打多块结构。\n【为什么】电弧炉一次可熔炼 3 矿物。\n【提示】需要高压电输入。"
+			dependencies: [ ]
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "immersiveengineering:arc_furnace", tag: { } }
+			tasks: [
+				{ id: "CC00DD11EE22FF34", type: "item", item: { Count: 1, id: "immersiveengineering:arc_furnace", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "DD00EE11FF22AA33"
+			title: "PneumaticCraft · 压缩铁锭"
+			subtitle: ""
+			description: "【材料】8 块压缩铁锭 + 压缩机。\n【做法】JEI 搜索压缩铁锭。\n【为什么】压缩铁锭是气压科技的基础。\n【提示】需要足够的压力进行压缩。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 8.0d
+			icon: { Count: 1, id: "pneumaticcraft:ingot_iron_compressed", tag: { } }
+			tasks: [
+				{ id: "DD00EE11FF22AA34", type: "item", item: { Count: 1, id: "pneumaticcraft:ingot_iron_compressed", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "EE00FF11AA22BB33"
+			title: "PneumaticCraft · 压力管道"
+			subtitle: ""
+			description: "【材料】4 段压力管 + 连接件。\n【做法】JEI 搜索压力管。\n【为什么】压力管用于传输压缩空气。\n【提示】不同颜色管道有不同用途。"
+			dependencies: [ ]
+			x: 2.0d
+			y: 8.0d
+			icon: { Count: 1, id: "pneumaticcraft:pressure_tube", tag: { } }
+			tasks: [
+				{ id: "EE00FF11AA22BB34", type: "item", item: { Count: 1, id: "pneumaticcraft:pressure_tube", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "FF00AA11BB22CC33"
+			title: "PneumaticCraft · 空气压缩机"
+			subtitle: ""
+			description: "【材料】铁锭 + 活塞 + 缸体。\n【做法】JEI 搜索空气压缩机。\n【为什么】空气压缩机是气压系统的心脏。\n【提示】需要燃料或电能驱动。"
+			dependencies: [ ]
+			x: 4.0d
+			y: 8.0d
+			icon: { Count: 1, id: "pneumaticcraft:air_compressor", tag: { } }
+			tasks: [
+				{ id: "FF00AA11BB22CC34", type: "item", item: { Count: 1, id: "pneumaticcraft:air_compressor", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "00AA11BB22CC33DD"
+			title: "Industrial Foregoing · 植物收割机"
+			subtitle: ""
+			description: "【材料】铁锭 + 齿轮 + 能源芯片。\n【做法】JEI 搜索植物收割机。\n【为什么】植物收割机用于自动收获作物。\n【提示】需要能量驱动。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 10.0d
+			icon: { Count: 1, id: "industrialforegoing:plant_gatherer", tag: { } }
+			tasks: [
+				{ id: "00AA11BB22CC33DE", type: "item", item: { Count: 1, id: "industrialforegoing:plant_gatherer", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "11BB22CC33DD44EE"
+			title: "Industrial Foregoing · 矿石激光钻"
+			subtitle: ""
+			description: "【材料】钻石 + 激光瓶 + 能源仓。\n【做法】JEI 搜索矿石激光钻。\n【为什么】矿石激光钻用于远程挖矿。\n【提示】需要大量能量，范围很大。"
+			dependencies: [ ]
+			x: 2.0d
+			y: 10.0d
+			icon: { Count: 1, id: "industrialforegoing:laser_drill", tag: { } }
+			tasks: [
+				{ id: "11BB22CC33DD44EF", type: "item", item: { Count: 1, id: "industrialforegoing:laser_drill", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "22CC33DD44EE55FF"
+			title: "Pipez · 流体管道网络"
+			subtitle: ""
+			description: "【材料】4 段流体管道 + 连接件。\n【做法】JEI 搜索流体管道。\n【为什么】流体管道用于运输液体和气体。\n【提示】可左键切换提取/输入模式。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 12.0d
+			icon: { Count: 1, id: "pipez:fluid_pipe", tag: { } }
+			tasks: [
+				{ id: "22CC33DD44EE5600", type: "item", item: { Count: 1, id: "pipez:fluid_pipe", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

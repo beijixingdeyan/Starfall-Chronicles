@@ -180,5 +180,84 @@
 			rewards: [
 			]
 		}
+		{
+			id: "E8F7C2A1B3D4E5F6"
+			title: "百科 · Botania 入门"
+			subtitle: ""
+			description: "【Botania 入门】\nBotania 是魔法与花朵的文明。\n【怎么做】收集 1 本书与 1 朵蒲公英。\n【为什么】书是知识的载体，蒲公英是 Botania 最初的魔力来源。\n【提示】蒲公英在草地随处可见；任何一本书都行（任务书、手册、或普通书）。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:book", tag: { } }
+			tasks: [
+				{ id: "A1B2C3D4E5F6G7H8", type: "item", item: { Count: 1, id: "minecraft:book", tag: { } }, count: 1L }
+				{ id: "B2C3D4E5F6G7H8I9", type: "item", item: { Count: 1, id: "minecraft:dandelion", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F6A7B8C9D0E1F2G3"
+			title: "百科 · Ars Nouveau 入门"
+			subtitle: ""
+			description: "【Ars Nouveau 入门】\nArs Nouveau 是符文与魔法的艺术。\n【怎么做】收集 1 本书与 4 份青金石。\n【为什么】书记录咒语，青金石是奥秘符文的基础材料。\n【提示】青金石通常从下界深处的矿脉或交易中获得。"
+			dependencies: ["E8F7C2A1B3D4E5F6"]
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:book", tag: { } }
+			tasks: [
+				{ id: "C3D4E5F6G7H8I9J0", type: "item", item: { Count: 1, id: "minecraft:book", tag: { } }, count: 1L }
+				{ id: "D4E5F6G7H8I9J0K1", type: "item", item: { Count: 1, id: "minecraft:lapis_lazuli", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "G7B8C9D0E1F2G3H4"
+			title: "百科 · 附魔知识"
+			subtitle: ""
+			description: "【附魔知识】\n附魔台是古代魔法的祭坛。\n【怎么做】制作 1 个附魔台 + 8 个书架。\n【为什么】书架环绕附魔台，能提升附魔台的威力；书是知识，书架是知识的守护。\n【提示】附魔台配方：黑曜石 4 + 书 1 + 钻石 2；书架配方：木板 6 + 书 3。"
+			dependencies: ["F6A7B8C9D0E1F2G3"]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:enchanting_table", tag: { } }
+			tasks: [
+				{ id: "E5F6G7H8I9J0K1L2", type: "item", item: { Count: 1, id: "minecraft:enchanting_table", tag: { } }, count: 1L }
+				{ id: "F6G7H8I9J0K1L2M3", type: "item", item: { Count: 1, id: "minecraft:bookshelf", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "H8C9D0E1F2G3H4I5"
+			title: "里程碑 · 千里之行"
+			subtitle: ""
+			description: "【里程碑：千里之行】\n\"千里之行，始于足下。\"\n【怎么做】收集 1 双皮革靴子。\n【象征意义】靴子代表着旅程的开始——每一步都是文明远征的起点。\n【提示】皮革靴子可通过合成皮革获得，或在村落中交易。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:leather_boots", tag: { } }
+			tasks: [
+				{ id: "G7H8I9J0K1L2M3N4", type: "item", item: { Count: 1, id: "minecraft:leather_boots", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "I9D0E1F2G3H4I5J6"
+			title: "里程碑 · 星火传承"
+			subtitle: ""
+			description: "【里程碑：星火传承】\n\"文明的薪火在星火中传承。\"\n【怎么做】收集 1 颗下界之星 + 4 份文明精华。\n【象征意义】下界之星是最古老的力量，文明精华是四颗星球知识的结晶。合在一起，象征着文明的完全继承。\n【提示】下界之星来自凋灵战斗或特殊掉落；文明精华在档案馆获得。"
+			dependencies: ["H8C9D0E1F2G3H4I5"]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:nether_star", tag: { } }
+			tasks: [
+				{ id: "H8I9J0K1L2M3N4O5", type: "item", item: { Count: 1, id: "minecraft:nether_star", tag: { } }, count: 1L }
+				{ id: "I9J0K1L2M3N4O5P6", type: "item", item: { Count: 1, id: "starciv:civ_essence", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

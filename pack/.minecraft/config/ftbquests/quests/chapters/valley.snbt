@@ -203,5 +203,186 @@
 			rewards: [
 			]
 		}
+		{
+			id: "2E8F1A4C7B93D5E2"
+			title: "绿谷 · 胡萝卜王国"
+			subtitle: ""
+			description: "【位置】绿谷农田区域。\n【目标】收集 32 个胡萝卜。\n【要领】胡萝卜田易于大规模种植；熟透后直接收获。\n【背景】胡萝卜是绿谷高产作物的代表——沃土种出来的财富。"
+			dependencies: []
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:carrot", tag: { } }
+			tasks: [
+				{ id: "A7C2F1E9D4B6C8F0", type: "item", item: { Count: 1, id: "minecraft:carrot", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "3F9D2B5E8A1C4G6H"
+			title: "绿谷 · 土豆丰收"
+			subtitle: ""
+			description: "【位置】绿谷农田南区。\n【目标】收集 32 个土豆。\n【要领】土豆田与胡萝卜交替轮作，提高产量；熟时一挥而收。\n【背景】土豆的繁殖力惊人——绿谷粮仓的另一块基石。"
+			dependencies: []
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:potato", tag: { } }
+			tasks: [
+				{ id: "B8D3G2F0E1C5H7I9", type: "item", item: { Count: 1, id: "minecraft:potato", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "4G0E3C6F9B2D5H8J"
+			title: "绿谷 · 甜菜农场"
+			subtitle: ""
+			description: "【位置】绿谷农田中心。\n【目标】收集 16 个甜菜。\n【要领】甜菜需要较多阳光；收获时直接掉甜菜块。\n【背景】甜菜为绿谷的冬季储备提供糖分——甜蜜是文明的滋味。"
+			dependencies: []
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:beetroot", tag: { } }
+			tasks: [
+				{ id: "C9E4H3G1F2D6I8J0", type: "item", item: { Count: 1, id: "minecraft:beetroot", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5H1F4D7G0C3E9I0K"
+			title: "绿谷 · 南瓜灯节"
+			subtitle: ""
+			description: "【位置】绿谷农场西北角（南瓜地）。\n【目标】制作 8 个南瓜灯。\n【要领】南瓜成熟后用剑切割；内部雕空后放火把即为南瓜灯。\n【背景】南瓜灯是绿谷秋季庆典的象征——每盏灯都是丰收的祝福。"
+			dependencies: []
+			x: 8.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:jack_o_lantern", tag: { } }
+			tasks: [
+				{ id: "D0F5I4H2G3E7J9K1", type: "item", item: { Count: 1, id: "minecraft:jack_o_lantern", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "6I2G5E8H1D4F0J1L"
+			title: "绿谷 · 村民之家"
+			subtitle: ""
+			description: "【位置】绿谷城镇规划区。\n【目标】制作 4 张床。\n【要领】床=羊毛×3+木板×3；白色羊毛需剪白羊毛。\n【背景】每张床都是对村民生活的承诺——安居乐业是文明的基础。"
+			dependencies: []
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:white_bed", tag: { } }
+			tasks: [
+				{ id: "E1G6J5I3H4F8K0L2", type: "item", item: { Count: 1, id: "minecraft:white_bed", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "7J3H6F9I2E5G1K2M"
+			title: "绿谷 · 铁匠铺"
+			subtitle: ""
+			description: "【位置】绿谷城镇中心广场。\n【目标】制作 1 个铁砧 + 2 个熔炉。\n【要领】铁砧=铁块×31+木棒；熔炉=圆石8块+空心。\n【背景】铁匠铺是文明工业化的起点——每一次铸造，都是进步的声音。"
+			dependencies: []
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:anvil", tag: { } }
+			tasks: [
+				{ id: "F2H7K6J4I5G9L1M3", type: "item", item: { Count: 1, id: "minecraft:anvil", tag: { } }, count: 1L },
+				{ id: "G3I8L7K5J6H0M2N4", type: "item", item: { Count: 1, id: "minecraft:furnace", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8K4I7G0J3F6H2L3N"
+			title: "绿谷 · 图书馆"
+			subtitle: ""
+			description: "【位置】绿谷城镇文化区。\n【目标】制作 3 个书架。\n【要领】书架=木板6+书1；书是纸×3+皮革制作。\n【背景】图书馆是知识的灯塔——绿谷的文明不仅要在田间，也要在智慧中延续。"
+			dependencies: []
+			x: 6.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:bookshelf", tag: { } }
+			tasks: [
+				{ id: "H4J9M8L6K7I1N3O5", type: "item", item: { Count: 1, id: "minecraft:bookshelf", tag: { } }, count: 3L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "9L5J8H1K4G7I3M4O"
+			title: "绿谷 · 贸易大厅"
+			subtitle: ""
+			description: "【位置】绿谷城镇南侧（与村庄临近）。\n【目标】收集 16 个绿宝石。\n【要领】绿宝石主要来自村民交易或矿区探险；多与农民交易效率最高。\n【背景】绿宝石是信用的象征——有了它，绿谷就有了与世界的通行证。"
+			dependencies: []
+			x: 8.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:emerald", tag: { } }
+			tasks: [
+				{ id: "I5K0N9M7L8J2O4P6", type: "item", item: { Count: 1, id: "minecraft:emerald", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0M6K9I2L5H8J4F7P"
+			title: "绿谷 · 洞穴探险"
+			subtitle: ""
+			description: "【位置】绿谷地下矿脉（河流下方）。\n【目标】收集 16 个铁矿石原矿。\n【要领】铁矿在深层常见；用铁镐采集，火把照明防怪。\n【背景】铁矿是工业文明的基础——第一炉铁水，标志着绿谷进入青铜时代。"
+			dependencies: []
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:raw_iron", tag: { } }
+			tasks: [
+				{ id: "J6L1O0P9N8M2K5Q7", type: "item", item: { Count: 1, id: "minecraft:raw_iron", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1N7L0J3M6I9K5G8Q"
+			title: "绿谷 · 地下湖泊"
+			subtitle: ""
+			description: "【位置】绿谷深层地下（深穴探险中发现）。\n【目标】收集 4 个发光鱿鱼墨囊。\n【要领】发光鱿鱼墨囊来自地下湖泊的发光鱿鱼；水下呼吸药水必须。\n【背景】地下湖泊隐藏着生物的秘密——发光的墨囊记录着深层的故事。"
+			dependencies: []
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:glow_ink_sac", tag: { } }
+			tasks: [
+				{ id: "K7M2P1Q0O9N3L6R8", type: "item", item: { Count: 1, id: "minecraft:glow_ink_sac", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "2O8M1K4N7J0I6H9R"
+			title: "绿谷 · 丛林寺庙"
+			subtitle: ""
+			description: "【位置】绿谷南侧丛林地带（天然遗迹）。\n【目标】收集 1 个 TNT（从寺庙陷阱中获取）。\n【要领】丛林寺庙的陷阱常藏 TNT；小心触发或用工具挖取。\n【背景】寺庙的陷阱守护了古老的秘密——那 TNT 是对入侵者的最后警告。"
+			dependencies: []
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:tnt", tag: { } }
+			tasks: [
+				{ id: "L8N3Q2R1P0O4M7S9", type: "item", item: { Count: 1, id: "minecraft:tnt", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "3P9N2L5O8K1J7I0S"
+			title: "绿谷 · 星空观测"
+			subtitle: ""
+			description: "【位置】绿谷高地（晨曦花园城堡北侧）。\n【目标】制作 1 个望远镜。\n【要领】望远镜=铜锭5+紫水晶块1+玻璃片4；居高临下才能观星。\n【背景】望远镜把星空拉近——绿谷人终于能看见自己来自的地方。"
+			dependencies: []
+			x: 8.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:spyglass", tag: { } }
+			tasks: [
+				{ id: "M9O4R3S2Q1P5N8T0", type: "item", item: { Count: 1, id: "minecraft:spyglass", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

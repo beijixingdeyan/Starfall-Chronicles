@@ -233,5 +233,170 @@
 			rewards: [
 			]
 		}
+		{
+			id: "A1B2C3D4E5F6A7B8"
+			title: "铁锈 · 铜矿开采"
+			subtitle: ""
+			description: "【位置】铁锈深矿层（y=2）。\n【目标】收集 32 个铜锭。\n【要领】铜矿在深层最常见；需铁镐或更好的工具。\n【背景】铜在铁锈星代表着过去——被氧化但仍然有价值。"
+			dependencies: []
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:copper_ingot", tag: { } }
+			tasks: [
+				{ id: "C1D2E3F4A5B6C7D8", type: "item", item: { Count: 1, id: "minecraft:copper_ingot", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B2C3D4E5F6A7B8C9"
+			title: "铁锈 · 金矿深挖"
+			subtitle: ""
+			description: "【位置】铁锈深矿层（y=2）。\n【目标】收集 16 个金锭。\n【要领】金矿稀少但价值高；深层下去才能找到。\n【背景】黄金在废土上代表着不朽——即使锈蚀，也永远闪闪发光。"
+			dependencies: ["A1B2C3D4E5F6A7B8"]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:gold_ingot", tag: { } }
+			tasks: [
+				{ id: "D2E3F4A5B6C7D8E9", type: "item", item: { Count: 1, id: "minecraft:gold_ingot", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C3D4E5F6A7B8C9D0"
+			title: "铁锈 · 钻石矿脉"
+			subtitle: ""
+			description: "【位置】铁锈最深层（y=2）。\n【目标】收集 8 个钻石。\n【要领】钻石极其稀有；耐心挖掘，用铁镐或钻石镐。\n【背景】钻石是永恒的承诺——即使在末日废土上，它也不会褪色。"
+			dependencies: ["B2C3D4E5F6A7B8C9"]
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:diamond", tag: { } }
+			tasks: [
+				{ id: "E3F4A5B6C7D8E9F0", type: "item", item: { Count: 1, id: "minecraft:diamond", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D4E5F6A7B8C9D0E1"
+			title: "铁锈 · 红石矿藏"
+			subtitle: ""
+			description: "【位置】铁锈全层都有（y=2最密集）。\n【目标】收集 64 个红石粉。\n【要领】红石矿遍地；挖起来需下界之门打火石；深层最多。\n【背景】红石脉搏——曾经驱动整个文明的血液，如今只有机器还能听到它的跳动。"
+			dependencies: ["C3D4E5F6A7B8C9D0"]
+			x: 8.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+			tasks: [
+				{ id: "F4A5B6C7D8E9F0A1", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 64L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E5F6A7B8C9D0E1F2"
+			title: "铁锈 · 高炉冶炼"
+			subtitle: ""
+			description: "【位置】铁锈工业基地。\n【目标】制作 2 个高炉。\n【要领】高炉由砖块堆砌；放在熔炉旁提升效率。\n【背景】高炉是钢铁的摇篮——没有它，工业就只是梦话。"
+			dependencies: []
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:blast_furnace", tag: { } }
+			tasks: [
+				{ id: "A5B6C7D8E9F0A1B2", type: "item", item: { Count: 1, id: "minecraft:blast_furnace", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F6A7B8C9D0E1F2A3"
+			title: "铁锈 · 烟囱排气"
+			subtitle: ""
+			description: "【位置】铁锈工厂屋顶。\n【目标】制作 16 个铁栏杆。\n【要领】铁栏杆可用铁锭合成；排成竖列就是烟囱。\n【背景】污染是工业的影子——烟囱排气提醒我们：进步从来都有代价。"
+			dependencies: ["E5F6A7B8C9D0E1F2"]
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:iron_bars", tag: { } }
+			tasks: [
+				{ id: "B6C7D8E9F0A1B2C3", type: "item", item: { Count: 1, id: "minecraft:iron_bars", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "A7B8C9D0E1F2A3B4"
+			title: "铁锈 · 铁轨网络"
+			subtitle: ""
+			description: "【位置】铁锈矿场之间。\n【目标】制作 32 个铁轨。\n【要领】铁轨由铁锭和木棍合成；铺成网络连接矿脉。\n【背景】铁轨是物流的纽带——它们曾经运来繁荣，如今只能运出废墟。"
+			dependencies: ["F6A7B8C9D0E1F2A3"]
+			x: 6.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:rail", tag: { } }
+			tasks: [
+				{ id: "C7D8E9F0A1B2C3D4", type: "item", item: { Count: 1, id: "minecraft:rail", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B8C9D0E1F2A3B4C5"
+			title: "铁锈 · 矿车运输"
+			subtitle: ""
+			description: "【位置】铁轨上方。\n【目标】制作 4 个矿车。\n【要领】矿车由铁锭组成；放在铁轨上推动它们运货。\n【背景】矿车滚过铁轨——这是废土上仅有的机械乐章。"
+			dependencies: ["A7B8C9D0E1F2A3B4"]
+			x: 8.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:minecart", tag: { } }
+			tasks: [
+				{ id: "D8E9F0A1B2C3D4E5", type: "item", item: { Count: 1, id: "minecraft:minecart", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C9D0E1F2A3B4C5D6"
+			title: "铁锈 · 废弃矿井"
+			subtitle: ""
+			description: "【位置】铁锈各地的地下废矿。\n【目标】收集 4 个蜘蛛网。\n【要领】蜘蛛网在黑暗洞穴常见；用剑或手砍最快。\n【背景】蜘蛛网是时间的丝线——每一根都见证了这座星球的遗忘。"
+			dependencies: []
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:cobweb", tag: { } }
+			tasks: [
+				{ id: "E9F0A1B2C3D4E5F6", type: "item", item: { Count: 1, id: "minecraft:cobweb", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D0E1F2A3B4C5D6E7"
+			title: "铁锈 · 熔岩深渊"
+			subtitle: ""
+			description: "【位置】铁锈最深的地下熔岩池。\n【目标】收集 4 个黑曜石。\n【要领】黑曜石在熔岩水交界处生成；用钻石镐采集。\n【背景】黑曜石是火与水的相逢——铁锈星上最坚硬的遗物。"
+			dependencies: ["C9D0E1F2A3B4C5D6"]
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:obsidian", tag: { } }
+			tasks: [
+				{ id: "F0A1B2C3D4E5F6A7", type: "item", item: { Count: 1, id: "minecraft:obsidian", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E1F2A3B4C5D6E7F8"
+			title: "铁锈 · 钢铁之心"
+			subtitle: ""
+			description: "【位置】铁锈冶炼炉。\n【目标】制作 1 个铁块。\n【要领】铁块由 9 个铁锭合成；代表工业的核心。\n【背景】铁块是承诺的物质化——它象征着，即使在锈蚀的废土上，我们也能重建辉煌。"
+			dependencies: ["D0E1F2A3B4C5D6E7"]
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:iron_block", tag: { } }
+			tasks: [
+				{ id: "A1B2C3D4E5F6A7B9", type: "item", item: { Count: 1, id: "minecraft:iron_block", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

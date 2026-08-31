@@ -101,5 +101,215 @@
 			rewards: [
 			]
 		}
+		{
+			id: "A1B2C3D4E5F6A7B8"
+			title: "美食 · 切菜板"
+			subtitle: ""
+			description: "Farmer's Delight 美食系列之一：制作第一个切菜板。\n【材料】6 根原木/木板 + 1 个铁锭（或其他金属）。\n【干什么】制作 1 个切菜板，用于加工食材。\n【为什么】切菜板是美食制作的基础工具，可以快速加工各类食材。"
+			dependencies: []
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "farmersdelight:cutting_board", tag: { } }
+			tasks: [
+				{ id: "B2C3D4E5F6A7B8C9", type: "item", item: { Count: 1, id: "farmersdelight:cutting_board", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C3D4E5F6A7B8C9DA"
+			title: "美食 · 牛肉炖菜"
+			subtitle: ""
+			description: "Farmer's Delight 美食系列之二：烹饪美味的牛肉炖菜。\n【材料】需要切菜板与各类食材。\n【干什么】制作 4 个炖牛肉。\n【为什么】营养丰富的食物能恢复更多饱食度。"
+			dependencies: ["A1B2C3D4E5F6A7B8"]
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "farmersdelight:beef_stew", tag: { } }
+			tasks: [
+				{ id: "D4E5F6A7B8C9DAE0", type: "item", item: { Count: 1, id: "farmersdelight:beef_stew", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E5F6A7B8C9DAE0F1"
+			title: "美食 · 混合沙拉"
+			subtitle: ""
+			description: "Farmer's Delight 美食系列之三：混合新鲜蔬菜做沙拉。\n【材料】生菜、番茄、黄瓜等新鲜蔬菜。\n【干什么】制作 4 个混合沙拉。\n【为什么】沙拉清爽可口，是生存游戏中的清淡选择。"
+			dependencies: ["C3D4E5F6A7B8C9DA"]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "farmersdelight:mixed_salad", tag: { } }
+			tasks: [
+				{ id: "F6A7B8C9DAE0F1F2", type: "item", item: { Count: 1, id: "farmersdelight:mixed_salad", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F7G8H9I0J1K2L3M4"
+			title: "美食 · 蛋糕大师"
+			subtitle: ""
+			description: "Farmer's Delight 美食系列之四：烘烤甜蜜的蛋糕。\n【材料】鸡蛋、小麦、糖、牛奶。\n【干什么】制作 2 个蛋糕。\n【为什么】蛋糕是派对和庆祝的象征，也是高营养的食物。"
+			dependencies: ["E5F6A7B8C9DAE0F1"]
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:cake", tag: { } }
+			tasks: [
+				{ id: "G8H9I0J1K2L3M4N5", type: "item", item: { Count: 1, id: "minecraft:cake", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "H9I0J1K2L3M4N5O6"
+			title: "酿造 · 啤酒入门"
+			subtitle: ""
+			description: "Brewing & Chewin 酿造系列之一：开始你的酿酒之旅。\n【材料】大麦、蛇麻草、酵母。\n【干什么】制作 2 瓶啤酒。\n【为什么】啤酒是中世纪的饮品，也是社交的良伴。"
+			dependencies: []
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "brewinandchewin:beer", tag: { } }
+			tasks: [
+				{ id: "I0J1K2L3M4N5O6P7", type: "item", item: { Count: 1, id: "brewinandchewin:beer", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "I1J2K3L4M5N6O7P8"
+			title: "酿造 · 蜂蜜酒"
+			subtitle: ""
+			description: "Brewing & Chewin 酿造系列之二：用蜂蜜酿造高级饮品。\n【材料】蜂蜜、酵母。\n【干什么】制作 2 瓶蜂蜜酒（如无此ID用蜂蜜瓶×4 替代）。\n【为什么】蜂蜜酒古老而珍贵，是君主们的最爱。"
+			dependencies: ["H9I0J1K2L3M4N5O6"]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:honey_bottle", tag: { } }
+			tasks: [
+				{ id: "J2K3L4M5N6O7P8Q9", type: "item", item: { Count: 1, id: "minecraft:honey_bottle", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "J3K4L5M6N7O8P9Q0"
+			title: "四季 · 春播"
+			subtitle: ""
+			description: "Serene Seasons 四季系列之一：春天播种的季节。\n【材料】小麦种子。\n【干什么】种植 16 个小麦种子。\n【为什么】春天是万物复苏的季节，播下希望的种子。"
+			dependencies: []
+			x: 0.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:wheat_seeds", tag: { } }
+			tasks: [
+				{ id: "K4L5M6N7O8P9Q0R1", type: "item", item: { Count: 1, id: "minecraft:wheat_seeds", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "K5L6M7N8O9P0Q1R2"
+			title: "四季 · 夏养"
+			subtitle: ""
+			description: "Serene Seasons 四季系列之二：夏天是浆果成熟的季节。\n【材料】甜浆果。\n【干什么】收集 8 个甜浆果。\n【为什么】炎炎夏日，甜浆果是清凉的美味。"
+			dependencies: ["J3K4L5M6N7O8P9Q0"]
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:sweet_berries", tag: { } }
+			tasks: [
+				{ id: "L6M7N8O9P0Q1R2S3", type: "item", item: { Count: 1, id: "minecraft:sweet_berries", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "L7M8N9O0P1Q2R3S4"
+			title: "四季 · 秋收"
+			subtitle: ""
+			description: "Serene Seasons 四季系列之三：秋天丰收的季节。\n【材料】小麦。\n【干什么】收集 32 个小麦。\n【为什么】秋高气爽，收获一年辛勤的果实。"
+			dependencies: ["K5L6M7N8O9P0Q1R2"]
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+			tasks: [
+				{ id: "M8N9O0P1Q2R3S4T5", type: "item", item: { Count: 1, id: "minecraft:wheat", tag: { } }, count: 32L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "M9N0O1P2Q3R4S5T6"
+			title: "四季 · 冬藏"
+			subtitle: ""
+			description: "Serene Seasons 四季系列之四：冬天是储存的季节。\n【材料】陶土、砖块等。\n【干什么】制作 1 个 BotanyPots 花盆用于冬季储存种子。\n【为什么】冬天虽然寒冷，但我们为春天的再次播种做准备。"
+			dependencies: ["L7M8N9O0P1Q2R3S4"]
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "botanypots:terracotta_botany_pot", tag: { } }
+			tasks: [
+				{ id: "N0O1P2Q3R4S5T6U7", type: "item", item: { Count: 1, id: "botanypots:terracotta_botany_pot", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "N1O2P3Q4R5S6T7U8"
+			title: "进阶蜂巢"
+			subtitle: ""
+			description: "Productive Bees 进阶系列之一：升级到高级蜂巢。\n【材料】高级木材和蜜脾。\n【干什么】制作 1 个进阶橡树蜂巢。\n【为什么】进阶蜂巢能吸引更多高产量的蜂种。"
+			dependencies: []
+			x: 0.0d
+			y: 8.0d
+			icon: { Count: 1, id: "productivebees:advanced_oak_beehive", tag: { } }
+			tasks: [
+				{ id: "O2P3Q4R5S6T7U8V9", type: "item", item: { Count: 1, id: "productivebees:advanced_oak_beehive", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "O3P4Q5R6S7T8U9V0"
+			title: "蜂蜜加工"
+			subtitle: ""
+			description: "Productive Bees 进阶系列之二：大规模收蜜。\n【材料】蜂箱。\n【干什么】收集 8 个蜂蜜瓶。\n【为什么】建立自动化收蜜系统是高产的关键。"
+			dependencies: ["N1O2P3Q4R5S6T7U8"]
+			x: 2.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:honey_bottle", tag: { } }
+			tasks: [
+				{ id: "P4Q5R6S7T8U9V0W1", type: "item", item: { Count: 1, id: "minecraft:honey_bottle", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "P5Q6R7S8T9U0V1W2"
+			title: "蜂蜜块"
+			subtitle: ""
+			description: "Productive Bees 进阶系列之三：蜂蜜块的妙用。\n【材料】蜂蜜瓶。\n【干什么】制作 2 个蜂蜜块。\n【为什么】蜂蜜块可用于建筑或作为粘性材料。"
+			dependencies: ["O3P4Q5R6S7T8U9V0"]
+			x: 4.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:honey_block", tag: { } }
+			tasks: [
+				{ id: "Q6R7S8T9U0V1W2X3", type: "item", item: { Count: 1, id: "minecraft:honey_block", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "Q7R8S9T0U1V2W3X4"
+			title: "蜂蜡收集"
+			subtitle: ""
+			description: "Productive Bees 进阶系列之四：蜂蜡的收集与应用。\n【材料】蜂巢。\n【干什么】收集 8 个蜜脾。\n【为什么】蜜脾用于合成蜂蜡相关产品，是高级合成的重要材料。"
+			dependencies: ["P5Q6R7S8T9U0V1W2"]
+			x: 6.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:honeycomb", tag: { } }
+			tasks: [
+				{ id: "R8S9T0U1V2W3X4Y5", type: "item", item: { Count: 1, id: "minecraft:honeycomb", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

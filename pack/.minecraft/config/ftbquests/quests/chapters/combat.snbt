@@ -159,5 +159,185 @@
 			rewards: [
 			]
 		}
+		{
+			id: "A1B2C3D4E5F6A7B8"
+			title: "战斗 · 铁剑锻造"
+			subtitle: ""
+			description: "【基础武器：铁剑】\n  铁是战斗的起点。锻造你的第一把真正的武器。\n【配方】3 个铁锭 + 1 个木棍（工作台）\n【用处】足以应对大多数平原地表怪物。\n【进阶】附魔"锋利"后，甚至可对抗初级精英怪。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:iron_sword", tag: { } }
+			tasks: [
+				{ id: "A1B2C3D4E5F6A7B9", type: "item", item: { Count: 1, id: "minecraft:iron_sword", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B2C3D4E5F6A7B8C9"
+			title: "战斗 · 附魔入门"
+			subtitle: ""
+			description: "【附魔台的秘密】\n  要让武器真正强大，需要古老的魔法。\n【配方】2 个钻石 + 5 个黑曜石 + 1 本书（工作台）\n【用处】解锁武器/防具附魔，是一切强化的基础。\n【提示】高等级附魔需要足够的经验，磨石可移除不需要的附魔。"
+			dependencies: ["A1B2C3D4E5F6A7B8"]
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:enchanting_table", tag: { } }
+			tasks: [
+				{ id: "B2C3D4E5F6A7B8CA", type: "item", item: { Count: 1, id: "minecraft:enchanting_table", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C3D4E5F6A7B8C9D0"
+			title: "战斗 · 钻石装备"
+			subtitle: ""
+			description: "【钻石时代的到来】\n  钻石是中期最耐用的材料，适合冒险家的第二套装备。\n【配方】3 个钻石 + 1 个木棍（工作台）\n【对比】钻石剑耐久 1561，附魔后威力远超黑钢。\n【策略】先锻造 1 把钻石剑，探索地狱与末地的前置条件。"
+			dependencies: ["B2C3D4E5F6A7B8C9"]
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:diamond_sword", tag: { } }
+			tasks: [
+				{ id: "C3D4E5F6A7B8C9D1", type: "item", item: { Count: 1, id: "minecraft:diamond_sword", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D4E5F6A7B8C9D0E1"
+			title: "战斗 · 下界合金"
+			subtitle: ""
+			description: "【终极主流武器】\n  下界合金是游戏中最强的材料——锻造、挖掘、战斗的终极选择。\n【配方】4 个下界合金锭 + 1 个木棍（工作台）\n【特性】伤害 8（相比钻石 7），最高耐久与抗火！\n【获取】击杀凋零、挖掘远古残骸、与 Boss 战斗来积累。\n【里程碑】拥有下界合金剑 = 你已是真正的战士。"
+			dependencies: ["C3D4E5F6A7B8C9D0"]
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:netherite_sword", tag: { } }
+			tasks: [
+				{ id: "D4E5F6A7B8C9D0E2", type: "item", item: { Count: 1, id: "minecraft:netherite_sword", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E5F6A7B8C9D0E1F2"
+			title: "Boss · 末影守卫"
+			subtitle: ""
+			description: "【Boss 档案：末影守卫】（Cataclysm）\n【位置】末地虚空边缘的暗晶塔。\n【外观】类人形紫色生物：传送、远程打击、空间扭曲。\n【打法】\n  ① 无法靠近时用远程武器风筝\n  ② 准备充足的飞行手段（末影珍珠、鞘翅）\n  ③ 掉落高级材料与虚空碎片\n【目标】击败 1 次。\n【剧情】它守护末地最深的秘密——维度之间的界限。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
+			tasks: [
+				{ id: "E5F6A7B8C9D0E1F3", type: "kill", entity: "cataclysm:ender_guardian", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F6A7B8C9D0E1F2G3"
+			title: "Boss · 先驱者"
+			subtitle: ""
+			description: "【Boss 档案：先驱者】（Cataclysm）\n【位置】荒凉废土的黑塔之中。\n【外观】失落文明的守护者：利刃、魔法、虚空能量。\n【打法】\n  ① 魔法攻击难以预判，需反应速度\n  ② 靠近时有猛烈的连击\n  ③ 掉落：先驱者遗物与古老知识碎片\n【目标】击败 1 次。\n【剧情】文明陨落后，它仍在坚守岗位——唯一的先驱者。"
+			dependencies: ["E5F6A7B8C9D0E1F2"]
+			x: 2.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "F6A7B8C9D0E1F2G4", type: "kill", entity: "cataclysm:the_harbinger", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "G7B8C9D0E1F2G3H4"
+			title: "Boss · 深潜女皇"
+			subtitle: ""
+			description: "【Boss 档案：深潜女皇】（Cataclysm）\n【位置】深海核心的冰冷深渊。\n【外观】深海怪物：多触手、毒液、冰冻光线。\n【打法】\n  ① 在水中战斗中毒风险高，准备解毒药\n  ② 触手会制造伤害地带，边打边走\n  ③ 掉落：深潜之心与深海宝藏\n【挑战】如不存在深潜女皇，再次击杀深潜蛮兽作为强力替代。\n【目标】击败 1 次。\n【剧情】她统治深海数百年，从未被挑战者触及——直到你到来。"
+			dependencies: ["F6A7B8C9D0E1F2G3"]
+			x: 4.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:prismarine_crystals", tag: { } }
+			tasks: [
+				{ id: "G7B8C9D0E1F2G3H5", type: "kill", entity: "cataclysm:deepling_priest", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "H8C9D0E1F2G3H4I5"
+			title: "Boss · 全部征服"
+			subtitle: ""
+			description: "【终极挑战：下界合金巨兽（第二次）】\n【位置】苍穹星晶体平原。\n【难度】★★★★★ 疯狂\n【打法】\n  ① 首次击败仅是序章——它会变得更强\n  ② 准备充足的金苹果、药水与逃脱手段\n  ③ 每一道伤口都是它变强的机会\n【目标】再次击败下界合金巨兽。\n【奖励】官方认证的"勇者"头衔 + 最高荣誉。\n【剧情】所有怪物都退缩了。只有它，仍站在最后。"
+			dependencies: ["G7B8C9D0E1F2G3H4"]
+			x: 6.0d
+			y: 8.0d
+			icon: { Count: 1, id: "minecraft:netherite_block", tag: { } }
+			tasks: [
+				{ id: "H8C9D0E1F2G3H4I6", type: "kill", entity: "cataclysm:netherite_monstrosity", value: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "I9D0E1F2G3H4I5J6"
+			title: "装备 · 虚空之剑"
+			subtitle: ""
+			description: "【传说装备：虚空之剑】（Cataclysm）\n【来源】虚空潜视（the_watcher）的稀有掉落。\n【特性】\n  • 伤害值媲美下界合金\n  • 自带虚空伤害，能穿透护甲\n  • 挥舞时产生空间扭曲效果\n【用处】对付高防御 Boss 的最佳选择。\n【地位】传说中只有真正的勇者才配拥有虚空之剑。\n【目标】收集 1 把。"
+			dependencies: [ ]
+			x: 0.0d
+			y: 10.0d
+			icon: { Count: 1, id: "cataclysm:void_sword", tag: { } }
+			tasks: [
+				{ id: "I9D0E1F2G3H4I5J7", type: "item", item: { Count: 1, id: "cataclysm:void_sword", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "J0E1F2G3H4I5J6K7"
+			title: "装备 · 末影套装"
+			subtitle: ""
+			description: "【传说防具：末影套装】（Cataclysm / 原版升级）\n【来源】末影守卫掉落或合成升级。\n【特性】\n  • 护甲值顶级（接近下界合金）\n  • 自带传送耐性与虚空保护\n  • 外观飘然若思\n【替代】如末影套装不存在，收集 1 件下界合金胸甲作为等效替代。\n【用处】末地探险与虚空战斗的理想装备。\n【目标】收集 1 件。"
+			dependencies: ["I9D0E1F2G3H4I5J6"]
+			x: 2.0d
+			y: 10.0d
+			icon: { Count: 1, id: "cataclysm:enderite_chestplate", tag: { } }
+			tasks: [
+				{ id: "J0E1F2G3H4I5J6K8", type: "item", item: { Count: 1, id: "cataclysm:enderite_chestplate", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "K1F2G3H4I5J6K7L8"
+			title: "装备 · 远古金属"
+			subtitle: ""
+			description: "【稀有材料：远古金属锭】（Cataclysm）\n【来源】远古残骸击杀掉落或地下遗迹挖掘。\n【特性】\n  • 强度与下界合金相当\n  • 可用于锻造传说级武器与防具\n  • 深灰色泽承载着旧文明的记忆\n【用处】升级装备、合成高级工具的关键材料。\n【数量】每次击杀获得 1~3 个；本任务需要 4 个积累。\n【目标】收集 4 个。"
+			dependencies: ["J0E1F2G3H4I5J6K7"]
+			x: 4.0d
+			y: 10.0d
+			icon: { Count: 1, id: "cataclysm:ancient_metal_ingot", tag: { } }
+			tasks: [
+				{ id: "K1F2G3H4I5J6K7L9", type: "item", item: { Count: 1, id: "cataclysm:ancient_metal_ingot", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "L2G3H4I5J6K7L8M9"
+			title: "装备 · 虚空核心"
+			subtitle: ""
+			description: "【终极物质：虚空核心】（Cataclysm）\n【来源】虚空潜视（the_watcher）掉落。\n【特性】\n  • 蕴含维度间的原始能量\n  • 可用于合成空间扭曲效应装备\n  • 稀有度堪比下界合金\n【用处】锻造虚空套装、升级传说装备的必需品。\n【地位】拥有虚空核心 = 你已触及游戏内最高秘密。\n【提示】需击杀虚空潜视数次来积累；每个虚空核心都弥足珍贵。\n【目标】收集 2 个。"
+			dependencies: ["K1F2G3H4I5J6K7L8"]
+			x: 6.0d
+			y: 10.0d
+			icon: { Count: 1, id: "cataclysm:void_core", tag: { } }
+			tasks: [
+				{ id: "L2G3H4I5J6K7L8MA", type: "item", item: { Count: 1, id: "cataclysm:void_core", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

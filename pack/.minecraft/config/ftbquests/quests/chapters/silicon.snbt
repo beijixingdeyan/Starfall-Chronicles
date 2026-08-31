@@ -218,5 +218,125 @@
 			rewards: [
 			]
 		}
+		{
+			id: "7A1F9C3E2B4D5A6F"
+			title: "硅火 · ME 控制器"
+			subtitle: ""
+			description: "【存储网络】硅火的数据存储枢纽。\n【目标】制作 1 个 AE2 ME 控制器。\n【要领】这是应用能源系统的核心——所有的数据都在这里流动。\n【背景】ME 网络让整座都市的存储连为一体。"
+		dependencies: []
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "appliedenergistics2:controller", tag: { } }
+			tasks: [
+				{ id: "1E2F3A4B5C6D7E8F", type: "item", item: { Count: 1, id: "appliedenergistics2:controller", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8B2C9D4E5F6A7B1C"
+			title: "硅火 · 存储元件"
+			subtitle: ""
+			description: "【存储网络】硅火的数据仓库。\n【目标】制作 1 个 AE2 1K 存储元件。\n【要领】把你的物品压缩成数字——这就是硅火的魔法。\n【背景】存储元件是 ME 网络的血液，让无限物品成为可能。"
+		dependencies: ["7A1F9C3E2B4D5A6F"]
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "appliedenergistics2:1k_cell_component", tag: { } }
+			tasks: [
+				{ id: "2F3E4A5B6C7D8E9F", type: "item", item: { Count: 1, id: "appliedenergistics2:1k_cell_component", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "9C3D9E5F6B7C8D2E"
+			title: "硅火 · RS 控制器"
+			subtitle: ""
+			description: "【存储网络】精致存储系统的大脑。\n【目标】制作 1 个 RS 控制器。\n【要领】另一种连接方式——更加优雅，更加精致。\n【背景】精致存储与 AE2 分庭抗礼，各有千秋。"
+		dependencies: ["8B2C9D4E5F6A7B1C"]
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "refinedstorage:controller", tag: { } }
+			tasks: [
+				{ id: "3E4F5A6B7C8D9EA0", type: "item", item: { Count: 1, id: "refinedstorage:controller", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "AD4E9F6C7D8E9F3A"
+			title: "硅火 · RS 磁盘"
+			subtitle: ""
+			description: "【存储网络】精致存储的数据载体。\n【目标】制作 1 个 RS 1K 存储磁盘。\n【要领】小小磁盘，却能装下整个仓库。\n【背景】硅火人用磁盘书写文明——每一片都是一个故事。"
+		dependencies: ["9C3D9E5F6B7C8D2E"]
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "refinedstorage:1k_storage_disk", tag: { } }
+			tasks: [
+				{ id: "4F5E6B7C8D9E0FA1", type: "item", item: { Count: 1, id: "refinedstorage:1k_storage_disk", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "BE5F0A7D8E9FA0B1"
+			title: "硅火 · 电脑入门"
+			subtitle: ""
+			description: "【编程自动化】硅火的智慧源头。\n【目标】制作 1 台 ComputerCraft 电脑。\n【要领】一台电脑承载的，不仅是计算，更是梦想。\n【背景】硅火的每一处自动化，都始于一台电脑的代码。"
+		dependencies: []
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "computercraft:computer_normal", tag: { } }
+			tasks: [
+				{ id: "5E6F7A8B9C0D1E2F", type: "item", item: { Count: 1, id: "computercraft:computer_normal", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "CF6A1B8E9F0A1B2C"
+			title: "硅火 · 显示器"
+			subtitle: ""
+			description: "【编程自动化】电脑的眼睛。\n【目标】制作 1 个 ComputerCraft 显示器。\n【要领】不是所有信息都值得看，但有些信息必须被看见。\n【背景】显示器把代码变成了现实——这就是编程的魔力。"
+		dependencies: ["BE5F0A7D8E9FA0B1"]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "computercraft:monitor_normal", tag: { } }
+			tasks: [
+				{ id: "6F7E8B9C0D1E2F3A", type: "item", item: { Count: 1, id: "computercraft:monitor_normal", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D07B2C9F0A1B2C3D"
+			title: "硅火 · 逻辑电缆"
+			subtitle: ""
+			description: "【编程自动化】数据的通道。\n【目标】制作 4 条集成动力学电缆。\n【要领】电缆连接一切——信息在其中流动。\n【背景】逻辑电缆是硅火神经网络的一部分。"
+		dependencies: ["CF6A1B8E9F0A1B2C"]
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "integrateddynamics:cable", tag: { } }
+			tasks: [
+				{ id: "7E8F9A0B1C2D3E4F", type: "item", item: { Count: 1, id: "integrateddynamics:cable", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E18C3D0A1B2C3D4E"
+			title: "硅火 · 变量存储"
+			subtitle: ""
+			description: "【编程自动化】信息的记忆体。\n【目标】制作 1 个集成动力学变量存储器。\n【要领】存储变量，就是存储可能性本身。\n【背景】有了变量存储，自动化才能有记忆，有逻辑，有灵魂。"
+		dependencies: ["D07B2C9F0A1B2C3D"]
+			x: 6.0d
+			y: 4.0d
+			icon: { Count: 1, id: "integrateddynamics:variablestore", tag: { } }
+			tasks: [
+				{ id: "8F9E0B1C2D3E4F5A", type: "item", item: { Count: 1, id: "integrateddynamics:variablestore", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

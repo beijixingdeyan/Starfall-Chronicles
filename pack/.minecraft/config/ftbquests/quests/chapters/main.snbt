@@ -10,9 +10,9 @@
 	quests: [
 		{
 			id: "D0CCDBFE6B69EFAB"
-			title: "① 绿谷 · 上古之种"
-			subtitle: ""
-			description: "这是你文明的起点，也是全流程的“开门”任务。\n【去哪里】绿谷星（出生世界）中心区域，寻找发光的【星港独石碑】，独石碑脚下与周边遗迹里有上古文明的休眠舱。\n【干什么】拾取【上古之种】；也可以开垦草地块碰碰运气。\n【为什么】上古之种是这一切的钥匙：农业、燃料、星门科技都以它为基础。\n【注意】种子很珍贵，先种进土里等它成熟，你还会用到它做【文明精华】。"
+			title: "① 序章 · 上古之种"
+			subtitle: "文明从一粒种子开始"
+			description: "【故事】你在绿谷星苏醒，记忆空白。唯一的线索是远处发光的【星港独石碑】。\n\n【任务】前往独石碑 (26, ~, -126)，在脚下的休眠舱中拾取【上古之种】。\n\n【提示】\n- 种子很珍贵——先种一株，观察它的成长\n- 按 E 键打开 JEI，搜索任何物品都能看到配方\n- 周围可能还有更多休眠舱，仔细找找"
 		dependencies: [ ]
 			x: 0.0d
 			y: 0.0d
@@ -21,168 +21,360 @@
 				{ id: "4BA4297E6269C149", type: "item", item: { Count: 1, id: "starciv:ancient_seed", tag: { } }, count: 1L }
 				{ id: "BCEEBC06A14B70AB", type: "advancement", advancement: "starciv:agriculture/start" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "7A1B2C3D4E5F6789"
+			title: "② 绿谷 · 扎根大地"
+			subtitle: "学会耕种，才有资格仰望星空"
+			description: "【故事】上古之种在你手中发芽了——但一粒不够。你需要建立一个农场来养活自己，也为后续的文明精粹储备原料。\n\n【任务】\n- 种植上古之种并等待成熟（约 5-15 分钟，雨天更快）\n- 收获 8 个小麦（建立基础食物来源）\n\n【提示】\n- 右键耕地可放置上古之种\n- 成熟后右键收获，可获得上古之种 + 文明精粹\n- 用锄头开垦河边的土地，灌溉范围内作物长得更快"
+		dependencies: ["D0CCDBFE6B69EFAB"]
+			x: 2.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:wheat", tag: { } }
+			tasks: [
+				{ id: "8B2C3D4E5F6A7890", type: "item", item: { Count: 1, id: "minecraft:wheat", tag: { } }, count: 8L }
 			]
+			rewards: [ ]
+		}
+		{
+			id: "9C3D4E5F6A7B8901"
+			title: "③ 绿谷 · 文明精粹"
+			subtitle: "第一代文明的知识结晶"
+			description: "【故事】上古之种成熟时，你发现了一种闪光的粉末——【文明精粹】。它是上古文明浓缩的知识，也是打开星门的关键材料。\n\n【任务】收集 2 份文明精粹。\n\n【怎么获得】\n- 上古之种成熟后收获会附带产出\n- 也可用 4 个上古之种在工作台直接压榨（JEI 查看配方）\n\n【背景】独石碑上的铭文写着：'精粹是记忆，记忆是火种。'"
+		dependencies: ["7A1B2C3D4E5F6789"]
+			x: 4.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:civ_essence", tag: { } }
+			tasks: [
+				{ id: "0D4E5F6A7B8C9012", type: "item", item: { Count: 1, id: "starciv:civ_essence", tag: { } }, count: 2L }
+			]
+			rewards: [ ]
 		}
 		{
 			id: "842B847A4A16859F"
-			title: "② 绿谷 · 星门钥匙"
-			subtitle: ""
-			description: "主线第二步（建议先完成①）。\n【材料】1 文明精华（上古之种制成）、4 金锭、4 绿宝石。\n【怎么做】打开 JEI（按 E 键后右侧配方列表，搜索“星门钥匙”）查看配方，在工作台合成。\n【为什么】星门钥匙是激活星门、前往铁锈星的凭证——没有它，你哪儿也去不了。\n【提示】配方详情见 JEI；材料不够就多挖矿。"
-		dependencies: ["D0CCDBFE6B69EFAB"]
-			x: 2.0d
+			title: "④ 绿谷 · 星门钥匙"
+			subtitle: "通往星际的第一把钥匙"
+			description: "【故事】文明精粹在你手中发出微光——独石碑似乎在回应。档案馆碎片提示：将精粹与贵金属融合，可以铸造【星门钥匙】。\n\n【材料】1 文明精粹 + 4 金锭 + 4 绿宝石\n【做法】工作台合成（JEI 搜索"星门钥匙"）\n\n【提示】\n- 金锭：地下 Y=-64~32 挖矿，或村民交易\n- 绿宝石：山地矿脉，或用小麦和村民换\n- 合成后别急着用——先把农场稳住"
+		dependencies: ["9C3D4E5F6A7B8901"]
+			x: 6.0d
 			y: 0.0d
 			icon: { Count: 1, id: "starciv:stellar_key", tag: { } }
 			tasks: [
 				{ id: "D077D06FD8ACBE12", type: "item", item: { Count: 1, id: "starciv:stellar_key", tag: { } }, count: 1L }
 				{ id: "B884F7233EEFCB71", type: "advancement", advancement: "starciv:agriculture/stellar_key" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "1E2F3A4B5C6D7E8F"
+			title: "⑤ 绿谷 · 远行准备"
+			subtitle: "带上食物和工具，铁锈星不会温柔"
+			description: "【故事】星门钥匙在手，但贸然闯入未知世界是愚蠢的。档案馆残页记载：铁锈星昼夜温差极大，食物匮乏，亡灵横行。\n\n【任务】准备远行物资：\n- 32 个面包（路上的口粮）\n- 1 套铁质装备（至少铁剑 + 铁胸甲）\n- 16 个火把（照亮废土的黑暗）\n\n【提示】\n- 面包 = 3 小麦，你的农场应该够用了\n- 铁矿在绿谷地下很常见\n- 多带一组原木，到了铁锈星随时能做工具"
+		dependencies: ["842B847A4A16859F"]
+			x: 8.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:bread", tag: { } }
+			tasks: [
+				{ id: "2F3A4B5C6D7E8F90", type: "item", item: { Count: 1, id: "minecraft:bread", tag: { } }, count: 32L }
+				{ id: "3A4B5C6D7E8F9012", type: "item", item: { Count: 1, id: "minecraft:iron_sword", tag: { } }, count: 1L }
 			]
+			rewards: [ ]
 		}
 		{
 			id: "DA7BA5DACC19A825"
-			title: "③ 铁锈 · 踏上废土"
-			subtitle: ""
-			description: "主线第三步（需持有星门钥匙）。\n【去哪里】回到绿谷星门（独石碑旁的发光方框），手持【星门钥匙】走进去，传送到铁锈星。\n【铁锈星是什么】旧文明的工业心脏：锈红色的天与地、废弃工厂、高炉群、深埋的紫水晶矿。\n【干什么】落地后探索废墟，收集初期物资，为重启抛光线做准备。\n【注意】铁锈星昼夜温差大，带足食物；夜里警惕游荡的亡灵。"
-		dependencies: ["842B847A4A16859F"]
-			x: 4.0d
+			title: "⑥ 铁锈 · 踏上废土"
+			subtitle: "锈红的天空下，文明的残骸遍地"
+			description: "【故事】手持星门钥匙走进绿谷星门——光芒吞没一切。当视觉恢复时，你站在一片锈红色的大地上。空气中弥漫着铁锈的味道。远处，废弃的高炉群像巨人的骸骨。\n\n【任务】抵达铁锈星维度。\n\n【铁锈星档案】\n- 定位：旧文明的工业心脏\n- 生态：荒漠+矿区，废弃工厂，深埋紫水晶矿\n- 威胁：夜间亡灵、昼夜温差\n- 地标：铁锈灯塔 (480, 76, 460)\n\n【注意】落地后先找遮蔽处，标记星门位置！"
+		dependencies: ["1E2F3A4B5C6D7E8F"]
+			x: 10.0d
 			y: 0.0d
 			icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
 			tasks: [
 				{ id: "1E1AC314512993DE", type: "dimension", dimension: "starciv:rustfall" }
 				{ id: "AAB933A8CA1902DF", type: "advancement", advancement: "starciv:industry/arrival" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "4B5C6D7E8F901234"
+			title: "⑦ 铁锈 · 废土开荒"
+			subtitle: "在铁的骸骨中搜刮文明的碎片"
+			description: "【故事】铁锈星的地面散落着旧文明的残骸——铁栅栏、锈蚀机器、断裂的铁轨。这些废铁是你重建工业的第一批原料。\n\n【任务】收集 32 个铁锭。\n\n【怎么获得】\n- 废墟中的铁栅栏/铁块可以挖了熔炼\n- 地下矿脉铁矿丰富\n- 带上镐和熔炉，边挖边炼\n\n【背景】在铁锈星，铁不是矿产——它是骸骨。大地记得每一座工厂。"
+		dependencies: ["DA7BA5DACC19A825"]
+			x: 12.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
+			tasks: [
+				{ id: "5C6D7E8F90123456", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 32L }
 			]
+			rewards: [ ]
 		}
 		{
 			id: "6DB4D833EF7DC88B"
-			title: "④ 铁锈 · 生物燃料"
-			subtitle: ""
-			description: "主线第四步。\n【材料】上古之种（或它的胚体）+ 木炭（烧原木）。\n【怎么做】按 JEI 配方合成【生物燃料罐】。\n【为什么】生物燃料是重启铁锈星机器的燃料——它们让锈蚀的传动轴重新转动，也解锁后续工厂科技。\n【提示】这步是农业与工业的第一次握手，之后绿谷粮食→铁锈燃料的循环就建立了。"
-		dependencies: ["DA7BA5DACC19A825"]
-			x: 6.0d
+			title: "⑧ 铁锈 · 生物燃料"
+			subtitle: "农业与工业的第一次握手"
+			description: "【故事】废弃工厂的机器还在——它们只是缺少燃料。档案馆碎片提示：上古之种可以发酵成【生物燃料】，这是重启工业的钥匙。\n\n【材料】2 上古之种 + 1 煤炭 + 1 玻璃瓶\n【做法】JEI 搜索"生物燃料罐"查看配方\n\n【为什么】生物燃料是铁锈星机器的血液。没有它，传动轴不会转，抛光线不会亮。\n\n【提示】记得从绿谷带上古之种过来！这就是跨星球贸易的开始。"
+		dependencies: ["4B5C6D7E8F901234"]
+			x: 14.0d
 			y: 0.0d
 			icon: { Count: 1, id: "starciv:biofuel_canister", tag: { } }
 			tasks: [
 				{ id: "C2F6C936117489C3", type: "item", item: { Count: 1, id: "starciv:biofuel_canister", tag: { } }, count: 1L }
 				{ id: "3C232021959AE413", type: "advancement", advancement: "starciv:industry/fuel" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "6D7E8F9012345678"
+			title: "⑨ 铁锈 · 传动工程"
+			subtitle: "让齿轮重新转动"
+			description: "【故事】有了燃料，你需要动力传输系统。Create 模组的传动轴是铁锈星工业的骨架——曾经驱动整座星球的生产线。\n\n【任务】制作 8 根传动轴（Create）+ 1 个水车。\n\n【做法】\n- 传动轴 = 木轴 + 铁片（JEI 查看）\n- 水车放在流水旁自动产生动力\n- 用传动轴把动力从水车传到机器\n\n【提示】这是 Create 模组的入门。学会传动 = 学会自动化的基础。"
+		dependencies: ["6DB4D833EF7DC88B"]
+			x: 16.0d
+			y: 0.0d
+			icon: { Count: 1, id: "create:shaft", tag: { } }
+			tasks: [
+				{ id: "7E8F901234567890", type: "item", item: { Count: 1, id: "create:shaft", tag: { } }, count: 8L }
+				{ id: "8F90123456789012", type: "item", item: { Count: 1, id: "create:water_wheel", tag: { } }, count: 1L }
 			]
+			rewards: [ ]
 		}
 		{
 			id: "61E13D05649DECE9"
-			title: "⑤ 铁锈 · 数据裂片"
-			subtitle: ""
-			description: "主线第五步。\n【去哪里】铁锈星地下：紫水晶矿石在矿洞深处与遗迹中常见。\n【干什么】开采紫水晶，用研磨装置或精准采集加工成【数据裂片】，集齐 8 片。\n【为什么】裂片记录了旧文明的生产参数，是后续精密零件的图纸来源。\n【提示】挖矿带好火把与镐；深矿层注意岩浆与怪物。"
-		dependencies: ["6DB4D833EF7DC88B"]
-			x: 8.0d
+			title: "⑩ 铁锈 · 数据裂片"
+			subtitle: "紫水晶中沉睡的旧文明图纸"
+			description: "【故事】深矿层中，你发现了发光的紫水晶矿脉。档案碎片说：这些晶体里存储着旧文明的生产参数——研磨它们可以提取【数据裂片】。\n\n【任务】收集 8 片数据裂片。\n\n【怎么获得】\n- 开采紫水晶，用 Create 碾磨机或 Mekanism 粉碎机加工\n- 遗迹宝箱中也可能找到\n\n【背景】每片裂片都是一段旧文明的工业参数。集齐它们，你就接过了图纸。"
+		dependencies: ["6D7E8F9012345678"]
+			x: 18.0d
 			y: 0.0d
 			icon: { Count: 1, id: "starciv:data_slivers", tag: { } }
 			tasks: [
 				{ id: "0AF2E73307DA2CC5", type: "item", item: { Count: 1, id: "starciv:data_slivers", tag: { } }, count: 8L }
 				{ id: "A1C5E3C01D3DF39C", type: "advancement", advancement: "starciv:hidden/lost_tech" }
 			]
-			rewards: [
-			]
+			rewards: [ ]
 		}
 		{
-			id: "809233D56E84E168"
-			title: "⑥ 硅火 · 霓虹都市"
-			subtitle: ""
-			description: "主线第六步（建议先完成⑤）。\n【去哪里】从铁锈星星门返回绿谷，再从绿谷星门选择【硅火】坐标。\n【硅火星是什么】最接近旧文明巅峰的世界：整座都市仍亮着霓虹，中央有庞大的计算机群。\n【干什么】降落在都市外围，熟悉环境，寻找工业台。\n【注意】都市里有自动防御设施，别在夜里乱闯。"
+			id: "9012345678901234"
+			title: "⑪ 铁锈 · 精密零件"
+			subtitle: "铁锈星的最高工业成就"
+			description: "【故事】有了数据裂片中的图纸，你终于可以锻造【精密零件】了。这是铁锈星工业文明的巅峰产物——也是通往信息文明的桥梁。\n\n【材料】Create 铁板 + 红石 + Mekanism 金粉\n【做法】JEI 搜索"精密零件"（需要 Create 辊压机先把铁锭压成铁板）\n\n【为什么】精密零件是硅火星量子核心的关键组件。工业文明的终点，就是信息文明的起点。\n\n【提示】你需要先建好 Create 的辊压机产线。"
 		dependencies: ["61E13D05649DECE9"]
-			x: 10.0d
-			y: 0.0d
-			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
-			tasks: [
-				{ id: "8C0A415AF074B0F6", type: "dimension", dimension: "starciv:silicon" }
-				{ id: "0CC72057CF5DBE95", type: "advancement", advancement: "starciv:information/arrival" }
-			]
-			rewards: [
-			]
-		}
-		{
-			id: "606C46602217C94F"
-			title: "⑦ 硅火 · 精密零件"
-			subtitle: ""
-			description: "主线第七步。\n【材料】数据裂片 + 铁锭 + 红石（具体配方见 JEI 的【精密零件】）。\n【怎么做】在硅火工业台锻造 4 个【精密零件】。\n【为什么】精密零件是穿梭机的核心部件，也是离开硅火星、组装量子核心的条件。\n【提示】硅火星的机床精度是四星最高的，别在别处瞎试。"
-		dependencies: ["809233D56E84E168"]
-			x: 12.0d
+			x: 20.0d
 			y: 0.0d
 			icon: { Count: 1, id: "starciv:precision_parts", tag: { } }
 			tasks: [
 				{ id: "59D4E83A77E488BF", type: "item", item: { Count: 1, id: "starciv:precision_parts", tag: { } }, count: 4L }
 				{ id: "A540216F17F24F49", type: "advancement", advancement: "starciv:information/chips" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "0123456789012345"
+			title: "⑫ 铁锈 · 铁锈之心"
+			subtitle: "在离开之前，向废土致敬"
+			description: "【故事】铁锈星教会了你工业的力量与代价。在离开前，档案馆建议你留下一个纪念——用铁块铸造【铁锈之心】，象征你在这里重启了文明。\n\n【任务】\n- 制作 1 个铁块（9 铁锭）\n- 在铁锈灯塔 (480, 76, 460) 附近放置\n\n【背景】灯塔顶端的灯室在你到来后重新亮起。铁锈星不再是废土——它是你的工业基地。\n\n【提示】铁块做完后就可以出发去硅火星了。"
+		dependencies: ["9012345678901234"]
+			x: 22.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:iron_block", tag: { } }
+			tasks: [
+				{ id: "1234567890123456", type: "item", item: { Count: 1, id: "minecraft:iron_block", tag: { } }, count: 1L }
 			]
+			rewards: [ ]
+		}
+		{
+			id: "809233D56E84E168"
+			title: "⑬ 硅火 · 霓虹都市"
+			subtitle: "信息文明的赛博殿堂"
+			description: "【故事】从铁锈星门返回绿谷，再选择【硅火】坐标。传送完成后——你被霓虹灯海淹没。整座都市仍在运转，中央计算机群的指示灯闪烁不止。\n\n【硅火星档案】\n- 定位：旧文明的信息中枢\n- 生态：霓虹都市 + 紫水晶岩区\n- 特产：数据裂片、红石科技、精密零件\n- 地标：硅火霓虹亭 (-660, 69, 360)\n\n【注意】都市有自动防御设施，夜间别乱闯！"
+		dependencies: ["0123456789012345"]
+			x: 24.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+			tasks: [
+				{ id: "8C0A415AF074B0F6", type: "dimension", dimension: "starciv:silicon" }
+				{ id: "0CC72057CF5DBE95", type: "advancement", advancement: "starciv:information/arrival" }
+			]
+			rewards: [ ]
+		}
+		{
+			id: "2345678901234567"
+			title: "⑭ 硅火 · 红石电路"
+			subtitle: "信息文明的语言是电信号"
+			description: "【故事】硅火星的一切都运行在红石电路之上。要在这里生存和制造，你必须先学会它的语言。\n\n【任务】\n- 收集 32 份红石粉\n- 制作 4 个红石中继器\n- 制作 2 个红石比较器\n\n【背景】电路是硅火的语言。读懂它，你就能让整座都市为你工作。\n\n【提示】红石在都市地下矿脉和旧机房中很常见。"
+		dependencies: ["809233D56E84E168"]
+			x: 26.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:redstone", tag: { } }
+			tasks: [
+				{ id: "3456789012345678", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 32L }
+				{ id: "4567890123456789", type: "item", item: { Count: 1, id: "minecraft:repeater", tag: { } }, count: 4L }
+			]
+			rewards: [ ]
 		}
 		{
 			id: "134A35149621496A"
-			title: "⑧ 硅火 · 量子核心"
-			subtitle: ""
-			description: "主线第八步。\n【材料】2 个精密零件 + 1 个红石灯 + 4 块石英（JEI 查看）。\n【怎么做】在工作台组装【量子核心】。\n【干什么】带着核心前往中央计算机群——核心会在那里苏醒，星门坐标库将展开，通往苍穹的路由此显现。\n【提示】核心苏醒时会引发短暂的断电故障，提前保存进度。"
-		dependencies: ["606C46602217C94F"]
-			x: 14.0d
+			title: "⑮ 硅火 · 量子核心"
+			subtitle: "AI 苏醒的时刻"
+			description: "【故事】你终于集齐了所有材料。在硅火星的中央计算机群中，精密零件与 AE2 处理器融合——【量子核心】在一阵蓝光中苏醒。\n\n【材料】2 精密零件 + 1 AE2 运算处理器 + 1 钻石 + 1 红石块\n【做法】JEI 搜索"量子核心"\n\n【背景】核心苏醒时，星门坐标库展开——通往苍穹的路由此显现。\n\n【提示】AE2 运算处理器需要先做赛特斯石英 + 逻辑处理器。"
+		dependencies: ["2345678901234567"]
+			x: 28.0d
 			y: 0.0d
 			icon: { Count: 1, id: "starciv:quantum_core", tag: { } }
 			tasks: [
 				{ id: "D86EAFC99F417910", type: "item", item: { Count: 1, id: "starciv:quantum_core", tag: { } }, count: 1L }
 				{ id: "D87CC6D9E9366E2B", type: "advancement", advancement: "starciv:information/core" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "5678901234567890"
+			title: "⑯ 硅火 · 跃迁核心"
+			subtitle: "曲率引擎的心脏"
+			description: "【故事】量子核心只是 AI——要让它驱动星际跃迁，需要 Ad Astra 的引擎框架和钢板将其封装成【跃迁核心】。\n\n【材料】1 量子核心 + 4 Ad Astra 引擎框架 + 4 钢板\n【做法】JEI 搜索"跃迁核心"\n\n【背景】跃迁核心是 AI 的物理载体。它既是计算器，也是导航仪——苍穹星的坐标已经写入其中。\n\n【提示】Ad Astra 的钢板需要先冶炼钢锭再压制。"
+		dependencies: ["134A35149621496A"]
+			x: 30.0d
+			y: 0.0d
+			icon: { Count: 1, id: "starciv:warp_core", tag: { } }
+			tasks: [
+				{ id: "6789012345678901", type: "item", item: { Count: 1, id: "starciv:warp_core", tag: { } }, count: 1L }
 			]
+			rewards: [ ]
 		}
 		{
 			id: "7C88458977D9E7A7"
-			title: "⑨ 硅火 · 跃迁引擎"
-			subtitle: ""
-			description: "主线第九步。\n【材料】1 个量子核心 + 1 个焰火之星 + 4 块紫水晶（JEI 查看）。\n【怎么做】按配方合成【跃迁引擎】。\n【为什么】苍穹星不通过星门抵达，它需要跃迁——跃迁引擎是唯一载体。\n【提示】跃迁引擎会留在你手里，放心使用。"
-		dependencies: ["134A35149621496A"]
-			x: 16.0d
+			title: "⑰ 硅火 · 跃迁引擎"
+			subtitle: "终局引擎：燃烧 AI 驱动曲率航行"
+			description: "【故事】跃迁核心包裹在下界合金与烈焰棒的框架中——【跃迁引擎】完成了。它沉甸甸地躺在你手中，散发着紫色的微光。\n\n【材料】1 跃迁核心 + 4 下界合金锭 + 4 烈焰棒\n【做法】JEI 搜索"跃迁引擎"\n\n【为什么】苍穹星不通过星门抵达——它需要跃迁。跃迁引擎是唯一的载体。\n\n【提示】下界合金需要去下界挖远古残骸。做好准备再去！"
+		dependencies: ["5678901234567890"]
+			x: 32.0d
 			y: 0.0d
-			icon: { Count: 1, id: "minecraft:firework_rocket", tag: { } }
+			icon: { Count: 1, id: "starciv:warp_engine", tag: { } }
 			tasks: [
 				{ id: "4FB5858FEA6B8B26", type: "item", item: { Count: 1, id: "starciv:warp_engine", tag: { } }, count: 1L }
 				{ id: "92A047E6A0720E54", type: "advancement", advancement: "starciv:interstellar/engine" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "7890123456789012"
+			title: "⑱ 硅火 · 霓虹告别"
+			subtitle: "在离开前，记住这座不灭的城市"
+			description: "【故事】跃迁引擎在手，但硅火星还有最后一件事——在霓虹亭 (-660, 69, 360) 制作 4 枚烟花，向这座千年不灭的都市致敬。\n\n【任务】\n- 制作 4 枚烟花火箭\n- 收集 8 颗荧光浆果（都市内常见）\n\n【背景】旧文明每年在这一天放烟花——庆祝'续命成功'。千年后，你为它补上了缺席的那一场。"
+		dependencies: ["7C88458977D9E7A7"]
+			x: 34.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:firework_rocket", tag: { } }
+			tasks: [
+				{ id: "8901234567890123", type: "item", item: { Count: 1, id: "minecraft:firework_rocket", tag: { } }, count: 4L }
 			]
+			rewards: [ ]
 		}
 		{
 			id: "B921E1A08F214AE7"
-			title: "⑩ 苍穹 · 应许之地"
-			subtitle: ""
-			description: "主线第十步（需持有跃迁引擎）。\n【去哪里】回到硅火中心广场的【苍穹之门】，手持跃迁引擎启动跃迁。\n【苍穹星是什么】悬浮大陆与发光晶体森林，保存着文明的终极答案——但守护者也在等待。\n【干什么】落地后熟悉环境，寻找晶体平原上的巨兽巢穴。\n【注意】苍穹星的生物比前三个世界强，先做好装备再来。"
-		dependencies: ["7C88458977D9E7A7"]
-			x: 18.0d
+			title: "⑲ 苍穹 · 应许之地"
+			subtitle: "悬浮大陆与晶体森林的世界"
+			description: "【故事】回到硅火中央广场的【苍穹之门】，手持跃迁引擎启动跃迁——时空扭曲，星光炸裂。当一切平息，你漂浮在云海之上。脚下是发光的晶体森林，头顶是从未见过的星空。\n\n【苍穹星档案】\n- 定位：文明的终点与起点\n- 生态：悬浮大陆、晶体森林、云海\n- 地标：苍穹空艇 (300, 64, -580)\n- 威胁：守护者【下界合金巨兽】盘踞晶体平原\n\n【注意】苍穹星的生物比前三个世界强得多。先做好装备！"
+		dependencies: ["7890123456789012"]
+			x: 36.0d
 			y: 0.0d
 			icon: { Count: 1, id: "minecraft:nether_star", tag: { } }
 			tasks: [
 				{ id: "F05393789972752B", type: "dimension", dimension: "starciv:stellaris" }
 				{ id: "2CF3978BBCC804FF", type: "advancement", advancement: "starciv:interstellar/arrival" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "9012345678ABCDEF"
+			title: "⑳ 苍穹 · 晶体森林"
+			subtitle: "每枚水晶都是一束被收纳的光"
+			description: "【故事】晶体森林在夜里发光像星河——这是苍穹星最美的地方，也是最危险的区域。巨兽的巢穴就在深处。\n\n【任务】\n- 采集 32 枚紫水晶碎片\n- 探索晶体森林，标记巨兽巢穴位置\n\n【提示】\n- 穿好装备再深入\n- 巨兽巢穴周围有骸骨环绕，很好辨认\n- 紫水晶碎片也是终局材料的来源"
+		dependencies: ["B921E1A08F214AE7"]
+			x: 38.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
+			tasks: [
+				{ id: "0123456789ABCDE0", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 32L }
 			]
+			rewards: [ ]
+		}
+		{
+			id: "ABCDEF0123456789"
+			title: "㉑ 苍穹 · 终局备战"
+			subtitle: "终局仪式没有第二次机会"
+			description: "【故事】巨兽巢穴就在前方。在进入之前，你需要做最后的准备——这是你面对的最强敌人。\n\n【任务】\n- 制作 2 个金苹果\n- 获得 1 个不死图腾（掠夺者队长/林地府邸）\n- 准备 1 套钻石或更高级装备\n\n【建议装备】\n- 全套下界合金（最佳）或钻石\n- 锋利V / 保护IV 附魔\n- 力量+抗火药水\n- 末影珍珠（紧急逃脱）"
+		dependencies: ["9012345678ABCDEF"]
+			x: 40.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:golden_apple", tag: { } }
+			tasks: [
+				{ id: "BCDEF01234567890", type: "item", item: { Count: 1, id: "minecraft:golden_apple", tag: { } }, count: 2L }
+				{ id: "CDEF012345678901", type: "item", item: { Count: 1, id: "minecraft:totem_of_undying", tag: { } }, count: 1L }
+			]
+			rewards: [ ]
 		}
 		{
 			id: "A292AA1B72AFDC08"
-			title: "⑪ 苍穹 · 终局仪式"
-			subtitle: ""
-			description: "最终步：击败远古造物【下界合金巨兽】。\n【去哪里】苍穹星晶体平原，骸骨环绕的巨兽巢穴。\n【准备】整套下界合金装备、充足药水与食物；参考【战斗】页签了解它的弱点。\n【怎么做】正面迎战 L_Ender 的 Cataclysm 之【下界合金巨兽】。它攻击高、范围大，注意走位与血量管理。\n【为什么】守护者是第一代文明留下的守门人。击败它并非征服，而是证明：新的文明已具备接过星火的资格。\n【结尾】仪式完成时，四颗星球的灯塔将同时亮起——文明的薪火传到了你手中。"
-		dependencies: ["B921E1A08F214AE7"]
-			x: 20.0d
+			title: "㉒ 苍穹 · 终局仪式"
+			subtitle: "击败守护者，接过文明的薪火"
+			description: "【故事】骸骨环绕的巢穴中，【下界合金巨兽】苏醒了。它是第一代文明留下的最终守门人——不是为了阻止你，而是为了考验你。\n\n【Boss】下界合金巨兽 (Cataclysm)\n- 四足机械巨兽，下界合金甲壳\n- 招牌攻击：流星火雨、正面冲锋\n- 弱点：绕侧翼打后腿，火雨时躲水晶柱后\n- 残血狂暴：拉距离风筝或药水硬刚\n\n【结尾】仪式完成时，四颗星球的灯塔将同时亮起——文明的薪火传到了你手中。"
+		dependencies: ["ABCDEF0123456789"]
+			x: 42.0d
 			y: 0.0d
 			icon: { Count: 1, id: "minecraft:netherite_ingot", tag: { } }
 			tasks: [
 				{ id: "E11268F44029798F", type: "kill", entity: "cataclysm:netherite_monstrosity", value: 1L }
 				{ id: "089AFFADB7222AA7", type: "advancement", advancement: "starciv:interstellar/contact" }
 			]
-			rewards: [
+			rewards: [ ]
+		}
+		{
+			id: "DEF0123456789ABC"
+			title: "㉓ 尾声 · 信标之光"
+			subtitle: "在苍穹之巅点亮文明的灯塔"
+			description: "【故事】巨兽倒下了。它的甲壳裂开，跃迁核心的光芒从中溢出。四颗星球的灯塔同时亮起——从绿谷的独石碑，到铁锈的灯塔，到硅火的霓虹亭，到苍穹的空艇……\n\n【任务】制作 1 个信标，放在苍穹星的最高点。\n\n【配方】3 黑曜石 + 5 玻璃 + 1 跃迁核心（本包特殊配方，JEI 查看）\n\n【背景】信标的光柱穿透云层——从此，任何仰望苍穹的人，都能看到你留下的标记。"
+		dependencies: ["A292AA1B72AFDC08"]
+			x: 44.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:beacon", tag: { } }
+			tasks: [
+				{ id: "EF01234567890ABC", type: "item", item: { Count: 1, id: "minecraft:beacon", tag: { } }, count: 1L }
 			]
+			rewards: [ ]
+		}
+		{
+			id: "F0123456789ABCDE"
+			title: "㉔ 尾声 · 鞘翅自由"
+			subtitle: "文明之翼：在四星之间自由翱翔"
+			description: "【故事】信标亮起后，苍穹空艇的货舱解锁了——里面是一对鞘翅。这是旧文明给继承者的最后礼物。\n\n【任务】制作 1 对鞘翅。\n\n【配方】3 幻翼膜 + 1 跃迁核心（本包特殊配方）\n\n【背景】戴上鞘翅，从苍穹最高的悬浮岛跳下——晶体森林、云海、星光……整个世界在你脚下展开。\n\n【提示】搭配烟花火箭可以持续飞行。"
+		dependencies: ["DEF0123456789ABC"]
+			x: 46.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:elytra", tag: { } }
+			tasks: [
+				{ id: "0123456789ABCDEF", type: "item", item: { Count: 1, id: "minecraft:elytra", tag: { } }, count: 1L }
+			]
+			rewards: [ ]
+		}
+		{
+			id: "123456789ABCDEF0"
+			title: "㉕ 终章 · 星际文明编年史"
+			subtitle: "从一粒种子到星辰大海"
+			description: "【故事】从绿谷的一粒上古之种，到铁锈的钢铁废土，到硅火的霓虹都市，到苍穹的悬浮大陆……你走完了四颗星球，重建了文明。\n\n【最终任务】集齐四星特产，向档案馆致敬：\n- 1 个上古之种（绿谷·农业）\n- 1 个生物燃料罐（铁锈·工业）\n- 1 个精密零件（硅火·信息）\n- 1 个跃迁核心（苍穹·星际）\n\n【结语】档案馆的最后一页终于有了新的墨迹：\n'读完它的人，就是下一个档案馆。'\n\n恭喜你完成了《星际文明编年史》的主线故事。但这个世界还有更多秘密等待探索——支线任务、隐藏 Boss、科技深造……\n\n文明的薪火，永不熄灭。🌟"
+		dependencies: ["F0123456789ABCDE"]
+			x: 48.0d
+			y: 0.0d
+			icon: { Count: 1, id: "minecraft:nether_star", tag: { } }
+			tasks: [
+				{ id: "23456789ABCDEF01", type: "item", item: { Count: 1, id: "starciv:ancient_seed", tag: { } }, count: 1L }
+				{ id: "3456789ABCDEF012", type: "item", item: { Count: 1, id: "starciv:biofuel_canister", tag: { } }, count: 1L }
+				{ id: "456789ABCDEF0123", type: "item", item: { Count: 1, id: "starciv:precision_parts", tag: { } }, count: 1L }
+				{ id: "56789ABCDEF01234", type: "item", item: { Count: 1, id: "starciv:warp_core", tag: { } }, count: 1L }
+			]
+			rewards: [ ]
 		}
 	]
 }

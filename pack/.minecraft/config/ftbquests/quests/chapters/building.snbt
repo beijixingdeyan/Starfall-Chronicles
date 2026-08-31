@@ -131,5 +131,156 @@
 			rewards: [
 			]
 		}
+		{
+			id: "7F4A8C92D5E1B6C3"
+			title: "Chipped · 石材工坊"
+			subtitle: ""
+			description: "Chipped 装饰工坊系列（1/4）\n【材料】制作 1 个石材工坊工作台。\n【用途】石材工坊可快速雕刻与装饰各类石材变种。"
+			dependencies: []
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "chipped:mason_table", tag: { } }
+			tasks: [
+				{ id: "A1F2B8D4C5E6G7H8", type: "item", item: { Count: 1, id: "chipped:mason_table", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8E5B9F3A7C2D6E1G"
+			title: "Chipped · 木工坊"
+			subtitle: ""
+			description: "Chipped 装饰工坊系列（2/4）\n【材料】制作 1 个木工坊工作台。\n【用途】木工坊用于快速打造各类木质装饰与建筑元素。"
+			dependencies: ["7F4A8C92D5E1B6C3"]
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "chipped:carpenters_table", tag: { } }
+			tasks: [
+				{ id: "B2E3C9A5D6F7G8H9", type: "item", item: { Count: 1, id: "chipped:carpenters_table", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "9F6C0G4B8D3E7F2H"
+			title: "Chipped · 玻璃工坊"
+			subtitle: ""
+			description: "Chipped 装饰工坊系列（3/4）\n【材料】制作 1 个玻璃工坊工作台。\n【用途】玻璃工坊能制作各种精致玻璃装饰与窗户变种。"
+			dependencies: ["8E5B9F3A7C2D6E1G"]
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "chipped:glassblower", tag: { } }
+			tasks: [
+				{ id: "C3F4D0B6E7G8H9I0", type: "item", item: { Count: 1, id: "chipped:glassblower", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "0G7D1H5C9E4F8G3I"
+			title: "Chipped · 染色台"
+			subtitle: ""
+			description: "Chipped 装饰工坊系列（4/4）\n【材料】制作 1 个染色台。\n【用途】染色台能为羊毛、陶土等材料染上多种颜色，开启色彩装饰新纪元。"
+			dependencies: ["9F6C0G4B8D3E7F2H"]
+			x: 6.0d
+			y: 4.0d
+			icon: { Count: 1, id: "chipped:loom_table", tag: { } }
+			tasks: [
+				{ id: "D4G5E1C7F8H9I0J1", type: "item", item: { Count: 1, id: "chipped:loom_table", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1H8E2I6D0F5G9H4J"
+			title: "装饰 · 旗帜收集"
+			subtitle: ""
+			description: "Supplementaries 装饰系列（1/4）\n【材料】制作 4 个白色旗帜。\n【用途】旗帜是建筑的点睛之笔，为空旷的城墙与塔楼增添生气。"
+			dependencies: []
+			x: 0.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:white_banner", tag: { } }
+			tasks: [
+				{ id: "E5H6F2D8G9I0J1K2", type: "item", item: { Count: 1, id: "minecraft:white_banner", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "2I9F3J7E1G6H0I5K"
+			title: "装饰 · 灯具大师"
+			subtitle: ""
+			description: "Supplementaries 装饰系列（2/4）\n【材料】制作 8 个灯笼 + 4 个末地烛。\n【用途】灯笼与末地烛是照亮夜晚、装点建筑的必备元素，营造温暖或神秘的氛围。"
+			dependencies: ["1H8E2I6D0F5G9H4J"]
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:lantern", tag: { } }
+			tasks: [
+				{ id: "F6I7G3E9H0J1K2L3", type: "item", item: { Count: 1, id: "minecraft:lantern", tag: { } }, count: 8L }
+				{ id: "G7J8H4F0I1K2L3M4", type: "item", item: { Count: 1, id: "minecraft:end_rod", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "3J0G4K8F2H7I1J6L"
+			title: "装饰 · 花园景观"
+			subtitle: ""
+			description: "Supplementaries 装饰系列（3/4）\n【材料】制作 16 个花盆。\n【用途】花盆是点缀花园与建筑周围的精致装饰，可种植各类植物。"
+			dependencies: ["2I9F3J7E1G6H0I5K"]
+			x: 4.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:flower_pot", tag: { } }
+			tasks: [
+				{ id: "H8K9I5G1J2L3M4N5", type: "item", item: { Count: 1, id: "minecraft:flower_pot", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "4K1H5L9G3I8J2K7M"
+			title: "装饰 · 地毯铺设"
+			subtitle: ""
+			description: "Supplementaries 装饰系列（4/4）\n【材料】制作 16 个白色地毯。\n【用途】地毯为建筑内部增添温馨感，可配合各类建筑风格进行铺设。"
+			dependencies: ["3J0G4K8F2H7I1J6L"]
+			x: 6.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:white_carpet", tag: { } }
+			tasks: [
+				{ id: "I9L0J6H2K3M4N5O6", type: "item", item: { Count: 1, id: "minecraft:white_carpet", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5L2I6M0H4J9K3L8N"
+			title: "横梁建筑"
+			subtitle: ""
+			description: "Decorative Blocks 系列（1/2）\n【材料】制作 8 个橡木横梁。\n【用途】横梁是构建木质建筑骨架的关键，能强化建筑的结构美感。"
+			dependencies: []
+			x: 0.0d
+			y: 8.0d
+			icon: { Count: 1, id: "decorative_blocks:oak_beam", tag: { } }
+			tasks: [
+				{ id: "J0M1K7I3L4N5O6P7", type: "item", item: { Count: 1, id: "decorative_blocks:oak_beam", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "6M3J7N1I5K0L4M9O"
+			title: "支撑结构"
+			subtitle: ""
+			description: "Decorative Blocks 系列（2/2）\n【材料】制作 4 个橡木支撑。\n【用途】支撑柱用于加强木质建筑的稳定性，并提升整体的视觉层次感。"
+			dependencies: ["5L2I6M0H4J9K3L8N"]
+			x: 2.0d
+			y: 8.0d
+			icon: { Count: 1, id: "decorative_blocks:oak_support", tag: { } }
+			tasks: [
+				{ id: "K1N2L8J4M5O6P7Q8", type: "item", item: { Count: 1, id: "decorative_blocks:oak_support", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

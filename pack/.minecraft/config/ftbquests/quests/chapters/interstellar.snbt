@@ -83,5 +83,160 @@
 			rewards: [
 			]
 		}
+		{
+			id: "A7F2E4D9B1C5F3A6"
+			title: "太空 · 火箭燃料"
+			subtitle: ""
+			description: "【目标】制作 4 个桶 + 收集 8 块铁锭。\n【要领】桶用于火箭燃料储存，铁锭为火箭结构材料。\n【背景】征服宇宙，先要有燃料。"
+		dependencies: []
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:bucket", tag: { } }
+			tasks: [
+				{ id: "B8F5A2D9E1C6G4B7", type: "item", item: { Count: 1, id: "minecraft:bucket", tag: { } }, count: 4L }
+				{ id: "C9G6B3E0F2D7H5C8", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "B8G3F5E0C2D8A1H9"
+			title: "太空 · 宇航服"
+			subtitle: ""
+			description: "【目标】制作 1 件铁胸甲。\n【要领】铁胸甲代表宇航服概念，保护宇航员。\n【背景】没有装备的宇航员无法生存。"
+		dependencies: []
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:iron_chestplate", tag: { } }
+			tasks: [
+				{ id: "D0H7C4F1G3E9B2I0", type: "item", item: { Count: 1, id: "minecraft:iron_chestplate", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "C9H4G6F1D3E0B2I1"
+			title: "太空 · 发射台"
+			subtitle: ""
+			description: "【目标】收集 32 块铁锭 + 16 块红石。\n【要领】这些材料用于建造火箭发射台。\n【背景】坚固的发射台，承载着人类的太空梦。"
+		dependencies: []
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
+			tasks: [
+				{ id: "E1I8D5G2H4F0C3J2", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 32L }
+				{ id: "F2J9E6H3I5G1D4K3", type: "item", item: { Count: 1, id: "minecraft:redstone", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "D0I5H7G2E4F1C3J0"
+			title: "太空 · 氧气系统"
+			subtitle: ""
+			description: "【目标】收集 16 块玻璃 + 4 块铁锭。\n【要领】玻璃用于建造氧气罩，铁锭加固结构。\n【背景】没有氧气的太空中，任何生命都无法长存。"
+		dependencies: []
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:glass", tag: { } }
+			tasks: [
+				{ id: "G3K0F7I4J6H2E5L1", type: "item", item: { Count: 1, id: "minecraft:glass", tag: { } }, count: 16L }
+				{ id: "H4L1G8J5K7I3F6M2", type: "item", item: { Count: 1, id: "minecraft:iron_ingot", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "E1J6I8H3F5G2D4K1"
+			title: "太空 · 月球材料"
+			subtitle: ""
+			description: "【目标】收集 4 个末影珍珠。\n【要领】末影珍珠代表月球矿藏，用于太空探索装备。\n【背景】月球的資源，等待着勇敢的探险家。"
+		dependencies: []
+			x: 8.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
+			tasks: [
+				{ id: "I5M2H9K6L8J4G7N3", type: "item", item: { Count: 1, id: "minecraft:ender_pearl", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "F2K7J9I4G6H3E5L0"
+			title: "铁路 · 铁轨建设"
+			subtitle: ""
+			description: "【目标】制作 64 个铁轨。\n【要领】铁轨是列车的基础，需要大量资源铺设。\n【背景】每一条铁轨都连接两个梦想。"
+		dependencies: []
+			x: 0.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:rail", tag: { } }
+			tasks: [
+				{ id: "J6N3I0L7M9K5H8O4", type: "item", item: { Count: 1, id: "minecraft:rail", tag: { } }, count: 64L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "G3L8K0J5H7I4F6M1"
+			title: "铁路 · 列车控制"
+			subtitle: ""
+			description: "【目标】制作 1 个拉杆 + 1 个红石火把。\n【要领】拉杆与红石火把用于列车动力和控制系统。\n【背景】掌握列车，就掌握了文明的脉搏。"
+		dependencies: []
+			x: 2.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:lever", tag: { } }
+			tasks: [
+				{ id: "K7O4J1M8N0L6I9P5", type: "item", item: { Count: 1, id: "minecraft:lever", tag: { } }, count: 1L }
+				{ id: "L8P5K2N9O1M7J0Q6", type: "item", item: { Count: 1, id: "minecraft:redstone_torch", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "H4M9L1K6I8J5G7N2"
+			title: "铁路 · 供应站"
+			subtitle: ""
+			description: "【目标】制作 16 个箱子。\n【要领】箱子用于建造供应站，储存列车物资。\n【背景】物流网络连接每个文明的心脏。"
+		dependencies: []
+			x: 4.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:chest", tag: { } }
+			tasks: [
+				{ id: "M9Q6L3O0P2N8K1R7", type: "item", item: { Count: 1, id: "minecraft:chest", tag: { } }, count: 16L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "I5N0M2L7J9K6H8O3"
+			title: "路标 · 传送网络"
+			subtitle: ""
+			description: "【目标】制作 1 个路标。\n【要领】路标是跨星球传送的基础。\n【背景】一个路标，就是一扇通往远方的门。"
+		dependencies: []
+			x: 0.0d
+			y: 6.0d
+			icon: { Count: 1, id: "waystones:waystone", tag: { } }
+			tasks: [
+				{ id: "N0R7M4P1Q3O9L2S8", type: "item", item: { Count: 1, id: "waystones:waystone", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "J6O1N3M8K0L7I9P4"
+			title: "路标 · 四星互联"
+			subtitle: ""
+			description: "【目标】收集 4 个末影珍珠 + 4 个紫水晶碎片。\n【要领】这些材料用于强化路标网络，实现四星互联。\n【背景】四颗星球的命运，由这个网络而连接。"
+		dependencies: []
+			x: 2.0d
+			y: 6.0d
+			icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
+			tasks: [
+				{ id: "O1S8N5Q2R4P0M3T9", type: "item", item: { Count: 1, id: "minecraft:ender_pearl", tag: { } }, count: 4L }
+				{ id: "P2T9O6R3S5Q1N4U0", type: "item", item: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }, count: 4L }
+			]
+			rewards: [
+			]
+		}
 	]
 }

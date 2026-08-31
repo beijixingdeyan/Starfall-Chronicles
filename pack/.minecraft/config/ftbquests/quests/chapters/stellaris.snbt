@@ -203,5 +203,113 @@
 			rewards: [
 			]
 		}
+		{
+			id: "3C7F8A2B1D4E9F6A"
+			title: "苍穹 · 不死之心"
+			subtitle: ""
+			description: "【位置】林地府邸 / 掠夺者队长巡逻。\n【目标】收集 2 个不死图腾。\n【要领】不死图腾在林地府邸或掠夺者队长掉落；终局前必备。\n【背景】不死之心是文明对抗终焉的最后防线。"
+		dependencies: []
+			x: 0.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:totem_of_undying", tag: { } }
+			tasks: [
+				{ id: "4E5A9B3C2F7D1A8E", type: "item", item: { Count: 1, id: "minecraft:totem_of_undying", tag: { } }, count: 2L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "5D8E7C3A9F2B4D1C"
+			title: "苍穹 · 钻石全套"
+			subtitle: ""
+			description: "【位置】任意挖矿地点。\n【目标】制作 1 套钻石胸甲 + 1 条钻石护腿。\n【要领】钻石在 y≈-16 附近富集；需 8 颗钻石制作。\n【背景】钻石装备是终局前的标准配置——虽然很快就会升级。"
+		dependencies: []
+			x: 2.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:diamond_chestplate", tag: { } }
+			tasks: [
+				{ id: "6F7A1E2D3C8B9A4F", type: "item", item: { Count: 1, id: "minecraft:diamond_chestplate", tag: { } }, count: 1L }
+				{ id: "7G8B2F3E4D9C0B5A", type: "item", item: { Count: 1, id: "minecraft:diamond_leggings", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8H9C3G4F5E0D1A6B"
+			title: "苍穹 · 药水大师"
+			subtitle: ""
+			description: "【位置】任意据点。\n【目标】制作 1 个酿造台 + 收集 8 个烈焰粉。\n【要领】酿造台=烈焰棒+铁栅栏；烈焰粉从烈焰人掉落（下界烈焰塔）。\n【背景】药水是终局战的隐形翅膀——效果的差别决定胜负。"
+		dependencies: []
+			x: 4.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:brewing_stand", tag: { } }
+			tasks: [
+				{ id: "9I0D4H5G6F1E2B7C", type: "item", item: { Count: 1, id: "minecraft:brewing_stand", tag: { } }, count: 1L }
+				{ id: "0J1E5I6H7G2F3C8D", type: "item", item: { Count: 1, id: "minecraft:blaze_powder", tag: { } }, count: 8L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "1K2F6J7I8H3G4D9E"
+			title: "苍穹 · 弓箭手"
+			subtitle: ""
+			description: "【位置】任意据点。\n【目标】制作 1 把弓 + 收集 64 个箭。\n【要领】弓=木板+线；箭=木板+燧石+羽毛（JEI 查配方）。\n【背景】弓箭是对抗空中敌人的经典武器——在苍穹，它还有一种诗意。"
+		dependencies: []
+			x: 6.0d
+			y: 2.0d
+			icon: { Count: 1, id: "minecraft:bow", tag: { } }
+			tasks: [
+				{ id: "2L3G7K8J9I4H5E0F", type: "item", item: { Count: 1, id: "minecraft:bow", tag: { } }, count: 1L }
+				{ id: "3M4H8L9K0J5I6F1G", type: "item", item: { Count: 1, id: "minecraft:arrow", tag: { } }, count: 64L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "4N5I9M0L1K6J7G2H"
+			title: "苍穹 · 末地远征"
+			subtitle: ""
+			description: "【位置】末地主岛及城市。\n【目标】收集 12 个末影之眼。\n【要领】末影之眼从末影人掉落；合成配方 JEI 查询。\n【背景】末影之眼是通往终焉的钥匙——12 颗眼睛，打开最后的门。"
+		dependencies: []
+			x: 8.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:ender_eye", tag: { } }
+			tasks: [
+				{ id: "5O6J0N1M2L7K8H3I", type: "item", item: { Count: 1, id: "minecraft:ender_eye", tag: { } }, count: 12L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "6P7K1O2N3M8L9I4J"
+			title: "苍穹 · 凋零之战"
+			subtitle: ""
+			description: "【位置】下界要塞 / 灵魂沙谷。\n【目标】收集 3 个凋零骷髅头。\n【要领】凋零骷髅头在下界堡垒掉落；需时间积累或精准挖掘。\n【背景】凋零骷髅头是召唤凋零的材料——每一颗都是黑暗本身的碎片。"
+		dependencies: []
+			x: 10.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:wither_skeleton_skull", tag: { } }
+			tasks: [
+				{ id: "7Q8L2P3O4N9M0J5K", type: "item", item: { Count: 1, id: "minecraft:wither_skeleton_skull", tag: { } }, count: 3L }
+			]
+			rewards: [
+			]
+		}
+		{
+			id: "8R9M3Q4P5O0N1K6L"
+			title: "苍穹 · 信标之光"
+			subtitle: ""
+			description: "【位置】任意据点。\n【目标】制作 1 个信标。\n【要领】信标=3 层下界合金+黑曜石底座+玻璃顶（JEI 查配方）。\n【背景】信标之光象征文明的最后灯塔——照亮终焉前的最后夜晚。"
+		dependencies: []
+			x: 12.0d
+			y: 4.0d
+			icon: { Count: 1, id: "minecraft:beacon", tag: { } }
+			tasks: [
+				{ id: "9S0N4R5Q6P1O2L7M", type: "item", item: { Count: 1, id: "minecraft:beacon", tag: { } }, count: 1L }
+			]
+			rewards: [
+			]
+		}
 	]
 }
