@@ -173,34 +173,12 @@ if (-not (Test-Path (Join-Path $mcDir 'datapacks'))) { New-Item -ItemType Direct
 $verJson = Join-Path $verDir "$ForgeVerId.json"
 if (-not (Test-Path $verJson)) { Write-Host "缺少版本 JSON: $verJson"; exit 1 }
 
-# ---- 4.5 版本合并：Starfall-Chronicles 独立（不继承 1.20.1）
-# PCL2 版本列表只显示一个版本 → 玩家无需"选择版本"
-$vanillaJsonPath = Join-Path $vanillaDir '1.20.1.json'
-$vanillaJar = Join-Path $vanillaDir '1.20.1.jar'
-if (Test-Path $vanillaJsonPath) {
-  try {
-    $van = Get-Content $vanillaJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
-    $fg = Get-Content $verJson -Raw -Encoding UTF8 | ConvertFrom-Json
-    $merged = $fg | ConvertTo-Json -Depth 30 | ConvertFrom-Json
-    $merged.PSObject.Properties.Remove('inheritsFrom')
-    $libs = @{}
-    foreach ($l in @($van.libraries) + @($fg.libraries)) { $key = $l.name; if (-not $libs.ContainsKey($key)) { $libs[$key] = $l } }
-    $merged.libraries = @($libs.Values)
-    $merged | Add-Member -NotePropertyName downloads -NotePropertyValue $van.downloads -Force
-    $merged | Add-Member -NotePropertyName assetIndex -NotePropertyValue $van.assetIndex -Force
-    $ga = @()
-    foreach ($a in @($fg.arguments.game)) { $ga += $a }
-    foreach ($a in @($van.arguments.game)) { $ga += $a }
-    # jvm 参数：只用 forge 的（保持原始顺序，禁止混入 vanilla 参数导致 -D/-- 值错位）
-    $ja = @()
-    foreach ($a in @($fg.arguments.jvm)) { $ja += $a }
-    $merged.arguments = [ordered]@{ game = $ga; jvm = $ja }
-    [System.IO.File]::WriteAllText($verJson, ($merged | ConvertTo-Json -Depth 30), (New-Object System.Text.UTF8Encoding($false)))
-    if (Test-Path $vanillaJar) { Copy-Item $vanillaJar (Join-Path $verDir ($ForgeVerId + '.jar')) -Force -ErrorAction SilentlyContinue }
-    if (Test-Path $vanillaDir) { Remove-Item $vanillaDir -Recurse -Force }
-    Write-Host "✔ 版本已合并为独立版: $ForgeVerId（PCL2 版本列表仅显示一个，无需选择）"
-  } catch { Write-Host ("版本合并警告(继续): " + $_.Exception.Message) }
-}
+# ---- 4.5 版本结构：保持 Forge 官方标准 inheritsFrom 结构（不手动合并 json）----
+# 手动合并 vanilla+forge 的 arguments/libraries 曾导致 BootstrapLauncher 启动崩溃
+# （module layer 加载不全，ServiceLoader 找不到 BootstrapLaunchConsumer）。
+# 标准结构在所有主流启动器（PCL2/HMCL 等）上都是被验证过的、可靠的方式。
+# 代价：PCL2 版本列表会同时显示 1.20.1（原版，勿选）与 Starfall-Chronicles（选这个）。
+Write-Host "✔ 保留标准 Forge 版本结构（Starfall-Chronicles 继承 1.20.1，双版本目录）"
 
 if ($GameDir) {
   Write-Host "已直接部署到 PCL2 游戏目录: $mcDir"
