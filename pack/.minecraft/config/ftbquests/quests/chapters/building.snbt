@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "building"
+	title: "建造 · 建筑与装饰"
 	id: "1B20E9021B3A16B0"
 	icon: { Count: 1, id: "minecraft:stone_bricks", tag: { } }
 	images: [ ]

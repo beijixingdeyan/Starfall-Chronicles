@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "interstellar"
+	title: "星际 · 跃迁与铁路"
 	id: "F62E05EAFEC32312"
 	icon: { Count: 1, id: "minecraft:ender_pearl", tag: { } }
 	images: [ ]

@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "stellaris"
+	title: "星球 · 苍穹星"
 	id: "0665E571DC297D8B"
 	icon: { Count: 1, id: "minecraft:amethyst_shard", tag: { } }
 	images: [ ]

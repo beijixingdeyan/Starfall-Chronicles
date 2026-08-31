@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "rust"
+	title: "星球 · 铁锈星"
 	id: "72812E30873455DC"
 	icon: { Count: 1, id: "minecraft:iron_ingot", tag: { } }
 	images: [ ]

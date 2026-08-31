@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "valley"
+	title: "星球 · 绿谷星"
 	id: "DD2921CC76EE3ABF"
 	icon: { Count: 1, id: "minecraft:wheat", tag: { } }
 	images: [ ]

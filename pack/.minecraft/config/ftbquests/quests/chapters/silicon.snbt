@@ -2,6 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "silicon"
+	title: "星球 · 硅火星"
 	id: "2D612A8A156E7FE9"
 	icon: { Count: 1, id: "minecraft:redstone", tag: { } }
 	images: [ ]
