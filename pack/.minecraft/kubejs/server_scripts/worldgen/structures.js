@@ -424,6 +424,7 @@ function buildStructures(evt) {
       buildGate(srv, g.dim, g.x, gy, g.z);
       if (g.dim === 'minecraft:overworld') {
         buildMonolith(srv, g.dim, g.x + 26, gy, g.z - 26);
+        map.monolith = { dim: 'minecraft:overworld', x: g.x + 26, y: gy, z: g.z - 26 };
         // 绿谷：出生点旁流动河流（起点在星门南侧）
         buildRiver(srv, g.dim, g.x - 20, gy + 6, g.z + 60, 48, 1);
       }

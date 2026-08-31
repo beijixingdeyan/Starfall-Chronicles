@@ -166,6 +166,37 @@ if (-not (Test-Path (Join-Path $mcDir 'datapacks'))) { New-Item -ItemType Direct
 $verJson = Join-Path $verDir "$ForgeVerId.json"
 if (-not (Test-Path $verJson)) { Write-Host "缺少版本 JSON: $verJson"; exit 1 }
 
+# ---- 4.5 版本合并：Starfall-Chronicles 独立（不继承 1.20.1）
+# PCL2 版本列表只显示一个版本 → 玩家无需"选择版本"
+$vanillaJsonPath = Join-Path $vanillaDir '1.20.1.json'
+$vanillaJar = Join-Path $vanillaDir '1.20.1.jar'
+if (Test-Path $vanillaJsonPath) {
+  try {
+    $van = Get-Content $vanillaJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $fg = Get-Content $verJson -Raw -Encoding UTF8 | ConvertFrom-Json
+    $merged = $fg | ConvertTo-Json -Depth 30 | ConvertFrom-Json
+    $merged.PSObject.Properties.Remove('inheritsFrom')
+    $libs = @{}
+    foreach ($l in @($van.libraries) + @($fg.libraries)) { $key = $l.name; if (-not $libs.ContainsKey($key)) { $libs[$key] = $l } }
+    $merged.libraries = @($libs.Values)
+    $merged | Add-Member -NotePropertyName downloads -NotePropertyValue $van.downloads -Force
+    $merged | Add-Member -NotePropertyName assetIndex -NotePropertyValue $van.assetIndex -Force
+    $mg = @{}
+    foreach ($a in @($van.arguments.game) + @($fg.arguments.game)) {
+      if ($a -is [string]) { $mg['s:' + $a] = $a } else { $mg['o:' + ($a | ConvertTo-Json -Compress -Depth 20)] = $a }
+    }
+    $mj = @{}
+    foreach ($a in @($van.arguments.jvm) + @($fg.arguments.jvm)) {
+      if ($a -is [string]) { $mj['s:' + $a] = $a } else { $mj['o:' + ($a | ConvertTo-Json -Compress -Depth 20)] = $a }
+    }
+    $merged.arguments = [ordered]@{ game = @($mg.Values); jvm = @($mj.Values) }
+    [System.IO.File]::WriteAllText($verJson, ($merged | ConvertTo-Json -Depth 30), (New-Object System.Text.UTF8Encoding($false)))
+    if (Test-Path $vanillaJar) { Copy-Item $vanillaJar (Join-Path $verDir ($ForgeVerId + '.jar')) -Force -ErrorAction SilentlyContinue }
+    if (Test-Path $vanillaDir) { Remove-Item $vanillaDir -Recurse -Force }
+    Write-Host "✔ 版本已合并为独立版: $ForgeVerId（PCL2 版本列表仅显示一个，无需选择）"
+  } catch { Write-Host ("版本合并警告(继续): " + $_.Exception.Message) }
+}
+
 if ($GameDir) {
   Write-Host "已直接部署到 PCL2 游戏目录: $mcDir"
   Write-Host "启动前请确认 PCL2 已识别版本 '1.20.1-forge-47.4.23'，并在『设置-游戏目录』指向该目录。" -ForegroundColor Green
@@ -179,21 +210,23 @@ $zipPath = Join-Path $dist ("starfall-chronicles-pcl-" + (Get-Date -Format yyyyM
 if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
 Add-Type -AssemblyName System.IO.Compression.FileSystem | Out-Null
 Add-Type -AssemblyName System.IO.Compression | Out-Null
-# PCL 约定: zip 根内直接是 .minecraft/*（包含 .minecraft 这一层再压缩）
+# PCL 约定: zip 根内是 单层包裹文件夹(Starfall-Chronicles/) 内含 .minecraft/* ——
+# 与乌托邦(zip 根为单文件夹)一致，PCL2 拖入 zip 自动解包识别，无需"选择文件夹"
 $zipRoot = Split-Path $mcDir -Parent
+$wrapName = 'Starfall-Chronicles/'
 # 防御：绝不允许任何 manifest.json 混进包根（PCL2 会把任意根 manifest.json 当 CurseForge 格式解析）
 $legacyManifest = Join-Path $zipRoot 'manifest.json'
 if (Test-Path $legacyManifest) { Remove-Item $legacyManifest -Force }
 # ZipFile::CreateFromDirectory 在 .NET Framework(PS5.1) 下把条目写成反斜杠（zip 规范要求正斜杠），
 # 导致 PCL2/第三方读取器无法识别 .minecraft/ 目录 —— 改用 ZipArchive 手工写正斜杠条目（含目录条目）。
-function New-PosixZip([string]$srcDir, [string]$dstZip) {
+function New-PosixZip([string]$srcDir, [string]$dstZip, [string]$prefix) {
   $fs = [System.IO.File]::Open($dstZip, [System.IO.FileMode]::Create)
   $zip = New-Object System.IO.Compression.ZipArchive($fs, [System.IO.Compression.ZipArchiveMode]::Create)
   try {
     $base = (Resolve-Path $srcDir).Path.TrimEnd('\') + '\'
     $dirs = New-Object System.Collections.Generic.HashSet[string]
     Get-ChildItem -Path $srcDir -Recurse -File | ForEach-Object {
-      $rel = $_.FullName.Substring($base.Length).Replace('\', '/')
+      $rel = $prefix + $_.FullName.Substring($base.Length).Replace('\', '/')
       $dirRel = Split-Path $rel -Parent
       while ($dirRel) {
         $dirRelPosix = $dirRel.Replace('\', '/')
@@ -204,9 +237,16 @@ function New-PosixZip([string]$srcDir, [string]$dstZip) {
       $es = $entry.Open()
       try { $bytes = [System.IO.File]::ReadAllBytes($_.FullName); $es.Write($bytes, 0, $bytes.Length) } finally { $es.Dispose() }
     }
+    # 包裹层根图标（PCL2 导入卡识别）
+    $iconSrc = Join-Path (Join-Path $srcDir '.minecraft') 'pack.png'
+    if (Test-Path $iconSrc) {
+      $e = $zip.CreateEntry(($prefix.TrimEnd('/') + '/pack.png'), [System.IO.Compression.CompressionLevel]::Optimal)
+      $es = $e.Open()
+      try { $b = [System.IO.File]::ReadAllBytes($iconSrc); $es.Write($b, 0, $b.Length) } finally { $es.Dispose() }
+    }
   } finally { $zip.Dispose(); $fs.Dispose() }
 }
-New-PosixZip $zipRoot $zipPath
+New-PosixZip $zipRoot $zipPath $wrapName
 Write-Host "✔ 已生成 PCL2 整合包:" -ForegroundColor Green
 Write-Host "  $zipPath"
 $sz = (Get-Item $zipPath).Length / 1MB
