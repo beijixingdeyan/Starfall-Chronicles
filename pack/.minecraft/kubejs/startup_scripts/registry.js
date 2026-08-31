@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 // Starfall Chronicles — Startup 注册：自定义物品与方块
 // 命名空间 starciv（Stellar Civilization / 星际文明）
 // 所有物品/方块纹理由 scripts/build_textures.ps1 生成，
@@ -83,6 +83,7 @@ StartupEvents.registry('item', event => {
 });
 
 // 二、上古作物方块（右键收获）
+// 注：使用 KubeJS 的基础 crop 方块 API，收获逻辑由事件处理
 StartupEvents.registry('block', event => {
   event.create('starciv:ancient_crop', 'crop')
     .displayName('上古作物')
@@ -91,10 +92,7 @@ StartupEvents.registry('block', event => {
     .texture('starciv:block/ancient_crop_2', 2)
     .texture('starciv:block/ancient_crop_3', 3)
     .age(3)
-    .speedUpWhen(e => e.world.isRaining())
-    .replacementLoot('starciv:ancient_seed')
-    .replacementLoot('starciv:ancient_seed')
-    .alwaysDropExperience(2);
+    .speedUpWhen(e => e.world.isRaining());
 });
 
 // 三、星门核心方块（星门传送的交互点）
