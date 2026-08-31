@@ -131,6 +131,13 @@ if (Test-Path $qlSrc) {
   if (Test-Path $qlDst) { Remove-Item $qlDst -Recurse -Force }
   Copy-Item $qlSrc $qlDst -Recurse -Force
 }
+# FTB Quests 任务书（乌托邦同款树状任务书数据 + 配置）
+$fqSrc = Join-Path $Root 'pack\.minecraft\config\ftbquests'
+if (Test-Path $fqSrc) {
+  $fqDst = Join-Path $mcDir 'config\ftbquests'
+  if (Test-Path $fqDst) { Remove-Item $fqDst -Recurse -Force }
+  Copy-Item $fqSrc $fqDst -Recurse -Force
+}
 # Questlog 客户端配置（背包 E 键任务书按钮显式开启）
 foreach ($qt in @('questlog-client.toml', 'questlog.toml')) {
   $qtSrc = Join-Path $Root ('pack\.minecraft\config\' + $qt)
